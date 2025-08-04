@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <!-- google merial icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- bootstrap v5.0.2 css -->
+    <link rel="stylesheet" href="css/main.min.css">
+    <!-- custom css classes -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/select.css">
+    <link rel="stylesheet" href="css/onboarding.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/find-jobs.css">
+    <link rel="stylesheet" href="css/project-details.css">
+    <link rel="stylesheet" href="css/getQuote.css">
+    <link rel="stylesheet" href="css/quotedProjectDetails.css">
+
+     <!-- bootstrap v5.0.2 JS -->
+     <script src="bootstrapV5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bg-primary-800">
+     <!-- Navbar -->
+     <nav class=" position-fixed  top-0 start-50 translate-middle-x px-4 navbar-css w-100 bg-primary-800 pt-2">
+        <div class="container-fluid d-flex justify-content-between align-items-center py-3">
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand fw-bold d-flex" href="#">
+                  <div class="">
+                      <img src="./assets/solvify logo.png" width="36" height="26" alt="solvify_hub_logo">
+                  </div>  
+                  <div class="ms-2"> Solvify Hub</div>
+                </a>
+            </div>
+            <div class="container-fluid d-none d-lg-flex p-0 align-items-center justify-content-between">
+              <div class="">
+                <ul class="nav-link-container d-flex align-items-center mb-0">
+                    <li class=" dropdown">
+                        <a class="nav-link text-primary nav-link-css rounded-pill nav-link-css dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu dropdown-css border-0 px-2" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Mobile Application</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">API Products</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Cloud Products</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Database Product</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">IOT Products</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Desktop applications</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Web Applications</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Websites</a></li>
+                        </ul>
+                    </li>
+                    <li class=""><a class="nav-link nav-link-css rounded-pill text-primary text-decoration-none" href="#">My Project</a></li>
+                </ul>
+              </div>
+              <div class="d-flex justify-content-end p-0">
+                  <ui class="nav-link-container d-flex align-items-center ">
+                      <li class="mx-3">
+                        <button class="btn btn-outline-primary border border-primary rounded-pill btn-text">Get Quote</button>
+                      </li>
+                      <li class="border border-primary p-0 rounded-circle nav-icons  d-flex align-items-center justify-content-center">
+                        <a class="dropdown-item p-0 nav-icon-link rounded-circle text-primary" href="#">
+                          <span class="material-icons fs-4 d-flex align-items-center rounded-circle justify-content-center">shopping_cart</span>
+                        </a>
+                     </li>
+                      <li class="ms-3 border border-primary p-0 rounded-circle nav-icons  d-flex align-items-center justify-content-center">
+                        <a class="dropdown-item p-0 nav-icon-link rounded-circle text-primary" href="#">
+                          <span class="material-icons fs-4 d-flex align-items-center rounded-circle justify-content-center">notifications</span>
+                          </a>
+                     </li>
+                      <li class="ms-3">
+                        <button class="btn btn-outline-primary border border-primary p-0 rounded-circle nav-icon-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="material-icons fs-3 d-flex align-items-center justify-content-center">account_circle</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-css border-0 px-2">
+                          <li><a class="dropdown-item text-dark-100 rounded px-3 py-2 " href="#">Profile</a></li>
+                          <li><a class="dropdown-item text-danger rounded px-3 py-2 " href="#">Logout</a></li>
+                        </ul>
+                      </li>
+                  </ui>
+              </div>
+            </div>
+            <div class="d-lg-none d-inline">
+              <div class="hamburger-menu" id="hamburger-menu">
+                <div class="menu-bar1 rounded-pill"></div>
+                <div class="menu-bar2 rounded-pill"></div>
+                <div class="menu-bar3 rounded-pill"></div>
+              </div>
+            </div>
+        </div>
+        <div id="responsive-navbar" class="d-lg-none d-flex flex-column align-items-center justify-content-center mobile-navbar position-absolute top-100 start-50 translate-middle-x bg-primary-800 border-top border-primary-600 pb-3 w-100">
+          <div class="mobile-navbar-items p-0 px-4  m-0 w-100">
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Get Quote</a></div>
+
+            <div class="w-100 d-flex flex-column"><a href="#navCollapse" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded nav-link-css" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="navCollapse">Category</a>
+              <div class="collapse" id="navCollapse">
+                <div class="card card-body bg-white">
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Websites</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Mobile Application</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">API Products</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Cloud Products</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Database Product</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">IOT Products</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Desktop applications</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">My Projects</a></div>
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Blog</a></div>
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Profile</a></div>
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded text-danger">Logout</a></div>
+            
+          </div>
+        </div>
+    </nav>
+    <style>
+        
+    </style>
+    <main>
+        <section class="container-fluid px-5"> 
+            <div class="container-fluid p-0 my-5">
+                <div class="row">
+                    <!-- Nav Pills -->
+                    <div class="col-12">
+                        <ul class="nav nav-pills nav-underline  mb-4 border-bottom border-1 border-primary-100" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="tab1-tab" data-bs-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true"> 
+                                    Projects Details
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="tab3-tab" data-bs-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">
+                                   Support
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+            
+                    <!-- Tab Content -->
+                    <div class="col-12">
+                        <div class="tab-content" id="myTabContent">
+                            <!-- project details start -->
+                            <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+                               <div class="container-fluid bg-white border-radius-16 p-4">
+                                <div class="d-flex flex-wrap flex-md-nowrap justify-content-between">
+                                    <div class="">
+                                        <h1 class="text-primary fs-4 fw-bold">Project Title is here</h1>
+                                        <div class="text-dark-200 fs-6">Created Date : 12-Jan-2024</div>
+                                    </div>
+                                </div>
+
+                                <!-- descriptions and bugets -->
+                                <div class="row m-0 mt-2 d-flex justify-content-between">
+                                    <div class="col-12 col-lg-8 ps-0 pe-0 pe-lg-3 text-dark-100">
+                                        <div class="">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde esse aperiam, laboriosam aliquam expedita labore doloremque, consequuntur placeat recusandae, incidunt illum adipisci saepe facere nobis dicta iste et natus. Harum quibusdam labore culpa laudantium facere eum neque ipsam. Qui fugiat maiores soluta esse. Rerum iure reprehenderit, modi impedit nesciunt possimus?
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias esse, quaerat non culpa 
+                                        </div>
+                                         <!-- technology -->
+                                        <div class="mt-3">
+                                            <div class="fs-5 fw-bold text-dark-100">Technology</div>
+                                            <div class="mt-3">
+                                            <div class="me-1 badge rounded-pill bg-primary-800 border border-primary-200 px-3 py-2 fs-6 text-primary-200">HTML</div>
+                                            <div class="me-1 badge rounded-pill bg-primary-800 border border-primary-200 px-3 py-2 fs-6 text-primary-200">Python</div>
+                                            <div class="me-1 badge rounded-pill bg-primary-800 border border-primary-200 px-3 py-2 fs-6 text-primary-200">Django</div>
+                                            </div>
+                                        </div>
+                                        <!-- attachments -->
+                                        <div class="my-4">
+                                            <div class="text-dark-100 fw-bold">Attechments</div>
+                                            <div class="mt-1">
+                                                <a class="p-1 px-2 rounded attacment-link border-bottom border-primary-100 text-decoration-none fw-500 d-flex justify-content-between align-items-center w-50" href="">
+                                                    <div>ABC-Document.pdf</div>
+                                                    <div class="">
+                                                        <span class="material-icons text-primary-100">text_snippet</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-4 pe-0 ps-0 ps-lg-2 pt-4 pt-lg-0">
+                                        
+                                        <div class="overflow-hidden border-radius-16 bg-primary-900">
+                                            <!-- price -->
+                                            <div class="px-3 py-3 border-white project-brief-info-row d-flex justify-content-between align-items-center">
+                                              <div class="d-flex  align-items-center">
+                                                <div class="ms-2 text-primary  fw-bold">Time Frame</div>
+                                              </div>
+                                              <div class="d-flex  align-items-center"">
+                                                <div class="me-1 text-primary-100  fw-bolder">20 Days</div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                               </div>
+
+                               <!-- Timeline  Start -->
+                              <div class="card mt-4  profile-card overflow-hidden border-0">
+                                <div class="card-header p-3 d-flex  align-items-center border-bottom border-3 border-primary-800 text-center  bg-white">
+                                  <div class="card-title mb-0 d-flex align-items-center w-100">
+                                    <div class="text-primary-100 fw-500 fs-5 text-center">Time Line</div>
+                                  </div>
+                                </div>
+                                <div class="card-body  w-100 d-flex p-3" >
+                                  <ul class="project-timeline p-0 w-100 ">
+                                    <!-- Preliminary Phase timeline-->
+                                    <li class="d-flex tl-content ">
+                                      <div class="row m-0 p-0 w-100">
+                                        <div class="col-6 col-sm-5 col-md-4 p-0">
+                                          <div class="row m-0 p-0">
+                                            <div class="col-8 col-lg-9 p-0 d-flex align-items-center">
+                                              <div class="text-dark fw-bold text-end tl-title w-100">Preliminary Phase</div>
+                                            </div>
+                                            <div class="col-4 col-lg-3 p-0 ">
+                                              <div class="d-flex justify-content-center w-100">
+                                                <div class="tl-icons-container bg-success-600 ">
+                                                  <span class="material-icons text-dark-100 tl-icon d-flex align-items-center">forum</span>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-6 col-sm-7 col-md-8 p-0">
+                                          <div class="d-flex flex-wrap h-100 align-items-center">
+                                            <!-- under analysis badges -->
+                                            <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                              <div class="">Under Analysis</div>
+                                            </div>
+                              
+                                            <!-- <div class="fw-bold bg-info text-dark px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                              <div class="">Under Analysis</div>
+                                            </div>
+                              
+                                            <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                              <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                              <div class="">Analysis End</div>
+                                            </div> -->
+                              
+                                            <!--  Negotiation badges -->
+                                            <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                              <div class="">Negotiation</div>
+                                            </div>
+                              
+                                            <!-- <div class="fw-bold bg-info text-dark px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                              <div class="">Negotiation Start</div>
+                                            </div>
+                              
+                                            <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                              <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                              <div class="">Negotiation End</div>
+                                            </div> -->
+
+                                            <!--  Quotation Upload badges -->
+                                            <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                              <div class="">Quotation Upload</div>
+                                            </div>
+                              
+                                            <!-- <div class="fw-bold bg-info text-dark px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                              <div class="">Quotation Upload</div>
+                                            </div>
+                              
+                                            <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                              <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                              <div class="">Quotation Uploaded</div>
+                                            </div> -->
+
+                                            <!-- Payment Pending badges -->
+                                            <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                              <div class="">Payment</div>
+                                            </div>
+                              
+                                            <!-- <div class="fw-bold bg-info text-dark px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                              <div class="">Payment Pending</div>
+                                            </div>
+                              
+                                            <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                              <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                              <div class="">Payment Completed</div>
+                                            </div> -->
+                              
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </li>
+
+                                    <!-- Development timeline -->
+                                    <li class="d-flex tl-content mt-3">
+                                      <div class="row m-0 p-0 w-100">
+                                        <div class="col-6 col-sm-5 col-md-4 p-0">
+                                          <div class="row m-0 p-0   mt-2">
+                                            <div class="col-8 col-lg-9 p-0 d-flex align-items-center">
+                                              <div class="text-dark fw-bold text-end tl-title w-100">Development</div>
+                                            </div>
+                                            <div class="col-4 col-lg-3 p-0 ">
+                                              <div class="d-flex justify-content-center w-100">
+                                                <div class="tl-icons-container bg-success-600 ">
+                                                  <span class="material-icons text-dark-100 tl-icon d-flex align-items-center">code</span>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-6 col-sm-7 col-md-8 p-0">
+                                          <div class="d-flex flex-wrap h-100 align-items-center">
+                                            
+                                            <!-- Under Development bagdges -->
+                                            <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                              <div class="">Under Development</div>
+                                            </div>
+                              
+                                            <!-- <div class="fw-bold bg-danger-700 text-dark px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                              <div class="">Under Development</div>
+                                            </div>
+
+                                            <div class="fw-bold bg-info text-dark px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                              <div class="">Under Development</div>
+                                            </div>
+                              
+                                            <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                              <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                              <div class="">Under Development</div>
+                                            </div> -->
+                              
+                                            <!-- Client Project Approval bagdges -->
+                                            <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                              <div class="">Client Project Approval</div>
+                                            </div>
+                              
+                                            <!-- <div class="fw-bold bg-info text-dark px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                              <div class="">Client Project Approval</div>
+                                            </div>
+                              
+                                            <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                              <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                              <div class="">Client Project Approval</div>
+                                            </div> -->
+
+                                            <!-- Development Completed bagdges -->
+                                            <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                              <div class="">Development Completed</div>
+                                            </div>
+
+                                            <!-- <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                              <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                              <div class="">Development Completed</div>
+                                            </div> -->
+                              
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </li>
+
+                                    <!-- Hosting timeline-->
+                                    <li class="d-flex tl-content mt-3 d-none">
+                                      <div class="row m-0 p-0 w-100">
+                                        <div class="col-6 col-sm-5 col-md-4 p-0">
+                                          <div class="row m-0 p-0   mt-2">
+                                            <div class="col-8 col-lg-9 p-0 d-flex align-items-center">
+                                              <div class="text-dark fw-bold text-end tl-title w-100">Hosting</div>
+                                            </div>
+                                            <div class="col-4 col-lg-3 p-0 ">
+                                              <div class="d-flex justify-content-center w-100">
+                                                <div class="tl-icons-container bg-success-600 ">
+                                                  <span class="material-icons text-dark-100 tl-icon d-flex align-items-center">cloud</span>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-6 col-sm-7 col-md-8 p-0">
+                                          <div class="d-flex flex-wrap h-100 align-items-center">
+                                            <!-- Under Hosting badges -->
+                                            <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                              <div class="">Under Hosting</div>
+                                            </div>
+                              
+                                            <!-- <div class="fw-bold bg-info text-dark px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                              <div class="">Under Hosting</div>
+                                            </div>
+
+                                            <div class="fw-bold bg-danger-700 text-dark px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                              <div class="">Hosting Overdue</div>
+                                            </div>
+                              
+                                            <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                              <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                              <div class="">Under Hosting</div>
+                                            </div> -->
+                              
+                                            <!-- Hosting Approval badges -->
+                                            <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                              <div class="">Hosting Approval</div>
+                                            </div>
+                              
+                                            <!-- <div class="fw-bold bg-info text-dark px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                              <div class="">Hosting Approval</div>
+                                            </div> -->
+                              
+                                            <!-- <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                              <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                              <div class="">Hosting Approval</div>
+                                            </div> -->
+
+                                            <!-- under analysis badges -->
+                                            <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                              <div class="">Hosting Completed</div>
+                                            </div>
+
+                                            <!-- <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                              <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                              <div class="">Hosting Completed</div>
+                                            </div> -->
+                              
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <!-- Timeline  End -->
+
+                               <!-- support contact -->
+                               <div class="card mt-4  profile-card overflow-hidden border-0">
+                                <div class="card-header p-3 d-flex  align-items-center border-bottom border-3 border-primary-800 text-center  bg-white">
+                                  <div class="card-title mb-0 d-flex justify-content-start align-items-center w-100">
+                                    <div class="text-primary-100 fw-500 fs-5 text-center">Client Contact</div>
+                                  </div>
+                                </div>
+                                <div class="card-body chat-messages-area w-100 d-flex p-3" >
+                                 <div class="d-flex flex-column w-100" id="support-chat-messages-box">
+                                   <!-- timeline divider -->
+                                   <div class="my-2 d-flex align-items-center justify-content-evenly w-100">
+                                    <div  class="border border border-dark-600 w-100"></div>
+                                    <div class="text-dark-100 fw-bold fs-6 px-3">Today</div>
+                                    <div class=" border border-dark-600 w-100"></div>
+                                    </div>
+                                  <!-- message reply-->
+                                   <div class="d-flex mb-3 w-100">
+                                      <div class="">
+                                          <img src="assets/avatar.jpg" class="rounded-circle chat-profile-img" alt="">
+                                      </div>
+                                      <div class="ps-2 w-100">
+                                          <div class="text-dark-100 fw-bold">Tony Stark</div>
+                                          <div class="text-dark-400 fs-6">12min ago</div>
+                                          <div class="mt-1">
+                                            <!-- message text or image -->
+                                          </div>
+                                      </div>
+                                   </div>
+                                  <!-- message -->
+                                   <div class="d-flex mb-3 w-100">
+                                      <div class="">
+                                          <img src="assets/solvify logo.png" class="rounded-circle chat-profile-img" alt="">
+                                      </div>
+                                      <div class="ps-2">
+                                          <div class="text-dark-100 fw-bold">Solvify Hub</div>
+                                          <div class="text-dark-400 fs-6">14min ago</div>
+                                          <div class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero error et deleniti facere dolorum molestiae deserunt iure blanditiis iste vitae?</div>
+                                      </div>
+                                   </div>
+                                  
+                                 </div>
+                                </div>
+                                <div class="card-footer bg-white border-0 py-3">
+                                  <form class="p-1 bg-primary-800 rounded-pill " id="support_contact_form">
+                                      <div class="d-flex align-items-center w-100">
+                                          <label class="w-100">
+                                              <input type="text" class="form-control bg-transparent chat-message-field border-0 w-100" name="support_message" id="support_message" placeholder="message">
+                                          </label>
+                                          <div class="">
+                                              <button type="submit" class="d-flex align-items-center btn btn-primary-300 border-0 rounded-pill">
+                                                  <span class="material-icons">send</span>
+                                              </button>
+                                          </div>
+                                      </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- project details end -->
+
+                            <!-- Support start -->
+                            <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+                                <div class="row m-0 mb-5">
+                                      <!-- Chat With Solvify Developer  -->
+                                      <div class="col-12 freelancer-chat-room">
+                                        <div class="card mt-4 mt-md-0  profile-card overflow-hidden border-0">
+                                          <div class="card-header p-3 d-flex  align-items-center border-bottom border-3 border-primary-800 text-center  bg-white">
+                                            <div class="card-title mb-0 d-flex justify-content-between w-100">
+                                              <button type="button" class="d-flex align-items-center d-lg-none border-0 bg-transparent freelancer-profile-open">
+                                                <div class="">
+                                                    <img src="assets/avatar2.jpg" class="rounded-circle chat-profile-img" alt="">
+                                                </div>
+                                                <div class="ps-2">
+                                                    <div class="text-dark-100 fw-bold">Tori Stark</div>
+                                                </div>
+                                              </button>
+                                              <div class="text-primary-100 fw-500 fs-5 text-center">Support Contact</div>
+                                            </div>
+                                          </div>
+                                          <div class="card-body chat-messages-area d-flex p-3">
+                                           <div class="d-flex flex-column w-100" id="freelancer-chat-box">
+                                            <!-- timeline divider -->
+                                            <div class="my-2 d-flex align-items-center justify-content-evenly w-100">
+                                                <div  class="border border border-dark-600 w-100"></div>
+                                                <div class="text-dark-100 fw-bold fs-6 px-3">Today</div>
+                                                <div class=" border border-dark-600 w-100"></div>
+                                            </div>
+                                            <!-- message reply-->
+                                             <div class="d-flex mb-3 ">
+                                                <div class="">
+                                                    <img src="assets/avatar.jpg" class="rounded-circle chat-profile-img" alt="">
+                                                </div>
+                                                <div class="ps-2">
+                                                    <div class="text-dark-100 fw-bold">Tony Stark</div>
+                                                    <div class="text-dark-400 fs-6">12min ago</div>
+                                                    <div class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero error et deleniti facere dolorum molestiae deserunt iure blanditiis iste vitae?</div>
+                                                </div>
+                                             </div>
+                                            <!-- message -->
+                                             <div class="d-flex mb-3">
+                                                <div class="">
+                                                    <img src="assets/avatar2.jpg" class="rounded-circle chat-profile-img" alt="">
+                                                </div>
+                                                <div class="ps-2">
+                                                    <div class="text-dark-100 fw-bold">Tori Stark</div>
+                                                    <div class="text-dark-400 fs-6">14min ago</div>
+                                                    <div class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero error et deleniti facere dolorum molestiae deserunt iure blanditiis iste vitae?</div>
+                                                </div>
+                                             </div>
+                                           
+                                           </div>
+                                          </div>
+                                          <div class="card-footer bg-white border-0 py-3">
+                                            <form class="p-1 bg-primary-800 rounded-pill" id="freelancer_chat_form">
+                                                <div class="d-flex align-items-center w-100">
+                                                    <label class="w-100">
+                                                        <input type="text" class="form-control bg-transparent chat-message-field border-0 w-100" name="freelancer_chat_input" id="freelancer_chat_input" placeholder="message">
+                                                    </label>
+                                                    <div class="">
+                                                        <button type="submit" class="d-flex align-items-center btn btn-primary-300 border-0 rounded-pill">
+                                                            <span class="material-icons">send</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                          </div>
+                                        </div>
+                                      </div>
+                                  </div>
+                            </div>
+                            <!-- Support  end -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <script src="JS/common.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js" integrity="sha512-KFHXdr2oObHKI9w4Hv1XPKc898mE4kgYx58oqsc/JqqdLMDI4YjOLzom+EMlW8HFUd0QfjfAvxSL6sEq/a42fQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+    <script src="JS/getQuote.js"></script>
+    <script src="JS/quoted_project_details_developer.js"></script>
+
+</body>
+</html>

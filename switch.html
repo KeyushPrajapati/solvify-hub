@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Switch with SweetAlert</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <style>
+        /* Toggle Switch Styles */
+        .switch-container {
+            position: relative;
+            display: inline-block;
+            width: 80px;
+            height: 34px;
+        }
+
+        .switch-checkbox {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .switch-slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            border-radius: 34px;
+            transition: 0.4s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .switch-slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            border-radius: 50%;
+            transition: 0.4s;
+        }
+
+        .switch-checkbox:checked + .switch-slider {
+            background-color: #4caf50;
+        }
+
+        .switch-checkbox:checked + .switch-slider:before {
+            transform: translateX(46px);
+        }
+    </style>
+</head>
+<body>
+    <label class="switch-container">
+        <input type="checkbox" class="switch-checkbox" id="toggleSwitch">
+        <span class="switch-slider" id="switchSlider">Subscribe</span>
+    </label>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        // Elements
+        const toggleSwitch = document.getElementById("toggleSwitch");
+        const switchSlider = document.getElementById("switchSlider");
+
+        toggleSwitch.addEventListener("change", () => {
+            const isChecked = toggleSwitch.checked;
+
+            Swal.fire({
+                title: "Are you sure?",
+                text: isChecked ? "Do you want to subscribe?" : "Do you want to unsubscribe?",
+                icon: "question",
+                showCancelButton: true,
+                confirmButtonText: "Yes",
+                cancelButtonText: "No",
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // Update the text inside the switch slider
+                    switchSlider.textContent = isChecked ? "Subscribed" : "Subscribe";
+                } else {
+                    // Revert the switch state if the user cancels
+                    toggleSwitch.checked = !isChecked;
+                }
+            });
+        });
+    </script>
+</body>
+</html>

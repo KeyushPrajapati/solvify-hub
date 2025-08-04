@@ -1,0 +1,34 @@
+.field-control{
+    max-width: 400px !important;
+    width: 100%;
+}
+.signup_form_container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.signup_form_container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/Sign\ Up\ bg.png'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; /* Puts image behind content */
+}
+.signup_form_css{
+    height: 94vh;
+}
+.solvify_img{
+    max-width: 360px;
+}
+@media screen and (max-width:992px) {
+    .solvify_img{
+        width: 80%;
+    }
+}

@@ -1,0 +1,149 @@
+<!-- After giving for customization or hosting or both -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+    <!-- google merial icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- bootstrap v5.0.2 css -->
+    <link rel="stylesheet" href="css/main.min.css">
+    <!-- custom css classes -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/select.css">
+    <link rel="stylesheet" href="css/find-jobs.css">
+    <link rel="stylesheet" href="css/info-verification.css">
+    
+    
+    <!-- bootstrap v5.0.2 JS -->
+    <script src="bootstrapV5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bg-primary-800">
+     <!-- Navbar -->
+     <nav class=" position-fixed  top-0 start-50 translate-middle-x px-4 navbar-css w-100 bg-primary-800 pt-2">
+        <div class="container-fluid d-flex justify-content-between align-items-center py-3">
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand fw-bold d-flex" href="#">
+                  <div class="">
+                      <img src="./assets/solvify logo.png" width="36" height="26" alt="solvify_hub_logo">
+                  </div>  
+                  <div class="ms-2"> Solvify Hub</div>
+                </a>
+            </div>
+            <div class="container-fluid d-none d-lg-flex p-0 align-items-center justify-content-between">
+              <div class="">
+                <ul class="nav-link-container d-flex align-items-center mb-0">
+                    <li class=" dropdown">
+                        <a class="nav-link text-primary nav-link-css rounded-pill nav-link-css dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu dropdown-css border-0 px-2" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Mobile Application</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">API Products</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Cloud Products</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Database Product</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">IOT Products</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Desktop applications</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Web Applications</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Websites</a></li>
+                        </ul>
+                    </li>
+                    <li class=""><a class="nav-link nav-link-css rounded-pill text-primary text-decoration-none" href="#">My Project</a></li>
+                </ul>
+              </div>
+              <div class="d-flex justify-content-end p-0">
+                  <ui class="nav-link-container d-flex align-items-center ">
+                      <li class="mx-3">
+                        <button class="btn btn-outline-primary border border-primary rounded-pill btn-text">Get Quote</button>
+                      </li>
+                      <li class="border border-primary p-0 rounded-circle nav-icons  d-flex align-items-center justify-content-center">
+                        <a class="dropdown-item p-0 nav-icon-link rounded-circle text-primary" href="#">
+                          <span class="material-icons fs-4 d-flex align-items-center rounded-circle justify-content-center">shopping_cart</span>
+                        </a>
+                     </li>
+                      <li class="ms-3 border border-primary p-0 rounded-circle nav-icons  d-flex align-items-center justify-content-center">
+                        <a class="dropdown-item p-0 nav-icon-link rounded-circle text-primary" href="#">
+                          <span class="material-icons fs-4 d-flex align-items-center rounded-circle justify-content-center">notifications</span>
+                          </a>
+                     </li>
+                      <li class="ms-3">
+                        <button class="btn btn-outline-primary border border-primary p-0 rounded-circle nav-icon-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="material-icons fs-3 d-flex align-items-center justify-content-center">account_circle</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-css border-0 px-2">
+                          <li><a class="dropdown-item text-dark-100 rounded px-3 py-2 " href="#">Profile</a></li>
+                          <li><a class="dropdown-item text-danger rounded px-3 py-2 " href="#">Logout</a></li>
+                        </ul>
+                      </li>
+                  </ui>
+              </div>
+            </div>
+            <div class="d-lg-none d-inline">
+              <div class="hamburger-menu" id="hamburger-menu">
+                <div class="menu-bar1 rounded-pill"></div>
+                <div class="menu-bar2 rounded-pill"></div>
+                <div class="menu-bar3 rounded-pill"></div>
+              </div>
+            </div>
+        </div>
+        <div id="responsive-navbar" class="d-lg-none d-flex flex-column align-items-center justify-content-center mobile-navbar position-absolute top-100 start-50 translate-middle-x bg-primary-800 border-top border-primary-600 pb-3 w-100">
+          <div class="mobile-navbar-items p-0 px-4  m-0 w-100">
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Get Quote</a></div>
+
+            <div class="w-100 d-flex flex-column"><a href="#navCollapse" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded nav-link-css" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="navCollapse">Category</a>
+              <div class="collapse" id="navCollapse">
+                <div class="card card-body bg-white">
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Websites</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Mobile Application</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">API Products</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Cloud Products</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Database Product</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">IOT Products</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Desktop applications</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">My Projects</a></div>
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Blog</a></div>
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Profile</a></div>
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded text-danger">Logout</a></div>
+            
+          </div>
+        </div>
+      </nav>
+    <main class="">
+        <!-- OTP verification -->
+        <div id="otp_verify" class=" bg-white d-flex flex-column position-relative align-items-center justify-content-center border-radius-16 m-sm-4 info-main-container">
+          <div class="otp-container text-center">
+            <div class="text-primary-200 fs-4 fw-bold text-center">OTP Verification</div>
+            <form id="otpForm" class="d-flex justify-content-center mt-5">
+              <!-- Hidden input to store full OTP -->
+              <input type="text" maxlength="1" class="otp-input" id="otp1">
+              <input type="text" maxlength="1" class="otp-input" id="otp2">
+              <input type="text" maxlength="1" class="otp-input" id="otp3">
+              <input type="text" maxlength="1" class="otp-input" id="otp4">
+              <input type="text" maxlength="1" class="otp-input" id="otp5">
+              <input type="text" maxlength="1" class="otp-input" id="otp6">
+              <input type="text" class="position-absolute top-0 start-0" id="hiddenOtp" name="otp_verification"  style="opacity: 0;">
+            </form>
+            <div class="otp-error error mt-1 text-center w-100 text-danger align-self-center"></div>
+            <button id="submitBtn" class="btn btn-primary-100 border-0 w-100 rounded-pill mt-4" form="otpForm" type="submit">Verify</button>
+          </div>
+          <div class="text-dark">If you don't find any OTP ? 
+            <a href="" class="text-primary-300 fw-bold">Resend OTP</a>
+          </div>
+        </div>
+    </main>
+
+    <script src="JS/single-select.js"></script>
+    <script src="JS/home.js"></script>
+    <script src="JS/common.js"></script>
+    <script src="JS/multi-select.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js" integrity="sha512-KFHXdr2oObHKI9w4Hv1XPKc898mE4kgYx58oqsc/JqqdLMDI4YjOLzom+EMlW8HFUd0QfjfAvxSL6sEq/a42fQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="JS/infoVarification.js"></script>
+    <script src="JS/validation.js"></script>
+</body>
+</html>

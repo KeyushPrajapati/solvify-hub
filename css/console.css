@@ -1,0 +1,455 @@
+/* width */
+.console-sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+/* Track */
+.console-sidebar::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);
+}
+/* Handle */
+.console-sidebar::-webkit-scrollbar-thumb {
+    background: var(--bs-dark-500);
+    border-top-left-radius:10px ;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+/* Handle on hover */
+.console-sidebar::-webkit-scrollbar-thumb:hover {
+    background: var(--bs-dark-400);
+}
+.console-sidebar {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    height: 100vh; 
+    width: 280px; 
+    overflow-y: auto; 
+    padding-top: 95px !important; 
+    z-index: 103; 
+    transition: all 0.3s ease;
+}
+.console-content {
+    margin-left: 255px;
+    flex: 1;
+    height: 48em;
+    overflow-y: auto;
+}
+/* width */
+#console-tab-panes::-webkit-scrollbar {
+    width: 8px;
+}
+/* Track */
+#console-tab-panes::-webkit-scrollbar-track {
+    background: white;
+}
+/* Handle */
+#console-tab-panes::-webkit-scrollbar-thumb {
+    background: var(--bs-dark-500);
+    border-top-left-radius:10px ;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+/* Handle on hover */
+#console-tab-panes::-webkit-scrollbar-thumb:hover {
+    background: var(--bs-dark-400);
+}
+.nav-tabs .nav-link {
+    margin-bottom: 0.5rem;
+}
+.console-tabs li .nav-link{
+    border: none !important;
+    border-top-left-radius: 50px !important;
+    border-top-right-radius: 50px !important;
+    border-radius: 50px;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+.console-tabs li .nav-link:hover{
+    background-color: white !important;
+}
+.console-tabs .nav-link.active{
+    background-color: var(--bs-primary-700) !important;
+}
+.console-menu{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.console-menu:hover{
+    background-color: var(--bs-primary-700) !important;
+}
+.console-menu:focus{
+    background-color: var(--bs-primary-700) !important;
+}
+/* width */
+.table-container::-webkit-scrollbar {
+    height: 10px;
+}
+/* Track */
+.table-container::-webkit-scrollbar-track {
+    background: white;
+}
+/* Handle */
+.table-container::-webkit-scrollbar-thumb {
+    background: var(--bs-dark-500);
+    border-top-left-radius:10px ;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+/* Handle on hover */
+.table-container::-webkit-scrollbar-thumb:hover {
+    background: var(--bs-dark-400);
+}
+.project_table {
+    table-layout: auto; /* Allows dynamic column widths */
+    width: 100%; /* Ensures the table takes full container width */
+}
+
+.project_table th, 
+.project_table td {
+    vertical-align: middle; /* Vertically align content */
+    white-space: nowrap; 
+}
+.project_table .name_column{
+    max-width: 225px;
+}
+.project_table .name_column .project-category{
+    font-size: 12px;
+}
+
+/* Add scrolling to the table container */
+.table-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+@media (max-width: 992px) {
+    .console-sidebar.activeConsoleMenu{
+        width: 280px;
+        padding: 1.5rem !important;
+        transition:  0.5s;
+    }
+    .console-sidebar {
+        margin-top: 0px;
+        transition: width 0.5s;
+        padding: 0rem !important;
+        width: 0px;
+        background-color: white;
+        box-shadow: 2px 0px 12px var(--bs-dark-600);
+        border-radius: 16px;
+        border-top-left-radius:0px;
+        border-bottom-left-radius:0px;
+        z-index: 1000;
+    }
+    .console-content {
+        margin-left: 0px;
+    }
+}
+
+/* Credit Tab CSS start */
+#creaditSub{
+    border-radius: 50px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+#creaditAdd{
+    border-radius: 50px !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+#creditValue{
+    background-color: white;
+}
+
+.timeline {
+    list-style-type: none;
+    position: relative;
+}
+.timeline:before {
+    content: ' ';
+    background: var(--bs-primary);
+    display: inline-block;
+    position: absolute;
+    left: 19px;
+    width: 2px;
+    height: 100%;
+    z-index: 10;
+}
+.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+.timeline > li:before {
+    content: ' ';
+    background: var(--bs-primary);
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    left: 12px;
+    width: 16px;
+    height: 16px;
+    z-index: 10;
+}
+
+.role-select,.mode-select{
+    width:130px !important;
+}
+/* Credit Tab CSS End */
+
+/* project card css start */
+.text-container {
+    position: relative;
+  }
+  
+  .text-content {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limits to 4 lines */
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    max-height: 5em; /* Adjust according to line height */
+  }
+  
+  .text-content.expanded {
+    -webkit-line-clamp: unset;
+    max-height: none;
+  }
+/* project card css end */
+
+/* ads banner */
+.ads-banner{
+    width: 100%;
+    height: 280px;
+    object-fit:fill;
+    object-position:center;
+    border-radius: 14px;
+    border: none;
+}
+/* Add project new css start */
+.stepper-counts{
+    list-style: none;
+    padding-top:3px ;
+}
+.step-number{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    z-index: 2;
+}
+.step-name{
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--bs-primary-200);
+}
+.console-progress-container{
+    position:absolute;
+    height: 36px;
+    width: 100%;
+    z-index: 1;
+    top: 0%;
+    left:50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+.console-progress-bar{
+    height: 48px;
+    width: 20%;
+    top: 0;
+    left:0;
+    transition: width 0.5s;
+}
+.add-project-input{
+    width: 450px;
+}
+/* COMMON HEADER UI START */
+.slideWindow{
+    min-height: 470px !important ;
+}
+.stepDeactive{
+    display: none !important;
+}
+.stepActive{
+    display: flex !important;
+}
+/* Style for the SVG */
+
+#btn_next{
+    background-color: white;
+}
+#btn_next:hover{
+    background-color: var(--bs-primary-100);
+}
+#btn_prev{
+    background-color: white;
+}
+#btn_prev:hover{
+    background-color: var(--bs-primary-100);
+}
+#btn_submit{
+    background-color: white;
+}
+#btn_submit:hover{
+    background-color: var(--bs-primary-100);
+}
+/* COMMON HEADER UI END*/
+
+/* SLIDER FORM START */
+#formWindow {
+    transition: 0.5s !important;
+}
+/* Error CLasses */
+#role-error{
+    padding-top: 12px;
+    text-align: center !important;
+}
+
+/* dropbox css start */
+.drop-box {
+    border: 2px dashed var(--bs-dark-400);
+    background-color: var(--bs-dark-700);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+.drop-box .material-icons {
+    font-size: 36px;
+    color: var(--bs-dark-400);
+    transform: rotate(90deg);
+}
+
+.drop-box-text {
+    font-size: 16px;
+    color: var(--bs-dark-400);
+    flex-wrap: wrap;
+}
+.hide_input{
+    opacity: 0;
+    left:-999px;
+}
+.file-preview {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    background-color: var(--bs-primary-800);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--bs-primary);
+}
+
+.file-preview span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 200px;
+}
+
+.file-preview .close-btn {
+    cursor: pointer;
+    color: var(--bs-danger);
+    font-weight: bold;
+    font-size: 16px;
+}
+.edit-drop-box{
+    max-width: none;
+    width: 100% !important;
+}
+#videoContainer{
+    width: 100%; 
+    height: 400px;
+}
+.embed-iframe {
+    width: 100%; 
+    height: 400px;
+    border: 0;
+    border-radius: 8px;
+    overflow: hidden;
+
+    /* box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);  */
+}
+.gallary_imgs{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+}
+.remove-media-btn{
+    width: 30px;
+    height: 30px;
+    z-index: 40;
+}
+.project-logo-cover{
+    border-radius: 0 !important;
+    z-index: 51 !important;
+    border:0 !important;
+}
+.checked_ui_element{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--bs-success);
+    color: white !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checked_ui_element span{
+    font-size: 4rem;
+}
+.project_badge{
+    width: 100%;
+    /* max-width:150px; */
+    padding: 8px 18px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.project_table_btn{
+    width: 100%;
+    max-width: 150px;
+    padding: 8px 18px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+#preview_card_image{
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+.action_btn{
+    width: 40px;
+    height: 40px;
+    transition: 0.5s;
+}
+.action_btn:hover{
+    transition: 0.5s;
+    background-color: var(--bs-primary-700) !important;
+}
+@media (max-width: 576px) {
+    .drop-box {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .drop-box .material-icons {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+/* dropbox css end */
+
+/* Add project new css end */
+.assign-select{
+    width: 180px;
+}
+.spinner-border-sm { margin-left: 10px; }
+.hidden { display: none; }

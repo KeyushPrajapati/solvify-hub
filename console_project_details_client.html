@@ -1,0 +1,2335 @@
+<!--Developer give his project for the Review and hosting. This detail Page open from console by clicking eye button  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Detail Page</title>
+    <!-- google merial icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- bootstrap v5.0.2 css -->
+    <link rel="stylesheet" href="css/main.min.css">
+    <!-- custom css classes -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/select.css">
+    <link rel="stylesheet" href="css/find-jobs.css">
+    <link rel="stylesheet" href="css/project-details.css">
+    <link rel="stylesheet" href="css/freelancer-project-details.css">
+    <!-- bootstrap v5.0.2 JS -->
+    <script src="bootstrapV5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bg-primary-800">
+     <!-- Navbar -->
+     <nav class=" position-fixed  top-0 start-50 translate-middle-x px-4 navbar-css w-100 bg-primary-800 pt-2">
+        <div class="container-fluid d-flex justify-content-between align-items-center py-3">
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand fw-bold d-flex" href="#">
+                  <div class="">
+                      <img src="./assets/solvify logo.png" width="36" height="26" alt="solvify_hub_logo">
+                  </div>  
+                  <div class="ms-2"> Solvify Hub</div>
+                </a>
+            </div>
+            <div class="container-fluid d-none d-lg-flex p-0 align-items-center justify-content-between">
+              <div class="">
+                <ul class="nav-link-container d-flex align-items-center mb-0">
+                    <li class=" dropdown">
+                        <a class="nav-link text-primary nav-link-css rounded-pill nav-link-css dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu dropdown-css border-0 px-2" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Mobile Application</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">API Products</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Cloud Products</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Database Product</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">IOT Products</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Desktop applications</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Web Applications</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Websites</a></li>
+                        </ul>
+                    </li>
+                    <li class=""><a class="nav-link nav-link-css rounded-pill text-primary text-decoration-none" href="#">My Project</a></li>
+                </ul>
+              </div>
+              <div class="d-flex justify-content-end p-0">
+                  <ui class="nav-link-container d-flex align-items-center ">
+                      <li class="mx-3">
+                        <button class="btn btn-outline-primary border border-primary rounded-pill btn-text">Get Quote</button>
+                      </li>
+                      <li class="border border-primary p-0 rounded-circle nav-icons  d-flex align-items-center justify-content-center">
+                        <a class="dropdown-item p-0 nav-icon-link rounded-circle text-primary" href="#">
+                          <span class="material-icons fs-4 d-flex align-items-center rounded-circle justify-content-center">shopping_cart</span>
+                        </a>
+                     </li>
+                      <li class="ms-3 border border-primary p-0 rounded-circle nav-icons  d-flex align-items-center justify-content-center">
+                        <a class="dropdown-item p-0 nav-icon-link rounded-circle text-primary" href="#">
+                          <span class="material-icons fs-4 d-flex align-items-center rounded-circle justify-content-center">notifications</span>
+                          </a>
+                     </li>
+                      <li class="ms-3">
+                        <button class="btn btn-outline-primary border border-primary p-0 rounded-circle nav-icon-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="material-icons fs-3 d-flex align-items-center justify-content-center">account_circle</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-css border-0 px-2">
+                          <li><a class="dropdown-item text-dark-100 rounded px-3 py-2 " href="#">Profile</a></li>
+                          <li><a class="dropdown-item text-danger rounded px-3 py-2 " href="#">Logout</a></li>
+                        </ul>
+                      </li>
+                  </ui>
+              </div>
+            </div>
+            <div class="d-lg-none d-inline">
+              <div class="hamburger-menu" id="hamburger-menu">
+                <div class="menu-bar1 rounded-pill"></div>
+                <div class="menu-bar2 rounded-pill"></div>
+                <div class="menu-bar3 rounded-pill"></div>
+              </div>
+            </div>
+        </div>
+        <div id="responsive-navbar" class="d-lg-none d-flex flex-column align-items-center justify-content-center mobile-navbar position-absolute top-100 start-50 translate-middle-x bg-primary-800 border-top border-primary-600 pb-3 w-100">
+          <div class="mobile-navbar-items p-0 px-4  m-0 w-100">
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Get Quote</a></div>
+
+            <div class="w-100 d-flex flex-column"><a href="#navCollapse" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded nav-link-css" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="navCollapse">Category</a>
+              <div class="collapse" id="navCollapse">
+                <div class="card card-body bg-white">
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Websites</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Mobile Application</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">API Products</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Cloud Products</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Database Product</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">IOT Products</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Desktop applications</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">My Projects</a></div>
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Blog</a></div>
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Profile</a></div>
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded text-danger">Logout</a></div>
+            
+          </div>
+        </div>
+    </nav>
+    <main>
+        <div class="">
+          <!-- banner and project logo -->
+          <section>
+            <div class="project-banner position-relative">
+              <!-- Background Image -->
+              <img src="assets/avatar2.jpg" alt="Background" class="background-image">
+              <div class="badge py-3 px-4 fw-normal banner-trusted-badge fs-5 bg-primary-300 text-white position-absolute rounded-pill">Trusted By Us</div>
+              <!-- Profile Picture -->
+              <div class="project-logo position-absolute top-100  ">
+                <img src="assets/doc-with-face.jpg" alt="Profile Picture" class="">
+              </div>
+            </div>
+          </section>
+          <section class="container-fluid p-0 project-details-section">
+            <ul class="nav nav-pills nav-underline  mb-4 border-bottom border-1 border-primary-100 mt-1 px-2 px-md-3 px-lg-5" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="about-project-tab" data-bs-toggle="tab" href="#about-project" role="tab" aria-controls="about-project" aria-selected="true"> 
+                        About
+                    </a>
+                </li>
+                <!-- freelancer flow - proposals  -->
+                <li class="nav-item d-none" role="presentation">
+                    <a class="nav-link" id="proposals-tab" data-bs-toggle="tab" href="#reviewer-proposals" role="tab" aria-controls="reviewer-proposals" aria-selected="false">
+                        Reviewer Proposals
+                    </a>
+                </li>
+                <!-- freelancer flow - assigned-reviewer  -->
+                <li class="nav-item d-none" role="presentation">
+                    <a class="nav-link" id="assigned-reviewer-tab" data-bs-toggle="tab" href="#assigned-reviewer" role="tab" aria-controls="assigned-reviewer" aria-selected="false">
+                        Assigned Reviewer
+                    </a>
+                </li>
+                <!-- freelancer flow - proposals -->
+                <li class="nav-item d-none" role="presentation">
+                    <a class="nav-link" id="hoster-proposals-tab" data-bs-toggle="tab" href="#hoster-proposals" role="tab" aria-controls="hoster-proposals" aria-selected="false">
+                        Hoster Proposals
+                    </a>
+                </li>
+                <!-- freelancer flow - assigned-hoster -->
+                <li class="nav-item d-none" role="presentation">
+                    <a class="nav-link" id="assigned-hoster-tab" data-bs-toggle="tab" href="#assigned-hoster" role="tab" aria-controls="assigned-hoster" aria-selected="false">
+                        Assigned Hoster
+                    </a>
+                </li>
+
+                <!-- Solvify - Assigned Reviewer -->
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="assigned-solvify-reviewer-tab" data-bs-toggle="tab" href="#assigned-solvify-reviewer" role="tab" aria-controls="assigned-solvify-reviewer" aria-selected="false">
+                        Assigned Reviewer
+                    </a>
+                </li>
+                <!-- Solvify - Assigned Hoster -->
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="assigned-solvify-hoster-tab" data-bs-toggle="tab" href="#assigned-solvify-hoster" role="tab" aria-controls="assigned-solvify-hoster" aria-selected="false">
+                        Assigned Hoster
+                    </a>
+                </li>
+              </ul>
+
+              <div class="tab-content">
+                <!-- About project tab -->
+                <div class="tab-pane fade show active" id="about-project" role="tabpanel" aria-labelledby="about-project-tab">
+                    <div class=" px-3 px-md-4 px-lg-5">
+                        <div class="row">
+                          <div class="col-12 col-lg-7 pb-5">
+                            <div class="d-flex align-items-center">
+                              <div class="fs-4 fw-bold text-primary-100">Project large Title</div>
+                              <div class="ms-3 d-flex">
+                              </div>
+                            </div>
+                            <div class="fw-bold text-dark-100">By Max Well</div>
+                            <div class=" mt-4 text-dark-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sapiente vel alias architecto quo officiis mollitia eos quos nulla numquam, eaque quis a similique velit? Exercitationem, perspiciatis! Earum cum accusantium illum repellat, repudiandae saepe consequatur fuga vel error ea sit dolorem autem, mollitia rerum itaque? Animi dolores et dicta blanditiis excepturi obcaecati doloribus molestiae non aperiam, ea velit quae omnis provident eum quisquam odio dolorem labore? Odio neque, velit ab eaque veniam illo voluptatem architecto quae harum explicabo laborum veritatis delectus adipisci nulla. Unde provident, ex vitae et corporis itaque quidem similique delectus, nulla commodi cum fuga at eius, aliquam odit porro nemo reprehenderit. Fuga similique dolorem nostrum accusantium natus aliquam omnis consequatur illum laborum illo architecto reiciendis consectetur, perferendis esse. B!</div>
+            
+                            <div class="mt-5">
+                              <div class="fs-5 fw-bold text-dark-100">Technology</div>
+                              <div class="mt-3">
+                                <div class="me-1 badge rounded-pill border border-primary-200 px-3 py-2 fs-6 text-primary-200">HTML</div>
+                                <div class="me-1 badge rounded-pill border border-primary-200 px-3 py-2 fs-6 text-primary-200">Python</div>
+                                <div class="me-1 badge rounded-pill border border-primary-200 px-3 py-2 fs-6 text-primary-200">Django</div>
+                              </div>
+                            </div>
+                            
+                            <!-- customization details card -->
+                            <div class="mt-5 bg-white border-radius-16 p-3">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="fs-5 fw-bold text-dark-100">Review Details</div>
+                                    <button type="button" class="ms-3 bg-primary-700 p-0 rounded-circle border-0  d-flex align-items-center justify-content-center project-handle" data-bs-toggle="modal" data-bs-target="#editCustomizationDetails" title="edit" >
+                                        <span class="material-icons fs-5 d-flex align-items-center rounded-circle justify-content-center">edit</span>
+                                    </button>
+                                </div>
+                                <div class="my-2">
+                                    <label class="text-dark-100 fw-500">Cost :</label>
+                                    <span class="text-dark-200">5000 INR</span>
+                                </div>
+                                <div class="my-2">
+                                    <label class="text-dark-100 fw-500">Budget :</label>
+                                    <span class="text-dark-200">12000 INR</span>
+                                </div>
+                                <div class="my-2">
+                                    <label class="text-dark-100 fw-500">Time Limit :</label>
+                                    <span class="text-dark-200">5 Days</span>
+                                </div>
+                                <div class="my-2">
+                                    <label class="text-dark-100 fw-500">Review Perference :</label>
+                                    <span class="text-dark-200">Solvify Hub</span>
+                                </div>
+                                <div class="my-2 text-dark-200">
+                                    I have a ready-made website, but I need to customize a few elements to match my brand. First, I'd like to update the color scheme to align with my company’s branding. Second, I want to redesign the homepage layout to make it more user-friendly and visually appealing. Third, I need to integrate a payment gateway that supports multiple currencies. Additionally, I’d like to add a blog section for regular updates and SEO optimization. Finally, I want to ensure the site is fully responsive on both mobile and desktop devices.
+                                </div>
+                                <div class="my-4">
+                                    <div class="text-dark-100 fw-bold">Attechments</div>
+                                    <div class="mt-1">
+                                        <a class="p-1 px-2 rounded attacment-link border-bottom border-primary-100 text-decoration-none fw-500 d-flex justify-content-between align-items-center w-50" href="">
+                                            <div>ABC-Document.pdf</div>
+                                            <div class="">
+                                                <span class="material-icons text-primary-100">text_snippet</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- hosting details card -->
+                            <div class="mt-5 bg-white border-radius-16 p-3">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="fs-5 fw-bold text-dark-100">Hosting Details</div>
+                                    <button type="button" class="ms-3 bg-primary-700 p-0 rounded-circle border-0  d-flex align-items-center justify-content-center project-handle" data-bs-toggle="modal" data-bs-target="#editHostingDetails" title="edit" >
+                                        <span class="material-icons fs-5 d-flex align-items-center rounded-circle justify-content-center">edit</span>
+                                    </button>
+                                </div>
+                                <div class="my-2">
+                                    <label class="text-dark-100 fw-500">Cost :</label>
+                                    <span class="text-dark-200">5000 INR</span>
+                                </div>
+                                <div class="my-2">
+                                    <label class="text-dark-100 fw-500">Budget :</label>
+                                    <span class="text-dark-200">12000 INR</span>
+                                </div>
+                                <div class="my-2">
+                                    <label class="text-dark-100 fw-500">Time Limit :</label>
+                                    <span class="text-dark-200">5 Days</span>
+                                </div>
+                                <div class="my-2">
+                                    <label class="text-dark-100 fw-500">Hosting Provider :</label>
+                                    <span class="text-dark-200">AWS</span>
+                                </div>
+                                <div class="my-2">
+                                    <label class="text-dark-100 fw-500">Hosting Perference :</label>
+                                    <span class="text-dark-200">Solvify Hub</span>
+                                </div>
+                                <div class="my-2 text-dark-200">
+                                    I have a ready-made website, but I need to customize a few elements to match my brand. First, I'd like to update the color scheme to align with my company’s branding. Second, I want to redesign the homepage layout to make it more user-friendly and visually appealing. Third, I need to integrate a payment gateway that supports multiple currencies. Additionally, I’d like to add a blog section for regular updates and SEO optimization. Finally, I want to ensure the site is fully responsive on both mobile and desktop devices.
+                                </div>
+                            </div>
+
+                            <!-- Timeline  Start -->
+                            <div class="card mt-4  profile-card overflow-hidden border-0">
+                                <div class="card-header p-3 d-flex  align-items-center border-bottom border-3 border-primary-800 text-center  bg-white">
+                                    <div class="card-title mb-0 d-flex align-items-center w-100">
+                                        <div class="text-primary-100 fw-500 fs-5 text-center">Time Line</div>
+                                    </div>
+                                </div>
+                                <!-- Solvify Flow - Timeline -->
+                                <div class="card-body  w-100 d-flex p-3" >
+                                    <ul class="project-timeline p-0 w-100 ">
+                                        <!-- Preliminary Phase timeline-->
+                                        <li class="d-flex tl-content ">
+                                            <div class="row m-0 p-0 w-100">
+                                                <div class="col-6 col-sm-5 col-md-4 p-0">
+                                                    <div class="row m-0 p-0">
+                                                        <div class="col-8 col-lg-9 p-0 d-flex align-items-center">
+                                                            <div class="text-dark fw-bold text-end tl-title w-100">Preliminary Phase</div>
+                                                        </div>
+                                                        <div class="col-4 col-lg-3 p-0 ">
+                                                            <div class="d-flex justify-content-center w-100">
+                                                                <div class="tl-icons-container bg-success-600 ">
+                                                                    <span class="material-icons text-dark-100 tl-icon d-flex align-items-center">forum</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-sm-7 col-md-8 p-0">
+                                                    <div class="d-flex flex-wrap h-100 align-items-center">
+                                                        <!-- under analysis badges -->
+                                                        <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                                            <div class="">Under Analysis</div>
+                                                        </div>
+                            
+                                                        <!-- <div class="fw-bold bg-info text-dark px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                                            <div class="">Under Analysis</div>
+                                                        </div>
+                            
+                                                        <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                                            <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                                            <div class="">Analysis End</div>
+                                                        </div> -->
+                            
+                                                        <!--  Negotiation badges -->
+                                                        <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                                            <div class="">Negotiation</div>
+                                                        </div>
+                            
+                                                        <!-- <div class="fw-bold bg-info text-dark px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                                            <div class="">Negotiation Start</div>
+                                                        </div>
+                            
+                                                        <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                                            <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                                            <div class="">Negotiation End</div>
+                                                        </div> -->
+
+                                                        <!-- Payment Pending badges -->
+                                                        <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                                            <div class="">Payment</div>
+                                                        </div>
+                            
+                                                        <!-- <div class="fw-bold bg-info text-dark px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                                            <div class="">Payment Pending</div>
+                                                        </div>
+                            
+                                                        <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                                            <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                                            <div class="">Payment Completed</div>
+                                                        </div> -->
+                            
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <!-- Review timeline -->
+                                        <li class="d-flex tl-content mt-3">
+                                            <div class="row m-0 p-0 w-100">
+                                                <div class="col-6 col-sm-5 col-md-4 p-0">
+                                                    <div class="row m-0 p-0   mt-2">
+                                                        <div class="col-8 col-lg-9 p-0 d-flex align-items-center">
+                                                            <div class="text-dark fw-bold text-end tl-title w-100">Reviewing</div>
+                                                        </div>
+                                                        <div class="col-4 col-lg-3 p-0 ">
+                                                            <div class="d-flex justify-content-center w-100">
+                                                                <div class="tl-icons-container bg-success-600 ">
+                                                                    <span class="material-icons text-dark-100 tl-icon d-flex align-items-center">search</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-sm-7 col-md-8 p-0">
+                                                    <div class="d-flex flex-wrap h-100 align-items-center">
+                                                        
+                                                        <!-- Under Review badges -->
+                                                        <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge m-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                                            <div class="">Under Review</div>
+                                                        </div>
+                            
+                                                        <!-- <div class="fw-bold bg-danger-700 text-dark px-3 py-2 tl-badge m-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                                            <div class="">Under Review</div>
+                                                        </div>
+
+                                                        <div class="fw-bold bg-info text-dark px-3 py-2 tl-badge m-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                                            <div class="">Under Review</div>
+                                                        </div>
+                            
+                                                        <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge m-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                                            <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                                            <div class="">Under Review</div>
+                                                        </div> -->
+                            
+                                                        <!-- Client Project Approval badges -->
+                                                        <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge m-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                                            <div class="">Client Project Approval</div>
+                                                        </div>
+                            
+                                                        <!-- <div class="fw-bold bg-info text-dark px-3 py-2 tl-badge m-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                                            <div class="">Client Project Approval</div>
+                                                        </div>
+                            
+                                                        <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge m-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                                            <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                                            <div class="">Client Project Approval</div>
+                                                        </div> -->
+
+                                                        <!-- Review Completed badges -->
+                                                        <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge m-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                                            <div class="">Review Completed</div>
+                                                        </div>
+
+                                                        <!-- <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge m-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                                            <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                                            <div class="">Review Completed</div>
+                                                        </div> -->
+                            
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <!-- Hosting timeline-->
+                                        <li class="d-flex tl-content mt-3">
+                                            <div class="row m-0 p-0 w-100">
+                                                <div class="col-6 col-sm-5 col-md-4 p-0">
+                                                    <div class="row m-0 p-0   mt-2">
+                                                        <div class="col-8 col-lg-9 p-0 d-flex align-items-center">
+                                                            <div class="text-dark fw-bold text-end tl-title w-100">Hosting</div>
+                                                        </div>
+                                                        <div class="col-4 col-lg-3 p-0 ">
+                                                            <div class="d-flex justify-content-center w-100">
+                                                                <div class="tl-icons-container bg-success-600 ">
+                                                                    <span class="material-icons text-dark-100 tl-icon d-flex align-items-center">cloud</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-sm-7 col-md-8 p-0">
+                                                    <div class="d-flex flex-wrap h-100 align-items-center">
+                                                        <!-- Under Hosting badges -->
+                                                        <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                                            <div class="">Under Hosting</div>
+                                                        </div>
+                            
+                                                        <!-- <div class="fw-bold bg-info text-dark px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                                            <div class="">Under Hosting</div>
+                                                        </div>
+
+                                                        <div class="fw-bold bg-danger-700 text-dark px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                                            <div class="">Hosting Overdue</div>
+                                                        </div>
+                            
+                                                        <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                                            <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                                            <div class="">Under Hosting</div>
+                                                        </div> -->
+                            
+                                                        <!-- Hosting Approval badges -->
+                                                        <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                                            <div class="">Hosting Approval</div>
+                                                        </div>
+                            
+                                                        <!-- <div class="fw-bold bg-info text-dark px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                                            <div class="">Hosting Approval</div>
+                                                        </div> -->
+                            
+                                                        <!-- <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                                            <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                                            <div class="">Hosting Approval</div>
+                                                        </div> -->
+
+                                                        <!-- under analysis badges -->
+                                                        <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                                            <div class="">Hosting Completed</div>
+                                                        </div>
+
+                                                            <!-- <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                                            <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                                            <div class="">Hosting Completed</div>
+                                                        </div> -->
+                            
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                                <!-- Freelancer Flow - Timeline -->
+                                <div class="card-body  w-100 d-flex p-3 d-none" >
+                                    <ul class="project-timeline p-0 w-100 ">
+
+                                        <!-- Review timeline -->
+                                        <li class="d-flex tl-content mt-0">
+                                            <div class="row m-0 p-0 w-100">
+                                                <div class="col-6 col-sm-5 col-md-4 p-0">
+                                                    <div class="row m-0 p-0   mt-0">
+                                                        <div class="col-8 col-lg-9 p-0 d-flex align-items-center">
+                                                            <div class="text-dark fw-bold text-end tl-title w-100">Reviewing</div>
+                                                        </div>
+                                                        <div class="col-4 col-lg-3 p-0 ">
+                                                            <div class="d-flex justify-content-center w-100">
+                                                                <div class="tl-icons-container bg-success-600 ">
+                                                                    <span class="material-icons text-dark-100 tl-icon d-flex align-items-center">search</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-sm-7 col-md-8 p-0">
+                                                    <div class="d-flex flex-wrap h-100 align-items-center">
+                                                        
+                                                        <!-- Bidding Badges -->
+                                                        <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                                            <div class="">Bidding</div>
+                                                        </div>
+
+                                                        <!-- <div class="fw-bold bg-info text-dark px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                                            <div class="">Bidding Started</div>
+                                                        </div> -->
+
+                                                        <!-- <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                                            <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                                            <div class="">Bidding Ended</div>
+                                                        </div> -->
+
+                                                        <!-- Payment Pending badges -->
+                                                        <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                                            <div class="">Payment</div>
+                                                        </div>
+                            
+                                                        <!-- <div class="fw-bold bg-info text-dark px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                                            <div class="">Payment Pending</div>
+                                                        </div>
+                            
+                                                        <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                                            <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                                            <div class="">Payment Completed</div>
+                                                        </div> -->
+
+                                                        <!-- Under Review badges -->
+                                                        <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                                            <div class="">Under Review</div>
+                                                        </div>
+                            
+                                                        <!-- <div class="fw-bold bg-danger-700 text-dark px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                                            <div class="">Under Review</div>
+                                                        </div>
+
+                                                        <div class="fw-bold bg-info text-dark px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                                            <div class="">Under Review</div>
+                                                        </div>
+                            
+                                                        <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                                            <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                                            <div class="">Under Review</div>
+                                                        </div> -->
+                            
+                                                        <!-- Client Project Approval badges -->
+                                                        <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                                            <div class="">Client Project Approval</div>
+                                                        </div>
+                            
+                                                        <!-- <div class="fw-bold bg-info text-dark px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                                            <div class="">Client Project Approval</div>
+                                                        </div>
+                            
+                                                        <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                                            <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                                            <div class="">Client Project Approval</div>
+                                                        </div> -->
+
+                                                        <!-- Review Completed badges -->
+                                                        <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                                            <div class="">Review Completed</div>
+                                                        </div>
+
+                                                        <!-- <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                                            <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                                            <div class="">Review Completed</div>
+                                                        </div> -->
+                            
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <!-- Hosting timeline-->
+                                        <li class="d-flex tl-content mt-3">
+                                            <div class="row m-0 p-0 w-100">
+                                                <div class="col-6 col-sm-5 col-md-4 p-0">
+                                                    <div class="row m-0 p-0   mt-2">
+                                                        <div class="col-8 col-lg-9 p-0 d-flex align-items-center">
+                                                            <div class="text-dark fw-bold text-end tl-title w-100">Hosting</div>
+                                                        </div>
+                                                        <div class="col-4 col-lg-3 p-0 ">
+                                                            <div class="d-flex justify-content-center w-100">
+                                                                <div class="tl-icons-container bg-success-600 ">
+                                                                    <span class="material-icons text-dark-100 tl-icon d-flex align-items-center">cloud</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-sm-7 col-md-8 p-0">
+                                                    <div class="d-flex flex-wrap h-100 align-items-center">
+                                                        <!-- Bidding Badges -->
+                                                        <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge m-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                                            <div class="">Bidding</div>
+                                                        </div>
+
+                                                        <!-- <div class="fw-bold bg-info text-dark px-3 py-2 tl-badge m-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                                            <div class="">Bidding Started</div>
+                                                        </div> -->
+
+                                                        <!-- <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge m-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                                            <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                                            <div class="">Bidding Ended</div>
+                                                        </div> -->
+
+                                                        <!-- Payment Pending badges -->
+                                                        <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge m-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                                            <div class="">Payment</div>
+                                                        </div>
+                            
+                                                        <!-- <div class="fw-bold bg-info text-dark px-3 py-2 tl-badge m-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                                            <div class="">Payment Pending</div>
+                                                        </div>
+                            
+                                                        <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge m-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                                            <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                                            <div class="">Payment Completed</div>
+                                                        </div> -->
+
+                                                        <!-- Under Hosting badges -->
+                                                        <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge m-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                                            <div class="">Under Hosting</div>
+                                                        </div>
+                            
+                                                        <!-- <div class="fw-bold bg-info text-dark px-3 py-2 tl-badge m-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                                            <div class="">Under Hosting</div>
+                                                        </div>
+
+                                                        <div class="fw-bold bg-danger-700 text-dark px-3 py-2 tl-badge m-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                                            <div class="">Hosting Overdue</div>
+                                                        </div>
+                            
+                                                        <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge m-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                                            <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                                            <div class="">Under Hosting</div>
+                                                        </div> -->
+                            
+                                                        <!-- Hosting Approval badges -->
+                                                        <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge m-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                                            <div class="">Hosting Approval</div>
+                                                        </div>
+                            
+                                                        <!-- <div class="fw-bold bg-info text-dark px-3 py-2 tl-badge m-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                                            <div class="">Hosting Approval</div>
+                                                        </div> -->
+                            
+                                                        <!-- <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge m-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                                            <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                                            <div class="">Hosting Approval</div>
+                                                        </div> -->
+
+                                                        <!-- under analysis badges -->
+                                                        <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge m-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                                            <div class="">Hosting Completed</div>
+                                                        </div>
+
+                                                        <!-- <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge m-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                                            <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                                            <div class="">Hosting Completed</div>
+                                                        </div> -->
+                            
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Timeline  End -->
+                                
+                            <!-- support contact -->
+                            <div class="card mt-4  profile-card overflow-hidden border-0">
+                                <div class="card-header p-3 d-flex  align-items-center border-bottom border-3 border-primary-800 text-center  bg-white">
+                                    <div class="card-title mb-0 d-flex justify-content-between align-items-center w-100">
+                                        <div class="text-primary-100 fw-500 fs-5 text-center">Support Contact</div>
+                                        <div class="d-flex">
+                                            <button type="button" class="btn-sm btn-outline-primary-100 border border-primary-100 rounded-pill d-flex align-items-center"  title="If you wish to share any images, please upload them here. Our support team will respond to you shortly." data-bs-content="">
+                                                <span class="material-icons fs-5">call</span> <span class="ms-1">Request Call</span>
+                                            </button>
+                                            <button type="button" class="ms-2 btn-sm btn-outline-primary-100 border border-primary-100 rounded-pill d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#imageMessage2" title="If you wish to share any images, please upload them here. Our support team will respond to you shortly." data-bs-content="">
+                                                    <span class="material-icons fs-5">upload</span> <span class="ms-1">Upload</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body chat-messages-area w-100 d-flex p-3" >
+                                    <div class="d-flex flex-column w-100" id="support-chat-messages-box">
+                                        <!-- timeline divider -->
+                                        <div class="my-2 d-flex align-items-center justify-content-evenly w-100">
+                                        <div  class="border border border-dark-600 w-100"></div>
+                                        <div class="text-dark-100 fw-bold fs-6 px-3">Today</div>
+                                        <div class=" border border-dark-600 w-100"></div>
+                                        </div>
+                                    <!-- message reply-->
+                                        <div class="d-flex mb-3 w-100">
+                                            <div class="">
+                                                    <img src="assets/avatar.jpg" class="rounded-circle chat-profile-img" alt="">
+                                            </div>
+                                            <div class="ps-2 w-100">
+                                                    <div class="text-dark-100 fw-bold">Tony Stark</div>
+                                                    <div class="text-dark-400 fs-6">12min ago</div>
+                                                    <div class="mt-1">
+                                                        <!-- message text or image -->
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    <!-- message -->
+                                        <div class="d-flex mb-3 w-100">
+                                            <div class="">
+                                                    <img src="assets/solvify logo.png" class="rounded-circle chat-profile-img" alt="">
+                                            </div>
+                                            <div class="ps-2">
+                                                    <div class="text-dark-100 fw-bold">Solvify Hub</div>
+                                                    <div class="text-dark-400 fs-6">14min ago</div>
+                                                    <div class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero error et deleniti facere dolorum molestiae deserunt iure blanditiis iste vitae?</div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white border-0 py-3">
+                                    <form class="p-1 bg-primary-800 rounded-pill " id="support_contact_form">
+                                        <div class="d-flex align-items-center w-100">
+                                            <label class="w-100">
+                                                <input type="text" class="form-control bg-transparent chat-message-field border-0 w-100" name="support_message" id="support_message" placeholder="message">
+                                            </label>
+                                            <div class="">
+                                                <button type="submit" class="d-flex align-items-center btn btn-primary-300 border-0 rounded-pill">
+                                                    <span class="material-icons">send</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <!-- gallary -->
+                            <div class="mt-5">
+                              <div class="fs-5 fw-bold text-dark-100">Gallary</div>
+                              <div class="mt-3">
+                                <div class="d-flex flex-column">
+                                  <div class="me-3" id="main-gallary-image">
+                                    <img class="" id="mainImage" src="assets/coc banner.png" alt="">
+                                  </div>
+                                  <div class="other-gallary-image mt-3 d-flex">
+                                    <div class="ratio ratio-1x1 overflow-hidden me-3">
+                                      <img class="gallary-img" src="assets/coc banner.png" alt="" onclick="replaceMainImg(this)">
+                                    </div>
+                                    <div class="ratio ratio-1x1 overflow-hidden me-3">
+                                      <img class="gallary-img" src="assets/coc.jpg" alt="" onclick="replaceMainImg(this)">
+                                    </div>
+                                    <div class="ratio ratio-1x1 overflow-hidden me-3">
+                                      <img class="gallary-img" src="assets/coc2.jpg" alt="" onclick="replaceMainImg(this)">
+                                    </div>
+                                    <div class="ratio ratio-1x1 overflow-hidden me-3">
+                                      <img class="gallary-img" src="assets/coc3.png" alt="" onclick="replaceMainImg(this)">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+            
+                            <!-- video demo -->
+                            <div class="mt-5">
+                              <div class="fs-5 fw-bold text-dark-100">Video</div>
+                              <div class="video-container mt-3">
+                                <iframe 
+                                    class="project-video-iframe"
+                                    src="https://www.youtube.com/embed/jLNrvmXboj8"
+                                    title="YALGAAR - CARRYMINATI X Wily Frenzy"
+                                    allowfullscreen>
+                                </iframe>
+                              </div>
+                            </div>
+                          </div>
+            
+                          <!-- sidebar client details and project brief -->
+                          <div class="col-12 col-lg-5 ">
+                            <div class="project-brief ms-lg-auto row m-0 flex-column-reverse flex-sm-row-reverse flex-lg-row">
+                                <section class="col-sm-6 col-lg-12">
+                                    <div class="overflow-hidden border-radius-16 mt-0 mt-lg-4">
+                                    <!-- rating -->
+                                    <div class="px-3 py-3 border-bottom border-3 border-primary-800 project-brief-info-row d-flex justify-content-between align-items-center">
+                                        <div class="d-flex  align-items-center">
+                                        <div class="">
+                                            <span class="material-icons fs-5 d-flex align-items-center rounded-circle justify-content-center text-primary-100">thumb_up</span>
+                                        </div>
+                                        <div class="ms-2 text-primary-100  fw-bold">Rating</div>
+                                        </div>
+                                        <div class="d-flex  align-items-center"">
+                                        <div class="me-1 text-primary-100  fw-bolder">3.5</div>
+                                        <div class="">
+                                            <span class="material-icons fs-5 d-flex align-items-center rounded-circle justify-content-center text-primary-100">star</span>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <!-- price -->
+                                    <div class="px-3 py-3 border-bottom border-3 border-primary-800 project-brief-info-row d-flex justify-content-between align-items-center">
+                                        <div class="d-flex  align-items-center">
+                                            <div class="">
+                                                <span class="p-1 bg-primary-100  d-flex align-items-center rounded-circle justify-content-center text-white" style="height: 20px; width: 20px;">₹</span>
+                                            </div>
+                                            <div class="ms-2 text-primary-100  fw-bold">Price</div>
+                                        </div>
+                                        <div class="d-flex  align-items-center" "="">
+                                            <div class="me-1 text-primary-100  fw-bolder">₹ 1200.00</div>
+                                        </div>
+                                    </div>
+                                    <!-- hosted or not -->
+                                    <div class="px-3 py-3 border-bottom border-3 border-primary-800 project-brief-info-row d-flex justify-content-between align-items-center">
+                                        <div class="d-flex  align-items-center">
+                                        <div class="">
+                                            <span class="material-icons fs-5 d-flex align-items-center rounded-circle justify-content-center text-primary-100">cloud_upload</span>
+                                        </div>
+                                        <div class="ms-2 text-primary-100  fw-bold">Hosting</div>
+                                        </div>
+                                        <div class="d-flex  align-items-center"">
+                                            <div class="">
+                                                <span class="material-icons fs-5 d-flex align-items-center rounded-circle justify-content-center text-primary-100">close</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Reviewed or not -->
+                                    <div class="px-3 py-3 border-bottom border-2 border-primary-800 project-brief-info-row d-flex justify-content-between align-items-center">
+                                        <div class="d-flex  align-items-center">
+                                            <div class="">
+                                                <span class="material-icons fs-5 d-flex align-items-center rounded-circle justify-content-center text-primary-100">search</span>
+                                            </div>
+                                            <div class="ms-2 text-primary-100  fw-bold">Review</div>
+                                        </div>
+                                        <div class="d-flex  align-items-center"">
+                                            <div class="">
+                                                <span class="material-icons fs-5 d-flex align-items-center rounded-circle justify-content-center text-primary-100">check</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </section>  
+                                
+                                <!-- Solvify Flow Cards  -->
+                                <section class="col-sm-6 col-lg-12">
+                                    <!-- NOTE Before Accept project -->
+                                    <div class="card mt-3 border-0 border-radius-16 overflow-hidden bg-info-700">
+                                        <div class="card-header py-3 bg-transparent text-dark-100 fw-bold fs-5 d-flex align-items-center border-0">
+                                            <!-- <span class="text-white me-3 bg-success rounded-circle p-1 fs-5"></span> -->
+                                            NOTE
+                                        </div>
+                                        <div class="card-body pt-0 ">
+                                            <div>
+                                                Your request is under review by Solvify Hub. Our team is evaluating the details, including price, timeframe, and project requirements. Both parties can negotiate these aspects through the Support Contact section. Once the negotiations and approval process are complete, your reviewing process will begin.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- payment done card -->
+                                    <div class="card  mt-3 border-0 border-radius-16 overflow-hidden bg-info-700">
+                                        <div class="card-header py-3 bg-transparent text-dark-100 fw-bold fs-5 d-flex align-items-center border-0">
+                                            <span class="material-icons  text-white me-3 bg-success rounded-circle p-1 fs-5">done</span>
+                                            Payment Done
+                                        </div>
+                                    </div>
+                                    <!-- Project Approved -->
+                                    <div class="card  mt-3 border-0 border-radius-16 overflow-hidden bg-info-700">
+                                        <div class="card-header py-3 bg-transparent text-dark-100 fw-bold fs-5 d-flex align-items-center border-0">
+                                            <span class="material-icons  text-white me-3 bg-success rounded-circle p-1 fs-5">done</span>
+                                            Project Accepted
+                                        </div>
+                                        <div class="card-body pt-0 ">
+                                            <div>
+                                                Your project has been accepted by our team, and we are excited to work on it. The review process will commence after finalizing the review cost and agreeing on the project timeline.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- NOTE under development -->
+                                    <div class="card mt-3 border-0 border-radius-16 overflow-hidden bg-info-700">
+                                        <div class="card-header py-3 bg-transparent text-dark-100 fw-bold fs-5 d-flex align-items-center border-0">
+                                            <!-- <span class="text-white me-3 bg-success rounded-circle p-1 fs-5"></span> -->
+                                            NOTE
+                                        </div>
+                                        <div class="card-body pt-0 ">
+                                            <div>
+                                                Project Under Review
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Payment request -->
+                                    <div class="card  mt-3 border-0 border-radius-16 overflow-hidden bg-info-700">
+                                        <div class="card-header py-3 bg-transparent text-dark-100 fw-bold fs-5 d-flex align-items-center border-0">
+                                            <span class="text-white me-3 bg-success rounded-circle px-2 fs-5">₹</span>
+                                            Payment Request
+                                        </div>
+                                        <div class="card-body pt-0 ">
+                                            <div>
+                                                Kindly make the payment to initiate the development of your project.
+                                            </div>
+                                            <div class="my-2">
+                                                <div class="fw-bold text-dark mb-1 border-bottom border-dark-300">Cost</div>
+                                                <div class="d-flex justify-content-between align-items-center mb-1">
+                                                    <div class="text-dark-100">Customization</div>
+                                                    <div class="text-dark-100 fw-500">5000 ₹</div>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center mb-1">
+                                                    <div class="text-dark-100">Hosting</div>
+                                                    <div class="text-dark-100 fw-500">5000 ₹</div>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center mb-1">
+                                                    <div class="text-dark-100">GST(18%) </div>
+                                                    <div class="text-dark-100 fw-500"></div>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center border-top border-dark-300 pt-1">
+                                                    <div class="text-dark fw-bold">Total bill</div>
+                                                    <div class="text-dark-200 fw-bold"> 8260 ₹ (including GST)</div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex pt-2">
+                                                <button type="button" id="payment_release" class="fs-6 w-100 btn-sm btn-success text-white rounded-pill border-0"> Payment</button>
+                                            </div>
+                                        </div>
+                                       </div>
+                                    <!-- Review Overdue Card -->
+                                    <div class="card  mt-3 border-0 border-radius-16 overflow-hidden bg-danger-700">
+                                        <div class="card-header py-3 bg-transparent text-danger-200 fw-bold fs-5 d-flex align-items-center border-0">
+                                            <span class="material-icons text-danger-200 me-3  rounded-circle p-1 fs-4">warning_amber</span>
+                                                Review Overdue
+                                        </div>
+                                        <div class="card-body pt-0 ">
+                                            <div class="text-danger-100">
+                                                Kindly get in touch with your reviewer as the review time limit has expired.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Hosting Overdue Card -->
+                                    <div class="card  mt-3 border-0 border-radius-16 overflow-hidden bg-danger-700">
+                                        <div class="card-header py-3 bg-transparent text-danger-200 fw-bold fs-5 d-flex align-items-center border-0">
+                                            <span class="material-icons text-danger-200 me-3  rounded-circle p-1 fs-4">warning_amber</span>
+                                                Hosting Overdue
+                                        </div>
+                                        <div class="card-body pt-0 ">
+                                            <div class="text-danger-100">
+                                                Kindly get in touch with your hoster as the hosting time limit has expired.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Check Your Hosting. -->
+                                    <div class="card border-2 border-dark-100 border-radius-16 mt-4">
+                                        <div class="card-header py-3 bg-transparent text-dark fw-bold fs-5 d-flex align-items-center border-0">
+                                            <span class="material-icons text-dark me-3 fs-4 rounded-circle p-1">category</span>
+                                                Check Your Hosting
+                                        </div>
+                                        <div class="card-body pt-0">
+                                            <div class="text-dark">
+                                                This project is designed to enhance user engagement through an intuitive interface and optimized performance. Our goal is to deliver a scalable and efficient solution tailored to your requirements.
+                                            </div>
+                                            <div class="py-2">
+                                            <div class="">
+                                                <div class="text-dark fw-bold fs-6">Hosted link</div>
+                                                <a href="#" class="mt-2 text-dark py-2 fs-6">https://www.example.com</a>
+                                            </div>
+                                            <div class="mt-2">
+                                                <div class="text-dark fw-bold fs-6">Project Video Demonstration</div>
+                                                    <a href="#" class="mt-2 text-dark py-2 fs-6">https://www.example.com</a>
+                                                </div>
+                                            </div>
+                                            <div class="bg-success-600 fw-500 text-dark border-radius-16 p-3 mt-2">
+                                                <p>
+                                                    Please review your project details carefully. If everything is accurate, kindly approve the project.
+                                                </p>
+                                                <div class="d-flex mt-3">
+                                                    <button type="button" class="btn-sm fs-6 btn-danger-300 border-0  rounded-pill w-100" data-bs-toggle="modal" data-bs-target="#declineModal">Decline</button>
+                                                    <button type="button" id="sp_development_approve_btn" class="ms-3 fs-6 btn-sm btn-dark text-white border-0  rounded-pill w-100">Approve</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Ḍownload your project -->
+                                    <div class="card border-2 border-dark-100 border-radius-16 mt-4 d-none" id="sp_hosted_project_card">
+                                        <div class="card-header py-3 bg-transparent text-dark fw-bold fs-5 d-flex align-items-center border-0">
+                                                <span class="material-icons text-dark me-3 fs-4 rounded-circle p-1">category</span>
+                                                Hosted Project.
+                                        </div>
+                                        <div class="card-body pt-0">
+                                            <div class="text-dark">
+                                                    This project is designed to enhance user engagement through an intuitive interface and optimized performance. Our goal is to deliver a scalable and efficient solution tailored to your requirements.
+                                            </div>
+                                            <div class="py-2">
+                                                <div class="">
+                                                    <div class="text-dark fw-bold fs-6">Hosted link</div>
+                                                    <a href="#" class="mt-2 text-dark py-2 fs-6">https://www.example.com</a>
+                                                </div>
+                                                <div class="mt-2">
+                                                    <div class="text-dark fw-bold fs-6">Project Video Demonstration</div>
+                                                    <a href="#" class="mt-2 text-dark py-2 fs-6">https://www.example.com</a>
+                                                </div>
+                                            </div>
+                                            <div class="mt-2">
+                                                <a class="p-1 mt-2 px-2  deliverables-download border-bottom border-dark-100 text-decoration-none fw-500 d-flex justify-content-between align-items-center w-100" href="">
+                                                    <div class="text-dark fw-bold">Source Code</div>
+                                                    <div class="d-flex align-items-end">
+                                                        <span class="material-icons text-dark-100 d-flex">download</span>
+                                                    </div>
+                                                </a>
+                                                <a class="p-1 mt-2 px-2  deliverables-download border-bottom border-dark-100 text-decoration-none fw-500 d-flex justify-content-between align-items-center w-100" href="">
+                                                    <div class="text-dark fw-bold">Credentials</div>
+                                                    <div class="d-flex align-items-end">
+                                                        <span class="material-icons text-dark-100 d-flex">download</span>
+                                                    </div>
+                                                </a>
+                                                <a class="p-1 mt-2 px-2  deliverables-download border-bottom border-dark-100 text-decoration-none fw-500 d-flex justify-content-between align-items-center w-100" href="">
+                                                    <div class="text-dark fw-bold">Documentation</div>
+                                                    <div class="d-flex align-items-end">
+                                                        <span class="material-icons text-dark-100 d-flex">download</span>
+                                                    </div>
+                                                </a>
+                                                <a class="p-1 mt-2 px-2  deliverables-download border-bottom border-dark-100 text-decoration-none fw-500 d-flex justify-content-between align-items-center w-100" href="">
+                                                    <div class="text-dark fw-bold">Other Attachments</div>
+                                                    <div class="d-flex align-items-end">
+                                                        <span class="material-icons text-dark-100 d-flex">download</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="mt-3">
+                                                <button type="button" data-bs-toggle="modal" data-bs-target="#hostingRaisIssueModal" class=" fs-6 btn-sm btn-dark text-white border-0  rounded-pill w-100">Raise an Issue</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Check Review Deliverables. -->
+                                    <div class="card border-2 border-dark-100 border-radius-16 mt-4">
+                                        <div class="card-header py-3 bg-transparent text-dark fw-bold fs-5 d-flex align-items-center border-0">
+                                            <span class="material-icons text-dark me-2 fs-4 rounded-circle p-1">category</span>
+                                            Check Review Deliverables
+                                        </div>
+                                        <div class="card-body pt-0">
+                                            <div class="text-dark">
+                                                This project is designed to enhance user engagement through an intuitive interface and optimized performance. Our goal is to deliver a scalable and efficient solution tailored to your requirements.
+                                            </div>
+                                            <div class="mt-2">
+                                                <a class="p-1 mt-2 px-2  deliverables-download border-bottom border-dark-100 text-decoration-none fw-500 d-flex justify-content-between align-items-center w-100" href="">
+                                                    <div class="text-dark fw-bold">Documentation</div>
+                                                    <div class="d-flex align-items-end">
+                                                        <span class="material-icons text-dark-100 d-flex">download</span>
+                                                    </div>
+                                                </a>
+                                                <a class="p-1 mt-2 px-2  deliverables-download border-bottom border-dark-100 text-decoration-none fw-500 d-flex justify-content-between align-items-center w-100" href="">
+                                                    <div class="text-dark fw-bold">Other Attachments</div>
+                                                    <div class="d-flex align-items-end">
+                                                        <span class="material-icons text-dark-100 d-flex">download</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="bg-success-600 fw-500 text-dark border-radius-16 p-3 mt-2">
+                                                <p>
+                                                    Please review your project details carefully. If everything is accurate, kindly approve the project.
+                                                </p>
+                                                <div class="d-flex mt-3">
+                                                    <button type="button" class="btn-sm fs-6 btn-danger-300 border-0  rounded-pill w-100" data-bs-toggle="modal" data-bs-target="#reviewDeclineModal">Decline</button>
+                                                    <button type="button" id="sp_review_approve_btn" class="ms-3 fs-6 btn-sm btn-dark text-white border-0  rounded-pill w-100">Approve</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>  
+
+                                <!-- Freelancer Flow Cards -->
+                                <section class="col-sm-6 col-lg-12">
+                                    <!-- NOTE Before Accept project -->
+                                    <div class="card mt-3 border-0 border-radius-16 overflow-hidden bg-info-700">
+                                        <div class="card-header py-3 bg-transparent text-dark-100 fw-bold fs-5 d-flex align-items-center border-0">
+                                            <!-- <span class="text-white me-3 bg-success rounded-circle p-1 fs-5"></span> -->
+                                            NOTE
+                                        </div>
+                                        <div class="card-body pt-0 ">
+                                            <div class="border-radius-10 bg-white p-2 fw-bold fs-6">
+                                                Bidding has started and will remain open for the next 3 days.
+                                            </div>
+                                            <ul class="mt-2">
+                                                <li>You need to review proposals, select a suitable reviewer, and communicate your requirements clearly.</li>
+                                                <li>Update your customization cost according to your requirements.
+                                                </li>
+                                                <li>If you encounter any issues or need assistance, please don’t hesitate to contact our support team.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- payment done card -->
+                                    <div class="card  mt-3 border-0 border-radius-16 overflow-hidden bg-info-700">
+                                        <div class="card-header py-3 bg-transparent text-dark-100 fw-bold fs-5 d-flex align-items-center border-0">
+                                            <span class="material-icons  text-white me-3 bg-success rounded-circle p-1 fs-5">done</span>
+                                            Payment Done
+                                        </div>
+                                    </div>
+                                    <!--Reviewer Project Approved -->
+                                    <div class="card  mt-3 border-0 border-radius-16 overflow-hidden bg-info-700">
+                                        <div class="card-header py-3 bg-transparent text-dark-100 fw-bold fs-5 d-flex align-items-center border-0">
+                                            <span class="material-icons  text-white me-3 bg-success rounded-circle p-1 fs-5">done</span>
+                                            Project Accepted
+                                        </div>
+                                        <div class="card-body pt-0 ">
+                                            <div>
+                                                Your project has been accepted by reviewer.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Hoster Project Approved -->
+                                    <div class="card  mt-3 border-0 border-radius-16 overflow-hidden bg-info-700">
+                                        <div class="card-header py-3 bg-transparent text-dark-100 fw-bold fs-5 d-flex align-items-center border-0">
+                                            <span class="material-icons  text-white me-3 bg-success rounded-circle p-1 fs-5">done</span>
+                                            Project Accepted
+                                        </div>
+                                        <div class="card-body pt-0 ">
+                                            <div>
+                                                Your project has been accepted by hoster.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- NOTE under development -->
+                                    <div class="card mt-3 border-0 border-radius-16 overflow-hidden bg-info-700">
+                                        <div class="card-header py-3 bg-transparent text-dark-100 fw-bold fs-5 d-flex align-items-center border-0">
+                                            <!-- <span class="text-white me-3 bg-success rounded-circle p-1 fs-5"></span> -->
+                                            NOTE
+                                        </div>
+                                        <div class="card-body pt-0 ">
+                                            <div>
+                                                Project Under Review
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Payment request -->
+                                    <div class="card  mt-3 border-0 border-radius-16 overflow-hidden bg-info-700">
+                                        <div class="card-header py-3 bg-transparent text-dark-100 fw-bold fs-5 d-flex align-items-center border-0">
+                                            <span class="text-white me-3 bg-success rounded-circle px-2 fs-5">₹</span>
+                                            Payment Request
+                                        </div>
+                                        <div class="card-body pt-0 ">
+                                            <div>
+                                                Kindly proceed with the payment to initiate the reviewing of your project. Your payment will remain secure with us and will only be released to the reviewer upon successful completion of the project review.
+                                            </div>
+                                            <div class="d-flex pt-2">
+                                                <button type="button" id="payment_release" class="fs-6 w-100 btn-sm btn-success text-white rounded-pill border-0"> Payment</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Bidding Ended Card -->
+                                    <div class="card  mt-3 border-0 border-radius-16 overflow-hidden bg-danger-700">
+                                        <div class="card-header py-3 bg-transparent text-danger-200 fw-bold fs-5 d-flex align-items-center border-0">
+                                            <span class="material-icons text-danger-200 me-3  rounded-circle p-1 fs-4">warning_amber</span>
+                                            Bidding Ended
+                                        </div>
+                                        <div class="card-body pt-0 ">
+                                            <div class="text-danger-100">
+                                                You can restart your bidding from here. The bidding will remain open for the next 3 days starting today.
+                                            </div>
+                                            <div class="w-100 mt-2">
+                                                <button class="fs-6 btn-sm btn-danger-300 w-100 border-0 rounded-pill" type="button" data-bs-toggle="modal" data-bs-target="#reviewerBiddingEnded">Reviewer Bidding Restart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card  mt-3 border-0 border-radius-16 overflow-hidden bg-danger-700">
+                                        <div class="card-header py-3 bg-transparent text-danger-200 fw-bold fs-5 d-flex align-items-center border-0">
+                                            <span class="material-icons text-danger-200 me-3  rounded-circle p-1 fs-4">warning_amber</span>
+                                            Bidding Ended
+                                        </div>
+                                        <div class="card-body pt-0 ">
+                                            <div class="text-danger-100">
+                                                You can restart your bidding from here. The bidding will remain open for the next 3 days starting today.
+                                            </div>
+                                            <div class="w-100 mt-2">
+                                                <button class="fs-6 btn-sm btn-danger-300 w-100 border-0 rounded-pill" type="button" data-bs-toggle="modal" data-bs-target="#hosterBiddingEnded">Hoster Bidding Restart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Review Overdue Card -->
+                                    <div class="card  mt-3 border-0 border-radius-16 overflow-hidden bg-danger-700">
+                                        <div class="card-header py-3 bg-transparent text-danger-200 fw-bold fs-5 d-flex align-items-center border-0">
+                                            <span class="material-icons text-danger-200 me-3  rounded-circle p-1 fs-4">warning_amber</span>
+                                                Review Overdue
+                                        </div>
+                                        <div class="card-body pt-0 ">
+                                            <div class="text-danger-100">
+                                                Kindly get in touch with your reviewer as the review time limit has expired.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Hosting Overdue Card -->
+                                    <div class="card  mt-3 border-0 border-radius-16 overflow-hidden bg-danger-700">
+                                        <div class="card-header py-3 bg-transparent text-danger-200 fw-bold fs-5 d-flex align-items-center border-0">
+                                            <span class="material-icons text-danger-200 me-3  rounded-circle p-1 fs-4">warning_amber</span>
+                                                Hosting Overdue
+                                        </div>
+                                        <div class="card-body pt-0 ">
+                                            <div class="text-danger-100">
+                                                Kindly get in touch with your hoster as the hosting time limit has expired.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Check Your Hosting. -->
+                                    <div class="card border-2 border-dark-100 border-radius-16 mt-4">
+                                        <div class="card-header py-3 bg-transparent text-dark fw-bold fs-5 d-flex align-items-center border-0">
+                                            <span class="material-icons text-dark me-3 fs-4 rounded-circle p-1">category</span>
+                                                Check Your Hosting
+                                        </div>
+                                        <div class="card-body pt-0">
+                                            <div class="text-dark">
+                                                This project is designed to enhance user engagement through an intuitive interface and optimized performance. Our goal is to deliver a scalable and efficient solution tailored to your requirements.
+                                            </div>
+                                            <div class="py-2">
+                                            <div class="">
+                                                <div class="text-dark fw-bold fs-6">Hosted link</div>
+                                                <a href="#" class="mt-2 text-dark py-2 fs-6">https://www.example.com</a>
+                                            </div>
+                                            <div class="mt-2">
+                                                <div class="text-dark fw-bold fs-6">Project Video Demonstration</div>
+                                                    <a href="#" class="mt-2 text-dark py-2 fs-6">https://www.example.com</a>
+                                                </div>
+                                            </div>
+                                            <div class="bg-success-600 fw-500 text-dark border-radius-16 p-3 mt-2">
+                                                <p>
+                                                    Please review your project details carefully. If everything is accurate, kindly approve the project.
+                                                </p>
+                                                <div class="d-flex mt-3">
+                                                    <button type="button" class="btn-sm fs-6 btn-danger-300 border-0  rounded-pill w-100" data-bs-toggle="modal" data-bs-target="#freelancerHostingDeclineModal">Decline</button>
+                                                    <button type="button" id="fp_development_approve_btn" class="ms-3 fs-6 btn-sm btn-dark text-white border-0  rounded-pill w-100">Approve</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Ḍownload your project -->
+                                    <div class="card border-2 border-dark-100 border-radius-16 mt-4 d-none" id="fp_hosted_project_card">
+                                        <div class="card-header py-3 bg-transparent text-dark fw-bold fs-5 d-flex align-items-center border-0">
+                                                <span class="material-icons text-dark me-3 fs-4 rounded-circle p-1">category</span>
+                                                Hosted Project.
+                                        </div>
+                                        <div class="card-body pt-0">
+                                            <div class="text-dark">
+                                                    This project is designed to enhance user engagement through an intuitive interface and optimized performance. Our goal is to deliver a scalable and efficient solution tailored to your requirements.
+                                            </div>
+                                            <div class="py-2">
+                                                <div class="">
+                                                    <div class="text-dark fw-bold fs-6">Hosted link</div>
+                                                    <a href="#" class="mt-2 text-dark py-2 fs-6">https://www.example.com</a>
+                                                </div>
+                                                <div class="mt-2">
+                                                    <div class="text-dark fw-bold fs-6">Project Video Demonstration</div>
+                                                    <a href="#" class="mt-2 text-dark py-2 fs-6">https://www.example.com</a>
+                                                </div>
+                                            </div>
+                                            <div class="mt-2">
+                                                <a class="p-1 mt-2 px-2  deliverables-download border-bottom border-dark-100 text-decoration-none fw-500 d-flex justify-content-between align-items-center w-100" href="">
+                                                    <div class="text-dark fw-bold">Source Code</div>
+                                                    <div class="d-flex align-items-end">
+                                                        <span class="material-icons text-dark-100 d-flex">download</span>
+                                                    </div>
+                                                </a>
+                                                <a class="p-1 mt-2 px-2  deliverables-download border-bottom border-dark-100 text-decoration-none fw-500 d-flex justify-content-between align-items-center w-100" href="">
+                                                    <div class="text-dark fw-bold">Credentials</div>
+                                                    <div class="d-flex align-items-end">
+                                                        <span class="material-icons text-dark-100 d-flex">download</span>
+                                                    </div>
+                                                </a>
+                                                <a class="p-1 mt-2 px-2  deliverables-download border-bottom border-dark-100 text-decoration-none fw-500 d-flex justify-content-between align-items-center w-100" href="">
+                                                    <div class="text-dark fw-bold">Documentation</div>
+                                                    <div class="d-flex align-items-end">
+                                                        <span class="material-icons text-dark-100 d-flex">download</span>
+                                                    </div>
+                                                </a>
+                                                <a class="p-1 mt-2 px-2  deliverables-download border-bottom border-dark-100 text-decoration-none fw-500 d-flex justify-content-between align-items-center w-100" href="">
+                                                    <div class="text-dark fw-bold">Other Attachments</div>
+                                                    <div class="d-flex align-items-end">
+                                                        <span class="material-icons text-dark-100 d-flex">download</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="mt-3">
+                                                <button type="button" data-bs-toggle="modal" data-bs-target="#freelnacerHostingRaisIssueModal" class=" fs-6 btn-sm btn-dark text-white border-0  rounded-pill w-100">Raise an Issue</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Check Review Deliverables. -->
+                                    <div class="card border-2 border-dark-100 border-radius-16 mt-4">
+                                        <div class="card-header py-3 bg-transparent text-dark fw-bold fs-5 d-flex align-items-center border-0">
+                                            <span class="material-icons text-dark me-2 fs-4 rounded-circle p-1">category</span>
+                                            Check Review Deliverables
+                                        </div>
+                                        <div class="card-body pt-0">
+                                            <div class="text-dark">
+                                                This project is designed to enhance user engagement through an intuitive interface and optimized performance. Our goal is to deliver a scalable and efficient solution tailored to your requirements.
+                                            </div>
+                                            <div class="mt-2">
+                                                <a class="p-1 mt-2 px-2  deliverables-download border-bottom border-dark-100 text-decoration-none fw-500 d-flex justify-content-between align-items-center w-100" href="">
+                                                    <div class="text-dark fw-bold">Documentation</div>
+                                                    <div class="d-flex align-items-end">
+                                                        <span class="material-icons text-dark-100 d-flex">download</span>
+                                                    </div>
+                                                </a>
+                                                <a class="p-1 mt-2 px-2  deliverables-download border-bottom border-dark-100 text-decoration-none fw-500 d-flex justify-content-between align-items-center w-100" href="">
+                                                    <div class="text-dark fw-bold">Other Attachments</div>
+                                                    <div class="d-flex align-items-end">
+                                                        <span class="material-icons text-dark-100 d-flex">download</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="bg-success-600 fw-500 text-dark border-radius-16 p-3 mt-2">
+                                                <p>
+                                                    Please review your project details carefully. If everything is accurate, kindly approve the project.
+                                                </p>
+                                                <div class="d-flex mt-3">
+                                                    <button type="button" class="btn-sm fs-6 btn-danger-300 border-0  rounded-pill w-100" data-bs-toggle="modal" data-bs-target="#reviewDeclineModal">Decline</button>
+                                                    <button type="button" id="fp_review_approve_btn" class="ms-3 fs-6 btn-sm btn-dark text-white border-0  rounded-pill w-100">Approve</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section> 
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Freelancer Reviewer Proposals -->
+                <div class="tab-pane fade" id="reviewer-proposals" role="tabpanel" aria-labelledby="reviewer-proposals">
+                    <div class="container-fluid px-5">
+                        <!-- Card start -->
+                        <div class="card bg-white border-radius-16 border-primary-600 mt-3">
+                        <div class="row m-0">
+                            <div class="col-12 col-md-8 p-4">
+                                <div class="d-flex justify-content-between flex-column h-100">
+                                    <div class="d-flex justify-content-between">
+                                    <div class="d-flex">
+                                        <div class="proposal-card-img">
+                                            <img src="assets/avatar.jpg" alt="">
+                                        </div>
+                                        <div class="ms-3">
+                                            <div class="fs-4 fw-bold text-dark">Tony Stark</div>
+                                            <div class=" text-dark-300">UI UX Designer</div>
+                                            <div class=" text-dark-300">Experience - 2 Year</div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="badge px-3 py-2 bg-dark rounded-pill fs-6">Solvify Developer</div>
+                                    </div>
+                                    </div>
+                                    <div class="text-dark-100 mt-3 text-container">
+                                        <p class="text-content mb-0">
+                                            Lorem, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam architecto consectetur voluptatibus inventore eius iste fugit necessitatibus, iure ullam quisquam nisi ea amet neque, dolore atque recusandae obcaecati, tenetur labore voluptatem ipsa debitis rerum quibusdam totam reprehenderit. Temporibus consequuntur incidunt perferendis saepe rerum, reiciendis modi adipisci ducimus sunt? Qui, molestiae.  ipsum dolor sit amet consectetur adipisicing elit. Sapiente optio nihil cum consequuntur quis rem debitis velit reprehenderit pariatur molestias fugit
+                                        </p>
+                                        <button class="read-more border-0 bg-transparent text-primary-300 p-0 d-none" type="button  ">read more</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 p-0 border-start border-dark-500">
+                                <div class="d-flex justify-content-between p-4 border-bottom border-dark-500">
+                                    <div class="text-primary fw-bold">Rating</div>
+                                    <div class="d-flex">
+                                        <div>
+                                            <span class="material-icons text-info">star</span>
+                                        </div>
+                                        <div>
+                                            <span class="material-icons text-info">star</span>
+                                        </div>
+                                        <div>
+                                            <span class="material-icons text-info">star</span>
+                                        </div>
+                                        <div>
+                                            <span class="material-icons text-info">star</span>
+                                        </div>
+                                        <div>
+                                            <span class="material-icons text-dark-500">star_border</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between p-4 border-bottom border-dark-500">
+                                    <div class="text-primary fw-bold">Price</div>
+                                    <div class="text-dark fw-bold">1200 INR</div>
+                                </div>
+                                <div class="d-flex justify-content-between p-4 border-bottom border-dark-500">
+                                    <div class="text-primary fw-bold">Time</div>
+                                    <div class="text-dark fw-bold">10 Days</div>
+                                </div>
+                                <div class="d-flex justify-content-center p-4">
+                                    <button type="button" id="reviewer_offer_btn_1" class=" w-100 btn btn-primary-100 border-0 rounded-pill">
+                                        Offer Project
+                                    </button>
+                                    <div class="disabled w-100 btn btn-success-100 text-white border-0 rounded-pill d-none" id="reviewer_requested_badge_1">Requested</div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- empty proposals -->
+                    <div class="container-fluid d-flex justify-content-between align-items-center empty-message-container">
+                    <div class="text-primary-200 w-100 fw-500 text-center">No proposal yet!</div>
+                    </div>
+                </div>
+
+                <!--  Freelancer - Assigned Reviewer  -->
+                <div class="tab-pane fade" id="assigned-reviewer" role="tabpanel" aria-labelledby="assigned-reviewer">
+                    <div class="row m-0 mb-5">
+                        <!-- sidebar -->
+                          <div class="col-12 col-lg-3 d-none d-lg-block freelancer-small-profile">
+                              <div class="card border-0 profile-sidebar position-relative">
+                                <!-- chat room open button -->
+                                <div class="position-absolute profile-sidebar-chat-btn d-block d-lg-none">
+                                    <button  type="button"  class="ms-3 bg-primary-800 p-0 rounded-circle border-0  d-flex align-items-center justify-content-center profile-social-link chat-with-freelancer" title="Chat with freelancer">
+                                        <span class="material-icons text-primary-100 fs-5 d-flex align-items-center rounded-circle justify-content-center">forum</span>
+                                    </button>
+                                </div>
+                                  <div class="d-flex align-items-center flex-column pt-4">
+                                      <!-- profile pivture -->
+                                      <div class="ratio ratio-1x1 rounded-circle profile-image w-50 overflow-hidden border mt-4 mb-2" >
+                                          <img src="assets/doc-with-face.jpg" alt="" class="">
+                                      </div>
+                                      <!-- Owner Name and email -->
+                                      <div class=" text-center">
+                                          <div class="fs-5 fw-bold text-primary-100">Owner Max</div>
+                                          <div class="fs-6  text-dark-200">Owner Max</div>
+                                      </div>
+                                      
+                                  </div>
+                                  <div class="mt-4">
+                                      <div class="profile-info-label d-flex align-items-center py-2 m-0 border-3 border-bottom border-primary-800 ">
+                                          <div class=" fw-bold text-dark-100" title="Date of Birth">
+                                            <span class="material-icons fs-4 d-flex align-items-center rounded-circle justify-content-center" >cake</span>
+                                          </div>
+                                          <div class="ms-2 text-dark-200 text-end ">12-10-2003</div>
+                                      </div>
+                                      <div class="profile-info-label d-flex align-items-center py-2 m-0 border-3 border-bottom border-primary-800 ">
+                                          <div class=" fw-bold text-dark-100" title="Male">
+                                            <span class="material-icons fs-4 d-flex align-items-center rounded-circle justify-content-center" >male</span>
+                                          </div>
+                                          <div class="ms-2 text-dark-200 text-end">Male</div>
+                                      </div>
+                                      <div class="my-4 w-100">
+                                          <div class="w-100 text-center text-dark-100 fw-bold fs-5">Verification</div>
+                                      </div>
+              
+                                      <div class="profile-info-label d-flex align-items-center justify-content-between py-2 m-0 border-3 border-bottom border-primary-800 ">
+                                          <div class="d-flex align-items-center">
+                                              <div class=" fw-bold text-dark-100" title="Identity">
+                                                  <span class="material-icons fs-4 d-flex align-items-center rounded-circle justify-content-center" >person</span>
+                                                </div>
+                                                <div class="ms-2 text-dark-200 fw-500 text-end">identity Verified</div>
+                                          </div>
+                                          <div class="">
+                                              <span class="material-icons d-flex align-items-center text-success fs-4">done</span>
+                                          </div>
+                                      </div>
+                                      <div class="profile-info-label d-flex align-items-center justify-content-between py-2 m-0 border-3 border-bottom border-primary-800 ">
+                                          <div class="d-flex align-items-center">
+                                              <div class=" fw-bold text-dark-100" title="Mail">
+                                                  <span class="material-icons fs-4 d-flex align-items-center rounded-circle justify-content-center" >mail</span>
+                                                </div>
+                                                <div class="ms-2 text-dark-200 fw-500 text-end">Email Verified</div>
+                                          </div>
+                                          <div class="">
+                                              <span class="material-icons d-flex align-items-center text-danger fs-4">close</span>
+                                          </div>
+                                      </div>
+                                      <div class="profile-info-label d-flex align-items-center justify-content-between py-2 m-0 border-3 border-bottom border-primary-800 ">
+                                          <div class="d-flex align-items-center">
+                                              <div class=" fw-bold text-dark-100" title="Contact">
+                                                  <span class="material-icons fs-4 d-flex align-items-center rounded-circle justify-content-center" >local_phone</span>
+                                                </div>
+                                                <div class="ms-2 text-dark-200 fw-500 text-end">Contact Verified</div>
+                                          </div>
+                                          <div class="">
+                                              <span class="material-icons d-flex align-items-center text-danger fs-4">close</span>
+                                          </div>
+                                      </div>
+                                      <div class="profile-info-label d-flex align-items-center justify-content-between py-2 m-0 border-3 border-bottom border-primary-800 ">
+                                          <div class="d-flex align-items-center">
+                                              <div class=" fw-bold text-dark-100" title="Payment">
+                                                  <span class="material-icons fs-4 d-flex align-items-center rounded-circle justify-content-center" >payment</span>
+                                                </div>
+                                                <div class="ms-2 text-dark-200 fw-500 text-end">payment Verified</div>
+                                          </div>
+                                          <div class="">
+                                              <span class="material-icons d-flex align-items-center text-danger fs-4">close</span>
+                                          </div>
+                                      </div>
+                                      
+                                      <!-- logout button -->
+                                       <div class="px-4 my-4 ">
+                                       </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- Assigned Reviewer Chat Room  -->
+                          <div class="col-12 col-lg-9 freelancer-chat-room">
+                            <div class="card mt-4 mt-md-0  profile-card overflow-hidden border-0">
+                              <div class="card-header p-3 d-flex  align-items-center border-bottom border-3 border-primary-800 text-center  bg-white">
+                                <div class="card-title mb-0 d-flex justify-content-between w-100">
+                                  <button type="button" class="d-flex align-items-center d-lg-none border-0 bg-transparent freelancer-profile-open">
+                                    <div class="">
+                                        <img src="assets/avatar2.jpg" class="rounded-circle chat-profile-img" alt="">
+                                    </div>
+                                    <div class="ps-2">
+                                        <div class="text-dark-100 fw-bold">Tori Stark</div>
+                                    </div>
+                                  </button>
+                                  <div class="text-primary-100 fw-500 fs-5 text-center">Chat With Reviewer</div>
+                                </div>
+                              </div>
+                              <div class="card-body chat-messages-area d-flex p-3">
+                               <div class="d-flex flex-column w-100" id="freelancer-reviewer-chat-box">
+                                <!-- timeline divider -->
+                                <div class="my-2 d-flex align-items-center justify-content-evenly">
+                                    <div  class="border border border-dark-600 w-100"></div>
+                                    <div class="text-dark-100 fw-bold fs-6 px-3">Today</div>
+                                    <div class=" border border-dark-600 w-100"></div>
+                                </div>
+                                <!-- message reply-->
+                                 <div class="d-flex mb-3 ">
+                                    <div class="">
+                                        <img src="assets/avatar.jpg" class="rounded-circle chat-profile-img" alt="">
+                                    </div>
+                                    <div class="ps-2">
+                                        <div class="text-dark-100 fw-bold">Tony Stark</div>
+                                        <div class="text-dark-400 fs-6">12min ago</div>
+                                        <div class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero error et deleniti facere dolorum molestiae deserunt iure blanditiis iste vitae?</div>
+                                    </div>
+                                 </div>
+                                <!-- message -->
+                                 <div class="d-flex mb-3">
+                                    <div class="">
+                                        <img src="assets/avatar2.jpg" class="rounded-circle chat-profile-img" alt="">
+                                    </div>
+                                    <div class="ps-2">
+                                        <div class="text-dark-100 fw-bold">Tori Stark</div>
+                                        <div class="text-dark-400 fs-6">14min ago</div>
+                                        <div class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero error et deleniti facere dolorum molestiae deserunt iure blanditiis iste vitae?</div>
+                                    </div>
+                                 </div>
+                               
+                               </div>
+                              </div>
+                              <div class="card-footer bg-white border-0 py-3">
+                                <form class="p-1 bg-primary-800 rounded-pill" id="freelancer_reviewer_chat_form">
+                                    <div class="d-flex align-items-center w-100">
+                                        <label class="w-100">
+                                            <input type="text" class="form-control bg-transparent chat-message-field border-0 w-100" name="freelancer_reviewer_chat_input" id="freelancer_reviewer_chat_input" placeholder="message">
+                                        </label>
+                                        <div class="">
+                                            <button type="submit" class="d-flex align-items-center btn btn-primary-300 border-0 rounded-pill">
+                                                <span class="material-icons">send</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                
+                <!--Freelancer - Hoster Proposals -->
+                <div class="tab-pane fade" id="hoster-proposals" role="tabpanel" aria-labelledby="hoster-proposals">
+                    <div class="container-fluid px-5">
+                        <!-- Card start -->
+                        <div class="card bg-white border-radius-16 border-primary-600 mt-3">
+                        <div class="row m-0">
+                            <div class="col-12 col-md-8 p-4">
+                                <div class="d-flex justify-content-between flex-column h-100">
+                                    <div class="d-flex justify-content-between">
+                                    <div class="d-flex">
+                                        <div class="proposal-card-img">
+                                            <img src="assets/avatar.jpg" alt="">
+                                        </div>
+                                        <div class="ms-3">
+                                            <div class="fs-4 fw-bold text-dark">Tony Stark</div>
+                                            <div class=" text-dark-300">UI UX Designer</div>
+                                            <div class=" text-dark-300">Experience - 2 Year</div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="badge px-3 py-2 bg-dark rounded-pill fs-6">Solvify Developer</div>
+                                    </div>
+                                    </div>
+                                    <div class="text-dark-100 mt-3 text-container">
+                                        <p class="text-content mb-0">
+                                            Lorem, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam architecto consectetur voluptatibus inventore eius iste fugit necessitatibus, iure ullam quisquam nisi ea amet neque, dolore atque recusandae obcaecati, tenetur labore voluptatem ipsa debitis rerum quibusdam totam reprehenderit. Temporibus consequuntur incidunt perferendis saepe rerum, reiciendis modi adipisci ducimus sunt? Qui, molestiae.  ipsum dolor sit amet consectetur adipisicing elit. Sapiente optio nihil cum consequuntur quis rem debitis velit reprehenderit pariatur molestias fugit
+                                        </p>
+                                        <button class="read-more border-0 bg-transparent text-primary-300 p-0 d-none" type="button  ">read more</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 p-0 border-start border-dark-500">
+                                <div class="d-flex justify-content-between p-4 border-bottom border-dark-500">
+                                    <div class="text-primary fw-bold">Rating</div>
+                                    <div class="d-flex">
+                                        <div>
+                                            <span class="material-icons text-info">star</span>
+                                        </div>
+                                        <div>
+                                            <span class="material-icons text-info">star</span>
+                                        </div>
+                                        <div>
+                                            <span class="material-icons text-info">star</span>
+                                        </div>
+                                        <div>
+                                            <span class="material-icons text-info">star</span>
+                                        </div>
+                                        <div>
+                                            <span class="material-icons text-dark-500">star_border</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between p-4 border-bottom border-dark-500">
+                                    <div class="text-primary fw-bold">Price</div>
+                                    <div class="text-dark fw-bold">1200 INR</div>
+                                </div>
+                                <div class="d-flex justify-content-between p-4 border-bottom border-dark-500">
+                                    <div class="text-primary fw-bold">Time</div>
+                                    <div class="text-dark fw-bold">10 Days</div>
+                                </div>
+                                <div class="d-flex justify-content-center p-4">
+                                    <button type="button" id="hoster_offer_btn_1" class=" w-100 btn btn-primary-100 border-0 rounded-pill">
+                                        Offer Project
+                                    </button>
+                                    <div class="disabled w-100 btn btn-success-100 text-white border-0 rounded-pill d-none" id="hoster_requested_badge_1">Requested</div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- empty proposals -->
+                    <div class="container-fluid d-flex justify-content-between align-items-center empty-message-container">
+                    <div class="text-primary-200 w-100 fw-500 text-center">No proposal yet!</div>
+                    </div>
+                </div>
+                
+                <!--  Freelancer - Assigned Hoster -->
+                <div class="tab-pane fade" id="assigned-hoster" role="tabpanel" aria-labelledby="assigned-hoster">
+                    <div class="row m-0 mb-5">
+                        <!-- sidebar -->
+                          <div class="col-12 col-lg-3 d-none d-lg-block freelancer-small-profile">
+                              <div class="card border-0 profile-sidebar position-relative">
+                                <!-- chat room open button -->
+                                <div class="position-absolute profile-sidebar-chat-btn d-block d-lg-none">
+                                    <button  type="button"  class="ms-3 bg-primary-800 p-0 rounded-circle border-0  d-flex align-items-center justify-content-center profile-social-link chat-with-freelancer" title="Chat with freelancer">
+                                        <span class="material-icons text-primary-100 fs-5 d-flex align-items-center rounded-circle justify-content-center">forum</span>
+                                    </button>
+                                </div>
+                                  <div class="d-flex align-items-center flex-column pt-4">
+                                      <!-- profile pivture -->
+                                      <div class="ratio ratio-1x1 rounded-circle profile-image w-50 overflow-hidden border mt-4 mb-2" >
+                                          <img src="assets/doc-with-face.jpg" alt="" class="">
+                                      </div>
+                                      <!-- Owner Name and email -->
+                                      <div class=" text-center">
+                                          <div class="fs-5 fw-bold text-primary-100">Owner Max</div>
+                                          <div class="fs-6  text-dark-200">Owner Max</div>
+                                      </div>
+                                  </div>
+                                  <div class="mt-4">
+                                      <div class="profile-info-label d-flex align-items-center py-2 m-0 border-3 border-bottom border-primary-800 ">
+                                          <div class=" fw-bold text-dark-100" title="Date of Birth">
+                                            <span class="material-icons fs-4 d-flex align-items-center rounded-circle justify-content-center" >cake</span>
+                                          </div>
+                                          <div class="ms-2 text-dark-200 text-end ">12-10-2003</div>
+                                      </div>
+                                      <div class="profile-info-label d-flex align-items-center py-2 m-0 border-3 border-bottom border-primary-800 ">
+                                          <div class=" fw-bold text-dark-100" title="Male">
+                                            <span class="material-icons fs-4 d-flex align-items-center rounded-circle justify-content-center" >male</span>
+                                          </div>
+                                          <div class="ms-2 text-dark-200 text-end">Male</div>
+                                      </div>
+                                      
+                                      <div class="my-4 w-100">
+                                          <div class="w-100 text-center text-dark-100 fw-bold fs-5">Verification</div>
+                                      </div>
+              
+                                      <div class="profile-info-label d-flex align-items-center justify-content-between py-2 m-0 border-3 border-bottom border-primary-800 ">
+                                          <div class="d-flex align-items-center">
+                                              <div class=" fw-bold text-dark-100" title="Identity">
+                                                  <span class="material-icons fs-4 d-flex align-items-center rounded-circle justify-content-center" >person</span>
+                                                </div>
+                                                <div class="ms-2 text-dark-200 fw-500 text-end">identity Verified</div>
+                                          </div>
+                                          <div class="">
+                                              <span class="material-icons d-flex align-items-center text-success fs-4">done</span>
+                                          </div>
+                                      </div>
+                                      <div class="profile-info-label d-flex align-items-center justify-content-between py-2 m-0 border-3 border-bottom border-primary-800 ">
+                                          <div class="d-flex align-items-center">
+                                              <div class=" fw-bold text-dark-100" title="Mail">
+                                                  <span class="material-icons fs-4 d-flex align-items-center rounded-circle justify-content-center" >mail</span>
+                                                </div>
+                                                <div class="ms-2 text-dark-200 fw-500 text-end">Email Verified</div>
+                                          </div>
+                                          <div class="">
+                                              <span class="material-icons d-flex align-items-center text-danger fs-4">close</span>
+                                          </div>
+                                      </div>
+                                      <div class="profile-info-label d-flex align-items-center justify-content-between py-2 m-0 border-3 border-bottom border-primary-800 ">
+                                          <div class="d-flex align-items-center">
+                                              <div class=" fw-bold text-dark-100" title="Contact">
+                                                  <span class="material-icons fs-4 d-flex align-items-center rounded-circle justify-content-center" >local_phone</span>
+                                                </div>
+                                                <div class="ms-2 text-dark-200 fw-500 text-end">Contact Verified</div>
+                                          </div>
+                                          <div class="">
+                                              <span class="material-icons d-flex align-items-center text-danger fs-4">close</span>
+                                          </div>
+                                      </div>
+                                      <div class="profile-info-label d-flex align-items-center justify-content-between py-2 m-0 border-3 border-bottom border-primary-800 ">
+                                          <div class="d-flex align-items-center">
+                                              <div class=" fw-bold text-dark-100" title="Payment">
+                                                  <span class="material-icons fs-4 d-flex align-items-center rounded-circle justify-content-center" >payment</span>
+                                                </div>
+                                                <div class="ms-2 text-dark-200 fw-500 text-end">payment Verified</div>
+                                          </div>
+                                          <div class="">
+                                              <span class="material-icons d-flex align-items-center text-danger fs-4">close</span>
+                                          </div>
+                                      </div>
+                                      
+                                      <!-- logout button -->
+                                       <div class="px-4 my-4 ">
+                                       </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- Assigned hoster Chat Room  -->
+                          <div class="col-12 col-lg-9 freelancer-chat-room">
+                            <div class="card mt-4 mt-md-0  profile-card overflow-hidden border-0">
+                              <div class="card-header p-3 d-flex  align-items-center border-bottom border-3 border-primary-800 text-center  bg-white">
+                                <div class="card-title mb-0 d-flex justify-content-between w-100">
+                                  <button type="button" class="d-flex align-items-center d-lg-none border-0 bg-transparent freelancer-profile-open">
+                                    <div class="">
+                                        <img src="assets/avatar2.jpg" class="rounded-circle chat-profile-img" alt="">
+                                    </div>
+                                    <div class="ps-2">
+                                        <div class="text-dark-100 fw-bold">Tori Stark</div>
+                                    </div>
+                                  </button>
+                                  <div class="text-primary-100 fw-500 fs-5 text-center">Chat With Hoster</div>
+                                </div>
+                              </div>
+                              <div class="card-body chat-messages-area d-flex p-3">
+                               <div class="d-flex flex-column w-100" id="freelancer-hoster-chat-box">
+                                <!-- timeline divider -->
+                                <div class="my-2 d-flex align-items-center justify-content-evenly">
+                                    <div  class="border border border-dark-600 w-100"></div>
+                                    <div class="text-dark-100 fw-bold fs-6 px-3">Today</div>
+                                    <div class=" border border-dark-600 w-100"></div>
+                                </div>
+                                <!-- message reply-->
+                                 <div class="d-flex mb-3 ">
+                                    <div class="">
+                                        <img src="assets/avatar.jpg" class="rounded-circle chat-profile-img" alt="">
+                                    </div>
+                                    <div class="ps-2">
+                                        <div class="text-dark-100 fw-bold">Tony Stark</div>
+                                        <div class="text-dark-400 fs-6">12min ago</div>
+                                        <div class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero error et deleniti facere dolorum molestiae deserunt iure blanditiis iste vitae?</div>
+                                    </div>
+                                 </div>
+                                <!-- message -->
+                                 <div class="d-flex mb-3">
+                                    <div class="">
+                                        <img src="assets/avatar2.jpg" class="rounded-circle chat-profile-img" alt="">
+                                    </div>
+                                    <div class="ps-2">
+                                        <div class="text-dark-100 fw-bold">Tori Stark</div>
+                                        <div class="text-dark-400 fs-6">14min ago</div>
+                                        <div class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero error et deleniti facere dolorum molestiae deserunt iure blanditiis iste vitae?</div>
+                                    </div>
+                                 </div>
+                               
+                               </div>
+                              </div>
+                              <div class="card-footer bg-white border-0 py-3">
+                                <form class="p-1 bg-primary-800 rounded-pill" id="freelancer_hoster_chat_form">
+                                    <div class="d-flex align-items-center w-100">
+                                        <label class="w-100">
+                                            <input type="text" class="form-control bg-transparent chat-message-field border-0 w-100" name="freelancer_hoster_chat_input" id="freelancer_hoster_chat_input" placeholder="message">
+                                        </label>
+                                        <div class="">
+                                            <button type="submit" class="d-flex align-items-center btn btn-primary-300 border-0 rounded-pill">
+                                                <span class="material-icons">send</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+                <!-- Solvify Assigned Reviewer Start-->
+                <div class="tab-pane fade" id="assigned-solvify-reviewer" role="tabpanel" aria-labelledby="assigned-solvify-reviewer-tab">
+                    <div class="container-fluid text-dark-300 m-0 py-5 my-5 text-center">
+                        💻Reviewer Not Assigned Yet!
+                    </div>
+                    <div class="row m-0 mb-5">
+                        <!-- Chat With Solvify Reviewer  -->
+                        <div class="col-12 freelancer-chat-room">
+                            <div class="card mt-4 mt-md-0  profile-card overflow-hidden border-0">
+                                <div class="card-header p-3 d-flex  align-items-center border-bottom border-3 border-primary-800 text-center  bg-white">
+                                    <div class="card-title mb-0 d-flex justify-content-between w-100">
+                                        <button type="button" class="d-flex align-items-center d-lg-none border-0 bg-transparent freelancer-profile-open">
+                                            <div class="">
+                                                    <img src="assets/avatar2.jpg" class="rounded-circle chat-profile-img" alt="">
+                                            </div>
+                                            <div class="ps-2">
+                                                    <div class="text-dark-100 fw-bold">Tori Stark</div>
+                                            </div>
+                                        </button>
+                                        <div class="text-primary-100 fw-500 fs-5 text-center">Chat With Reviewer</div>
+                                    </div>
+                                </div>
+                                <div class="card-body chat-messages-area d-flex p-3">
+                                    <div class="d-flex flex-column w-100" id="reviewer-chat-box">
+                                    <!-- timeline divider -->
+                                    <div class="my-2 d-flex align-items-center justify-content-evenly w-100">
+                                            <div  class="border border border-dark-600 w-100"></div>
+                                            <div class="text-dark-100 fw-bold fs-6 px-3">Today</div>
+                                            <div class=" border border-dark-600 w-100"></div>
+                                    </div>
+                                    <!-- message reply-->
+                                        <div class="d-flex mb-3 ">
+                                            <div class="">
+                                                    <img src="assets/avatar.jpg" class="rounded-circle chat-profile-img" alt="">
+                                            </div>
+                                            <div class="ps-2">
+                                                <div class="text-dark-100 fw-bold">Tony Stark</div>
+                                                <div class="text-dark-400 fs-6">12min ago</div>
+                                                <div class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero error et deleniti facere dolorum molestiae deserunt iure blanditiis iste vitae?</div>
+                                            </div>
+                                        </div>
+                                    <!-- message -->
+                                        <div class="d-flex mb-3">
+                                            <div class="">
+                                                    <img src="assets/avatar2.jpg" class="rounded-circle chat-profile-img" alt="">
+                                            </div>
+                                            <div class="ps-2">
+                                                <div class="text-dark-100 fw-bold">Tori Stark</div>
+                                                <div class="text-dark-400 fs-6">14min ago</div>
+                                                <div class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero error et deleniti facere dolorum molestiae deserunt iure blanditiis iste vitae?</div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white border-0 py-3">
+                                    <form class="p-1 bg-primary-800 rounded-pill" id="reviewer_chat_form">
+                                        <div class="d-flex align-items-center w-100">
+                                            <label class="w-100">
+                                                <input type="text" class="form-control bg-transparent chat-message-field border-0 w-100" name="reviewer_chat_input" id="reviewer_chat_input" placeholder="message">
+                                            </label>
+                                            <div class="">
+                                                <button type="submit" class="d-flex align-items-center btn btn-primary-300 border-0 rounded-pill">
+                                                        <span class="material-icons">send</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Solvify Assigned Reviewer end -->
+                
+                <!-- Solvify Assigned Hoster Start -->
+                <div class="tab-pane fade" id="assigned-solvify-hoster" role="tabpanel" aria-labelledby="assigned-solvify-hoster-tab">
+                    <div class="container-fluid text-dark-300 m-0 py-5 my-5 text-center">
+                        👩‍💻Hoster Not Assigned Yet!
+                    </div>
+                    <div class="row m-0 mb-5">
+                        <!-- Chat With Solvify Developer  -->
+                        <div class="col-12 hoster-chat-room">
+                            <div class="card mt-4 mt-md-0  profile-card overflow-hidden border-0">
+                                <div class="card-header p-3 d-flex  align-items-center border-bottom border-3 border-primary-800 text-center  bg-white">
+                                    <div class="card-title mb-0 d-flex justify-content-between w-100">
+                                        <button type="button" class="d-flex align-items-center d-lg-none border-0 bg-transparent freelancer-profile-open">
+                                            <div class="">
+                                                <img src="assets/avatar2.jpg" class="rounded-circle chat-profile-img" alt="">
+                                            </div>
+                                            <div class="ps-2">
+                                                <div class="text-dark-100 fw-bold">Tori Stark</div>
+                                            </div>
+                                        </button>
+                                        <div class="text-primary-100 fw-500 fs-5 text-center">Chat With Hoster</div>
+                                    </div>
+                                </div>
+                                <div class="card-body chat-messages-area d-flex p-3">
+                                    <div class="d-flex flex-column w-100" id="hoster-chat-box">
+                                    <!-- timeline divider -->
+                                    <div class="my-2 d-flex align-items-center justify-content-evenly w-100">
+                                        <div  class="border border border-dark-600 w-100"></div>
+                                        <div class="text-dark-100 fw-bold fs-6 px-3">Today</div>
+                                        <div class=" border border-dark-600 w-100"></div>
+                                    </div>
+                                    <!-- message reply-->
+                                        <div class="d-flex mb-3 ">
+                                            <div class="">
+                                                    <img src="assets/avatar.jpg" class="rounded-circle chat-profile-img" alt="">
+                                            </div>
+                                            <div class="ps-2">
+                                                <div class="text-dark-100 fw-bold">Tony Stark</div>
+                                                <div class="text-dark-400 fs-6">12min ago</div>
+                                                <div class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero error et deleniti facere dolorum molestiae deserunt iure blanditiis iste vitae?</div>
+                                            </div>
+                                        </div>
+                                    <!-- message -->
+                                        <div class="d-flex mb-3">
+                                            <div class="">
+                                                    <img src="assets/avatar2.jpg" class="rounded-circle chat-profile-img" alt="">
+                                            </div>
+                                            <div class="ps-2">
+                                                <div class="text-dark-100 fw-bold">Tori Stark</div>
+                                                <div class="text-dark-400 fs-6">14min ago</div>
+                                                <div class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero error et deleniti facere dolorum molestiae deserunt iure blanditiis iste vitae?</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white border-0 py-3">
+                                    <form class="p-1 bg-primary-800 rounded-pill" id="hoster_chat_form">
+                                        <div class="d-flex align-items-center w-100">
+                                            <label class="w-100">
+                                                <input type="text" class="form-control bg-transparent chat-message-field border-0 w-100" name="hoster_chat_input" id="hoster_chat_input" placeholder="message">
+                                            </label>
+                                            <div class="">
+                                                <button type="submit" class="d-flex align-items-center btn btn-primary-300 border-0 rounded-pill">
+                                                    <span class="material-icons">send</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Solvify Assigned Hoster End -->
+              </div>
+          </section>
+        </div>
+    </main>
+ <!-- Customization Details Modal Start -->
+<div class="modal fade" id="editCustomizationDetails" tabindex="-1" aria-labelledby="editCustomizationDetailsLabel" aria-hidden="true">
+	<div class="modal-dialog modal-xl modal-fullscreen-lg-down">
+		<div class="modal-content">
+		<div class="modal-header mx-4 mt-2">
+			<h5 class="modal-title" id="editCustomizationDetailsLabel">Customization Details</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body px-0 px-sm-3">
+			<!-- form -->
+			<form action="" class="px-3" id="editCustomizationDetailsForm">
+			<div class="row m-0">
+				<div class="col-12 col-lg-6 ps-0 pe-0 pe-lg-4">
+					<div class=" my-3 ">
+						<label for="editBudgetCustomization" class="text-primary-100 fs-6 fw-bold">Budget (in INR) *</label>
+						<input class="form-control w-100" type="number" name="editBudgetCustomization" maxlength="10" id="editBudgetCustomization" placeholder="10000">
+						<div class="text-dark-200 fs-6">Our Recommended Budget: 9317.00</div>
+					</div>
+					<div class=" my-3 ">
+						<label for="editTimeOFCustomization" class="text-primary-100 fs-6 fw-bold">Time Limit (in Days) *</label>
+						<input class="form-control w-100" type="number" name="editTimeOFCustomization" maxlength="2" id="editTimeOFCustomization" placeholder="2">
+						<div class="text-dark-200 fs-6">Our Estimated Time Limit: 11 days</div>
+					</div>
+					<div class=" my-3 ">
+						<label for="editProjectCustomizationAttactment" class="text-primary-100 fs-6 fw-bold">Attachment <span class="text-dark-400">(optional)</span></label>
+						<input class="form-control w-100" type="file" name="editProjectCustomizationAttactment" id="editProjectCustomizationAttactment">
+						<div class="text-dark-200 fs-6">Submit your requirements (allowed file type : .pdf, .txt, .doc, .docx)</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6 ps-0 pe-0 pe-lg-2 ps-lg-4">
+					<div class=" my-2 w-100">
+					<label for="editDescriptionOfCustomization" class="text-primary-100 fs-6 fw-bold">Description *</label>
+					<textarea class="form-control w-100" name="editDescriptionOfCustomization" maxlength="1000" id="editDescriptionOfCustomization" placeholder="text your customization details..." rows="8"></textarea>
+					</div>
+				</div>
+				</div>
+			</form>
+		</div>
+		<div class="modal-footer mb-3 mx-4">
+			<button type="button" class="me-2 btn btn-outline-primary-100 rounded-pill border border-primary-100" data-bs-dismiss="modal">Cancel</button>
+			<button type="submit" form="editCustomizationDetailsForm" class="btn btn-primary-100 rounded-pill border-0">Update</button>
+		</div>
+		</div>
+	</div>
+</div>
+<!-- Customization Details Modal End -->
+
+<!-- Hosting Details Modal Start -->
+<div class="modal fade" id="editHostingDetails" tabindex="-1" aria-labelledby="editHostingDetailsLabel" aria-hidden="true">
+	<div class="modal-dialog modal-xl modal-fullscreen-lg-down">
+		<div class="modal-content">
+		<div class="modal-header mx-4 mt-2">
+			<h5 class="modal-title" id="editHostingDetailsLabel">Hosting Details</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body px-0 px-sm-3">
+			<!-- form -->
+			<form action="" class="px-3" id="editHostingDetailsForm">
+			<div class="row m-0">
+				<div class="col-12 col-lg-6 ps-0 pe-0 pe-lg-4">
+					<div class=" my-3 ">
+						<label for="get_hoster" class="text-primary-100 fw-bold fs-6">Hosting Provider </label>
+						<select id="get_hoster" name="get_hoster" class="form-control form-select">
+							<option value="1" selected>AWS</option>
+							<option value="2">Saas</option>
+						</select>
+					</div>
+					<div class=" my-3 ">
+					<label for="editBudgetForHostingFees" class="text-primary-100 fs-6 fw-bold">Budget (in INR) *</label>
+					<input class="form-control w-100" type="number" name="editbudgetForHostingFees" maxlength="10" id="editbudgetForHostingFees" placeholder="10000">
+					<div class="text-dark-200 fs-6">The hosting fee is received by the hoster, but please note that the server cost is not included in this fee. You'll be responsible for covering the server cost separately. ( Our Recommended Budget: 9317.00 )</div>
+					</div>
+					<div class=" my-3 ">
+					<label for="editTimeForHosting" class="text-primary-100 fs-6 fw-bold">Time Limit (in Days) *</label>
+					<input class="form-control w-100" type="number" name="editTimeForHosting" maxlength="2" id="editTimeForHosting" placeholder="2">
+					<div class="text-dark-200 fs-6">Our Estimated Time Limit: 11 days</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6 ps-0 pe-0 pe-lg-2 ps-lg-4">
+					<div class=" my-2 w-100">
+					<label for="editDescriptionForHosting" class="text-primary-100 fs-6 fw-bold">Description*</label>
+					<textarea class="form-control w-100" name="editDescriptionForHosting" maxlength="1000" id="editDescriptionForHosting" placeholder="text your customization details..." rows="8"></textarea>
+					</div>
+				</div>
+				</div>
+			</form>
+		</div>
+		<div class="modal-footer mb-3 mx-4">
+			<button type="button" class="me-2 btn btn-outline-primary-100 rounded-pill border border-primary-100" data-bs-dismiss="modal">Cancel</button>
+			<button type="submit" form="editHostingDetailsForm" class="btn btn-primary-100 rounded-pill border-0">Update</button>
+		</div>
+		</div>
+	</div>
+</div>
+<!-- Hosting Details Modal End -->
+ 
+<!-- image upload modal start -->
+<div class="modal fade" id="imageMessage2" tabindex="-1" aria-labelledby="imageMessageLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-fullscreen-lg-down">
+        <div class="modal-content">
+            <div class="modal-header mx-2 mx-sm-4 mt-0 mt-sm-2">
+                <h5 class="modal-title" id="imageMessageLabel">Image Upload</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body px-3 px-sm-3 ">
+                <!-- form -->
+                <form action="" class="mx-0 mx-sm-4" id="imageUploadForm" enctype="multipart/form-data">
+                    <div class="w-100 d-flex flex-wrap flex-column flex-lg-row justify-content-evenly align-items-center align-items-lg-start step-container">
+                        <div class=" my-2 w-100">
+                            <label for="imageInput" class="text-primary-100 fs-6 fw-bold">Image*</label>
+                            <input type="file" id="imageInput" name="imageInput" class="form-control w-100" accept=".jpg,.jpeg,.png" >
+                    </div>
+                    <div class=" my-2 w-100">
+                        <label class="text-primary-100 fs-6 fw-bold" for="image_description">Image Description*</label>
+                        <textarea class="form-control  fs-6" name="image_description" maxlength="500" id="image_description" placeholder="Text Your descriptions..." rows="10"></textarea>
+                    </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer mb-0 mb-sm-3 mx-2 mx-sm-4">
+                <button type="button" class="btn btn-outline-primary-100 rounded-pill border border-primary-100" data-bs-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn btn-primary-100 rounded-pill border-0" form="imageUploadForm" id="update-personal-info-btn">Upload</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- image upload modal start end-->
+
+ <!--Solvify Hosting Decline Modal Start -->
+<div class="modal fade" id="declineModal" tabindex="-1" aria-labelledby="declineModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-fullscreen-lg-down">
+        <div class="modal-content">
+            <div class="modal-header mx-2 mx-sm-4 mt-0 mt-sm-2">
+                <h5 class="modal-title" id="declineModalLabel">Hosting Decline</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body px-3 px-sm-3 ">
+                <!-- form -->
+                <form action="" class="mx-0 mx-sm-4 decline_forms" id="declineReasonForm" enctype="multipart/form-data">
+                    <div class="row m-0">
+                        <div class="col-12 p-0">
+                            <div class=" ">
+                                <label for="declineReason" class="text-primary-100 fw-bold">Reason *</label>
+                                <textarea class="form-control w-100 h-100" name="declineReason" maxlength="500" id="declineReason" placeholder="Tell your problem..." rows="6"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer mb-0 mb-sm-3 mx-2 mx-sm-4">
+                <button type="button" class="btn btn-outline-primary-100 rounded-pill border border-primary-100" data-bs-dismiss="modal">Cancel</button>
+                <button type="submit" form="declineReasonForm" class="btn btn-danger rounded-pill text-white border-0 decline_submit">Decline</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Solvify Hosting Decline Modal End -->
+
+<!--Solvify Review Decline Modal Start -->
+<div class="modal fade" id="reviewDeclineModal" tabindex="-1" aria-labelledby="reviewDeclineModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-fullscreen-lg-down">
+        <div class="modal-content">
+            <div class="modal-header mx-2 mx-sm-4 mt-0 mt-sm-2">
+                <h5 class="modal-title" id="reviewDeclineModal">Review Decline</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body px-3 px-sm-3 ">
+                <!-- form -->
+                <form action="" class="mx-0 mx-sm-4 decline_forms" id="reviewDeclineReasonForm" enctype="multipart/form-data">
+                    <div class="row m-0">
+                        <div class="col-12 p-0">
+                            <div class=" ">
+                                <label for="reviewDeclineReason" class="text-primary-100 fw-bold">Reason *</label>
+                                <textarea class="form-control w-100 h-100" name="declineReason" maxlength="500" id="reviewDeclineReason" placeholder="Tell your problem..." rows="6"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer mb-0 mb-sm-3 mx-2 mx-sm-4">
+                <button type="button" class="btn btn-outline-primary-100 rounded-pill border border-primary-100" data-bs-dismiss="modal">Cancel</button>
+                <button type="submit" form="reviewDeclineReasonForm" class="btn btn-danger rounded-pill text-white border-0 decline_submit">Decline</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Solvify Review Decline Modal End -->
+
+<!--Solvify Hosting Rais Issue  Modal Start -->
+<div class="modal fade" id="hostingRaisIssueModal" tabindex="-1" aria-labelledby="hostingRaisIssueModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-fullscreen-lg-down">
+        <div class="modal-content">
+            <div class="modal-header mx-2 mx-sm-4 mt-0 mt-sm-2">
+                <h5 class="modal-title" id="hostingRaisIssueModal">Raise An Issue</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body px-3 px-sm-3 ">
+                <!-- form -->
+                <form action="" class="mx-0 mx-sm-4 decline_forms" id="hostingRaiseIssueForm" enctype="multipart/form-data">
+                    <div class="row m-0">
+                        <div class="col-12 p-0">
+                            <div class=" ">
+                                <label for="hostingIssue" class="text-primary-100 fw-bold">Issue Reason *</label>
+                                <textarea class="form-control w-100 h-100" name="issue" maxlength="500" id="hostingIssue" placeholder="Tell your problem..." rows="6"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer mb-0 mb-sm-3 mx-2 mx-sm-4">
+                <button type="button" class="btn btn-outline-primary-100 rounded-pill border border-primary-100" data-bs-dismiss="modal">Cancel</button>
+                <button type="submit" form="hostingRaiseIssueForm" class="btn btn-primary-100 rounded-pill text-white border-0">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Solvify Hosting Rais Issue Modal End -->
+
+<!--freelancer Review Decline Modal Start -->
+<div class="modal fade" id="freelancerReviewDeclineModal" tabindex="-1" aria-labelledby="freelancerReviewDeclineModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-fullscreen-lg-down">
+        <div class="modal-content">
+            <div class="modal-header mx-2 mx-sm-4 mt-0 mt-sm-2">
+                <h5 class="modal-title" id="freelancerReviewDeclineModal">Review Decline</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body px-3 px-sm-3 ">
+                <!-- form -->
+                <form action="" class="mx-0 mx-sm-4 decline_forms" id="freelancerReviewDeclineReasonForm" enctype="multipart/form-data">
+                    <div class="row m-0">
+                        <div class="col-12 p-0">
+                            <div class=" ">
+                                <label for="freelancerReviewDeclineReason" class="text-primary-100 fw-bold">Reason *</label>
+                                <textarea class="form-control w-100 h-100" name="declineReason" maxlength="500" id="freelancerReviewDeclineReason" placeholder="Tell your problem..." rows="6"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer mb-0 mb-sm-3 mx-2 mx-sm-4">
+                <button type="button" class="btn btn-outline-primary-100 rounded-pill border border-primary-100" data-bs-dismiss="modal">Cancel</button>
+                <button type="submit" form="freelancerReviewDeclineReasonForm" class="btn btn-danger rounded-pill text-white border-0 decline_submit">Decline</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--freelancer Review Decline Modal End -->
+
+ <!--Solvify Hosting Decline Modal Start -->
+ <div class="modal fade" id="freelancerHostingDeclineModal" tabindex="-1" aria-labelledby="freelancerHostingDeclineModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-fullscreen-lg-down">
+        <div class="modal-content">
+            <div class="modal-header mx-2 mx-sm-4 mt-0 mt-sm-2">
+                <h5 class="modal-title" id="freelancerHostingDeclineModal">Hosting Decline</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body px-3 px-sm-3 ">
+                <!-- form -->
+                <form action="" class="mx-0 mx-sm-4 decline_forms" id="freelancerHostingDeclineReasonForm" enctype="multipart/form-data">
+                    <div class="row m-0">
+                        <div class="col-12 p-0">
+                            <div class=" ">
+                                <label for="freelancerHostingDeclineReason" class="text-primary-100 fw-bold">Reason *</label>
+                                <textarea class="form-control w-100 h-100" name="declineReason" maxlength="500" id="freelancerHostingDeclineReason" placeholder="Tell your problem..." rows="6"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer mb-0 mb-sm-3 mx-2 mx-sm-4">
+                <button type="button" class="btn btn-outline-primary-100 rounded-pill border border-primary-100" data-bs-dismiss="modal">Cancel</button>
+                <button type="submit" form="freelancerHostingDeclineReasonForm" class="btn btn-danger rounded-pill text-white border-0 decline_submit">Decline</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Solvify Hosting Decline Modal End -->
+
+<!--freelancer Hosting Rais Issue  Modal Start -->
+<div class="modal fade" id="freelnacerHostingRaisIssueModal" tabindex="-1" aria-labelledby="freelnacerHostingRaisIssueModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-fullscreen-lg-down">
+        <div class="modal-content">
+            <div class="modal-header mx-2 mx-sm-4 mt-0 mt-sm-2">
+                <h5 class="modal-title" id="freelnacerHostingRaisIssueModal">Raise An Issue</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body px-3 px-sm-3 ">
+                <!-- form -->
+                <form action="" class="mx-0 mx-sm-4 decline_forms" id="freelnacerHostingRaiseIssueForm" enctype="multipart/form-data">
+                    <div class="row m-0">
+                        <div class="col-12 p-0">
+                            <div class=" ">
+                                <label for="freelancerHostingIssue" class="text-primary-100 fw-bold">Issue Reason *</label>
+                                <textarea class="form-control w-100 h-100" name="issue" maxlength="500" id="freelancerHostingIssue" placeholder="Tell your problem..." rows="6"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer mb-0 mb-sm-3 mx-2 mx-sm-4">
+                <button type="button" class="btn btn-outline-primary-100 rounded-pill border border-primary-100" data-bs-dismiss="modal">Cancel</button>
+                <button type="submit" form="freelnacerHostingRaiseIssueForm" class="btn btn-primary-100 rounded-pill text-white border-0">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- freelancer Hosting Rais Issue Modal End -->
+ 
+<!-- Review Bidding Ended Modal Start -->
+<div class="modal fade" id="reviewerBiddingEnded" tabindex="-1" aria-labelledby="reviewerBiddingEndedLabel" aria-hidden="true">
+	<div class="modal-dialog  modal-fullscreen-md-down">
+		<div class="modal-content">
+			<div class="modal-header mx-2 ">
+				<h5 class="modal-title" id="reviewerBiddingEndedLabel">Reviewer Bidding Ended</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body px-4">
+				<div class="text-dark">
+					<p>
+						If you have received proposals, you can proceed with assigning your project. However, if you haven't received any proposals or are not satisfied with the ones you received, you can restart the bidding process. 
+					</p>
+					<p class="fw-bold">If you start bidding now, it will remain open for the next three days.</p>
+				</div>
+				<div class="bg-info-700 fw-500 text-danger-100 border-radius-10 p-3 mt-2">
+					<p>
+						<span class="fw-bold">NO PROPOSALS REASON :</span> Low budget or less time frame.
+						Consider updating your budget or time limit to get more proposals. 
+					</p>
+				</div>
+				
+				<div class="modal-footer px-0 d-flex align-items-center">
+					<button type="button" class="btn-sm fs-6 btn-outline-primary-100 rounded-pill border border-primary-100" data-bs-dismiss="modal">Close</button>
+					<button type="button" class="btn-sm fs-6 btn-success text-white rounded-pill border-0" id="reviewer_bidding_restart_btn" >Restart</button>
+				</div>
+	  		</div>
+		</div>
+	</div>
+</div>
+<!-- Review Bidding Ended Modal End -->
+
+<!-- Hoster Bidding Ended Modal Start -->
+<div class="modal fade" id="hosterBiddingEnded" tabindex="-1" aria-labelledby="hosterBiddingEndedLabel" aria-hidden="true">
+	<div class="modal-dialog  modal-fullscreen-md-down">
+		<div class="modal-content">
+			<div class="modal-header mx-2 ">
+				<h5 class="modal-title" id="hosterBiddingEndedLabel">Hoster Bidding Ended</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body px-4">
+				<div class="text-dark">
+					<p>
+						If you have received proposals, you can proceed with assigning your project. However, if you haven't received any proposals or are not satisfied with the ones you received, you can restart the bidding process. 
+					</p>
+					<p class="fw-bold">If you start bidding now, it will remain open for the next three days.</p>
+				</div>
+				<div class="bg-info-700 fw-500 text-danger-100 border-radius-10 p-3 mt-2">
+					<p>
+						<span class="fw-bold">NO PROPOSALS REASON :</span> Low budget or less time frame.
+						Consider updating your budget or time limit to get more proposals. 
+					</p>
+				</div>
+				
+				<div class="modal-footer px-0 d-flex align-items-center">
+					<button type="button" class="btn-sm fs-6 btn-outline-primary-100 rounded-pill border border-primary-100" data-bs-dismiss="modal">Close</button>
+					<button type="button" class="btn-sm fs-6 btn-success text-white rounded-pill border-0" id="hoster_bidding_restart_btn" >Restart</button>
+				</div>
+	  		</div>
+		</div>
+	</div>
+</div>
+<!-- Hoster Bidding Ended Modal End -->
+    <script src="JS/single-select.js"></script>
+    <script src="JS/home.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js" integrity="sha512-KFHXdr2oObHKI9w4Hv1XPKc898mE4kgYx58oqsc/JqqdLMDI4YjOLzom+EMlW8HFUd0QfjfAvxSL6sEq/a42fQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+    <script src="JS/common.js"></script>
+    <script src="JS/multi-select.js"></script>
+    <script src="JS/validation.js"></script>
+    <script src="JS/project-details.js"></script>
+    <script src="JS/console_project_details_client.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+.project-banner {
+    width: 100%;
+    aspect-ratio: 36 / 9;
+}
+.project-banner::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(#011530 ,#02265900 70%);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-radius: 20px;
+}
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.project-logo {
+    width: 180px;
+    height: 180px;
+    left: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    transform: translate(75%,-50%)!important;
+    border: 6px solid var(--bs-primary-800);   
+    z-index: 3;
+}
+.project-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banner-trusted-badge{
+    top:8%;
+    left:3%;
+    z-index: 3;
+}
+.project-handle{
+    width: 40px;
+    height: 40px;
+    transition: 0.5s;
+}
+.project-handle:hover{
+    transition: 0.5s;
+    background-color: var(--bs-primary-600) !important;
+}
+.project-details-section{
+    margin-top: 120px;
+}
+#main-gallary-image{
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    border-radius: 16px;
+}
+#main-gallary-image img{
+    width: 100%;
+    height: 100%;
+}
+.gallary-img{
+    border-radius: 16px;
+    object-fit: cover;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.selectedImg {
+    border: 3px solid var(--bs-primary-200); /* Blue border */
+    opacity: 1;
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 16px;
+    overflow: hidden; /* Ensures the rounded corners apply to the iframe */
+}
+
+.project-video-iframe {
+    width: 100%;
+    height: 100%;
+    border: none; /* Remove default border from iframe */
+}
+.attacment-link:hover{
+    background-color: var(--bs-primary-700) !important;
+}
+/* sidebar client details and project brief css */
+.project-brief{
+    width: 100%;
+    max-width: 350px !important;
+}
+.project-brief-info-row{
+    background-color: #cde1fea1;
+}
+@media screen and (max-width:992px) {
+    .project-brief{
+        width: 100%;
+        max-width: 100% !important;
+    }
+    .project-logo {
+        width: 140px;
+        height: 140px;
+        left:50% ;
+        border: 4px solid var(--bs-primary-800);   
+        transform: translate(-50%,-50%)!important;
+    }
+    .project-banner {
+        width: 100%;
+        aspect-ratio: 30 / 9;
+    }
+    .background-image{
+        border-radius: 12px;
+    }
+    .project-banner::after{
+        border-radius: 12px;
+
+    }
+}

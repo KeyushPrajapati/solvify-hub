@@ -1,0 +1,20 @@
+/* project card css start */
+.text-container {
+    position: relative;
+  }
+  
+  .text-content {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limits to 4 lines */
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    max-height: 5em; /* Adjust according to line height */
+  }
+  
+  .text-content.expanded {
+    -webkit-line-clamp: unset;
+    max-height: none;
+  }
+/* project card css end */
+

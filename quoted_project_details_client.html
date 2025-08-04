@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <!-- google merial icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- bootstrap v5.0.2 css -->
+    <link rel="stylesheet" href="css/main.min.css">
+    <!-- custom css classes -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/select.css">
+    <link rel="stylesheet" href="css/onboarding.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/find-jobs.css">
+    <link rel="stylesheet" href="css/project-details.css">
+    <link rel="stylesheet" href="css/getQuote.css">
+    <link rel="stylesheet" href="css/quotedProjectDetails.css">
+
+     <!-- bootstrap v5.0.2 JS -->
+     <script src="bootstrapV5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bg-primary-800">
+     <!-- Navbar -->
+     <nav class=" position-fixed  top-0 start-50 translate-middle-x px-4 navbar-css w-100 bg-primary-800 pt-2">
+        <div class="container-fluid d-flex justify-content-between align-items-center py-3">
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand fw-bold d-flex" href="#">
+                  <div class="">
+                      <img src="./assets/solvify logo.png" width="36" height="26" alt="solvify_hub_logo">
+                  </div>  
+                  <div class="ms-2"> Solvify Hub</div>
+                </a>
+            </div>
+            <div class="container-fluid d-none d-lg-flex p-0 align-items-center justify-content-between">
+              <div class="">
+                <ul class="nav-link-container d-flex align-items-center mb-0">
+                    <li class=" dropdown">
+                        <a class="nav-link text-primary nav-link-css rounded-pill nav-link-css dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu dropdown-css border-0 px-2" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Mobile Application</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">API Products</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Cloud Products</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Database Product</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">IOT Products</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Desktop applications</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Web Applications</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Websites</a></li>
+                        </ul>
+                    </li>
+                    <li class=""><a class="nav-link nav-link-css rounded-pill text-primary text-decoration-none" href="#">My Project</a></li>
+                </ul>
+              </div>
+              <div class="d-flex justify-content-end p-0">
+                  <ui class="nav-link-container d-flex align-items-center ">
+                      <li class="mx-3">
+                        <button class="btn btn-outline-primary border border-primary rounded-pill btn-text">Get Quote</button>
+                      </li>
+                      <li class="border border-primary p-0 rounded-circle nav-icons  d-flex align-items-center justify-content-center">
+                        <a class="dropdown-item p-0 nav-icon-link rounded-circle text-primary" href="#">
+                          <span class="material-icons fs-4 d-flex align-items-center rounded-circle justify-content-center">shopping_cart</span>
+                        </a>
+                     </li>
+                      <li class="ms-3 border border-primary p-0 rounded-circle nav-icons  d-flex align-items-center justify-content-center">
+                        <a class="dropdown-item p-0 nav-icon-link rounded-circle text-primary" href="#">
+                          <span class="material-icons fs-4 d-flex align-items-center rounded-circle justify-content-center">notifications</span>
+                          </a>
+                     </li>
+                      <li class="ms-3">
+                        <button class="btn btn-outline-primary border border-primary p-0 rounded-circle nav-icon-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="material-icons fs-3 d-flex align-items-center justify-content-center">account_circle</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-css border-0 px-2">
+                          <li><a class="dropdown-item text-dark-100 rounded px-3 py-2 " href="#">Profile</a></li>
+                          <li><a class="dropdown-item text-danger rounded px-3 py-2 " href="#">Logout</a></li>
+                        </ul>
+                      </li>
+                  </ui>
+              </div>
+            </div>
+            <div class="d-lg-none d-inline">
+              <div class="hamburger-menu" id="hamburger-menu">
+                <div class="menu-bar1 rounded-pill"></div>
+                <div class="menu-bar2 rounded-pill"></div>
+                <div class="menu-bar3 rounded-pill"></div>
+              </div>
+            </div>
+        </div>
+        <div id="responsive-navbar" class="d-lg-none d-flex flex-column align-items-center justify-content-center mobile-navbar position-absolute top-100 start-50 translate-middle-x bg-primary-800 border-top border-primary-600 pb-3 w-100">
+          <div class="mobile-navbar-items p-0 px-4  m-0 w-100">
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Get Quote</a></div>
+
+            <div class="w-100 d-flex flex-column"><a href="#navCollapse" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded nav-link-css" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="navCollapse">Category</a>
+              <div class="collapse" id="navCollapse">
+                <div class="card card-body bg-white">
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Websites</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Mobile Application</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">API Products</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Cloud Products</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Database Product</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">IOT Products</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Desktop applications</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">My Projects</a></div>
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Blog</a></div>
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Profile</a></div>
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded text-danger">Logout</a></div>
+            
+          </div>
+        </div>
+    </nav>
+    <style>
+        
+    </style>
+    <main>
+        <section class="container-fluid px-5"> 
+            <div class="container-fluid p-0 my-5">
+                <div class="my-4">
+                    <a href="" class="btn btn-outline-primary-100 rounded-pill border border-primary-100 ps-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><span class="material-icons d-flex justify-content-between align-items-center">arrow_back</span></div>
+                            <div class="ms-2">Back</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="row">
+                    <!-- Nav Pills -->
+                    <div class="col-12">
+                        <ul class="nav nav-pills nav-underline  mb-4 border-bottom border-1 border-primary-100" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="tab1-tab" data-bs-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true"> 
+                                    Projects Details
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="tab3-tab" data-bs-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">
+                                    Assigned Developer
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+            
+                    <!-- Tab Content -->
+                    <div class="col-12">
+                        <div class="tab-content" id="myTabContent">
+                            <!-- project details start -->
+                            <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+                               <div class="container-fluid bg-white border-radius-16 p-4">
+                                <div class="d-flex flex-wrap flex-md-nowrap justify-content-between">
+                                    <div class="">
+                                        <h1 class="text-primary fs-4 fw-bold">Project Title is here</h1>
+                                        <div class="text-dark-200 fs-6">Created Date : 12-Jan-2024</div>
+                                    </div>
+                                    <div>
+                                        <button type="button" data-bs-toggle="modal" data-bs-target="#editQuotedDetails" title="edit details" class="btn btn-primary-100 border-0 rounded-pill">Edit-Details</button>
+                                    </div>
+                                </div>
+
+                                <!-- descriptions and bugets -->
+                                <div class="row m-0 mt-2 d-flex justify-content-between">
+                                    <div class="col-12 col-lg-8 ps-0 pe-0 pe-lg-3 text-dark-100">
+                                        <div class="">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde esse aperiam, laboriosam aliquam expedita labore doloremque, consequuntur placeat recusandae, incidunt illum adipisci saepe facere nobis dicta iste et natus. Harum quibusdam labore culpa laudantium facere eum neque ipsam. Qui fugiat maiores soluta esse. Rerum iure reprehenderit, modi impedit nesciunt possimus?
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias esse, quaerat non culpa 
+                                        </div>
+                                         <!-- technology -->
+                                        <div class="mt-3">
+                                            <div class="fs-5 fw-bold text-dark-100">Technology</div>
+                                            <div class="mt-3">
+                                            <div class="me-1 badge rounded-pill bg-primary-800 border border-primary-200 px-3 py-2 fs-6 text-primary-200">HTML</div>
+                                            <div class="me-1 badge rounded-pill bg-primary-800 border border-primary-200 px-3 py-2 fs-6 text-primary-200">Python</div>
+                                            <div class="me-1 badge rounded-pill bg-primary-800 border border-primary-200 px-3 py-2 fs-6 text-primary-200">Django</div>
+                                            </div>
+                                        </div>
+                                        <!-- attachments -->
+                                        <div class="my-4">
+                                            <div class="text-dark-100 fw-bold">Attechments</div>
+                                            <div class="mt-1">
+                                                <a class="p-1 px-2 rounded attacment-link border-bottom border-primary-100 text-decoration-none fw-500 d-flex justify-content-between align-items-center w-50" href="">
+                                                    <div>ABC-Document.pdf</div>
+                                                    <div class="">
+                                                        <span class="material-icons text-primary-100">text_snippet</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="my-4">
+                                          <div class="text-dark-100 fw-bold mb-1">Quick Update</div>
+                                          <div class="border border-dark-500 p-3 px-4 border-radius-10">
+                                            <form class="d-flex flex-column" class="quick_project_update_form">
+                                              <div class="fs-6 fw-bold text-primary-100">
+                                                <label>Estimated Days</label>
+                                                <input type="number" name="budget" maxlength="12" min="0" class="form-control" value="" placeholder="12 Days">
+                                              </div>
+                                              <div class="fs-6 fw-bold text-primary-100 mt-2">
+                                                <label>Estimated Days</label>
+                                                <input type="number" name="timeFrame" maxlength="2" min="0" class="form-control" value="" placeholder="12 Days">
+                                              </div>
+                                              <div class="mt-3 text-end">
+                                                <button type="submit" class="btn-sm btn-primary-200 border-0 ms-2 rounded-pill">Update</button>
+                                              </div>
+                                            </form>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-4 pe-0 ps-0 ps-lg-2 pt-4 pt-lg-0">
+                                        <div class="d-flex flex-column text-center mb-3 bg-primary-800 border-radius-16">
+                                            <div class="text-primary py-4 fs-4 fw-bold">₹ 10000.00</div>
+                                            <div class="text-primary pb-4  fw-bold">Budget</div>
+                                        </div>
+                                        <div class="overflow-hidden border-radius-16 bg-primary-900">
+                                            <!-- price -->
+                                            <div class="px-3 py-3 border-white project-brief-info-row d-flex justify-content-between align-items-center">
+                                              <div class="d-flex  align-items-center">
+                                                <div class="ms-2 text-primary  fw-bold">Time Frame</div>
+                                              </div>
+                                              <div class="d-flex  align-items-center"">
+                                                <div class="me-1 text-primary-100  fw-bolder">20 Days</div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <!-- payment done card -->
+                                           <div class="card  mt-3 border-0 border-radius-16 overflow-hidden bg-info-700">
+                                            <div class="card-header py-3 bg-transparent text-dark-100 fw-bold fs-5 d-flex align-items-center border-0">
+                                                <span class="material-icons  text-white me-3 bg-success rounded-circle p-1 fs-5">done</span>
+                                                Payment Done
+                                            </div>
+                                           </div>
+										   <!-- NOTE under development -->
+										   <div class="card  mt-3 border-0 border-radius-16 overflow-hidden bg-info-700">
+                                            <div class="card-header py-3 bg-transparent text-dark-100 fw-bold fs-5 d-flex align-items-center border-0">
+                                                <!-- <span class="text-white me-3 bg-success rounded-circle p-1 fs-5"></span> -->
+                                                NOTE
+                                            </div>
+                                            <div class="card-body pt-0 ">
+                                                <div>
+                                                    Project Under Development
+                                                </div>
+                                            </div>
+                                           </div>
+										   <!-- Payment request -->
+										   <div class="card  mt-3 border-0 border-radius-16 overflow-hidden bg-info-700">
+                                            <div class="card-header py-3 bg-transparent text-dark-100 fw-bold fs-5 d-flex align-items-center border-0">
+                                                <span class="text-white me-3 bg-success rounded-circle px-2 fs-5">₹</span>
+                                                Payment Request
+                                            </div>
+                                            <div class="card-body pt-0 ">
+                                                <div>
+                                                    Kindly make the payment to initiate the development of your project.
+                                                </div>
+												<div class="my-2">
+													<div class="fw-bold text-dark mb-1 border-bottom border-dark-300">Cost</div>
+                                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                                        <div class="text-dark-100">Customization</div>
+                                                        <div class="text-dark-100 fw-500">5000 ₹</div>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                                        <div class="text-dark-100">Hosting</div>
+                                                        <div class="text-dark-100 fw-500">5000 ₹</div>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                                        <div class="text-dark-100">GST(18%) </div>
+                                                        <div class="text-dark-100 fw-500"></div>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between align-items-center border-top border-dark-300 pt-1">
+                                                        <div class="text-dark fw-bold">Total bill</div>
+                                                        <div class="text-dark-200 fw-bold"> 8260 ₹ (including GST)</div>
+                                                    </div>
+												</div>
+                                                <div class="d-flex pt-2">
+                                                    <button type="button" id="payment_release" class="fs-6 w-100 btn-sm btn-success text-white rounded-pill border-0"> Payment</button>
+                                                </div>
+                                            </div>
+                                           </div>
+										   <!-- Development Overdue Card -->
+										   <div class="card  mt-3 border-0 border-radius-16 overflow-hidden bg-danger-700">
+                                            <div class="card-header py-3 bg-transparent text-danger-200 fw-bold fs-5 d-flex align-items-center border-0">
+                                                <span class="material-icons text-danger-200 me-3  rounded-circle p-1 fs-4">warning_amber</span>
+                                                Development Overdue
+                                            </div>
+                                            <div class="card-body pt-0 ">
+                                                <div class="text-danger-100">
+													Kindly get in touch with your developer as the customization time limit has expired.
+                                                </div>
+                                            </div>
+                                           </div>
+										   <!-- Quotation upload Card -->
+										   <div class="card  mt-3  border-2 border-primary-100 border-radius-16 overflow-hidden ">
+                                            <div class="card-header py-3 bg-transparent text-primary-100 fw-bold fs-5 d-flex align-items-center border-0">
+                                                <span class="material-icons text-primary-100 me-3  rounded-circle p-1 fs-4">text_snippet</span>
+                                                Quotation
+                                            </div>
+                                            <div class="card-body pt-0 ">
+                                                <div>
+                                                    Your quotation is under review by Solvify. If everything is in order, we will send you the payment link.
+                                                </div>
+												<div class="d-flex mt-3">
+													<button type="button" class="btn-sm fs-6 btn-outline-primary-100 border border-primary-100 rounded-pill w-100">Download</button>
+													<button type="button" data-bs-toggle="modal" data-bs-target="#quotationUploadModal" class="ms-3 fs-6 btn-sm btn-primary-100 border border-primary-100 rounded-pill w-100">Upload</button>
+												</div>
+                                            </div>
+                                           </div>
+										   <!-- Quotation uploaded Card -->
+										   <div class="card  mt-3  border-2 border-primary-100 border-radius-16 overflow-hidden ">
+                                            <div class="card-header py-3 bg-transparent text-primary-100 fw-bold fs-5 d-flex align-items-center border-0">
+                                                <span class="material-icons text-primary-100 me-3  rounded-circle p-1 fs-4">text_snippet</span>
+                                                Quotation
+                                            </div>
+                                            <div class="card-body pt-0 ">
+                                                <div>
+                                                    Your quotation is under review by Solvify. If everything is in order, we will send you the payment link.
+                                                </div>
+                                            </div>
+                                           </div>
+                                           <!-- Review Your Project. -->
+                                            <div class="card border-2 border-dark-100 border-radius-16 mt-4" >
+                                                <div class="card-header py-3 bg-transparent text-dark fw-bold fs-5 d-flex align-items-center border-0">
+													<span class="material-icons text-dark me-3 fs-4 rounded-circle p-1">category</span>
+                                                    Review Your Project.
+                                                </div>
+                                                <div class="card-body pt-0">
+                                                    <div class="text-dark">
+                                                        This project is designed to enhance user engagement through an intuitive interface and optimized performance. Our goal is to deliver a scalable and efficient solution tailored to your requirements.
+                                                    </div>
+                                                    <div class="py-2">
+														<div class="">
+															<div class="text-dark fw-bold fs-6">Temporary Hosted link</div>
+															<a href="#" class="mt-2 text-dark py-2 fs-6">https://www.example.com</a>
+														</div>
+														<div class="mt-2">
+															<div class="text-dark fw-bold fs-6">Project Video Demonstration</div>
+															<a href="#" class="mt-2 text-dark py-2 fs-6">https://www.example.com</a>
+														</div>
+													</div>
+													<div class="bg-success-600 fw-500 text-dark border-radius-16 p-3 mt-2">
+														<p>
+															Please review your project details carefully. If everything is accurate, kindly approve the project.
+														</p>
+														<div class="d-flex mt-3">
+															<button type="button" class="btn-sm fs-6 btn-danger-300 border-0  rounded-pill w-100" data-bs-toggle="modal" data-bs-target="#declineModal">Decline</button>
+															<button type="button" id="qp_development_approve_btn" class="ms-3 fs-6 btn-sm btn-dark text-white border-0  rounded-pill w-100">Approve</button>
+														</div>
+													</div>
+                                                </div>
+                                            </div>
+											<!-- Ḍownload your project -->
+											<div class="card border-2 border-dark-100 border-radius-16 mt-4 d-none" id="qp_hosted_project_card">
+                                                <div class="card-header py-3 bg-transparent text-dark fw-bold fs-5 d-flex align-items-center border-0">
+                                                    <span class="material-icons text-dark me-3 fs-4 rounded-circle p-1">category</span>
+                                                    Review Your Project.
+                                                </div>
+                                                <div class="card-body pt-0">
+                                                    <div class="text-dark">
+                                                        This project is designed to enhance user engagement through an intuitive interface and optimized performance. Our goal is to deliver a scalable and efficient solution tailored to your requirements.
+                                                    </div>
+                                                    <div class="py-2">
+														<div class="mt-2">
+															<div class="text-dark fw-bold fs-6">Project Video Demonstration</div>
+															<a href="#" class="mt-2 text-dark py-2 fs-6">https://www.example.com</a>
+														</div>
+													</div>
+													<div class="mt-2">
+														<a class="p-1 mt-2 px-2  deliverables-download border-bottom border-dark-100 text-decoration-none fw-500 d-flex justify-content-between align-items-center w-100" href="">
+															<div class="text-dark fw-bold">Source Code</div>
+															<div class="d-flex align-items-end">
+																<span class="material-icons text-dark-100 d-flex">download</span>
+															</div>
+														</a>
+														<a class="p-1 mt-2 px-2  deliverables-download border-bottom border-dark-100 text-decoration-none fw-500 d-flex justify-content-between align-items-center w-100" href="">
+															<div class="text-dark fw-bold">Credentials</div>
+															<div class="d-flex align-items-end">
+																<span class="material-icons text-dark-100 d-flex">download</span>
+															</div>
+														</a>
+														<a class="p-1 mt-2 px-2  deliverables-download border-bottom border-dark-100 text-decoration-none fw-500 d-flex justify-content-between align-items-center w-100" href="">
+															<div class="text-dark fw-bold">Documentation</div>
+															<div class="d-flex align-items-end">
+																<span class="material-icons text-dark-100 d-flex">download</span>
+															</div>
+														</a>
+														<a class="p-1 mt-2 px-2  deliverables-download border-bottom border-dark-100 text-decoration-none fw-500 d-flex justify-content-between align-items-center w-100" href="">
+															<div class="text-dark fw-bold">Other Attachments</div>
+															<div class="d-flex align-items-end">
+																<span class="material-icons text-dark-100 d-flex">download</span>
+															</div>
+														</a>
+													</div>
+													<div class="mt-3">
+														<button type="button" data-bs-toggle="modal" data-bs-target="#raisIssueModal" class=" fs-6 btn-sm btn-dark text-white border-0  rounded-pill w-100">Raise an Issue</button>
+													</div>
+                                                </div>
+                                            </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="text-dark bg-success-600 p-2 px-3 border-radius-10 mt-4 fs-6">
+                                  NOTE : Your quotation is under review by Solvify Hub. Our team is evaluating the details, including price, timeframe, and project requirements. Both parties can negotiate these aspects through the Support Contact section. We will also collect the final requirement document via Support Contact. Once the negotiations and approval process are complete, your project will begin.
+                                </div>
+                               </div>
+
+                               <!-- Timeline  Start -->
+                              <div class="card mt-4  profile-card overflow-hidden border-0">
+                                <div class="card-header p-3 d-flex  align-items-center border-bottom border-3 border-primary-800 text-center  bg-white">
+                                  <div class="card-title mb-0 d-flex align-items-center w-100">
+                                    <div class="text-primary-100 fw-500 fs-5 text-center">Time Line</div>
+                                  </div>
+                                </div>
+                                <div class="card-body  w-100 d-flex p-3" >
+                                  <ul class="project-timeline p-0 w-100 ">
+                                    <!-- Preliminary Phase timeline-->
+                                    <li class="d-flex tl-content ">
+                                      <div class="row m-0 p-0 w-100">
+                                        <div class="col-6 col-sm-5 col-md-4 p-0">
+                                          <div class="row m-0 p-0">
+                                            <div class="col-8 col-lg-9 p-0 d-flex align-items-center">
+                                              <div class="text-dark fw-bold text-end tl-title w-100">Preliminary Phase</div>
+                                            </div>
+                                            <div class="col-4 col-lg-3 p-0 ">
+                                              <div class="d-flex justify-content-center w-100">
+                                                <div class="tl-icons-container bg-success-600 ">
+                                                  <span class="material-icons text-dark-100 tl-icon d-flex align-items-center">forum</span>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-6 col-sm-7 col-md-8 p-0">
+                                          <div class="d-flex flex-wrap h-100 align-items-center">
+                                            <!-- under analysis badges -->
+                                            <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                              <div class="">Under Analysis</div>
+                                            </div>
+                              
+                                            <!-- <div class="fw-bold bg-info text-dark px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                              <div class="">Under Analysis</div>
+                                            </div>
+                              
+                                            <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                              <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                              <div class="">Analysis End</div>
+                                            </div> -->
+                              
+                                            <!--  Negotiation badges -->
+                                            <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                              <div class="">Negotiation</div>
+                                            </div>
+                              
+                                            <!-- <div class="fw-bold bg-info text-dark px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                              <div class="">Negotiation Start</div>
+                                            </div>
+                              
+                                            <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                              <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                              <div class="">Negotiation End</div>
+                                            </div> -->
+
+                                            <!--  Quotation Upload badges -->
+                                            <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                              <div class="">Quotation Upload</div>
+                                            </div>
+                              
+                                            <!-- <div class="fw-bold bg-info text-dark px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                              <div class="">Quotation Upload</div>
+                                            </div>
+                              
+                                            <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                              <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                              <div class="">Quotation Uploaded</div>
+                                            </div> -->
+
+                                            <!-- Payment Pending badges -->
+                                            <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                              <div class="">Payment</div>
+                                            </div>
+                              
+                                            <!-- <div class="fw-bold bg-info text-dark px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                              <div class="">Payment Pending</div>
+                                            </div>
+                              
+                                            <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge mb-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                              <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                              <div class="">Payment Completed</div>
+                                            </div> -->
+                              
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </li>
+
+                                    <!-- Development timeline -->
+                                    <li class="d-flex tl-content mt-3">
+                                      <div class="row m-0 p-0 w-100">
+                                        <div class="col-6 col-sm-5 col-md-4 p-0">
+                                          <div class="row m-0 p-0   mt-2">
+                                            <div class="col-8 col-lg-9 p-0 d-flex align-items-center">
+                                              <div class="text-dark fw-bold text-end tl-title w-100">Development</div>
+                                            </div>
+                                            <div class="col-4 col-lg-3 p-0 ">
+                                              <div class="d-flex justify-content-center w-100">
+                                                <div class="tl-icons-container bg-success-600 ">
+                                                  <span class="material-icons text-dark-100 tl-icon d-flex align-items-center">code</span>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-6 col-sm-7 col-md-8 p-0">
+                                          <div class="d-flex flex-wrap h-100 align-items-center">
+                                            
+                                            <!-- Under Development bagdges -->
+                                            <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                              <div class="">Under Development</div>
+                                            </div>
+                              
+                                            <!-- <div class="fw-bold bg-danger-700 text-dark px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                              <div class="">Under Development</div>
+                                            </div>
+
+                                            <div class="fw-bold bg-info text-dark px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                              <div class="">Under Development</div>
+                                            </div>
+                              
+                                            <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                              <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                              <div class="">Under Development</div>
+                                            </div> -->
+                              
+                                            <!-- Client Project Approval bagdges -->
+                                            <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                              <div class="">Client Project Approval</div>
+                                            </div>
+                              
+                                            <!-- <div class="fw-bold bg-info text-dark px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                              <div class="">Client Project Approval</div>
+                                            </div>
+                              
+                                            <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                              <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                              <div class="">Client Project Approval</div>
+                                            </div> -->
+
+                                            <!-- Development Completed bagdges -->
+                                            <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                              <div class="">Development Completed</div>
+                                            </div>
+
+                                            <!-- <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                              <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                              <div class="">Development Completed</div>
+                                            </div> -->
+                              
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </li>
+
+                                    <!-- Hosting timeline-->
+                                    <li class="d-flex tl-content mt-3 d-none">
+                                      <div class="row m-0 p-0 w-100">
+                                        <div class="col-6 col-sm-5 col-md-4 p-0">
+                                          <div class="row m-0 p-0   mt-2">
+                                            <div class="col-8 col-lg-9 p-0 d-flex align-items-center">
+                                              <div class="text-dark fw-bold text-end tl-title w-100">Hosting</div>
+                                            </div>
+                                            <div class="col-4 col-lg-3 p-0 ">
+                                              <div class="d-flex justify-content-center w-100">
+                                                <div class="tl-icons-container bg-success-600 ">
+                                                  <span class="material-icons text-dark-100 tl-icon d-flex align-items-center">cloud</span>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-6 col-sm-7 col-md-8 p-0">
+                                          <div class="d-flex flex-wrap h-100 align-items-center">
+                                            <!-- Under Hosting badges -->
+                                            <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                              <div class="">Under Hosting</div>
+                                            </div>
+                              
+                                            <!-- <div class="fw-bold bg-info text-dark px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                              <div class="">Under Hosting</div>
+                                            </div>
+
+                                            <div class="fw-bold bg-danger-700 text-dark px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                              <div class="">Hosting Overdue</div>
+                                            </div>
+                              
+                                            <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                              <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                              <div class="">Under Hosting</div>
+                                            </div> -->
+                              
+                                            <!-- Hosting Approval badges -->
+                                            <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                              <div class="">Hosting Approval</div>
+                                            </div>
+                              
+                                            <!-- <div class="fw-bold bg-info text-dark px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis pending">
+                                              <div class="">Hosting Approval</div>
+                                            </div> -->
+                              
+                                            <!-- <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                              <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                              <div class="">Hosting Approval</div>
+                                            </div> -->
+
+                                            <!-- under analysis badges -->
+                                            <div class="fw-bold bg-dark-700 text-dark-200 px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis">
+                                              <div class="">Hosting Completed</div>
+                                            </div>
+
+                                            <!-- <div class="fw-bold bg-success-500 text-dark-100 px-3 py-2 tl-badge mt-2 mx-2 d-flex align-items-center" data-bs-toggle="popover"  data-bs-placement="top"data-bs-content="under analysis end">
+                                              <div><span class="material-icons d-flex align-items-center me-2">check_circle</span></div>
+                                              <div class="">Hosting Completed</div>
+                                            </div> -->
+                              
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <!-- Timeline  End -->
+
+                               <!-- support contact -->
+                               <div class="card mt-4  profile-card overflow-hidden border-0">
+                                <div class="card-header p-3 d-flex  align-items-center border-bottom border-3 border-primary-800 text-center  bg-white">
+                                  <div class="card-title mb-0 d-flex justify-content-between align-items-center w-100">
+                                    <div class="text-primary-100 fw-500 fs-5 text-center">Support Contact</div>
+                                    <div class="d-flex">
+                                      <button type="button" class="btn-sm btn-outline-primary-100 border border-primary-100 rounded-pill d-flex align-items-center"  title="If you wish to share any images, please upload them here. Our support team will respond to you shortly." data-bs-content="">
+                                        <span class="material-icons ">call</span> <span class="ms-1">Request Call</span>
+                                      </button>
+                                      <button type="button" class="ms-2 btn-sm btn-outline-primary-100 border border-primary-100 rounded-pill d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#imageMessage" title="If you wish to share any images, please upload them here. Our support team will respond to you shortly." data-bs-content="">
+                                          <span class="material-icons ">upload</span> <span class="ms-1">Upload</span>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card-body chat-messages-area w-100 d-flex p-3" >
+                                 <div class="d-flex flex-column w-100" id="support-chat-messages-box">
+                                   <!-- timeline divider -->
+                                   <div class="my-2 d-flex align-items-center justify-content-evenly w-100">
+                                    <div  class="border border-dark-600 w-100"></div>
+                                    <div class="text-dark-100 fw-bold fs-6 px-3">Today</div>
+                                    <div class=" border border-dark-600 w-100"></div>
+                                    </div>
+                                  <!-- message reply-->
+                                   <div class="d-flex mb-3 w-100">
+                                      <div class="">
+                                          <img src="assets/avatar.jpg" class="rounded-circle chat-profile-img" alt="">
+                                      </div>
+                                      <div class="ps-2 w-100">
+                                          <div class="text-dark-100 fw-bold">Tony Stark</div>
+                                          <div class="text-dark-400 fs-6">12min ago</div>
+                                          <div class="mt-1">
+                                            <!-- message text or image -->
+                                          </div>
+                                      </div>
+                                   </div>
+                                  <!-- message -->
+                                   <div class="d-flex mb-3 w-100">
+                                      <div class="">
+                                          <img src="assets/solvify logo.png" class="rounded-circle chat-profile-img" alt="">
+                                      </div>
+                                      <div class="ps-2">
+                                          <div class="text-dark-100 fw-bold">Solvify Hub</div>
+                                          <div class="text-dark-400 fs-6">14min ago</div>
+                                          <div class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero error et deleniti facere dolorum molestiae deserunt iure blanditiis iste vitae?</div>
+                                      </div>
+                                   </div>
+                                   <div class="d-flex mb-3 w-100">
+                                      <div class="">
+                                          <img src="assets/solvify logo.png" class="rounded-circle chat-profile-img" alt="">
+                                      </div>
+                                      <div class="ps-2">
+                                          <div class="text-dark-100 fw-bold">Solvify Hub</div>
+                                          <div class="text-dark-400 fs-6">14min ago</div>
+                                          <div class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero error et deleniti facere dolorum molestiae deserunt iure blanditiis iste vitae?</div>
+                                      </div>
+                                   </div>
+                                   <div class="d-flex mb-3 w-100">
+                                      <div class="">
+                                          <img src="assets/solvify logo.png" class="rounded-circle chat-profile-img" alt="">
+                                      </div>
+                                      <div class="ps-2">
+                                          <div class="text-dark-100 fw-bold">Solvify Hub</div>
+                                          <div class="text-dark-400 fs-6">14min ago</div>
+                                          <div class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero error et deleniti facere dolorum molestiae deserunt iure blanditiis iste vitae?</div>
+                                      </div>
+                                   </div>
+                                   <div class="d-flex mb-3 w-100">
+                                      <div class="">
+                                          <img src="assets/solvify logo.png" class="rounded-circle chat-profile-img" alt="">
+                                      </div>
+                                      <div class="ps-2">
+                                          <div class="text-dark-100 fw-bold">Solvify Hub</div>
+                                          <div class="text-dark-400 fs-6">14min ago</div>
+                                          <div class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero error et deleniti facere dolorum molestiae deserunt iure blanditiis iste vitae?</div>
+                                      </div>
+                                   </div>
+                                  
+                                 </div>
+                                </div>
+                                <div class="card-footer bg-white border-0 py-3">
+                                  <form class="p-1 bg-primary-800 rounded-pill " id="support_contact_form">
+                                      <div class="d-flex align-items-center w-100">
+                                          <label class="w-100">
+                                              <input type="text" class="form-control bg-transparent chat-message-field border-0 w-100" name="support_message" id="support_message" placeholder="message">
+                                          </label>
+                                          <div class="">
+                                              <button type="submit" class="d-flex align-items-center btn btn-primary-300 border-0 rounded-pill">
+                                                  <span class="material-icons">send</span>
+                                              </button>
+                                          </div>
+                                      </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- project details end -->
+
+                            <!-- proposals start -->
+                            <!-- <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                               <div class="card bg-white border-radius-16 border-primary-600">
+                                <div class="row m-0">
+                                    <div class="col-12 col-md-8 p-4">
+                                        <div class="d-flex justify-content-between flex-column h-100">
+                                            <div class="d-flex">
+                                                <div class="proposal-card-img">
+                                                    <img src="assets/avatar.jpg" alt="">
+                                                </div>
+                                                <div class="ms-3">
+                                                    <div class="fs-4 fw-bold text-dark">Tony Stark</div>
+                                                    <div class=" text-dark-300">UI UX Designer</div>
+                                                    <div class=" text-dark-300">Experience - 2 Year</div>
+                                                </div>
+                                            </div>
+                                            <div class="text-dark-100 mt-3 text-container">
+                                                <p class="text-content mb-0">
+                                                    Lorem, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam architecto consectetur voluptatibus inventore eius iste fugit necessitatibus, iure ullam quisquam nisi ea amet neque, dolore atque recusandae obcaecati, tenetur labore voluptatem ipsa debitis rerum quibusdam totam reprehenderit. Temporibus consequuntur incidunt perferendis saepe rerum, reiciendis modi adipisci ducimus sunt? Qui, molestiae.  ipsum dolor sit amet consectetur adipisicing elit. Sapiente optio nihil cum consequuntur quis rem debitis velit reprehenderit pariatur molestias fugit
+                                                </p>
+                                                <button class="read-more border-0 bg-transparent text-primary-300 p-0 d-none" type="button  ">read more</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 p-0 border-start border-dark-500">
+                                        <div class="d-flex justify-content-between p-4 border-bottom border-dark-500">
+                                            <div class="text-primary fw-bold">Rating</div>
+                                            <div class="d-flex">
+                                                <div>
+                                                    <span class="material-icons text-info">star</span>
+                                                </div>
+                                                <div>
+                                                    <span class="material-icons text-info">star</span>
+                                                </div>
+                                                <div>
+                                                    <span class="material-icons text-info">star</span>
+                                                </div>
+                                                <div>
+                                                    <span class="material-icons text-info">star</span>
+                                                </div>
+                                                <div>
+                                                    <span class="material-icons text-dark-500">star_border</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between p-4 border-bottom border-dark-500">
+                                            <div class="text-primary fw-bold">Price</div>
+                                            <div class="text-dark fw-bold">1200 INR</div>
+                                        </div>
+                                        <div class="d-flex justify-content-between p-4 border-bottom border-dark-500">
+                                            <div class="text-primary fw-bold">Time</div>
+                                            <div class="text-dark fw-bold">10 Days</div>
+                                        </div>
+                                        <div class="d-flex justify-content-center p-4">
+                                            <button type="button" class="w-100 btn btn-primary-100 border-0 rounded-pill">
+                                                Assign
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                               </div>
+                            </div> -->
+                            <!-- proposals end -->
+
+                            <!-- Assigned Developer start -->
+                            <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+								<div class="container-fluid text-dark-300 m-0 py-5 my-5 text-center">
+									💻Developer Not Assigned Yet!
+								</div>
+                                <div class="row m-0 mb-5">
+                                      <!-- Chat With Solvify Developer  -->
+                                      <div class="col-12 freelancer-chat-room">
+                                        <div class="card mt-4 mt-md-0  profile-card overflow-hidden border-0">
+                                          <div class="card-header p-3 d-flex  align-items-center border-bottom border-3 border-primary-800 text-center  bg-white">
+                                            <div class="card-title mb-0 d-flex justify-content-between w-100">
+                                              <button type="button" class="d-flex align-items-center d-lg-none border-0 bg-transparent freelancer-profile-open">
+                                                <div class="">
+                                                    <img src="assets/avatar2.jpg" class="rounded-circle chat-profile-img" alt="">
+                                                </div>
+                                                <div class="ps-2">
+                                                    <div class="text-dark-100 fw-bold">Tori Stark</div>
+                                                </div>
+                                              </button>
+                                              <div class="text-primary-100 fw-500 fs-5 text-center">Chat With Developer</div>
+                                            </div>
+                                          </div>
+                                          <div class="card-body chat-messages-area d-flex p-3">
+                                           <div class="d-flex flex-column w-100" id="freelancer-chat-box">
+                                            <!-- timeline divider -->
+                                            <div class="my-2 d-flex align-items-center justify-content-evenly w-100">
+                                                <div  class="border border border-dark-600 w-100"></div>
+                                                <div class="text-dark-100 fw-bold fs-6 px-3">Today</div>
+                                                <div class=" border border-dark-600 w-100"></div>
+                                            </div>
+                                            <!-- message reply-->
+                                             <div class="d-flex mb-3 ">
+                                                <div class="">
+                                                    <img src="assets/avatar.jpg" class="rounded-circle chat-profile-img" alt="">
+                                                </div>
+                                                <div class="ps-2">
+                                                    <div class="text-dark-100 fw-bold">Tony Stark</div>
+                                                    <div class="text-dark-400 fs-6">12min ago</div>
+                                                    <div class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero error et deleniti facere dolorum molestiae deserunt iure blanditiis iste vitae?</div>
+                                                </div>
+                                             </div>
+                                            <!-- message -->
+                                             <div class="d-flex mb-3">
+                                                <div class="">
+                                                    <img src="assets/avatar2.jpg" class="rounded-circle chat-profile-img" alt="">
+                                                </div>
+                                                <div class="ps-2">
+                                                    <div class="text-dark-100 fw-bold">Tori Stark</div>
+                                                    <div class="text-dark-400 fs-6">14min ago</div>
+                                                    <div class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero error et deleniti facere dolorum molestiae deserunt iure blanditiis iste vitae?</div>
+                                                </div>
+                                             </div>
+                                           
+                                           </div>
+                                          </div>
+                                          <div class="card-footer bg-white border-0 py-3">
+                                            <form class="p-1 bg-primary-800 rounded-pill" id="freelancer_chat_form">
+                                                <div class="d-flex align-items-center w-100">
+                                                    <label class="w-100">
+                                                        <input type="text" class="form-control bg-transparent chat-message-field border-0 w-100" name="freelancer_chat_input" id="freelancer_chat_input" placeholder="message">
+                                                    </label>
+                                                    <div class="">
+                                                        <button type="submit" class="d-flex align-items-center btn btn-primary-300 border-0 rounded-pill">
+                                                            <span class="material-icons">send</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                          </div>
+                                        </div>
+                                      </div>
+                                  </div>
+                            </div>
+                            <!-- Assigned Developer end -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    
+<!-- edit qoute details modal start -->
+<div class="modal fade" id="editQuotedDetails" tabindex="-1" aria-labelledby="editQuotedDetailsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-fullscreen-lg-down">
+      <div class="modal-content">
+        <div class="modal-header mx-2 mx-sm-4 mt-0 mt-sm-2">
+          <h5 class="modal-title" id="editQuotedDetailsLabel">Project Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body px-3 px-sm-3 ">
+          <!-- form -->
+          <form action="" class="mx-0 mx-sm-4" id="editQuotedDetailsForm" enctype="multipart/form-data">
+            <div class="row m-0">
+				<div class="col-12 col-lg-6 ps-0 pe-0 pe-lg-2">
+					<div class=" my-4 ">
+					<label for="getQuoteBudgetPlan" class="text-primary-100  fw-bold">Estimated Budget (In INR)</label>
+						<input class="form-control w-100" type="number" name="budget" maxlength="12" min="0" id="getQuoteBudgetPlan" placeholder="5000 INR" >
+						<div class="text-dark-200 fs-6">The hosting fee is received by the hoster, but please note that the server cost is not included in this fee. You'll be responsible for covering the server cost separately. ( Our Recommended Budget: 9317.00 )</div>
+					</div>
+					<div class=" my-4 ">
+						<label for="quotedProjectTimeFrame" class="text-primary-100  fw-bold">Expected Timeframe (In Days)</label>
+						<input class="form-control w-100" type="number" name="timeFrame" maxlength="2" min="0" id="quotedProjectTimeFrame" placeholder="2" >
+						<div class="text-dark-200 fs-6">Our Estimated Time Limit: 11 days</div>
+					</div>
+					<div class=" my-4 ">
+						<label for="editProjectAttachment" class="text-primary-100  fw-bold">Attachment (optional)</label>
+						<input class="form-control w-100" type="file" name="attachment"  id="editProjectAttachment" >
+						<div class="text-dark-200 fs-6">Submit your requirements (allowed file type : .pdf, .txt, .doc, .docx)</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6 pe-0 ps-0 ps-lg-2">
+					<div class=" my-4 ">
+						<label for="projectDescription" class="text-primary-100 fw-bold">Description *</label>
+						<textarea class="form-control w-100 h-100" name="projectDescription" maxlength="500" id="projectDescription" placeholder="Text Your descriptions..." rows="11"></textarea>
+					</div>
+				</div>
+			</div>
+          </form>
+        </div>
+        <div class="modal-footer mb-0 mb-sm-3 mx-2 mx-sm-4">
+          <button type="button" class="btn btn-outline-primary-100 rounded-pill border border-primary-100" data-bs-dismiss="modal">Cancel</button>
+          <button type="submit" form="editQuotedDetailsForm" class="btn btn-primary-100 rounded-pill border-0">Update</button>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- quote details modal end -->
+ 
+<!-- Customization Decline Modal Start -->
+<div class="modal fade" id="declineModal" tabindex="-1" aria-labelledby="declineModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-fullscreen-lg-down">
+      <div class="modal-content">
+        <div class="modal-header mx-2 mx-sm-4 mt-0 mt-sm-2">
+          <h5 class="modal-title" id="declineModalLabel">Customization Decline</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body px-3 px-sm-3 ">
+          <!-- form -->
+          <form action="" class="mx-0 mx-sm-4" id="declineReasonForm" enctype="multipart/form-data">
+            <div class="row m-0">
+				<div class="col-12 p-0">
+					<div class=" ">
+						<label for="declineReason" class="text-primary-100 fw-bold">Reason *</label>
+						<textarea class="form-control w-100 h-100" name="declineReason" maxlength="500" id="declineReason" placeholder="Tell your problem..." rows="6"></textarea>
+					</div>
+				</div>
+			</div>
+          </form>
+        </div>
+        <div class="modal-footer mb-0 mb-sm-3 mx-2 mx-sm-4">
+          <button type="button" class="btn btn-outline-primary-100 rounded-pill border border-primary-100" data-bs-dismiss="modal">Cancel</button>
+          <button type="submit" form="declineReasonForm" class="btn btn-danger rounded-pill text-white border-0">Decline</button>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- Customization Decline Modal End -->
+
+<!-- Quotation Upload Modal Start -->
+<div class="modal fade" id="quotationUploadModal" tabindex="-1" aria-labelledby="quotationLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-fullscreen-lg-down">
+      <div class="modal-content">
+        <div class="modal-header mx-2 mx-sm-4 mt-0 mt-sm-2">
+          <h5 class="modal-title" id="quotationLabel">Quotation Upload</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body px-3 px-sm-3 ">
+          <!-- form -->
+          <form action="" class="mx-0 mx-sm-4" id="quotationForm" enctype="multipart/form-data">
+            <div class="row m-0">
+				<div class="col-12 p-0">
+					<div class=" ">
+						<label for="quotationAttachment" class="text-primary-100  fw-bold">Attachment (optional)</label>
+						<input class="form-control w-100" type="file" name="attachment" accept=".pdf"  id="quotationAttachment" >
+						<div class="text-dark-200 fs-6">Submit your requirements (allowed file type : .pdf)</div>
+					</div>
+				</div>
+			</div>
+          </form>
+        </div>
+        <div class="modal-footer mb-0 mb-sm-3 mx-2 mx-sm-4">
+          <button type="button" class="btn btn-outline-primary-100 rounded-pill border border-primary-100" data-bs-dismiss="modal">Cancel</button>
+          <button type="submit" form="quotationForm" class="btn btn-primary-100 rounded-pill text-white border-0">Upload</button>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- Quotation Upload Modal End -->
+
+ 
+<!-- Rais Issue  Modal Start -->
+<div class="modal fade" id="raisIssueModal" tabindex="-1" aria-labelledby="raisIssueLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-fullscreen-lg-down">
+      <div class="modal-content">
+        <div class="modal-header mx-2 mx-sm-4 mt-0 mt-sm-2">
+          <h5 class="modal-title" id="raisIssueLabel">Raise An Issue</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body px-3 px-sm-3 ">
+          <!-- form -->
+          <form action="" class="mx-0 mx-sm-4" id="raiseIssueForm" enctype="multipart/form-data">
+            <div class="row m-0">
+				<div class="col-12 p-0">
+					<div class=" ">
+						<label for="issue" class="text-primary-100 fw-bold">Issue Reason *</label>
+						<textarea class="form-control w-100 h-100" name="issue" maxlength="500" id="issue" placeholder="Tell your problem..." rows="6"></textarea>
+					</div>
+				</div>
+			</div>
+          </form>
+        </div>
+        <div class="modal-footer mb-0 mb-sm-3 mx-2 mx-sm-4">
+          <button type="button" class="btn btn-outline-primary-100 rounded-pill border border-primary-100" data-bs-dismiss="modal">Cancel</button>
+          <button type="submit" form="raiseIssueForm" class="btn btn-primary-100 rounded-pill text-white border-0">Submit</button>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- Rais Issue Modal End -->
+
+<!-- image upload modal start -->
+<div class="modal fade" id="imageMessage" tabindex="-1" aria-labelledby="imageMessageLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-fullscreen-lg-down">
+      <div class="modal-content">
+        <div class="modal-header mx-2 mx-sm-4 mt-0 mt-sm-2">
+          <h5 class="modal-title" id="imageMessageLabel">Image Upload</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body px-3 px-sm-3 ">
+          <!-- form -->
+          <form action="" class="mx-0 mx-sm-4" id="imageUploadForm" enctype="multipart/form-data">
+            <div class="w-100 d-flex flex-wrap flex-column flex-lg-row justify-content-evenly align-items-center align-items-lg-start step-container">
+              <div class=" my-2 w-100">
+                <label for="imageInput" class="text-primary-100 fs-6 fw-bold">Image*</label>
+                <input type="file" id="imageInput" name="imageInput" class="form-control w-100" accept=".jpg,.jpeg,.png" >
+            </div>
+            <div class=" my-2 w-100">
+              <label class="text-primary-100 fs-6 fw-bold" for="image_description">Image Description*</label>
+              <textarea class="form-control  fs-6" name="image_description" maxlength="500" id="image_description" placeholder="Text Your descriptions..." rows="10"></textarea>
+            </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer mb-0 mb-sm-3 mx-2 mx-sm-4">
+          <button type="button" class="btn btn-outline-primary-100 rounded-pill border border-primary-100" data-bs-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn btn-primary-100 rounded-pill border-0" form="imageUploadForm" id="update-personal-info-btn">Upload</button>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- image upload modal start end-->
+
+<!-- release modal start -->
+<!-- <div class="modal fade" id="release_payment" tabindex="-1" aria-labelledby="release_payment_label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-fullscreen-lg-down">
+      <div class="modal-content">
+        <div class="modal-header mx-2 mx-sm-4 mt-0 mt-sm-2">
+          <h5 class="modal-title" id="release_payment_label">Release Payment</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body px-3 px-sm-3 ">
+          <form action="" class="mx-0 mx-sm-4" id="release_payment_form" enctype="multipart/form-data">
+            <div class="w-100 d-flex flex-wrap flex-column flex-lg-row justify-content-evenly align-items-center align-items-lg-start step-container">
+                <div class=" my-2 w-100">
+                    <label for="imageInput" class="text-primary-100 fs-6 fw-bold">Image*</label>
+                    <input type="file" id="imageInput" name="imageInput" class="form-control w-100" accept=".jpg,.jpeg,.png" required>
+                </div>
+                <div class=" my-2 w-100">
+                    <label class="text-primary-100 fs-6 fw-bold" for="image_description">Image Description*</label>
+                    <textarea class="form-control  fs-6" name="image_description" maxlength="500" id="image_description" placeholder="Text Your descriptions..." rows="10" required></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer mb-0 mb-sm-3 mx-2 mx-sm-4">
+          <button type="button" class="btn btn-outline-primary-100 rounded-pill border border-primary-100" data-bs-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn btn-primary-100 rounded-pill border-0" form="release_payment_form"  id="update-personal-info-btn">Release</button>
+        </div>
+      </div>
+    </div>
+</div> -->
+<!-- release modal end -->
+
+    <script src="JS/multi-select.js"></script>
+    <script src="JS/single-select.js"></script>
+    <script src="JS/common.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js" integrity="sha512-KFHXdr2oObHKI9w4Hv1XPKc898mE4kgYx58oqsc/JqqdLMDI4YjOLzom+EMlW8HFUd0QfjfAvxSL6sEq/a42fQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+    <script src="JS/validation.js"></script>
+    <script src="JS/getQuote.js"></script>
+    <script src="JS/quoted_project_details_client.js"></script>
+
+</body>
+</html>

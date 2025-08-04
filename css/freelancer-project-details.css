@@ -1,0 +1,34 @@
+.empty-message-container{
+    height: 200px;
+    opacity: 0.8;
+}
+.proposal-card-img img{
+    max-width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 1/1;
+}
+
+.text-container {
+  position: relative;
+}
+
+.text-content {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limits to 4 lines */
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  max-height: 5em; /* Adjust according to line height */
+}
+
+.text-content.expanded {
+  -webkit-line-clamp: unset;
+  max-height: none;
+}
+
+.read-more {
+  margin-top: 8px;
+}

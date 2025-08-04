@@ -1,0 +1,288 @@
+<!-- After giving for customization or hosting or both -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Verification</title>
+    <!-- google merial icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- bootstrap v5.0.2 css -->
+    <link rel="stylesheet" href="css/main.min.css">
+    <!-- custom css classes -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/select.css">
+    <link rel="stylesheet" href="css/find-jobs.css">
+    <link rel="stylesheet" href="css/info-verification.css">
+    
+    
+    <!-- bootstrap v5.0.2 JS -->
+    <script src="bootstrapV5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bg-primary-800">
+     <!-- Navbar -->
+     <nav class=" position-fixed  top-0 start-50 translate-middle-x px-4 navbar-css w-100 bg-primary-800 pt-2">
+        <div class="container-fluid d-flex justify-content-between align-items-center py-3">
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand fw-bold d-flex" href="#">
+                  <div class="">
+                      <img src="./assets/solvify logo.png" width="36" height="26" alt="solvify_hub_logo">
+                  </div>  
+                  <div class="ms-2"> Solvify Hub</div>
+                </a>
+            </div>
+            <div class="container-fluid d-none d-lg-flex p-0 align-items-center justify-content-between">
+              <div class="">
+                <ul class="nav-link-container d-flex align-items-center mb-0">
+                    <li class=" dropdown">
+                        <a class="nav-link text-primary nav-link-css rounded-pill nav-link-css dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu dropdown-css border-0 px-2" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Mobile Application</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">API Products</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Cloud Products</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Database Product</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">IOT Products</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Desktop applications</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Web Applications</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Websites</a></li>
+                        </ul>
+                    </li>
+                    <li class=""><a class="nav-link nav-link-css rounded-pill text-primary text-decoration-none" href="#">My Project</a></li>
+                </ul>
+              </div>
+              <div class="d-flex justify-content-end p-0">
+                  <ui class="nav-link-container d-flex align-items-center ">
+                      <li class="mx-3">
+                        <button class="btn btn-outline-primary border border-primary rounded-pill btn-text">Get Quote</button>
+                      </li>
+                      <li class="border border-primary p-0 rounded-circle nav-icons  d-flex align-items-center justify-content-center">
+                        <a class="dropdown-item p-0 nav-icon-link rounded-circle text-primary" href="#">
+                          <span class="material-icons fs-4 d-flex align-items-center rounded-circle justify-content-center">shopping_cart</span>
+                        </a>
+                     </li>
+                      <li class="ms-3 border border-primary p-0 rounded-circle nav-icons  d-flex align-items-center justify-content-center">
+                        <a class="dropdown-item p-0 nav-icon-link rounded-circle text-primary" href="#">
+                          <span class="material-icons fs-4 d-flex align-items-center rounded-circle justify-content-center">notifications</span>
+                          </a>
+                     </li>
+                      <li class="ms-3">
+                        <button class="btn btn-outline-primary border border-primary p-0 rounded-circle nav-icon-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="material-icons fs-3 d-flex align-items-center justify-content-center">account_circle</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-css border-0 px-2">
+                          <li><a class="dropdown-item text-dark-100 rounded px-3 py-2 " href="#">Profile</a></li>
+                          <li><a class="dropdown-item text-danger rounded px-3 py-2 " href="#">Logout</a></li>
+                        </ul>
+                      </li>
+                  </ui>
+              </div>
+            </div>
+            <div class="d-lg-none d-inline">
+              <div class="hamburger-menu" id="hamburger-menu">
+                <div class="menu-bar1 rounded-pill"></div>
+                <div class="menu-bar2 rounded-pill"></div>
+                <div class="menu-bar3 rounded-pill"></div>
+              </div>
+            </div>
+        </div>
+        <div id="responsive-navbar" class="d-lg-none d-flex flex-column align-items-center justify-content-center mobile-navbar position-absolute top-100 start-50 translate-middle-x bg-primary-800 border-top border-primary-600 pb-3 w-100">
+          <div class="mobile-navbar-items p-0 px-4  m-0 w-100">
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Get Quote</a></div>
+
+            <div class="w-100 d-flex flex-column"><a href="#navCollapse" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded nav-link-css" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="navCollapse">Category</a>
+              <div class="collapse" id="navCollapse">
+                <div class="card card-body bg-white">
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Websites</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Mobile Application</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">API Products</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Cloud Products</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Database Product</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">IOT Products</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Desktop applications</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">My Projects</a></div>
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Blog</a></div>
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Profile</a></div>
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded text-danger">Logout</a></div>
+            
+          </div>
+        </div>
+      </nav>
+    <main class="">
+        <!-- Main Verification page -->
+        <section id="all-details-verify" class=" bg-white d-flex flex-column flex-sm-row position-relative align-items-center justify-content-center border-radius-16 m-sm-4 info-main-container">
+            <div class="">
+                <div class="d-flex flex-column align-items-center">
+                    <h1 class="text-primary-100 h2 text-center">Verify Your Details</h1>
+                    <div class="text-primary-100 my-2 text-center">This verification is helpful to us for secure communication.</div>
+                </div>
+                <div class="d-flex justify-content-center w-100 ">
+                    <div class="row m-0 mx-3 mt-5">
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <button class="border-0 bg-transparent p-0 w-100 d-flex justify-content-center h-100" type="button" id="identity-verification-btn"  data-target="identity-verification-page">
+                                <div class="card p-4 d-flex justify-content-center info-cards border-0 bg-primary-800">
+                                    <div class="text-center">
+                                        <span class="material-icons text-dark-100">contacts</span>
+                                    </div>
+                                    <div class="mt-2 text-dark-100 fw-500 w-100 text-center">Identity Verification</div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 mt-4 mt-sm-0">
+                            <button class="border-0 bg-transparent p-0 w-100 d-flex justify-content-center h-100" type="button" id="contact-verification-btn" data-target="contact_details_verify_screen">
+                                <div class="card p-4 d-flex justify-content-center info-cards border-0 bg-primary-800">
+                                    <div class="text-center">
+                                        <span class="material-icons text-dark-100">local_phone</span>
+                                    </div>
+                                    <div class="mt-2 text-dark-100 fw-500 w-100 text-center">Contact Verification</div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 mt-4 mt-md-0">
+                            <button class="border-0 bg-transparent p-0 w-100 d-flex justify-content-center h-100" type="button" id="mail-verification-btn" data-target="email_details_verify_screen">
+                                <div class="card p-4 d-flex justify-content-center info-cards border-0 bg-primary-800">
+                                    <div class="text-center">
+                                        <span class="material-icons text-dark-100">mail</span>
+                                    </div>
+                                    <div class="mt-2 text-dark-100 fw-500 w-100 text-center">Mail Verification</div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 mt-4 mt-md-0">
+                            <button class="border-0 bg-transparent p-0 w-100 d-flex justify-content-center h-100" type="button" id="payment-verification-btn">
+                                <div class="card p-4 d-flex justify-content-center info-cards border-0 bg-primary-800">
+                                    <div class="text-center">
+                                        <span class="material-icons text-dark-100">payment</span>
+                                    </div>
+                                    <div class="mt-2 text-dark-100 fw-500 w-100 text-center">Payment Verification</div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="position-absolute start-0 bottom-0 info-verification-back-btn w-100 pb-4 ps-4 mt-4 mt-sm-0">
+                <a href="freelancer-profile.html" class="btn btn-outline-primary border border-primary-100 rounded-pill">Back</a>
+            </div>
+        </section>
+
+        <!-- Identity Verification -->
+        <section id="identity-verification-page" class="sectionONxOFF px-4 px-lg-3 bg-white d-flex flex-column flex-md-row position-relative  justify-content-center border-radius-16 m-sm-4 info-main-container">
+            <div class="">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="text-primary-200 fs-4 fw-bold text-center">Identity Verification</div>
+                </div>
+                <div class="d-flex justify-content-center w-100 ">
+                    <form id="identity-verify-form" action="" method="" enctype="multipart/form-data">
+                        <div class=" my-3 ">
+                            <div class=" my-2 w-100">
+                              <label class="text-primary-100 fs-6 fw-bold">Select Document type *</label>
+                              <div class="custom-select-container w-100" id="documentTypeSelect">
+                                <div class="custom-select " ><span class="text-dark-500 fs-500">Select Document type</span></div>
+                                <ul class="select-options">
+                                  <li data-value="adhaar">Adhaar Card</li>
+                                    <li data-value="pan">PAN Card</li>
+                                </ul>
+                              </div>
+                              <!-- Hidden input to store selected value -->
+                              <input type="text" validation="true" class="hidden-select-field" name="documentType" id="documentTypeInput" required>
+                  
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap flex-md-nowrap justify-content-center">
+                          <div class="d-flex flex-column me-md-2 me-lg-3 justify-content-between  align-items-center w-100">
+                              <div class="my-2 text-primary-100 fs-6 fw-bold w-100">Upload Your Document </div>
+                              <div class=" position-relative mt-2 mt-lg-0">
+                                <button type="button" class="d-flex align-items-center justify-content-center btn-sm btn-danger p-1 rounded-circle position-absolute border-0 remove-preview-btn end-0 top-25 d-none" id="remove-doc-img-btn">
+                                  <span class="material-icons text-white fw-bold fs-5 m-0">close</span>
+                                </button>
+                                <img class="bg-primary-800 doc-preview-img mb-3" src="assets/only-doc.png" alt="profile-image" id="documentPreviewImage">
+                              </div>
+                              <label for="userDoc" class="w-100 btn btn-primary-100 rounded-pill position-relative">
+                                <input class="invisible position-absolute start-0 w-100" type="file" name="userDocument" id="userDoc"  accept=".jpg, .jpeg, .png, .pdf" required> Upload
+                              </label>
+                          </div>
+                          <div class="mt-4 mt-md-0 d-flex flex-column ms-md-2 ms-lg-3 justify-content-between  align-items-center w-100">
+                              <div class="my-2 text-primary-100 fs-6 fw-bold w-100">Upload Your Document with Face </div>
+                              <div class=" position-relative mt-2 mt-lg-0">
+                                <button type="button" class="d-flex align-items-center justify-content-center btn-sm btn-danger p-1 rounded-circle position-absolute border-0 remove-preview-btn end-0 top-25 d-none" id="remove-doc-face-img-btn">
+                                  <span class="material-icons text-white fw-bold fs-5 m-0">close</span>
+                                </button>
+                                <img class="bg-primary-800 doc-preview-img mb-3" src="assets/doc-with-face.png" alt="profile-image" id="documentWithFacePreviewImage">
+                              </div>
+                              <label for="userDocFace" class="w-100 btn btn-primary-100 rounded-pill position-relative">
+                                <input class="invisible position-absolute start-0 w-100" type="file" name="userDocumentWithFace" id="userDocFace"  accept=".jpg, .jpeg, .png, .pdf" required> Upload
+                              </label>
+                          </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="position-absolute  start-0 bottom-0 identity-verification-back-btn w-100 pb-md-4 px-2 px-md-4 mt-4 mt-md-0 d-flex justify-content-between">
+                <button type="button" class="btn btn-outline-primary-100 border border-primary-100 rounded-pill info-back-btn">Back</button>
+                <button type="submit" form="identity-verify-form" class="btn btn-outline-primary-100 border border-primary-100 rounded-pill">submit</button>
+            </div>
+        </section>
+
+        <!-- Contact Verification -->
+        <section id="contact_details_verify_screen" class="sectionONxOFF bg-white d-flex flex-column flex-sm-row position-relative align-items-center justify-content-center border-radius-16 m-sm-4 info-main-container">
+          <div class="">
+              <div class="d-flex flex-column align-items-center">
+                <div class="text-primary-200 fs-4 fw-bold text-center">Contact Verification</div>
+              </div>
+              <div class="d-flex justify-content-center w-100 mt-4">
+                <form action="" method="" id="contactVerificationForm">
+                  <div class="my-2 w-100">
+                    <label for="contactVerify" class="text-primary-100 w-100 fs-6 fw-bold">Phone Number</label>
+                    <input class="form-control w-100 infoVerifyInput" type="number" name="contactVerify" maxlength="10" id="contactVerify" placeholder="1234567890" required>
+                  </div>
+                  <div class="mt-3">
+                    <button type="submit" class="btn btn-primary-100 border-0 w-100 rounded-pill">Verify</button>
+                  </div>
+                </form>
+              </div>
+          </div>
+          <div class="position-absolute start-0 bottom-0 w-100 pb-4 ps-4 mt-4 mt-sm-0">
+              <button type="button" class="btn btn-outline-primary border border-primary-100 rounded-pill info-back-btn">Back</button>
+          </div>
+        </section>
+
+        <!-- Email Verification -->
+        <section id="email_details_verify_screen" class="sectionONxOFF bg-white d-flex flex-column flex-sm-row position-relative align-items-center justify-content-center border-radius-16 m-sm-4 info-main-container">
+          <div class="">
+              <div class="d-flex flex-column align-items-center">
+                <div class="text-primary-200 fs-4 fw-bold text-center">Email Verification</div>
+              </div>
+              <div class="d-flex justify-content-center w-100 mt-4">
+                <form action="" method="" id="emailVerificationForm">
+                  <div class="my-2 w-100">
+                    <label for="emailVerify" class="text-primary-100 w-100 fs-6 fw-bold">Email</label>
+                    <input class="form-control w-100 infoVerifyInput" type="text" name="emailVerify" maxlength="100" id="emailVerify" placeholder="example@gmail.com">
+                  </div>
+                  <div class="mt-3">
+                    <button type="submit" class="btn btn-primary-100 border-0 w-100 rounded-pill" >Verify</button>
+                  </div>
+                </form>
+              </div>
+          </div>
+          <div class="position-absolute start-0 bottom-0 w-100 pb-4 ps-4 mt-4 mt-sm-0">
+              <button type="button" class="btn btn-outline-primary border border-primary-100 rounded-pill info-back-btn">Back</button>
+          </div>
+        </section>
+    </main>
+
+    <script src="JS/single-select.js"></script>
+    <script src="JS/home.js"></script>
+    <script src="JS/common.js"></script>
+    <script src="JS/multi-select.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js" integrity="sha512-KFHXdr2oObHKI9w4Hv1XPKc898mE4kgYx58oqsc/JqqdLMDI4YjOLzom+EMlW8HFUd0QfjfAvxSL6sEq/a42fQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="JS/infoVerification.js"></script>
+    <script src="JS/validation.js"></script>
+</body>
+</html>

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart</title>
+    <!-- google merial icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- bootstrap v5.0.2 css -->
+    <link rel="stylesheet" href="css/main.min.css">
+    <!-- custom css classes -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/select.css">
+    <link rel="stylesheet" href="css/simpleSelect.css">
+    <link rel="stylesheet" href="css/find-jobs.css">
+    <link rel="stylesheet" href="css/project-details.css">
+    <link rel="stylesheet" href="css/add-to-cart.css">
+    <!-- bootstrap v5.0.2 JS -->
+    <script src="bootstrapV5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bg-primary-800">
+     <!-- Navbar -->
+     <nav class=" position-fixed  top-0 start-50 translate-middle-x px-4 navbar-css w-100 bg-primary-800 pt-2">
+        <div class="container-fluid d-flex justify-content-between align-items-center py-3">
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand fw-bold d-flex" href="#">
+                  <div class="">
+                      <img src="./assets/solvify logo.png" width="36" height="26" alt="solvify_hub_logo">
+                  </div>  
+                  <div class="ms-2"> Solvify Hub</div>
+                </a>
+            </div>
+            <div class="container-fluid d-none d-lg-flex p-0 align-items-center justify-content-between">
+              <div class="">
+                <ul class="nav-link-container d-flex align-items-center mb-0">
+                    <li class=" dropdown">
+                        <a class="nav-link text-primary nav-link-css rounded-pill nav-link-css dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu dropdown-css border-0 px-2" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Mobile Application</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">API Products</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Cloud Products</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Database Product</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">IOT Products</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Desktop applications</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Web Applications</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Websites</a></li>
+                        </ul>
+                    </li>
+                    <li class=""><a class="nav-link nav-link-css rounded-pill text-primary text-decoration-none" href="#">My Project</a></li>
+                </ul>
+              </div>
+              <div class="d-flex justify-content-end p-0">
+                  <ui class="nav-link-container d-flex align-items-center ">
+                      <li class="mx-3">
+                        <button class="btn btn-outline-primary border border-primary rounded-pill btn-text">Get Quote</button>
+                      </li>
+                      <li class="border border-primary p-0 rounded-circle nav-icons  d-flex align-items-center justify-content-center">
+                        <a class="dropdown-item p-0 nav-icon-link rounded-circle text-primary" href="#">
+                          <span class="material-icons fs-4 d-flex align-items-center rounded-circle justify-content-center">shopping_cart</span>
+                        </a>
+                     </li>
+                      <li class="ms-3 border border-primary p-0 rounded-circle nav-icons  d-flex align-items-center justify-content-center">
+                        <a class="dropdown-item p-0 nav-icon-link rounded-circle text-primary" href="#">
+                          <span class="material-icons fs-4 d-flex align-items-center rounded-circle justify-content-center">notifications</span>
+                          </a>
+                     </li>
+                      <li class="ms-3">
+                        <button class="btn btn-outline-primary border border-primary p-0 rounded-circle nav-icon-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="material-icons fs-3 d-flex align-items-center justify-content-center">account_circle</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-css border-0 px-2">
+                          <li><a class="dropdown-item text-dark-100 rounded px-3 py-2 " href="#">Profile</a></li>
+                          <li><a class="dropdown-item text-danger rounded px-3 py-2 " href="#">Logout</a></li>
+                        </ul>
+                      </li>
+                  </ui>
+              </div>
+            </div>
+            <div class="d-lg-none d-inline">
+              <div class="hamburger-menu" id="hamburger-menu">
+                <div class="menu-bar1 rounded-pill"></div>
+                <div class="menu-bar2 rounded-pill"></div>
+                <div class="menu-bar3 rounded-pill"></div>
+              </div>
+            </div>
+        </div>
+        <div id="responsive-navbar" class="d-lg-none d-flex flex-column align-items-center justify-content-center mobile-navbar position-absolute top-100 start-50 translate-middle-x bg-primary-800 border-top border-primary-600 pb-3 w-100">
+          <div class="mobile-navbar-items p-0 px-4  m-0 w-100">
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Get Quote</a></div>
+
+            <div class="w-100 d-flex flex-column"><a href="#navCollapse" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded nav-link-css" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="navCollapse">Category</a>
+              <div class="collapse" id="navCollapse">
+                <div class="card card-body bg-white">
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Websites</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Mobile Application</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">API Products</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Cloud Products</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Database Product</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">IOT Products</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Desktop applications</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">My Projects</a></div>
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Blog</a></div>
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Profile</a></div>
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded text-danger">Logout</a></div>
+            
+          </div>
+        </div>
+    </nav>
+    <main>
+     <div class="px-sm-2 px-lg-3">
+      <!-- title - checout button  -->
+      <div class="">
+        <div class="">
+          <h2 class="text-primary-100 fw-bold">Your Projects</h2>
+          <div class="">
+            If you choose customization, hosting, or both, the associated costs will be paid after the completion of these services. For now, you only need to pay the project amount, not the customization or hosting fees.
+          </div>
+        </div>
+      </div>
+
+      <!-- step 1 -->
+      <section id="cart_section" class="">
+        <div class="w-100 text-end mt-3 d-flex align-items-center justify-content-end">
+          <button class="btn btn-primary-100 border-0 rounded-pill text-white" style="font-size: 16px;" id="cart_continue_btn">Continue</button>
+        </div>
+        <div class="mt-4 bg-white mb-4 cart-container overflow-hidden">
+          
+          <!-- card start -->
+          <div class="card border-0 border-bottom add-to-cart-card">
+            <div class="card-body d-flex flex-wrap flex-md-nowrap">
+              <!-- image and other details about project. -->
+               <div class="w-100">
+                 <div class="row m-0 px-0 w-100">
+                  <div class="col-12 col-md-4 col-lg-3 ps-0 pe-0 pe-md-2">
+                    <div class="cart-img   w-100">
+                      <img src="assets/coc2.jpg" alt="" class="cart-product-image" width="100%">
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-8 col-lg-9 ps-0 ps-md-2 pe-0 pt-3 pt-md-0">
+                    <div class="d-flex flex-column justify-content-between h-100">
+                      <!-- Title, Owner Name ,Price , delete-->
+                      <div class="d-flex flex-column flex-lg-row justify-content-between align-items-start">
+                        <div class="d-flex flex-column">
+                          <div class="d-flex align-items-center flex-wrap">
+                            <div class="fs-5 text-dark-100 fw-bold">This is title Lorem ipsum dolor sit amet</div>
+                            <div class=" ms-2 text-info-200 fw-bold d-flex align-items-center"> 
+                              <span class="ms-1">2.5</span> 
+                              <span class="material-icons fs-5">star</span>
+                            </div>
+                          </div>
+                          <div class="mt-2 d-flex align-items-center">
+                            <div class="">
+                              <img src="assets/solvify logo.png" class="cart-profile-img border" alt="">
+                            </div>
+                            <div class="ms-2 text-dark-100 fw-500">Keyush Prajapati
+                              <span class=" ms-1 text-dark-400">(Software Developer)</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row align-items-center flex-lg-column justify-content-end mt-2 mt-lg-0">
+                          <div class="text-dark-100 fs-4 fw-bold">5000 INR</div>
+                          <div class="mt-0 mt-lg-2 align-self-end">
+                            <button type="button"  class="ms-3 bg-danger-400 p-0 rounded-circle border-0  d-flex align-items-center justify-content-center cart-delete-btn" title="delete">
+                              <span class="material-icons cart-delete-icon text-white d-flex align-items-center rounded-circle justify-content-center">delete</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- question customize or hosting -->
+                      <div class="mt-3 mt-lg-0">
+                        <div class="fw-500 text-dark">Would you like to customize your project, host it, or both?</div>
+                        <div class="mt-2 d-flex w-100">
+                          <div class="">
+                            <div class="">
+                              <label for="customization_checkbox_1" class="d-flex" data-bs-toggle="popover" data-placement="left" data-bs-trigger="hover focus" title="Customization" data-bs-content="Any customization you may like. In the next step you will give us to your requirments.">
+                                <input type="checkbox" id="customization_checkbox_1" class=" form-check-input">
+                                <div class="ms-3 text-dark">Customization</div>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="ms-4">
+                            <div class="">
+                              <label for="hosting_checkbox_1" class="d-flex" data-bs-toggle="popover" data-bs-trigger="hover focus" title="Hosting" data-bs-content="Any hosting service you want to apply on this project.">
+                                <input type="checkbox" id="hosting_checkbox_1" class="form-check-input host_checkbox">
+                                <div class="ms-3 text-dark">Hosting</div>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+
+          <!-- cart 2 start -->
+          <div class="card border-0 border-bottom add-to-cart-card">
+            <div class="card-body d-flex flex-wrap flex-md-nowrap">
+              <!-- image and other details about project. -->
+               <div class="w-100">
+                 <div class="row m-0 px-0 w-100">
+                  <div class="col-12 col-md-4 col-lg-3 ps-0 pe-0 pe-md-2">
+                    <div class="cart-img   w-100">
+                      <img src="assets/coc3.png" alt="" class="cart-product-image" width="100%">
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-8 col-lg-9 ps-0 ps-md-2 pe-0 pt-3 pt-md-0">
+                    <div class="d-flex flex-column justify-content-between h-100">
+                      <!-- Title, Owner Name ,Price , delete-->
+                      <div class="d-flex flex-column flex-lg-row justify-content-between align-items-start">
+                        <div class="d-flex flex-column">
+                          <div class="d-flex align-items-center flex-wrap">
+                            <div class="fs-5 text-dark-100 fw-bold">Project 2 Lorem ipsum dolor sit amet</div>
+                            <div class=" ms-2 text-info-200 fw-bold d-flex align-items-center"> 
+                              <span class="ms-1">2.5</span> 
+                              <span class="material-icons fs-5">star</span>
+                            </div>
+                          </div>
+                          <div class="mt-2 d-flex align-items-center">
+                            <div class="">
+                              <img src="assets/solvify logo.png" class="cart-profile-img border" alt="">
+                            </div>
+                            <div class="ms-2 text-dark-100 fw-500">Keyush Prajapati
+                              <span class=" ms-1 text-dark-400">(Software Developer)</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row align-items-center flex-lg-column justify-content-end mt-2 mt-lg-0">
+                          <div class="text-dark-100 fs-4 fw-bold">5000 INR</div>
+                          <div class="mt-0 mt-lg-2 align-self-end">
+                            <button type="button"  class="ms-3 bg-danger-400 p-0 rounded-circle border-0  d-flex align-items-center justify-content-center cart-delete-btn" title="delete">
+                              <span class="material-icons cart-delete-icon text-white d-flex align-items-center rounded-circle justify-content-center">delete</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- question customize or hosting -->
+                      <div class="mt-3 mt-lg-0">
+                        <div class="fw-500 text-dark">Would you like to customize your project, host it, or both?</div>
+                        <div class="mt-2 d-flex w-100">
+                          <div class="">
+                            <div class="">
+                              <label for="customization_checkbox_2" class="d-flex" data-bs-toggle="popover" data-bs-trigger="hover focus" title="Customization" data-bs-content="Any customization you may like. In the next step you will give us to your requirments.">
+                                <input type="checkbox" id="customization_checkbox_2" class=" form-check-input">
+                                <div class="ms-3 text-dark">Customization</div>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="ms-4">
+                            <div class="">
+                              <label for="hosting_checkbox_2" class="d-flex" data-bs-toggle="popover" data-bs-trigger="hover focus" title="Hosting" data-bs-content="Any hosting service you want to apply on this project.">
+                                <input type="checkbox" id="hosting_checkbox_2" class="form-check-input host_checkbox">
+                                <div class="ms-3 text-dark">Hosting</div>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 </div>
+              </div>
+            </div>
+          </div>
+          <!-- cart 2 end -->
+        </div>
+      </section>
+
+      <!-- step 2 -->
+      <section id="product_service_section" class="d-none">
+        <div class="w-100 text-end mt-3 d-flex align-items-center justify-content-between">
+          <button class="btn btn-primary-100 border-0 rounded-pill text-white" style="font-size: 16px;" id="service_choice_previous_btn">Previous</button>
+          <button class="btn btn-primary-100 border-0 rounded-pill text-white" style="font-size: 16px;" id="service_choice_continue_btn">Continue</button>
+        </div>
+        <div class="mt-4 p-4 bg-white mb-4 cart-container overflow-hidden">
+          <div id="service_message">😊 Please proceed to the next step to continue. 👉</div>
+          <form id="cart_form" class="">
+            <!-- project 1 -->
+            <div class="card border border-dark-500 border-radius-10 overflow-hidden" id="project_1">
+              <input type="hidden" name="project_details[]" value="1">
+              <div class="fs-5 text-dark-100 border-dark-500 fw-bold card-header">This is title Lorem ipsum dolor sit amet</div>
+              <div class="card-body pt-0">
+                <!-- customization form -->
+                 <div id="customization_service_form_1" class="d-none">
+                  <div class="border-bottom border-dark-500 pt-3 pb-2">
+                    <div class="fw-bold text-dark-100">Customization</div>
+                  </div>
+                  <div class="row m-0">
+                    <div class="col-12 col-lg-6 ps-0 pe-0 pe-lg-3">
+                      <div class=" my-3 ">
+                        <label for="budgetForCustomization_1" class="text-primary-100 fs-6 fw-bold">Budget (in INR)*</label>
+                        <input class="form-control w-100" type="number" name="budgetForCustomization[]" maxlength="10" id="budgetForCustomization_1" placeholder="10000" min="1" required>
+                        <div class="text-dark-200 fs-6">Our Recommend Budget : 5167.00  </div>
+                      </div>
+                      <div class=" my-3 ">
+                        <label for="timeForCustomization_1" class="text-primary-100 fs-6 fw-bold">Time Limit (in Days)*</label>
+                        <input class="form-control w-100" type="number" name="timeForCustomization[]" maxlength="3" min="1" max="365" id="timeForCustomization_1" placeholder="2" required>
+                        <div class="text-dark-200 fs-6">Our Estimated Time Limit : 14 Days  </div>
+                      </div>
+                      <div class="my-3">
+                          <label for="customization_preference_1" class="text-primary-100 fs-6 fw-bold">Customization Preference*</label>
+                          <select  id="customization_preference_1" name="customization_preference[]" class="form-control form-select" required>
+                              <option value="" selected disabled>select</option>
+                              <option value="1">Solvify Hub</option>
+                              <option value="2">Open For Freelancer</option>
+                          </select>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-6 ps-0 pe-0 ps-lg-3 pe-0">
+                      <div class=" my-3 ">
+                        <label for="projectCustomizationAttactment_1" class="text-primary-100 fs-6 fw-bold">Attachment <span class="text-dark-400">(optional)</span></label>
+                        <input class="form-control w-100" type="file" name="projectCustomizationAttactment[]" id="projectCustomizationAttactment_1" accept=".doc,.docx, .txt ,.pdf" >
+                        <div class="text-dark-200 fs-6">submit your requirements (allowed file type : .pdf, .txt, .doc, .docx)  </div>
+                      </div>
+                      <div class=" my-2 w-100">
+                        <label for="descriptionForCustomization_1" class="text-primary-100 fs-6 fw-bold">Description</label>
+                        <textarea class="form-control w-100" name="descriptionForCustomization[]" maxlength="1000" id="descriptionForCustomization_1" placeholder="text your customization details..." rows="5"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                 </div>
+                <!-- hosting form -->
+                 <div id="hosting_service_form_1" class="d-none">
+                  <div class="border-bottom border-dark-500 pt-3 pb-2">
+                    <div class="fw-bold text-dark-100">Hosting</div>
+                  </div>
+                  <div class="row m-0">
+                    <div class="col-12 col-lg-6 ps-0 pe-0 pe-lg-3">
+                      <div class="my-3">
+                        <label for="hostingChoice_1" class="text-primary-100 fs-6 fw-bold">Would you like to choose your own hosting provider ? *</label>
+                        <select  id="hostingChoice_1" name="hostingChoice[]" class="form-control form-select" required>
+                          <option value="" selected disabled>select</option>
+                          <option value="1">Yes</option>
+                          <option value="2">No</option>
+                        </select>
+                      </div>
+                      <div class="my-3 d-none" id="hosting_provider_field_1">
+                        <label for="hostingProvider_1" class="text-primary-100 fs-6 fw-bold">Hosting Provider *</label>
+                        <select  id="hostingProvider_1" name="hostingProvider[]" class="form-control form-select" required>
+                          <option value="" selected disabled>select</option>
+                          <option value="1">Any</option>
+                          <option value="2">GCP</option>
+                          <option value="3">AWS</option>
+                          <option value="4">Azure</option>
+                          <option value="5">Cpanel</option>
+                        </select>
+                      </div>
+                      <div class="my-3">
+                          <label for="hosting_preference_1" class="text-primary-100 fs-6 fw-bold">Hosting Preference*</label>
+                          <select  id="hosting_preference_1" name="hosting_preference[]" class="form-control form-select" required>
+                              <option value="" selected disabled>select</option>
+                              <option value="1">Solvify Hub</option>
+                              <option value="2">Open For Freelancer</option>
+                          </select>
+                      </div>
+                      <div class=" my-3 ">
+                        <label for="budgetForHostingFees_1" class="text-primary-100 fs-6 fw-bold">Budget (in INR) *</label>
+                        <div class="text-dark-200 fs-6"></div>
+                        <input class="form-control w-100" type="number" name="budgetForHostingFees[]" maxlength="10" id="budgetForHostingFees_1" placeholder="10000" required>
+                        <div class="text-dark-200 fs-6">The hosting fee is received by the hoster, but please note that the server cost is not included in this fee. You'll be responsible for covering the server cost separately. <span class="text-dark fw-500">( Our Recommended Budget: 9317.00 )</span> </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-6 ps-0 pe-0  ps-lg-3">
+                      <div class=" my-3 ">
+                        <label for="timeForHosting_1" class="text-primary-100 fs-6 fw-bold">Time Limit (in Days)*</label>
+                        <input class="form-control w-100" type="number" name="timeForHosting[]" maxlength="2" id="timeForHosting_1" placeholder="2" required>
+                        <div class="text-dark-200 fs-6">Our Estimated Time Limit: 11 days</div>
+                      </div>
+                      <div class=" my-2 w-100">
+                        <label for="descriptionForHosting_1" class="text-primary-100 fs-6 fw-bold">Description</label>
+                        <textarea class="form-control w-100" name="descriptionForHosting[]" maxlength="1000" id="descriptionForHosting_1" placeholder="text your customization details..." rows="8"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                 </div>
+              </div>
+              
+
+            </div>
+
+            <!-- project 2 -->
+            <div class="card border border-dark-500 border-radius-10 overflow-hidden mt-3" id="project_2">
+              <input type="hidden" name="project_details[]" value="1">
+              <div class="fs-5 text-dark-100 border-dark-500 fw-bold card-header">Project 2 Lorem ipsum dolor sit amet</div>
+              <div class="card-body pt-0">
+                <!-- customization form -->
+                 <div id="customization_service_form_2" class="d-none">
+                  <div class="border-bottom border-dark-500 pt-3 pb-2">
+                    <div class="fw-bold text-dark-100">Customization</div>
+                  </div>
+                  <div class="row m-0">
+                    <div class="col-12 col-lg-6 ps-0 pe-0 pe-lg-3">
+                      <div class=" my-3 ">
+                        <label for="budgetForCustomization_2" class="text-primary-100 fs-6 fw-bold">Budget*</label>
+                        <input class="form-control w-100" type="number" name="budgetForCustomization[]" maxlength="10" id="budgetForCustomization_2" placeholder="10000" min="1" required>
+                        <div class="text-dark-200 fs-6">Our Recommend Budget : 5167.00  </div>
+                      </div>
+                      <div class=" my-3 ">
+                        <label for="timeForCustomization_2" class="text-primary-100 fs-6 fw-bold">Time Limit*</label>
+                        <input class="form-control w-100" type="number" name="timeForCustomization[]" maxlength="3" min="1" max="365" id="timeForCustomization_2" placeholder="2" required>
+                        <div class="text-dark-200 fs-6">Our Estimated Time Limit : 14 Days  </div>
+                      </div>
+                      <div class=" my-3 ">
+                        <label for="projectCustomizationAttactment_2" class="text-primary-100 fs-6 fw-bold">Attachment <span class="text-dark-400">(optional)</span></label>
+                        <input class="form-control w-100" type="file" name="projectCustomizationAttactment[]" id="projectCustomizationAttactment_2" accept=".doc,.docx, .txt ,.pdf" >
+                        <div class="text-dark-200 fs-6">submit your requirements (allowed file type : .pdf, .txt, .doc, .docx)  </div>
+    
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-6 ps-0 pe-0 ps-lg-3 pe-0">
+                      <div class=" my-2 w-100">
+                        <label for="descriptionForCustomization_2" class="text-primary-100 fs-6 fw-bold">Description</label>
+                        <textarea class="form-control w-100" name="descriptionForCustomization[]" maxlength="1000" id="descriptionForCustomization_2" placeholder="text your customization details..." rows="8"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                 </div>
+                <!-- hosting form -->
+                 <div id="hosting_service_form_2" class="d-none">
+                  <div class="border-bottom border-dark-500 pt-3 pb-2">
+                    <div class="fw-bold text-dark-100">Hosting</div>
+                  </div>
+                  <div class="row m-0">
+                    <div class="col-12 col-lg-6 ps-0 pe-0 pe-lg-3">
+                      <div class="my-3">
+                        <label for="hostingChoice_2" class="text-primary-100 fs-6 fw-bold">Would you like to choose your own hosting provider ? *</label>
+                        <select  id="hostingChoice_2" name="hostingChoice[]" class="form-control form-select" required>
+                          <option value="" selected disabled>select</option>
+                          <option value="1">Yes</option>
+                          <option value="2">No</option>
+                        </select>
+                      </div>
+                      <div class="my-3 d-none" id="hosting_provider_field_2">
+                        <label for="hostingProvider_2" class="text-primary-100 fs-6 fw-bold">Hosting Provider *</label>
+                        <select  id="hostingProvider_2" name="hostingProvider[]" class="form-control form-select" required>
+                          <option value="" selected disabled>select</option>
+                          <option value="1">Any</option>
+                          <option value="2">GCP</option>
+                          <option value="3">AWS</option>
+                          <option value="4">Azure</option>
+                          <option value="5">Cpanel</option>
+                        </select>
+                      </div>
+                      <div class=" my-3 ">
+                        <label for="budgetForHostingFees_2" class="text-primary-100 fs-6 fw-bold">Hosting Fee Budget *</label>
+                        <div class="text-dark-200 fs-6"></div>
+                        <input class="form-control w-100" type="number" name="budgetForHostingFees[]" maxlength="10" id="budgetForHostingFees_2" placeholder="10000" required>
+                        <div class="text-dark-200 fs-6">The hosting fee is received by the hoster, but please note that the server cost is not included in this fee. You'll be responsible for covering the server cost separately. <span class="text-dark fw-500">( Our Recommended Budget: 9317.00 )</span> </div>
+                      </div>
+                      <div class=" my-3 ">
+                        <label for="budgetForExpectedHostingFees_2" class="text-primary-100 fs-6 fw-bold">Expected Monthly Hosting Budget *</label>
+                        <input class="form-control w-100" type="number" name="budgetForExpectedHostingFees[]" maxlength="10" id="budgetForExpectedHostingFees_2" placeholder="10000" required>
+                        <div class="text-dark-200 fs-6">Please provide your expected monthly hosting budget to help us recommend the best hosting options for your needs. <span class="text-dark fw-500">( Our Recommended Budget: 713.00 )</span> </div>
+                      </div>
+                      
+                    </div>
+                    <div class="col-12 col-lg-6 ps-0 pe-0  ps-lg-3">
+                      <div class=" my-3 ">
+                        <label for="timeForHosting_2" class="text-primary-100 fs-6 fw-bold">Time Limit*</label>
+                        <input class="form-control w-100" type="number" name="timeForHosting[]" maxlength="2" id="timeForHosting_2" placeholder="2" required>
+                        <div class="text-dark-200 fs-6">Our Estimated Time Limit: 11 days</div>
+                      </div>
+                      <div class=" my-2 w-100">
+                        <label for="descriptionForHosting_2" class="text-primary-100 fs-6 fw-bold">Description</label>
+                        <textarea class="form-control w-100" name="descriptionForHosting[]" maxlength="1000" id="descriptionForHosting_2" placeholder="text your customization details..." rows="8"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                 </div>
+              </div>
+            </div>
+
+            <!-- <div class="d-flex justify-content-end">
+              <button class="btn btn-primary-100 border-0 rounded-pill text-white mt-3" style="font-size: 16px;" id="service_submit_btn">Submit</button>
+            </div> -->
+          </form>
+        </div>
+      </section>
+
+      <!-- step 3 -->
+      <section id="preview_section" class="d-none">
+        <div class="w-100 text-end mt-3 d-flex align-items-center justify-content-between">
+          <button class="btn btn-primary-100 border-0 rounded-pill text-white" style="font-size: 16px;" id="preview_previous_btn">Previous</button>
+          <button class="btn btn-success border-0 rounded-pill text-white" style="font-size: 16px;" id="preview_paynow_btn">Pay Now</button>
+        </div>
+        <div class="mt-4 p-4 bg-white mb-4 cart-container overflow-hidden">
+          <div class="container-fluid p-0 m-0">
+            <div class="w-100 pb-3">
+            <div class="h5 fw-bold text-primary pb-2 border-bottom">Checkout Details</div>
+                <div class="">Billing Address : <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, officia?</span></div>
+                <div class="">Email : <a href="#" class="text-primary-300 text-decoration-none">solvifyhub@company.com</a></div>
+                <div class="">Date : <span>12 / 12 / 2024</span></div>
+            </div>
+            <table class="w-100 table border overflow-hidden">
+                <tr class="text-dark">
+                    <th class="col">Sr No.</th>
+                    <th class="col">Project</th>
+                    <th class="col">Hosting Price</th>
+                    <th class="col">Customization Price</th>
+                    <th class="col">Project Price</th>
+                    <th class="col">Total Price</th>
+                </tr>
+                <tr>
+                    <td class="col">1</td>
+                    <td class="col">Lorem ipsum dolor sit amet consectetur </td>
+                    <td class="col">10,000.00</td>
+                    <td class="col">NA</td>
+                    <td class="col">15,000.00</td>
+                    <td class="col">25,000.00</td>
+                </tr>
+                <tr class="fw-bold bg-light">
+                    <td class="text-end border-bottom " colspan="5">Total :</td>
+                    <td class="border-bottom ">25,000.00</td>
+                </tr>
+                <tr class="fw-bold bg-light">
+                    <td class="text-end border-bottom" colspan="5">G.S.T :</td>
+                    <td class="border-bottom">500.00</td>
+                </tr>
+                <tr class="fw-bold border-bottom text-white bg-success-200">
+                    <td class="text-end border-0" colspan="5">Total Amount:</td>
+                    <td class="border-0">25,500.00</td>
+                </tr>
+            </table>
+         </div>
+        </div>
+      </section>
+      <!-- Empty Cart Screen start -->
+      <!-- <section class="empty-cart-section p-5">
+        <div class="d-flex flex-column justify-content-center align-items-center py-4">
+          <div class="">
+            <img src="assets/null-cart.png" class="null-cart-img" alt="">
+          </div>
+          <div class="text-primary-200 mt-2">It seems you forgot to add the product.!</div>
+        </div>
+       </section> -->
+      <!-- Empty Cart Screen End -->
+     </div>
+    </main>
+
+    <script src="JS/simpleSelect.js"></script>
+    <script src="JS/home.js"></script>
+    <script src="JS/multi-select.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js" integrity="sha512-KFHXdr2oObHKI9w4Hv1XPKc898mE4kgYx58oqsc/JqqdLMDI4YjOLzom+EMlW8HFUd0QfjfAvxSL6sEq/a42fQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+    <script src="JS/common.js"></script>
+    <script src="JS/validation.js"></script>
+    <script src="JS/add-to-cart.js"></script>
+</body>
+</html>

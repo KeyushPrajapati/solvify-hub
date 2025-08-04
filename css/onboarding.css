@@ -1,0 +1,195 @@
+/* COMMON HEADER UI START */
+.onboarding-header-svg-mask {
+    width: 100%; /* Define the width of the mask */
+    height: 160px; /* Define the height of the mask */
+    overflow: hidden; /* Hide the overflowing parts of the SVG */
+    position: relative; /* To control SVG positioning inside the mask */
+    background-color: #E6F0FE;
+    z-index: -1;
+    border-bottom-left-radius: 24px ;
+    border-bottom-right-radius: 24px ;
+    border-top-left-radius: 0px ;
+    border-top-right-radius: 0px ;
+}
+.slideWindow{
+    min-height: 480px !important ;
+}
+.stepDeactive{
+    display: none !important;
+}
+.stepActive{
+    display: flex !important;
+}
+/* Style for the SVG */
+.onboarding-header-svg-mask svg {
+    position: absolute; /* To control positioning inside the mask */
+    top: 10%; /* Adjust to show the desired part of the SVG */
+    left: 50%; /* Adjust to show the desired part of the SVG */
+    width: 120%;
+    transform: translate(-50%,-50%);
+    /* opacity: 0.7; */
+}
+#btn_next{
+    background-color: white;
+}
+#btn_next:hover{
+    background-color: var(--bs-primary-100);
+}
+#btn_prev{
+    background-color: white;
+}
+#btn_prev:hover{
+    background-color: var(--bs-primary-100);
+}
+#btn_submit{
+    background-color: white;
+}
+#btn_submit:hover{
+    background-color: var(--bs-primary-100);
+}
+/* COMMON HEADER UI END*/
+
+/* PROGRESS BAR START */
+#progress-container {
+    width: 100%;
+    height: 2px;
+    background-color: #E6F0FE;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 9 !important;
+}
+#progress-line {
+    width: 0;
+    height: 100%;
+    background-color: #034096;
+    transition: width 0.5s;
+}
+/*  PROGRESS BAR END */
+
+/* SLIDER FORM START */
+#formWindow {
+    transition: 0.5s !important;
+}
+.freelancer-icon-svg{
+    max-width:calc(1.525rem + 3.3vw);
+}
+.option-checkbox{
+    width: 300px;
+    min-height: 300px;
+    border-radius: 10px;
+}
+.option-ratio-btn:checked + .option-checkbox{
+    border: 2px solid #034096 !important;
+    background-color: #E6F0FE;
+    /* transition: background-color 0.5s; */
+}
+.option-checkbox:hover{
+    border: 2px solid #066BF9 !important;
+    background-color: #E6F0FE;
+    transition: background-color 0.5s;
+}
+.onboarding-signup-input{
+    width: 450px;
+}
+.gender-label{
+    transition: 0.5s;
+}
+.gender-label:hover{
+    border: 1px solid var(--bs-primary-200) !important;
+    background-color: var(--bs-primary-200) !important;
+    color: var(--bs-white) !important;
+    transition: 0.5s;
+}
+.radio-gender:checked + .gender-label{
+    color: var(--bs-white) !important;
+    border:var(--bs-primary-100) !important;
+    background-color: var(--bs-primary-100) !important;
+}
+.profile-upload-btn{
+    width: 16rem;
+}
+.remove-profile-btn{
+    width: 32px;
+    height: 32px;
+    z-index: 10;
+    /* border-radius: 50%; */
+}
+
+/* Error CLasses */
+#role-error,#freelancer_role-error{
+    padding-top: 12px;
+    text-align: center !important;
+}
+/* select css */
+
+.project_dummy_img {
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 14px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+/* .project_ask_card{
+    height: 400px;
+    width: 100%;
+    max-width: 600px;
+} */
+
+/* Portfolio section start*/
+.profile_project_image{
+    aspect-ratio: 16/9;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+}
+.profile_project_badge{
+     letter-spacing: 0.4px;
+}
+.portfolio_project_action_btn{
+     width: 27px !important;
+     padding: 0;
+     height: 27px !important;
+     /* background-color: white; */
+}
+.text-truncate-multiline {
+    max-height: 4.5em !important;
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis !important;
+    line-clamp: 3; 
+    line-height: 1.5;
+    
+}
+.portfolio_card{
+    transition: 0.4s;
+}
+.portfolio_card:hover{
+    border: none;
+    transition: 0.4s;
+    box-shadow: 0px 5px 10px #30303045;
+}
+#portfolio_project_review_canvas.offcanvas-end{
+    width: 700px !important;
+}
+.portfolio_project_preview_image{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: center;
+}
+/* Portfolio section end*/
+
+.project_dummy_img {
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 14px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}

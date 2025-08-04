@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+     <!-- google merial icons-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- bootstrap v5.0.2 css -->
+     <link rel="stylesheet" href="css/main.min.css">
+     <!-- custom css classes -->
+     <link rel="stylesheet" href="css/index.css">
+     <link rel="stylesheet" href="css/select.css">
+     <link rel="stylesheet" href="css/onboarding.css">
+     <link rel="stylesheet" href="css/profile.css">
+     <link rel="stylesheet" href="css/find-jobs.css">
+     <!-- bootstrap v5.0.2 JS -->
+     <script src="bootstrapV5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bg-primary-800">
+     <!-- Navbar -->
+     <nav class=" position-fixed  top-0 start-50 translate-middle-x px-4 navbar-css w-100 bg-primary-800 pt-2">
+        <div class="container-fluid d-flex justify-content-between align-items-center py-3">
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand fw-bold d-flex" href="#">
+                  <div class="">
+                      <img src="./assets/solvify logo.png" width="36" height="26" alt="solvify_hub_logo">
+                  </div>  
+                  <div class="ms-2"> Solvify Hub</div>
+                </a>
+            </div>
+            <div class="container-fluid d-none d-lg-flex p-0 align-items-center justify-content-between">
+              <div class="">
+                <ul class="nav-link-container d-flex align-items-center mb-0">
+                    <li class=" dropdown">
+                        <a class="nav-link text-primary nav-link-css rounded-pill nav-link-css dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu dropdown-css border-0 px-2" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Mobile Application</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">API Products</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Cloud Products</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Database Product</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">IOT Products</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Desktop applications</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Web Applications</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Websites</a></li>
+                        </ul>
+                    </li>
+                    <li class=""><a class="nav-link nav-link-css rounded-pill text-primary text-decoration-none" href="#">My Project</a></li>
+                </ul>
+              </div>
+              <div class="d-flex justify-content-end p-0">
+                  <ui class="nav-link-container d-flex align-items-center ">
+                      <li class="mx-3">
+                        <button class="btn btn-outline-primary border border-primary rounded-pill btn-text">Get Quote</button>
+                      </li>
+                      <li class="border border-primary p-0 rounded-circle nav-icons  d-flex align-items-center justify-content-center">
+                        <a class="dropdown-item p-0 nav-icon-link rounded-circle text-primary" href="#">
+                          <span class="material-icons fs-4 d-flex align-items-center rounded-circle justify-content-center">shopping_cart</span>
+                        </a>
+                     </li>
+                      <li class="ms-3 border border-primary p-0 rounded-circle nav-icons  d-flex align-items-center justify-content-center">
+                        <a class="dropdown-item p-0 nav-icon-link rounded-circle text-primary" href="#">
+                          <span class="material-icons fs-4 d-flex align-items-center rounded-circle justify-content-center">notifications</span>
+                          </a>
+                     </li>
+                      <li class="ms-3">
+                        <button class="btn btn-outline-primary border border-primary p-0 rounded-circle nav-icon-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="material-icons fs-3 d-flex align-items-center justify-content-center">account_circle</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-css border-0 px-2">
+                          <li><a class="dropdown-item text-dark-100 rounded px-3 py-2 " href="#">Profile</a></li>
+                          <li><a class="dropdown-item text-danger rounded px-3 py-2 " href="#">Logout</a></li>
+                        </ul>
+                      </li>
+                  </ui>
+              </div>
+            </div>
+            <div class="d-lg-none d-inline">
+              <div class="hamburger-menu" id="hamburger-menu">
+                <div class="menu-bar1 rounded-pill"></div>
+                <div class="menu-bar2 rounded-pill"></div>
+                <div class="menu-bar3 rounded-pill"></div>
+              </div>
+            </div>
+        </div>
+        <div id="responsive-navbar" class="d-lg-none d-flex flex-column align-items-center justify-content-center mobile-navbar position-absolute top-100 start-50 translate-middle-x bg-primary-800 border-top border-primary-600 pb-3 w-100">
+          <div class="mobile-navbar-items p-0 px-4  m-0 w-100">
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Get Quote</a></div>
+
+            <div class="w-100 d-flex flex-column"><a href="#navCollapse" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded nav-link-css" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="navCollapse">Category</a>
+              <div class="collapse" id="navCollapse">
+                <div class="card card-body bg-white">
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Websites</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Mobile Application</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">API Products</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Cloud Products</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Database Product</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">IOT Products</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Desktop applications</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">My Projects</a></div>
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Blog</a></div>
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Profile</a></div>
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded text-danger">Logout</a></div>
+            
+          </div>
+        </div>
+    </nav>
+  
+    <main>
+        <section class="container-fluid px-5">
+            <div class="my-5 pt-4">
+                <h1 class="fw-bold text-primary fs-2">My Projects</h1>
+            </div>
+            <div class="container-fluid p-0 my-5">
+                <div class="row">
+                    <!-- Nav Pills -->
+                    <div class="col-12">
+                        <ul class="nav nav-pills nav-underline  mb-4 border-bottom border-1 border-primary-100" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="tab1-tab" data-bs-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">
+                                    Projects
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="tab2-tab" data-bs-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">
+                                    Quoted Projects
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+            
+                    <!-- Tab Content -->
+                    <div class="col-12">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+                                <!-- empty project page -->
+                                <div class="p-5 bg-primary-700 border-radius-10">
+                                    <div class="d-flex flex-column justify-content-center align-items-center py-4">
+                                      <div class="">
+                                        <img src="assets/null-cart.png" class="null-cart-img" alt="">
+                                      </div>
+                                      <div class="text-primary-200 mt-2 w-100 text-center">No projects purchased yet. Your purchases will appear here.</div>
+                                    </div>
+                                </div> 
+                                <!--  project page -->
+                                <div id="project-card-section" class="d-none w-100 card-section">
+                                    <div class="row p-0 mx-0">
+                                         <div class="col-sm-6 col-lg-4 px-2  pb-3">
+                                             <div class="card border-0 w-100 h-100 custom-card overflow-hidden ">
+                                                 <div class="card-image-container">
+                                                     <div class="card-cart-icons  d-flex justify-content-center align-items-center cursor-pointer"> <span class="material-icons text-white ">shopping_cart</span> </div>
+                                                     <div class="card-img-box"><img src="assets/coc.jpg" class="card-img-top" alt="..."></div>
+                                                     <div class="card-rating">
+                                                         <div class="d-flex">
+                                                             <span class="material-icons  text-info">star</span>
+                                                             <span class="material-icons  text-info">star</span>
+                                                             <span class="material-icons  text-info">star</span>
+                                                             <span class="material-icons  text-info">star</span>
+                                                             <span class="material-icons  text-info">star_border</span>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                                 <a href="#" class="card-body custom-card-body d-flex flex-column justify-content-between cursor-pointer text-decoration-none">
+                                                   <div class="">
+                                                     <h5 class="card-title fs-5 text-capitalize">COC theme website</h5>
+                                                     <div class="card-text text-dark-300 fs-6 mb-2  text-truncate-multiline">Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, cum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, culpa. </div>
+                                                     <div class="d-flex mb-3 flex-wrap">
+                                                         <div class="badge bg-dark-200 rounded-pill d-flex align-items-center justify-content-center px-2 px-md-3 py-1 py-md-2 ">Hosting</div>  
+                                                         <div class="badge bg-primary-300 rounded-pill d-flex align-items-center justify-content-center px-2 px-md-3 ms-2 py-1 py-md-2 ">Customization</div>  
+                                                     </div>
+                                                   </div>
+                                                   <div class="">
+                                                       <div class="d-flex align-items-center  pt-2">
+                                                           <div class="ratio ratio-1x1 rounded-circle card-owner-img  overflow-hidden" >
+                                                               <img src="assets/doc-with-face.jpg" alt="" class="">
+                                                           </div>
+                                                           <div class="ms-2 fs-6 fw-bold text-dark-100">Owner Max</div>
+                                                       </div>
+                                                   </div>
+                                                 </a>
+                                             </div>
+                                         </div>
+                                    </div>
+                                 </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                                <div class="row m-0">
+                                    <!-- old card design -->
+                                    <div class="col-12 col-md-6 col-lg-4 mt-4 mt-lg-0">
+                                        <div class="card shadow-sm bg-white border-0 border-radius-16">
+                                            <div class="card-header text-primary-100 fw-bold fs-5 bg-white bg-transparent p-3">My First Project</div>
+                                            <div class="card-body">
+                                                <div class="">
+                                                    <label class="text-dark-100 fw-bold fw-6">Budget:
+                                                        <span class="text-dark-200" id="quoteProjectBudget">12000 INR</span>
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex mt-3">
+                                                    <div class="border-radius-10 d-flex flex-column rounded bg-primary-800 align-items-center justify-content-between w-100">
+                                                        <div class="py-2 text-dark fs-5 fw-bold">23</div>
+                                                        <div class="pb-2 text-dark fs-6">Bids</div>
+                                                    </div>
+                                                    <div class="border-radius-10 ms-3 d-flex flex-column rounded bg-primary-800 align-items-center justify-content-between w-100">
+                                                        <div class="py-2 text-dark fs-5 fw-bold">213 INR</div>
+                                                        <div class="pb-2 text-dark fs-6">Avg Bids</div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-end text-dark-200 fs-6 mt-3">
+                                                    12 Days ago
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- New card designs -->
+                                    <div class="col-12 col-md-6 col-lg-4 mt-4 mt-lg-0">
+                                        <a href="#" class="card shadow-sm bg-white border-0 border-radius-16 text-decoration-none">
+                                            <div class="card-header position-relative bg-white bg-transparent p-3 ">
+                                                <div class="text-primary-100 fw-bold fs-5"> My First Project Lorem ipsum dolor sit amet, consectet</div>
+                                                <span class="position-absolute p-2 bg-danger border border-light rounded-circle" data-bs-toggle="popover" data-bs-content="Please open the card. New Message is arrived" style="top:10px; right:10px;">
+                                                    <span class="visually-hidden">New alerts</span>
+                                                </span>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="row m-0 d-flex justify-content-between bg-primary-800 p-2 rounded fs-6">
+                                                    <label class="text-primary fw-bold col-6 p-0">Estimated Budget </label>
+                                                    <div class="text-dark-100 fw-500 col-6 text-end p-0" id="quoteProjectBudget">12000 INR</div>
+                                                </div>
+                                                <div class="row m-0 mt-2 d-flex justify-content-between bg-primary-800 p-2 rounded fs-6">
+                                                    <label class="text-primary fw-bold col-6 p-0">Category </label>
+                                                    <div class="text-dark-100 fw-500 col-6 text-end p-0" id="quoteProjectBudget">Web Application</div>
+                                                </div>
+                                                <div class="row m-0 mt-2 d-flex justify-content-between bg-primary-800 p-2 rounded fs-6">
+                                                    <label class="text-primary fw-bold col-6 p-0">Development Preference</label>
+                                                    <div class="text-dark-100 fw-500 col-6 text-end p-0" id="quoteProjectBudget">Solvify Hub</div>
+                                                </div>
+                                                <div class="row m-0 mt-2 d-flex justify-content-between bg-primary-800 p-2 rounded fs-6">
+                                                    <label class="text-primary fw-bold col-6 p-0">Technologies </label>
+                                                    <div class="text-dark-100 fw-500 col-6 text-end p-0" id="quoteProjectBudget">HTML, CSS , JS , DJANGO , AJAX, </div>
+                                                </div>
+                                                <div class="  mt-3 row m-0">
+                                                    <div class="col-6 p-0">
+                                                        <!-- Under Analysis badge -->
+                                                        <!-- <div class="badge px-3 py-2 fs-6 bg-info text-dark-100 rounded-pill" data-bs-toggle="popover" data-bs-content="Your project is currently under analysis. Our team is reviewing the details, and the estimated price may change based on the findings of our analysis. If you have any questions or concerns, please open the project and contact our support team for assistance.">Under Analysis</div> -->
+                                                        
+                                                        <!-- Quotation Upload -->
+                                                        <!-- <div class="badge px-3 py-2 fs-6 bg-primary-100 text-white rounded-pill" data-bs-toggle="popover" data-bs-content="Check quotation the quotation and reupload with your signature. ">Quotation Upload</div> -->
+
+                                                        <!-- Payment Pending -->
+                                                        <!-- <div class="badge px-3 py-2 fs-6 bg-success text-white rounded-pill" data-bs-toggle="popover" data-bs-content="Kindly make the payment to initiate the development of your project.">Payment Pending</div> -->
+
+                                                        <!-- Payment Completed -->
+                                                        <!-- <div class="badge px-3 py-2 fs-6 bg-success text-white rounded-pill" data-bs-toggle="popover" data-bs-content="Your payment has been successfully completed. Our team is now assigning a developer to your project.">Payment Completed</div> -->
+
+                                                        <!-- Under Development -->
+                                                        <!-- <div class="badge px-3 py-2 fs-6 bg-primary-300 text-white rounded-pill" data-bs-toggle="popover" data-bs-content="Your project development has begun. We will keep you updated on the progress and notify you once the project is completed. In the meantime, feel free to track the progress of your project.">Under Development</div> -->
+
+                                                        <!-- Development Overdue -->
+                                                        <!-- <div class="badge px-3 py-2 fs-6 bg-dark-500 text-dark rounded-pill" data-bs-toggle="popover" data-bs-content="Your project development timeline has exceeded the expected duration. Kindly reach out to your assigned developer for further details and updates regarding the project.">Development Overdue</div> -->
+
+                                                        <!--Development - Client Project Approval -->
+                                                        <!-- <div class="badge px-3 py-2 fs-6 bg-dark-400 text-white rounded-pill" data-bs-toggle="popover" data-bs-content="Your project has been successfully completed. Please download the project and release the payment at your earliest convenience.">Client Project Approval</div> -->
+
+                                                        <!-- Development Completed -->
+                                                        <div class="badge px-3 py-2 fs-6 bg-dark text-white rounded-pill" data-bs-toggle="popover" data-bs-content="Development Process is completed.">Development Completed</div>
+
+                                                        <!-- Under Hosting -->
+                                                        <!-- <div class="badge px-3 py-2 fs-6 bg-primary-300 text-white rounded-pill" data-bs-toggle="popover" data-bs-content="Your project is under hosting.">Under Hosting</div> -->
+
+                                                         <!-- Hosting Overdue -->
+                                                         <!-- <div class="badge px-3 py-2 fs-6 bg-dark-500 text-dark rounded-pill" data-bs-toggle="popover" data-bs-content="Your project hosting timeline has exceeded the expected duration. Kindly reach out to your assigned hoster for further details and updates regarding the project.">Hosting Overdue</div> -->
+                                                         
+                                                        <!--Hosting - Client Project Approval -->
+                                                        <!-- <div class="badge px-3 py-2 fs-6 bg-dark-400 text-white rounded-pill" data-bs-toggle="popover" data-bs-content="Your project has been successfully hosted. Please download the project and release the payment at your earliest convenience.">Client Project Approval</div> -->
+
+                                                         <!-- Hosting Completed -->
+                                                         <!-- <div class="badge px-3 py-2 fs-6 bg-dark text-white rounded-pill" data-bs-toggle="popover" data-bs-content="Hosting Process is completed.">Hosting Completed</div> -->
+
+                                                    </div>
+                                                    <div class="col-6 fs-6 text-end text-dark-200 p-0">12 Days ago</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    
+
+
+    <script src="JS/multi-select.js"></script>
+    <script src="JS/single-select.js"></script>
+    <script src="JS/common.js"></script>
+    <script type="module" src="JS/profile.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js" integrity="sha512-KFHXdr2oObHKI9w4Hv1XPKc898mE4kgYx58oqsc/JqqdLMDI4YjOLzom+EMlW8HFUd0QfjfAvxSL6sEq/a42fQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="JS/validation.js"></script>
+
+</body>
+</html>

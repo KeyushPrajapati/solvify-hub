@@ -1,0 +1,119 @@
+$primary     :#022659; 
+$secondary   :#A5B0C0;
+$success     :#47D16D;
+$info        :#F9F906;
+$warning     :#F9A806;
+$danger      :#F90606;
+$light       :#F0F2F5;
+$dark        :#252C36;
+
+//import the function & variables
+@import '../bootstrapV5.0.2/scss/functions';
+@import '../bootstrapV5.0.2/scss/variables';
+
+// Customize btn-sm (Small Buttons)
+$btn-padding-y-sm: 10px;
+$btn-padding-x-sm: 20px;
+$btn-font-size-sm: 12px;
+
+// Customize btn-lg (Large Buttons)
+$btn-padding-y-lg: 14px;
+$btn-padding-x-lg: 28px;
+$btn-font-size-lg: 16px;
+
+// Custom button padding
+$btn-padding-y: 12px;
+$btn-padding-x: 24px;
+$btn-font-size: 16px ;
+
+// Remove border from all buttons
+$btn-border-width: 0 !important;  // Remove border from all buttons
+$btn-border-color: transparent !important; // Ensure the border is transparent
+$btn-box-shadow: none;
+$btn-focus-box-shadow: none !important;
+// Customize colors
+$custom-theme-colors: (
+    // primary Colors
+    "primary-100" : #034096,
+    "primary-200" : #0456C8,
+    "primary-300" : #066BF9,
+    "primary-400" : #3789FB,
+    "primary-500" : #69A6FC,
+    "primary-600" : #9BC4FD,
+    "primary-700" : #CDE1FE,
+    "primary-800" : #E6F0FE,
+   
+
+    // Success Colors
+    "success-100" : #5CD67D,
+    "success-200" : #70DB8D,
+    "success-300" : #85E09D,
+    "success-400" : #99E6AE,
+    "success-500" : #ADEBBE,
+    "success-600" : #C2F0CE,
+    "success-700" : #E7F9EB,
+
+    // Danger Colors
+    "danger-100" : #590202,
+    "danger-200" : #960303,
+    "danger-300" : #C80404,
+    "danger-400" : #FB3737,
+    "danger-500" : #FC6969,
+    "danger-600" : #FD9B9B,
+    "danger-700" : #FECDCD,
+    "danger-800" : #FEE6E6,
+
+    // Warning Colors
+    "warning-100" : #593C02,
+    "warning-200" : #966503,
+    "warning-300" : #C88704,
+    "warning-400" : #FBBA37,
+    "warning-500" : #FCCB69,
+    "warning-600" : #FDDC9B,
+    "warning-700" : #FEEECD,
+    "warning-800" : #FEF6E6,
+
+    // Info Colors
+    "info-100" : #595902,
+    "info-200" : #969603,
+    "info-300" : #C8C804,
+    "info-400" : #FBFB37,
+    "info-500" : #FCFC69,
+    "info-600" : #FDFD9B,
+    "info-700" : #FEFECD,
+    "info-800" : #FEFEE6,
+
+    // Dark Colors
+    "dark-100" : #3F4A5A,
+    "dark-200" : #546378,
+    "dark-300" : #697C96,
+    "dark-400" : #8796AB,
+    "dark-500" : #C3CAD5,
+    "dark-600" : #E1E5EA,
+    "dark-700" : #F0F2F5,
+);
+
+$theme-colors : map-merge($custom-theme-colors , $theme-colors );
+$modal-backdrop-bg : #03409636;
+// popover
+$popover-header-bg:#fff;
+$popover-header-color:#252C36;
+$popover-header-bg: #E6F0FE;
+$popover-border-color: #ffffff;
+$popover-border-width:0.5px;
+$popover-border-radius: 12px; 
+$popover-inner-border-radius: 12px; 
+$popover-arrow-width: 1rem;
+$popover-arrow-height: .5rem;
+$popover-arrow-color:#ffffff;
+$popover-arrow-outer-color: #fff;
+// Import Google Font
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+
+// Customize Bootstrap font
+$font-family-base: 'Manrope',Roboto,"Noto Sans", sans-serif;
+
+
+
+// import bootstrap
+@import '../bootstrapV5.0.2/scss/bootstrap.scss';

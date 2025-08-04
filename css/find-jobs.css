@@ -1,0 +1,209 @@
+
+.filter-search-sort-bar{
+    top:86px; 
+    left:0; 
+    z-index: 40;
+}
+#sidebar-find-jobs::-webkit-scrollbar {
+    width: 8px;
+}
+/* Track */
+#sidebar-find-jobs::-webkit-scrollbar-track {
+    background: #ffffff00; 
+}
+
+/* Handle */
+#sidebar-find-jobs::-webkit-scrollbar-thumb {
+    background: var(--bs-dark-500); 
+    border-radius: 50px;
+}
+#sidebar-find-jobs::-webkit-scrollbar-thumb:horizontal {
+    background-color: #ffffff00;
+}
+
+/* Handle on hover */
+#sidebar-find-jobs::-webkit-scrollbar-thumb:hover {
+    background: var(--bs-dark-400); 
+}
+
+.find-job-search-bar{
+    width: 65%;
+}
+.sort-find-jobs{
+    width: 100px;
+}
+/* Card section CSS */
+.card-section{
+    width: 76%;
+    transition: 0.5s;
+}
+.filter-card-section{
+    margin-top: 200px;
+}
+.section-full-width{
+    width: 100% !important;
+    transition: 0.5s;
+    margin-left:0;
+}
+/* Filter Sidebar CSS */
+.sidebar-filter{
+    width: 24%;
+    transition: width 0.5s;
+    overflow-y: auto !important;
+    height: 550px;
+}
+#badgeContainer2 .badge-capsule,#badgeContainer3 .badge-capsule,#serviceTypebadgeContainer .badge-capsule{
+    border:none !important;
+    color: white;
+    background-color: var(--bs-primary-100);
+}
+#badgeContainer2 .badge-capsule span,#badgeContainer3 .badge-capsule span,#serviceTypebadgeContainer .badge-capsule span{
+    color: white;
+}
+@media screen and (max-width:992px) {
+    .filter-search-sort-bar{
+     top: 79px;
+    }
+    .find-job-search-bar{
+        width: 100%;
+    }
+    .find-job-search-form{
+        width: 100%;
+    }
+    .card-section{
+        width: 100%;
+        margin-left: 0;
+    }
+    .sidebar-filter{
+       /* display: none; */
+       position: absolute;
+       z-index: 999;
+       background-color: white;
+       width: 100%;
+       padding: 0 0 16px 0 !important;
+       left:50%;
+       top: 0;
+       height: 100vh;
+       transform: translateX(-50%);
+    }  
+
+    .filter-form{
+        padding:0px 24px;
+    } 
+}
+.filter_close{
+    width: 0% !important;
+    transition:  0.5s;
+    padding: 0 !important;
+}
+.filter-clear:hover{
+    background-color: var(--bs-primary-100) !important;
+}
+/* Card Css */
+.card-img-top{
+    object-fit: cover;
+}
+.custom-card{
+    border-radius: 12px !important;
+    /* box-shadow: 0px 0px 10px #00006e19 ; */
+    /* max-width: 400px; */
+    transition: 0.5s;
+    /* min-height: 410px; */
+}
+.card-image-container{
+    position: relative;
+    width: 100%;
+    /* height: 100%; */
+    top:0;
+    left:0;
+    aspect-ratio: calc(9 / 16* 100%);
+}
+.custom-card-body{
+    z-index: 30 !important;
+    /* flex-grow: 1; */
+}
+.custom-card-body .card-title{
+    font-size: 16px !important;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+.card-cart-icons{
+    z-index: 10;
+    position: absolute;
+    right:12px;
+    top:-50px;
+    border-radius: 50%;
+    /* padding: 12px; */
+    height: 40px;
+    width: 40px;
+    transition: 0.5s;
+    background-color: #022659;
+}
+.card-cart-icons:hover{
+    background-color: #0456C8;
+    transition: 0.5s;
+}
+.card-rating{
+    z-index: 10;
+    position: absolute;
+    bottom:12px;
+    left:-120px;
+    transition: 0.5s;
+
+}
+.card-img-box{
+    aspect-ratio: calc(9 / 16* 100%);
+}
+.card-img-box::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: linear-gradient(to bottom, #42485100 20%, #2d333da6);
+    z-index: 5;
+    opacity: 0;
+    transition: 0.5s;
+}
+.text-truncate-multiline {
+    max-height: 4.5em !important;
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis !important;
+    line-clamp: 3; 
+    line-height: 1.5;
+    
+}
+.custom-card:hover .card-cart-icons{
+    top:12px;
+    transition: 0.5s;
+}
+.custom-card:hover .card-rating{
+    transition: 0.5s;
+    left: 12px;
+}
+.custom-card:hover .card-img-box::before{
+    transition: 0.5s;
+    opacity: 1;
+}
+.card-owner-img{
+    width: 32px;
+    height: 32px;
+}
+.card-owner-img img{
+    object-fit:cover;
+}
+.custom-card:hover{
+    transition: 0.5s;
+    box-shadow: 0px 10px 16px #68688a3f ;
+}
+@media screen and (min-width:1440px) {
+    .filter-card-section{
+        max-width: 1500px !important;
+    }
+}
+@media screen and (max-width:576px) {
+    .filter-card-section{
+        margin-top: 260px !important;
+    }
+}
+

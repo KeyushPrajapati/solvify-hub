@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solvify Hub</title>
+    <!-- google merial icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- bootstrap v5.0.2 css -->
+    <link rel="stylesheet" href="css/main.min.css">
+    <!-- custom css classes -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/add-to-cart.css">
+
+    <!-- bootstrap v5.0.2 JS -->
+    <script src="bootstrapV5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bg-primary-800">
+    <!-- Navbar -->
+    <nav class=" position-fixed  top-0 start-50 translate-middle-x px-4 navbar-css w-100 bg-primary-800 pt-2">
+        <div class="container-fluid d-flex justify-content-between align-items-center py-3">
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand fw-bold d-flex" href="#">
+                  <div class="">
+                      <img src="./assets/solvify logo.png" width="36" height="26" alt="solvify_hub_logo">
+                  </div>  
+                  <div class="ms-2"> Solvify Hub</div>
+                </a>
+            </div>
+            <div class="container-fluid d-none d-lg-flex p-0 align-items-center justify-content-between">
+              <div class="">
+                <ul class="nav-link-container d-flex align-items-center mb-0">
+                    <li class=" dropdown">
+                        <a class="nav-link text-primary nav-link-css rounded-pill nav-link-css dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu dropdown-css border-0 px-2" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Mobile Application</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">API Products</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Cloud Products</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Database Product</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">IOT Products</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Desktop applications</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Web Applications</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Websites</a></li>
+                        </ul>
+                    </li>
+                    <li class=""><a class="nav-link nav-link-css rounded-pill text-primary text-decoration-none" href="#">My Project</a></li>
+                </ul>
+              </div>
+              <div class="d-flex justify-content-end p-0">
+                  <ui class="nav-link-container d-flex align-items-center ">
+                      <li class="mx-3">
+                        <button class="btn btn-outline-primary border border-primary rounded-pill btn-text">Get Quote</button>
+                      </li>
+                      <li class="border border-primary p-0 rounded-circle nav-icons  d-flex align-items-center justify-content-center">
+                        <a class="dropdown-item p-0 nav-icon-link rounded-circle text-primary position-relative" href="#">
+                          <span class="material-icons fs-4 d-flex align-items-center rounded-circle justify-content-center">shopping_cart</span>
+                          <span class="position-absolute top-0 start-100 p-1 translate-middle badge rounded-pill bg-danger">
+                            10
+                          </span>
+                        </a>
+                     </li>
+                    <li class="ms-3 border border-primary p-0 rounded-circle nav-icons  d-flex align-items-center justify-content-center">
+                        <a href="#" role="button" class="dropdown-item  p-0 nav-icon-link rounded-circle text-primary position-relative" id="notificationsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                          <span class="material-icons fs-4 d-flex align-items-center rounded-circle justify-content-center">notifications</span>
+                          <span class="position-absolute top-0 start-100 p-1 translate-middle badge rounded-pill bg-danger">
+                            5
+                          </span>
+                        </a>
+                        <ul class="dropdown-menu overflow-hidden noti-dropdown-css dropdown-css border-0 p-0 mt-2 " aria-labelledby="notificationsDropdown">
+                          <div class="noti-dropdown-inner-container overflow-auto ">
+                            <li>
+                              <a href="#" class="dropdown-item d-flex py-2 border-bottom">
+                                <div class="">
+                                  <div class="d-flex justify-content-center align-items-center noti-icon rounded-circle bg-dark-700">
+                                    <span class="material-icons text-dark-100">notifications</span>
+                                  </div>
+                                </div>
+                                <div class="px-3">
+                                  <div class="text-dark-100 fw-bold">Notification Title</div>
+                                  <div class="text-dark-300 fs-6">2 Min Ago</div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" class="dropdown-item d-flex py-2 border-bottom">
+                                <div class="">
+                                  <div class="d-flex justify-content-center align-items-center noti-icon rounded-circle bg-dark-700">
+                                    <span class="material-icons text-dark-100">notifications</span>
+                                  </div>
+                                </div>
+                                <div class="px-3">
+                                  <div class="text-dark-100 fw-bold">Notification Title</div>
+                                  <div class="text-dark-300 fs-6">2 Min Ago</div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" class="dropdown-item d-flex py-2 border-bottom">
+                                <div class="">
+                                  <div class="d-flex justify-content-center align-items-center noti-icon rounded-circle bg-dark-700">
+                                    <span class="material-icons text-dark-100">notifications</span>
+                                  </div>
+                                </div>
+                                <div class="px-3">
+                                  <div class="text-dark-100 fw-bold">Notification Title</div>
+                                  <div class="text-dark-300 fs-6">2 Min Ago</div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" class="dropdown-item d-flex py-2 border-bottom">
+                                <div class="">
+                                  <div class="d-flex justify-content-center align-items-center noti-icon rounded-circle bg-dark-700">
+                                    <span class="material-icons text-dark-100">notifications</span>
+                                  </div>
+                                </div>
+                                <div class="px-3">
+                                  <div class="text-dark-100 fw-bold">Notification Title</div>
+                                  <div class="text-dark-300 fs-6">2 Min Ago</div>
+                                </div>
+                              </a>
+                            </li>
+                            <!-- If notification box is empty then show this div -->
+                            <div class="py-4 w-100 text-center text-dark-300">No Notifications Yet !😊</div>
+                          </div>
+                          <!-- All notification -->
+                          <div class="position-sticky bottom-0 start-0 text-center w-100 py-3 all-notification">
+                            <a href="" class="py-3 px-3 w-100 h-100 text-decoration-none text-primary-100 fw-bold">All Notification</a>
+                          </div>
+                        </ul>
+                     </li>
+                      <li class="ms-3">
+                        <button class="btn btn-outline-primary border border-primary p-0 rounded-circle nav-icon-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="material-icons fs-3 d-flex align-items-center justify-content-center">account_circle</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-css border-0 px-2">
+                          <li><a class="dropdown-item text-dark-100 rounded px-3 py-2 " href="#">Profile</a></li>
+                          <li><a class="dropdown-item text-danger rounded px-3 py-2 " href="#">Logout</a></li>
+                        </ul>
+                      </li>
+                  </ui>
+              </div>
+            </div>
+            <div class="d-lg-none d-inline">
+              <div class="hamburger-menu" id="hamburger-menu">
+                <div class="menu-bar1 rounded-pill"></div>
+                <div class="menu-bar2 rounded-pill"></div>
+                <div class="menu-bar3 rounded-pill"></div>
+              </div>
+            </div>
+        </div>
+        <div id="responsive-navbar" class="d-lg-none d-flex flex-column align-items-center justify-content-center mobile-navbar position-absolute top-100 start-50 translate-middle-x bg-primary-800 border-top border-primary-600 pb-3 w-100">
+          <div class="mobile-navbar-items p-0 px-4  m-0 w-100">
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Get Quote</a></div>
+
+            <div class="w-100 d-flex flex-column"><a href="#navCollapse" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded nav-link-css" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="navCollapse">Category</a>
+              <div class="collapse" id="navCollapse">
+                <div class="card card-body bg-white">
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Websites</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Mobile Application</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">API Products</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Cloud Products</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Database Product</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">IOT Products</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Desktop applications</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">My Projects</a></div>
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Blog</a></div>
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Profile</a></div>
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded text-danger">Logout</a></div>
+            
+          </div>
+        </div>
+    </nav>
+     
+    <main>
+     <div class="container-fluid bg-white border-radius-16 p-4">
+        <div class="w-100 pb-3">
+        <div class="h">Checkout Details</div>
+            <div class="">Billing Address : <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, officia?</span></div>
+            <div class="">Email : <a href="#" class="text-primary-300 text-decoration-none">solvifyhub@company.com</a></div>
+            <div class="">Date : <span>12 / 12 / 2024</span></div>
+        </div>
+        <table class="w-100 table border overflow-hidden">
+            <tr class="text-dark">
+                <th class="col">Sr No.</th>
+                <th class="col">Project</th>
+                <th class="col">Hosting Price</th>
+                <th class="col">Customization Price</th>
+                <th class="col">Project Price</th>
+                <th class="col">Total Price</th>
+            </tr>
+            <tr>
+                <td class="col">1</td>
+                <td class="col">Lorem ipsum dolor sit amet consectetur </td>
+                <td class="col">10,000.00</td>
+                <td class="col">NA</td>
+                <td class="col">15,000.00</td>
+                <td class="col">25,000.00</td>
+            </tr>
+            <tr class="fw-bold ">
+                <td class="text-end border-0" colspan="5">Total :</td>
+                <td class="border-0">25,000.00</td>
+            </tr>
+            <tr class="fw-bold">
+                <td class="text-end border-0" colspan="5">G.S.T :</td>
+                <td class="border-0">500.00</td>
+            </tr>
+            <tr class="fw-bold border-bottom bg-success-700">
+                <td class="text-end border-0" colspan="5">Total Amount:</td>
+                <td class="border-0">25,500.00</td>
+            </tr>
+        </table>
+        <div class="w-100 text-end">
+           <button type="button" class="btn btn-success rounded-pill text-white border-0">Pay Now</button>
+        </div>
+     </div>
+    </main>
+</body>
+</html>

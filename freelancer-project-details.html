@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Detail Page</title>
+    <!-- google merial icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- bootstrap v5.0.2 css -->
+    <link rel="stylesheet" href="css/main.min.css">
+    <!-- custom css classes -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/select.css">
+    <link rel="stylesheet" href="css/find-jobs.css">
+    <link rel="stylesheet" href="css/project-details.css">
+    <link rel="stylesheet" href="css/freelancer-project-details.css">
+    <!-- bootstrap v5.0.2 JS -->
+    <script src="bootstrapV5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bg-primary-800">
+     <!-- Navbar -->
+     <nav class=" position-fixed  top-0 start-50 translate-middle-x px-4 navbar-css w-100 bg-primary-800 pt-2">
+        <div class="container-fluid d-flex justify-content-between align-items-center py-3">
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand fw-bold d-flex" href="#">
+                  <div class="">
+                      <img src="./assets/solvify logo.png" width="36" height="26" alt="solvify_hub_logo">
+                  </div>  
+                  <div class="ms-2"> Solvify Hub</div>
+                </a>
+            </div>
+            <div class="container-fluid d-none d-lg-flex p-0 align-items-center justify-content-between">
+              <div class="">
+                <ul class="nav-link-container d-flex align-items-center mb-0">
+                    <li class=" dropdown">
+                        <a class="nav-link text-primary nav-link-css rounded-pill nav-link-css dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu dropdown-css border-0 px-2" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Mobile Application</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">API Products</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Cloud Products</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Database Product</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">IOT Products</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Desktop applications</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Web Applications</a></li>
+                            <li><a class="dropdown-item text-dark-100 rounded px-3 py-2" href="#">Websites</a></li>
+                        </ul>
+                    </li>
+                    <li class=""><a class="nav-link nav-link-css rounded-pill text-primary text-decoration-none" href="#">My Project</a></li>
+                </ul>
+              </div>
+              <div class="d-flex justify-content-end p-0">
+                  <ui class="nav-link-container d-flex align-items-center ">
+                      <li class="mx-3">
+                        <button class="btn btn-outline-primary border border-primary rounded-pill btn-text">Get Quote</button>
+                      </li>
+                      <li class="border border-primary p-0 rounded-circle nav-icons  d-flex align-items-center justify-content-center">
+                        <a class="dropdown-item p-0 nav-icon-link rounded-circle text-primary" href="#">
+                          <span class="material-icons fs-4 d-flex align-items-center rounded-circle justify-content-center">shopping_cart</span>
+                        </a>
+                     </li>
+                      <li class="ms-3 border border-primary p-0 rounded-circle nav-icons  d-flex align-items-center justify-content-center">
+                        <a class="dropdown-item p-0 nav-icon-link rounded-circle text-primary" href="#">
+                          <span class="material-icons fs-4 d-flex align-items-center rounded-circle justify-content-center">notifications</span>
+                          </a>
+                     </li>
+                      <li class="ms-3">
+                        <button class="btn btn-outline-primary border border-primary p-0 rounded-circle nav-icon-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="material-icons fs-3 d-flex align-items-center justify-content-center">account_circle</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-css border-0 px-2">
+                          <li><a class="dropdown-item text-dark-100 rounded px-3 py-2 " href="#">Profile</a></li>
+                          <li><a class="dropdown-item text-danger rounded px-3 py-2 " href="#">Logout</a></li>
+                        </ul>
+                      </li>
+                  </ui>
+              </div>
+            </div>
+            <div class="d-lg-none d-inline">
+              <div class="hamburger-menu" id="hamburger-menu">
+                <div class="menu-bar1 rounded-pill"></div>
+                <div class="menu-bar2 rounded-pill"></div>
+                <div class="menu-bar3 rounded-pill"></div>
+              </div>
+            </div>
+        </div>
+        <div id="responsive-navbar" class="d-lg-none d-flex flex-column align-items-center justify-content-center mobile-navbar position-absolute top-100 start-50 translate-middle-x bg-primary-800 border-top border-primary-600 pb-3 w-100">
+          <div class="mobile-navbar-items p-0 px-4  m-0 w-100">
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Get Quote</a></div>
+
+            <div class="w-100 d-flex flex-column"><a href="#navCollapse" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded nav-link-css" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="navCollapse">Category</a>
+              <div class="collapse" id="navCollapse">
+                <div class="card card-body bg-white">
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Websites</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Mobile Application</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">API Products</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Cloud Products</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Database Product</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">IOT Products</a></div>
+                  <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Desktop applications</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">My Projects</a></div>
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Blog</a></div>
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded ">Profile</a></div>
+            <div class="w-100 d-flex"><a href="" class=" text-center nav-link-css rounded w-100 py-2 text-decoration-none rounded text-danger">Logout</a></div>
+            
+          </div>
+        </div>
+    </nav>
+    <main>
+        <div class="">
+          <!-- banner and project logo -->
+          <section>
+            <div class="project-banner position-relative">
+              <!-- Background Image -->
+              <img src="assets/avatar2.jpg" alt="Background" class="background-image">
+              <div class="badge py-3 px-4 fw-normal banner-trusted-badge fs-5 bg-primary-300 text-white position-absolute rounded-pill">Trusted By Us</div>
+              <!-- Profile Picture -->
+              <div class="project-logo position-absolute top-100  ">
+                <img src="assets/doc-with-face.jpg" alt="Profile Picture" class="">
+              </div>
+            </div>
+          </section>
+          <section class="container-fluid p-0 project-details-section">
+            <ul class="nav nav-pills nav-underline  mb-4 border-bottom border-1 border-primary-100 mt-1 px-2 px-md-3 px-lg-5" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="about-project-tab" data-bs-toggle="tab" href="#about-project" role="tab" aria-controls="about-project" aria-selected="true"> 
+                        About
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="proposals-tab" data-bs-toggle="tab" href="#proposals" role="tab" aria-controls="proposals" aria-selected="false">
+                        Proposals
+                    </a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <!-- about project tab -->
+                <div class="tab-pane fade show active" id="about-project" role="tabpanel" aria-labelledby="about-project-tab">
+                    <div class=" px-3 px-md-4 px-lg-5">
+                        <div class="row">
+                          <div class="col-12 col-lg-7 pb-5">
+                            <div class="d-flex align-items-center">
+                              <div class="fs-4 fw-bold text-primary-100">Project large Title</div>
+                              <div class="ms-3 d-flex">
+                                <button class="bg-primary-700 p-0 rounded-circle border-0 d-flex align-items-center justify-content-center project-handle bookmark-btn" >
+                                    <div class=" p-0 rounded-circle text-primary  text-decoration-none">
+                                      <span class="material-icons fs-5 d-flex align-items-center rounded-circle justify-content-center bookmark-icon">bookmark_border</span>
+                                    </div>
+                                 </button>
+                                <button class="ms-3 bg-primary-700 p-0 rounded-circle border-0 d-flex align-items-center justify-content-center project-handle" type="button" data-bs-toggle="modal" data-bs-target="#bugReportModal" >
+                                    <div class=" p-0 rounded-circle text-primary  text-decoration-none">
+                                      <span class="material-icons fs-5 d-flex align-items-center rounded-circle justify-content-center">bug_report</span>
+                                    </div>
+                                 </button>
+                              </div>
+                            </div>
+                            <div class="fw-bold text-dark-100">By Max Well</div>
+                            <div class=" mt-4 text-dark-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sapiente vel alias architecto quo officiis mollitia eos quos nulla numquam, eaque quis a similique velit? Exercitationem, perspiciatis! Earum cum accusantium illum repellat, repudiandae saepe consequatur fuga vel error ea sit dolorem autem, mollitia rerum itaque? Animi dolores et dicta blanditiis excepturi obcaecati doloribus molestiae non aperiam, ea velit quae omnis provident eum quisquam odio dolorem labore? Odio neque, velit ab eaque veniam illo voluptatem architecto quae harum explicabo laborum veritatis delectus adipisci nulla. Unde provident, ex vitae et corporis itaque quidem similique delectus, nulla commodi cum fuga at eius, aliquam odit porro nemo reprehenderit. Fuga similique dolorem nostrum accusantium natus aliquam omnis consequatur illum laborum illo architecto reiciendis consectetur, perferendis esse. B!</div>
+            
+                            <div class="mt-5">
+                              <div class="fs-5 fw-bold text-dark-100">Technology</div>
+                              <div class="mt-3">
+                                <div class="me-1 badge rounded-pill border border-primary-200 px-3 py-2 fs-6 text-primary-200">HTML</div>
+                                <div class="me-1 badge rounded-pill border border-primary-200 px-3 py-2 fs-6 text-primary-200">Python</div>
+                                <div class="me-1 badge rounded-pill border border-primary-200 px-3 py-2 fs-6 text-primary-200">Django</div>
+                              </div>
+                            </div>
+            
+                            <!-- gallary -->
+                            <div class="mt-5">
+                              <div class="fs-5 fw-bold text-dark-100">Gallary</div>
+                              <div class="mt-3">
+                                <div class="d-flex flex-column">
+                                  <div class="me-3" id="main-gallary-image">
+                                    <img class="" id="mainImage" src="assets/coc banner.png" alt="">
+                                  </div>
+                                  <div class="other-gallary-image mt-3 d-flex">
+                                    <div class="ratio ratio-1x1 overflow-hidden me-3">
+                                      <img class="gallary-img" src="assets/coc banner.png" alt="" onclick="replaceMainImg(this)">
+                                    </div>
+                                    <div class="ratio ratio-1x1 overflow-hidden me-3">
+                                      <img class="gallary-img" src="assets/coc.jpg" alt="" onclick="replaceMainImg(this)">
+                                    </div>
+                                    <div class="ratio ratio-1x1 overflow-hidden me-3">
+                                      <img class="gallary-img" src="assets/coc2.jpg" alt="" onclick="replaceMainImg(this)">
+                                    </div>
+                                    <div class="ratio ratio-1x1 overflow-hidden me-3">
+                                      <img class="gallary-img" src="assets/coc3.png" alt="" onclick="replaceMainImg(this)">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+            
+                            <!-- video demo -->
+                            <div class="mt-5">
+                              <div class="fs-5 fw-bold text-dark-100">Video</div>
+                              <div class="video-container mt-3">
+                                <iframe 
+                                    class="project-video-iframe"
+                                    src="https://www.youtube.com/embed/jLNrvmXboj8"
+                                    title="YALGAAR - CARRYMINATI X Wily Frenzy"
+                                    allowfullscreen>
+                                </iframe>
+                              </div>
+                            </div>
+                          </div>
+            
+                          <!-- sidebar client details and project brief -->
+                          <div class="col-12 col-lg-5 ">
+                            <div class="project-brief ms-lg-auto row m-0 flex-column-reverse flex-sm-row-reverse flex-lg-row">
+                              <section class="col-sm-6 col-lg-12">
+                                <div class="overflow-hidden border-radius-16 ">
+                                  <!-- rating -->
+                                  <div class="px-3 py-3 border-bottom border-3 border-primary-800 project-brief-info-row d-flex justify-content-between align-items-center">
+                                    <div class="d-flex  align-items-center">
+                                      <div class="">
+                                        <span class="material-icons fs-5 d-flex align-items-center rounded-circle justify-content-center text-primary-100">thumb_up</span>
+                                      </div>
+                                      <div class="ms-2 text-primary-100  fw-bold">Rating</div>
+                                    </div>
+                                    <div class="d-flex  align-items-center"">
+                                      <div class="me-1 text-primary-100  fw-bolder">3.5</div>
+                                      <div class="">
+                                        <span class="material-icons fs-5 d-flex align-items-center rounded-circle justify-content-center text-primary-100">star</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- price -->
+                                  <div class="px-3 py-3 border-bottom border-3 border-primary-800 project-brief-info-row d-flex justify-content-between align-items-center">
+                                    <div class="d-flex  align-items-center">
+                                      <div class="">
+                                        <span class="material-icons fs-5 d-flex align-items-center rounded-circle justify-content-center text-primary-100">monetization_on</span>
+                                      </div>
+                                      <div class="ms-2 text-primary-100  fw-bold">Price</div>
+                                    </div>
+                                    <div class="d-flex  align-items-center"">
+                                      <div class="me-1 text-primary-100  fw-bolder">1200</div>
+                                      <div class="">
+                                        <span class="material-icons fs-5 d-flex align-items-center rounded-circle justify-content-center text-primary-100">monetization_on</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- hosted or not -->
+                                  <div class="px-3 py-3 border-bottom border-3 border-primary-800 project-brief-info-row d-flex justify-content-between align-items-center">
+                                    <div class="d-flex  align-items-center">
+                                      <div class="">
+                                        <span class="material-icons fs-5 d-flex align-items-center rounded-circle justify-content-center text-primary-100">cloud_upload</span>
+                                      </div>
+                                      <div class="ms-2 text-primary-100  fw-bold">Hosting</div>
+                                    </div>
+                                    <div class="d-flex  align-items-center"">
+                                      <div class="">
+                                        <span class="material-icons fs-5 d-flex align-items-center rounded-circle justify-content-center text-primary-100">close</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- Reviewed or not -->
+                                  <div class="px-3 py-3 border-bottom border-2 border-primary-800 project-brief-info-row d-flex justify-content-between align-items-center">
+                                    <div class="d-flex  align-items-center">
+                                      <div class="">
+                                        <span class="material-icons fs-5 d-flex align-items-center rounded-circle justify-content-center text-primary-100">search</span>
+                                      </div>
+                                      <div class="ms-2 text-primary-100  fw-bold">Review</div>
+                                    </div>
+                                    <div class="d-flex  align-items-center"">
+                                      <div class="">
+                                        <span class="material-icons fs-5 d-flex align-items-center rounded-circle justify-content-center text-primary-100">check</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <button type="modal" data-bs-toggle="modal" data-bs-target="#bidModal" class="mt-3 mt-lg-2 btn btn-primary-100 rounded-pill border-0 w-100" type="button">Bid Now</button>
+                              </section>
+                              
+                              <section class="col-sm-6 col-lg-12">
+                                <div class="overflow-hidden border-radius-16  mt-0 mt-lg-5">
+                                  <!-- title -->
+                                  <div class="px-3 py-3 w-100 border-bottom border-3 border-primary-800 project-brief-info-row d-flex justify-content-between  align-items-center ">
+                                    <div class="w-100 fs-5 fw-bold text-primary-100 text-center">
+                                      Developer Verification
+                                    </div>
+                                  </div>
+                                  <!-- Identity Verified -->
+                                  <div class="px-3 py-3 border-bottom border-3 border-primary-800 project-brief-info-row d-flex justify-content-between align-items-center">
+                                    <div class="d-flex  align-items-center">
+                                      <div class="">
+                                        <span class="material-icons fs-5 d-flex align-items-center rounded-circle justify-content-center text-primary-100">person</span>
+                                      </div>
+                                      <div class="ms-2 text-primary-100  fw-bold">Identity Verified</div>
+                                    </div>
+                                    <div class="d-flex  align-items-center"">
+                                      <div class="">
+                                        <span class="material-icons fs-5 d-flex align-items-center rounded-circle justify-content-center text-success-100 fs-4">check</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- price -->
+                                  <div class="px-3 py-3 border-bottom border-3 border-primary-800 project-brief-info-row d-flex justify-content-between align-items-center">
+                                    <div class="d-flex  align-items-center">
+                                      <div class="">
+                                        <span class="material-icons fs-5 d-flex align-items-center rounded-circle justify-content-center text-primary-100">email</span>
+                                      </div>
+                                      <div class="ms-2 text-primary-100  fw-bold">Email Verified</div>
+                                    </div>
+                                    <div class="d-flex  align-items-center"">
+                                      <div class="">
+                                        <span class="material-icons fs-5 d-flex align-items-center rounded-circle justify-content-center text-success-100 fs-4 ">check</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- hosted or not -->
+                                  <div class="px-3 py-3 border-bottom border-3 border-primary-800 project-brief-info-row d-flex justify-content-between align-items-center">
+                                    <div class="d-flex  align-items-center">
+                                      <div class="">
+                                        <span class="material-icons fs-5 d-flex align-items-center rounded-circle justify-content-center text-primary-100">call</span>
+                                      </div>
+                                      <div class="ms-2 text-primary-100  fw-bold">Phone Verified</div>
+                                    </div>
+                                    <div class="d-flex  align-items-center"">
+                                      <div class="">
+                                        <span class="material-icons fs-5 d-flex align-items-center rounded-circle justify-content-center text-danger-400 fs-4 ">close</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- Reviewed or not -->
+                                  <div class="px-3 py-3 border-bottom border-2 border-primary-800 project-brief-info-row d-flex justify-content-between align-items-center">
+                                    <div class="d-flex  align-items-center">
+                                      <div class="">
+                                        <span class="material-icons fs-5 d-flex align-items-center rounded-circle justify-content-center text-primary-100">credit_card</span>
+                                      </div>
+                                      <div class="ms-2 text-primary-100  fw-bold">Payment Verified</div>
+                                    </div>
+                                    <div class="d-flex  align-items-center"">
+                                      <div class="">
+                                        <span class="material-icons fs-5 d-flex align-items-center rounded-circle justify-content-center text-danger-400 fs-4 ">close</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </section>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- proposals -->
+                <div class="tab-pane fade" id="proposals" role="tabpanel" aria-labelledby="proposals">
+                  <div class="container-fluid px-5">
+                    <div class="card bg-white border-radius-16 border-primary-600 mt-3">
+                      <div class="row m-0">
+                          <div class="col-12 col-md-8 p-4">
+                              <div class="d-flex justify-content-between flex-column h-100">
+                                <div class="d-flex justify-content-between">
+                                  <div class="d-flex">
+                                      <div class="proposal-card-img">
+                                          <img src="assets/avatar.jpg" alt="">
+                                      </div>
+                                      <div class="ms-3">
+                                          <div class="fs-4 fw-bold text-dark">Tony Stark</div>
+                                          <div class=" text-dark-300">UI UX Designer</div>
+                                          <div class=" text-dark-300">Experience - 2 Year</div>
+                                      </div>
+                                  </div>
+                                  <div>
+                                    <div class="badge px-3 py-2 bg-dark rounded-pill fs-6">Solvify Developer</div>
+                                  </div>
+                                </div>
+                                  <div class="text-dark-100 mt-3 text-container">
+                                      <p class="text-content mb-0">
+                                          Lorem, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam architecto consectetur voluptatibus inventore eius iste fugit necessitatibus, iure ullam quisquam nisi ea amet neque, dolore atque recusandae obcaecati, tenetur labore voluptatem ipsa debitis rerum quibusdam totam reprehenderit. Temporibus consequuntur incidunt perferendis saepe rerum, reiciendis modi adipisci ducimus sunt? Qui, molestiae.  ipsum dolor sit amet consectetur adipisicing elit. Sapiente optio nihil cum consequuntur quis rem debitis velit reprehenderit pariatur molestias fugit
+                                      </p>
+                                      <button class="read-more border-0 bg-transparent text-primary-300 p-0 d-none" type="button  ">read more</button>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-12 col-md-4 p-0 border-start border-dark-500">
+                              <div class="d-flex justify-content-between p-4 border-bottom border-dark-500">
+                                  <div class="text-primary fw-bold">Rating</div>
+                                  <div class="d-flex">
+                                      <div>
+                                          <span class="material-icons text-info">star</span>
+                                      </div>
+                                      <div>
+                                          <span class="material-icons text-info">star</span>
+                                      </div>
+                                      <div>
+                                          <span class="material-icons text-info">star</span>
+                                      </div>
+                                      <div>
+                                          <span class="material-icons text-info">star</span>
+                                      </div>
+                                      <div>
+                                          <span class="material-icons text-dark-500">star_border</span>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="d-flex justify-content-between p-4 border-bottom border-dark-500">
+                                  <div class="text-primary fw-bold">Price</div>
+                                  <div class="text-dark fw-bold">1200 INR</div>
+                              </div>
+                              <div class="d-flex justify-content-between p-4  border-dark-500">
+                                  <div class="text-primary fw-bold">Time</div>
+                                  <div class="text-dark fw-bold">10 Days</div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="card bg-white border-radius-16 border-primary-600 mt-3">
+                      <div class="row m-0">
+                          <div class="col-12 col-md-8 p-4">
+                              <div class="d-flex justify-content-between flex-column h-100">
+                                <div class="d-flex justify-content-between">
+                                  <div class="d-flex">
+                                      <div class="proposal-card-img">
+                                          <img src="assets/avatar.jpg" alt="">
+                                      </div>
+                                      <div class="ms-3">
+                                          <div class="fs-4 fw-bold text-dark">Tony Stark</div>
+                                          <div class=" text-dark-300">UI UX Designer</div>
+                                          <div class=" text-dark-300">Experience - 2 Year</div>
+                                      </div>
+                                  </div>
+                                </div>
+                                  <div class="text-dark-100 mt-3 text-container">
+                                      <p class="text-content mb-0">
+                                          Lorem, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam architecto consectetur voluptatibus inventore eius iste fugit necessitatibus, iure ullam quisquam nisi ea amet neque, dolore atque recusandae obcaecati, tenetur labore voluptatem ipsa debitis rerum quibusdam totam reprehenderit. Temporibus consequuntur incidunt perferendis saepe rerum, reiciendis modi adipisci ducimus sunt? Qui, molestiae.  ipsum dolor sit amet consectetur adipisicing elit. Sapiente optio nihil cum consequuntur quis rem debitis velit reprehenderit pariatur molestias fugit
+                                      </p>
+                                      <button class="read-more border-0 bg-transparent text-primary-300 p-0 d-none" type="button">read more</button>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-12 col-md-4 p-0 border-start border-dark-500">
+                              <div class="d-flex justify-content-between p-4 border-bottom border-dark-500">
+                                  <div class="text-primary fw-bold">Rating</div>
+                                  <div class="d-flex">
+                                      <div>
+                                          <span class="material-icons text-info">star</span>
+                                      </div>
+                                      <div>
+                                          <span class="material-icons text-info">star</span>
+                                      </div>
+                                      <div>
+                                          <span class="material-icons text-info">star</span>
+                                      </div>
+                                      <div>
+                                          <span class="material-icons text-info">star</span>
+                                      </div>
+                                      <div>
+                                          <span class="material-icons text-dark-500">star_border</span>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="d-flex justify-content-between p-4 border-bottom border-dark-500">
+                                  <div class="text-primary fw-bold">Price</div>
+                                  <div class="text-dark fw-bold">1200 INR</div>
+                              </div>
+                              <div class="d-flex justify-content-between p-4  border-dark-500">
+                                  <div class="text-primary fw-bold">Time</div>
+                                  <div class="text-dark fw-bold">10 Days</div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                    <!-- empty proposals -->
+                     <div class="container-fluid d-flex justify-content-between align-items-center empty-message-container">
+                        <div class="text-primary-200 w-100 fw-500 text-center">No proposal yet!</div>
+                     </div>
+                </div>
+              </div>
+          </section>
+        </div>
+    </main>
+    <!--Bug report Modal start-->
+    <div class="modal fade" id="bugReportModal" tabindex="-1" aria-labelledby="bugReportModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-fullscreen-lg-down">
+        <div class="modal-content">
+          <div class="modal-header mx-4 mt-2">
+            <h5 class="modal-title" id="bugReportModalLabel">Bug Report</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body px-0 px-sm-3">
+            <!-- form -->
+            <form action="" class="px-3" id="bugReportForm">
+              <div class="d-flex flex-column">
+                <label for="bugReportText" class="text-primary-100 fs-6 fw-bold">Write your issues regarding this project.</label>
+                <textarea name="bugDetails" class="rounded" id="bugReportText" rows="5" maxlength="1000"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer mb-3 mx-4">
+            <button type="button" class="btn btn-outline-primary-100 rounded-pill border border-primary-100" data-bs-dismiss="modal">Cancel</button>
+            <button type="submit" form="bugReportForm" class="btn btn-primary-100 rounded-pill border-0">Report</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Bug report Modal start-->
+<!-- bid modal start -->
+<div class="modal fade" id="bidModal" tabindex="-1" aria-labelledby="bidModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-fullscreen-lg-down">
+    <div class="modal-content">
+      <div class="modal-header mx-2 mx-sm-4 mt-0 mt-sm-2">
+        <h5 class="modal-title" id="bidModalLabel">Place a bid on this project</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body px-3 px-sm-3 ">
+        <!-- form -->
+        <form action="" class="mx-0 mx-sm-4" id="bidPlacedForm" enctype="multipart/form-data">
+          <div class="w-100 d-flex flex-wrap flex-column flex-lg-row justify-content-evenly align-items-center align-items-lg-start ">
+            <div class=" my-2 w-100">
+              <label for="bid_amount" class="text-primary-100 fs-6 fw-bold">Bid Amount *</label>
+              <input class="form-control" type="number" name="bid_amount" maxlength="12" min="0" id="bid_amount" placeholder="3" required>
+            </div>
+            <div class=" my-2 w-100">
+              <label for="completion_period" class="text-primary-100 fs-6 fw-bold">Completion Period *</label>
+              <input class="form-control" type="number" name="completion_period" maxlength="3" min="0" max="365" id="completion_period" placeholder="30 Days" required>
+            </div>
+            <div class=" my-2 w-100">
+              <label class="text-primary-100 fs-6 fw-bold" for="bid_description">Description*</label>
+              <textarea class="form-control " name="bid_description" maxlength="1000" id="bid_description" placeholder="Text Your descriptions..." rows="10" maxlength="1000" required></textarea>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer mb-0 mb-sm-3 mx-2 mx-sm-4">
+        <button type="button" class="btn btn-outline-primary-100 rounded-pill border border-primary-100" data-bs-dismiss="modal">Cancel</button>
+        <button type="submit" class="btn btn-primary-100 rounded-pill border-0" form="bidPlacedForm" id="bid_update_submit_btn">Update</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- bid modal end -->
+    <script src="JS/single-select.js"></script>
+    <script src="JS/home.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js" integrity="sha512-KFHXdr2oObHKI9w4Hv1XPKc898mE4kgYx58oqsc/JqqdLMDI4YjOLzom+EMlW8HFUd0QfjfAvxSL6sEq/a42fQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+    <script src="JS/common.js"></script>
+    <script src="JS/multi-select.js"></script>
+    <script src="JS/validation.js"></script>
+    <script src="JS/project-details.js"></script>
+    <script src="JS/freelancer-project-details.js"></script>
+
+
+</body>
+</html>

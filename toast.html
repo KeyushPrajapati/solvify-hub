@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toaster</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- bootstrap v5.0.2 css -->
+    <link rel="stylesheet" href="css/main.min.css">
+    <!-- custom css classes -->
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+    .swal2-backdrop-show:has(.no-blur-popup){
+        backdrop-filter: none !important;
+        background: rgba(0, 0, 0, 0.4); /* Adjust as needed */
+    }
+    </style>
+</head>
+<body>
+    <!-- SweetAlert2 CDN -->
+    
+    <!-- HTML buttons to trigger different types of toasts -->
+    <button id="showTopLeftToast">Top Left Toast</button>
+    <button id="showTopRightToast">Top Right Toast</button>
+    <button id="showBottomLeftToast">Bottom Left Toast</button>
+    <button id="showBottomRightToast">Bottom Right Toast</button>
+    <hr>
+    
+    <!-- HTML buttons to trigger different types of toasts -->
+    <button id="showSuccessToast">Success Toast</button>
+    <button id="showErrorToast">Error Toast</button>
+    <button id="showWarningToast">Warning Toast</button>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js" integrity="sha512-KFHXdr2oObHKI9w4Hv1XPKc898mE4kgYx58oqsc/JqqdLMDI4YjOLzom+EMlW8HFUd0QfjfAvxSL6sEq/a42fQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        // Select buttons
+        const showTopLeftToastButton = document.getElementById('showTopLeftToast');
+        const showTopRightToastButton = document.getElementById('showTopRightToast');
+        const showBottomLeftToastButton = document.getElementById('showBottomLeftToast');
+        const showBottomRightToastButton = document.getElementById('showBottomRightToast');
+
+        // Add click event listeners
+        showTopLeftToastButton.addEventListener('click', () => {
+            showToast('top-start');
+        });
+
+        showTopRightToastButton.addEventListener('click', () => {
+            showToast('top-end');
+        });
+
+        showBottomLeftToastButton.addEventListener('click', () => {
+            showToast('bottom-start');
+        });
+
+        showBottomRightToastButton.addEventListener('click', () => {
+            showToast('bottom-end');
+        });
+
+        // Function to show toast
+        function showToast(position) {
+            Swal.fire({
+                icon: 'info',
+                title: 'This is an info toast',
+                toast: true,
+                position: position,
+                showConfirmButton: false,
+                showCloseButton:true,
+                timer: 5000,
+                timerProgressBar: true,
+                backdrop:false,
+                customClass: {
+                    popup: 'no-blur-popup'
+                }
+            })
+            // swal2-container swal2-top-end swal2-backdrop-show
+        }
+        const showSuccessToastButton = document.getElementById('showSuccessToast');
+        const showErrorToastButton = document.getElementById('showErrorToast');
+        const showWarningToastButton = document.getElementById('showWarningToast');
+
+        // Add click event listeners
+        showSuccessToastButton.addEventListener('click', () => {
+            showToast2('success');
+        });
+
+        showErrorToastButton.addEventListener('click', () => {
+            showToast2('error');
+        });
+
+        showWarningToastButton.addEventListener('click', () => {
+            showToast2('warning');
+        });
+
+
+        // Function to show toast
+        function showToast2(type) {
+            Swal.fire({
+                icon: type,
+                title: `This is a ${type} toast`,
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                showCloseButton:true,
+                timer: 5000,
+                timerProgressBar: true,
+                backdrop:false,
+                customClass: {
+                    popup: 'no-blur-popup'
+                }
+            })
+        }
+    </script>
+</body>
+</html>

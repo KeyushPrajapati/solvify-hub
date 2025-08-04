@@ -1,0 +1,40 @@
+.blogCarouselImageContainer{
+    height: 600px;
+    width: 100%;
+}
+.blogCarouselImage{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.carouselBlogCaption{
+    z-index: 2;
+}
+.blogCarouselImageContainer::before{
+    content: "";
+    position: absolute;
+    height: 600px;
+    width:100%;
+    background-image: linear-gradient(to top,#252c36,#252c3600);
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+@media screen and (max-width:992px) {
+    .blogCarouselImageContainer{
+        height: 400px;
+    }
+    .blogCarouselImageContainer::before{
+        height: 400px;
+    }
+}
+@media screen and (max-width:768px) {
+    .blogCarouselImageContainer{
+        height: 300px;
+    }
+    .blogCarouselImageContainer::before{
+        height: 300px;
+    }
+}

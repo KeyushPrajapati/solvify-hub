@@ -1,0 +1,2103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onboarding</title>
+     <!-- google merial icons-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- bootstrap v5.0.2 css -->
+     <link rel="stylesheet" href="css/main.min.css">
+     <!-- custom css classes -->
+     <link rel="stylesheet" href="css/index.css">
+     <link rel="stylesheet" href="css/select.css">
+     <link rel="stylesheet" href="css/onboarding.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@3.1.0/dist/css/multi-select-tag.css">
+     <!-- bootstrap v5.0.2 JS -->
+     <script src="bootstrapV5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container-fluid position-relative px-0">
+            <div class="onboarding-header-svg-mask">
+              <!-- SVG content -->
+                <svg width="5383" height="4466" viewBox="0 0 5383 4466" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="4339.6" cy="3422.94" r="1042.83" transform="rotate(-90 4339.6 3422.94)" fill="url(#paint0_linear_803_16851)"/>
+                    <circle cx="470.132" cy="2758.97" r="383.44" transform="rotate(-75 470.132 2758.97)" fill="url(#paint1_linear_803_16851)"/>
+                    <circle cx="3250.34" cy="1419.2" r="1158.34" transform="rotate(75 3250.34 1419.2)" fill="url(#paint2_linear_803_16851)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_803_16851" x1="4098.88" y1="4438.15" x2="5114.77" y2="2739.53" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0456C8" stop-opacity="0.7"/>
+                    <stop offset="1" stop-color="#0456C8" stop-opacity="0.1"/>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_803_16851" x1="381.623" y1="3132.25" x2="755.156" y2="2507.68" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0456C8" stop-opacity="0.7"/>
+                    <stop offset="1" stop-color="#0456C8" stop-opacity="0.1"/>
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_803_16851" x1="2982.96" y1="2546.86" x2="4111.37" y2="660.09" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0456C8" stop-opacity="0.7"/>
+                    <stop offset="1" stop-color="#0456C8" stop-opacity="0.1"/>
+                    </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <!-- HERO TEXT  -->
+            <div class="container-fluid  position-absolute bottom-0 start-50 translate-middle px-0 text-primary-100">
+              <div class="hero-title text-center  mx-5">
+                <div class="">
+                  <h2 class="fw-bold fs-1 mb-0" id="onboarding-header">Join as a client or freelancer</h2>
+                  <!-- <h3 class="fw-light fs-5 letter-spacing subtitle">Find the tech solution that fits your business. Start your search and unlock new possibilities.</h3> -->
+                </div>
+              </div>
+            </div>
+        </div>
+    </header>
+    <section>  
+      <div class="d-flex justify-content-center">
+        <!-- form -->
+        <form class="w-100 overflow-hidden" action="" id="onboarding-form" enctype="multipart/form-data" autocomplete="off">
+            <div id="formWindow" class="row flex-nowrap  m-0 ">
+                <!-- step-1 -->
+                <div id="slide" class="col-12 slideWindow">
+                  <div class="pt-5 mb-5 step-container justify-content-center flex-column">
+                    <div class="d-flex justify-content-center role-type">
+                      <input class="invisible option-ratio-btn" type="radio" name="role" id="client_checkbox" value="client" >
+                      <label for="client_checkbox" class="mx-2  border border-primary-600  d-flex flex-column justify-content-evenly option-checkbox cursor-pointer align-items-center">
+                        <div class="text-center">
+                          <span class="material-icons text-primary-100 display-3">person</span>
+                        </div>
+                        <div>
+                          <div class="text-primary-400 fw-500 fs-6 text-center">Join As</div>
+                          <div class="text-primary-100 fs-5 text-center fw-500">Client</div>
+                        </div>
+                      </label>
+  
+                      <input class="invisible option-ratio-btn" type="radio" name="role" id="freelancer_checkbox" value="freelancer" >
+                      <label for="freelancer_checkbox" class="mx-2  border border-primary-600 align-items-center option-checkbox d-flex flex-column justify-content-evenly cursor-pointer">
+                        <div class="text-center">
+                          <svg class="freelancer-icon-svg" width="61" height="60" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_332_12395)">
+                            <path d="M27.5193 24.1474C28.4765 24.1474 29.2509 23.3642 29.2509 22.407L29.2596 13.7053C29.2596 12.7481 28.4765 11.9649 27.5193 11.9649H13.5965C12.6393 11.9649 11.8561 12.7481 11.8561 13.7053V22.407C11.8561 23.3642 12.6393 24.1474 13.5965 24.1474H10.986C10.5074 24.1474 10.1158 24.5389 10.1158 25.0175C10.1158 25.4961 10.5074 25.8877 10.986 25.8877H30.1298C30.6084 25.8877 31 25.4961 31 25.0175C31 24.5389 30.6084 24.1474 30.1298 24.1474H27.5193ZM14.4667 13.7053H26.6491C27.1277 13.7053 27.5193 14.0968 27.5193 14.5754V21.5368C27.5193 22.0154 27.1277 22.407 26.6491 22.407H14.4667C13.9881 22.407 13.5965 22.0154 13.5965 21.5368V14.5754C13.5965 14.0968 13.9881 13.7053 14.4667 13.7053Z" fill="#034096"/>
+                            </g>
+                            <circle cx="10.4421" cy="5.22105" r="5.22105" fill="#034096"/>
+                            <mask id="mask0_332_12395" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="12" width="21" height="9">
+                            <path d="M0 17.0196V19.0895C0 19.8104 0.584385 20.3947 1.30526 20.3947H19.2526C19.9735 20.3947 20.5579 19.8104 20.5579 19.0895V17.0181C20.5579 16.6728 20.4226 16.3397 20.1725 16.1016C18.9132 14.9027 17.8853 14.2905 15.8263 13.5421C13.5704 12.8627 12.2368 12.7263 9.78947 12.7263C7.01579 12.8895 6.03684 13.0526 4.07895 13.7053C2.43283 14.4535 1.7475 14.79 0.386386 16.0995C0.136917 16.3395 0 16.6734 0 17.0196Z" fill="#D9D9D9"/>
+                            </mask>
+                            <g mask="url(#mask0_332_12395)">
+                            <rect y="12.7263" width="10.4421" height="7.83158" fill="#034096"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_332_12395">
+                            <rect width="20.8842" height="20.8842" fill="white" transform="translate(10.1158 8.48419)"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        </div>
+                        <div>
+                          <div class="text-primary-400 fw-500 fs-6 text-center">Join As</div>
+                          <div class="text-primary-100 fs-5 text-center fw-500">Freelancer</div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Freelancer Role Step -->
+                <div class="col-12 slideWindow d-none" id="freelancer-role-slide">
+                  <div class="pt-5 mb-5 justify-content-center flex-column">
+                    <div class="d-flex justify-content-center">
+                      <input class="invisible option-ratio-btn"  type="radio" name="freelancer_role" id="developer_checkbox" value="developer" >
+                      <label for="developer_checkbox" class="mx-2  border border-primary-600  d-flex flex-column justify-content-evenly option-checkbox cursor-pointer align-items-center">
+                        <div class="text-center">
+                          <span class="material-icons text-primary-100 display-3">code</span>
+                        </div>
+                        <div>
+                          <div class="text-primary-400 fw-500 fs-6 text-center">Become a</div>
+                          <div class="text-primary-100 fs-5 text-center fw-500">Developer</div>
+                        </div>
+                      </label>
+  
+                      <input class="invisible option-ratio-btn" type="radio" name="freelancer_role" id="reviewer_checkbox" value="reviewer" >
+                      <label for="reviewer_checkbox" class="mx-2  border border-primary-600 align-items-center option-checkbox d-flex flex-column justify-content-evenly cursor-pointer">
+                        <div class="text-center">
+                          <span class="material-icons text-primary-100 display-3">person_search</span>
+                        </div>
+                        <div>
+                          <div class="text-primary-400 fw-500 fs-6 text-center">Become a</div>
+                          <div class="text-primary-100 fs-5 text-center fw-500">Reviewer</div>
+                        </div>
+                      </label>
+
+                      <input class="invisible option-ratio-btn" type="radio" name="freelancer_role" id="hoster_checkbox" value="hoster" >
+                      <label for="hoster_checkbox" class="mx-2  border border-primary-600 align-items-center option-checkbox d-flex flex-column justify-content-evenly cursor-pointer">
+                        <div class="text-center">
+                          <span class="material-icons text-primary-100 display-3">cloud_upload</span>
+                        </div>
+                        <div>
+                          <div class="text-primary-400 fw-500 fs-6 text-center">Become a</div>
+                          <div class="text-primary-100 fs-5 text-center fw-500">Hoster</div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- step-2 Signup form-->
+                <!-- <div class="col-12 slideWindow">
+                  <div class="d-flex flex-column align-items-center mt-5 step-container">
+                    <div class=" my-2 signup-details">
+                        <label for="username" class="text-primary-100 fs-6 fw-bold">Username *</label>
+                        <input class="form-control onboarding-signup-input " type="text" name="username" maxlength="40" id="username" placeholder="Username">
+                    </div>
+                    <div class=" my-2 signup-details">
+                      <label for="useremail" class="text-primary-100 fs-6 fw-bold">Email *</label>
+                      <input class="form-control onboarding-signup-input" type="text" name="useremail" maxlength="40" id="useremail" placeholder="Email">
+                    </div>
+                    <div class=" my-2 signup-details">
+                      <label for="userpassword" class="text-primary-100 fs-6 fw-bold">Password *</label>
+                      <input class="form-control onboarding-signup-input" type="password" name="userpassword" minlength="8" maxlength="20" id="userpassword" placeholder="Password">
+                    </div>
+                    <div class=" my-2 signup-details">
+                      <label for="confirmpassword" class="text-primary-100 fs-6 fw-bold">Confirm Password *</label>
+                      <input class="form-control onboarding-signup-input" type="password" name="confirmpassword" minlength="8" maxlength="20" id="confirmpassword" placeholder="Confirm Password">
+                    </div>
+                  </div>
+                </div> -->
+
+                <!-- step-3 basic details -->
+                <div class="col-12 slideWindow">
+                  <div class="d-flex flex-column flex-lg-row flex-wrap w-100 justify-content-evenly step-container">
+                    <!-- profile upload -->
+                    <div class="d-flex flex-column mt-5 justify-content-between pb-3 align-items-center">
+                      <div class="text-primary-100 fw-500">Profile Image</div>
+                      <div class=" position-relative mt-2 mt-lg-0 text-center">
+                        <button type="button" class="d-flex align-items-center justify-content-center btn-sm btn-primary-100 rounded-circle position-absolute p-0 border-0 remove-profile-btn end-0 top-25 d-none" id="remove-img-btn">
+                          <span class="material-icons text-white fw-bold fs-5 m-0">close</span>
+                        </button>
+                        <img class="border-2 border-primary-600 rounded-circle" src="assets/dummy-profile.jpg" alt="profile-image" width="200" height="200" id="previewImage">
+                      </div>
+                      <label for="profileImage" class="profile-upload-btn btn btn-primary-100 rounded-pill position-relative mt-3 mt-lg-0">
+                        <input class="invisible position-absolute" type="file" name="profileImage" id="profileImage"  accept=".jpg, .jpeg, .png" required> Upload
+                      </label>
+                    </div>
+                    <!-- other basic details -->
+                    <div class="d-flex flex-column align-items-center mt-5 ">
+                      <div class=" my-2 ">
+                          <label for="firstname" class="text-primary-100 fs-6 fw-bold">First Name*</label>
+                          <input class="form-control onboarding-signup-input" type="text" name="firstname" maxlength="20" id="firstname" placeholder="First Name" required>
+                      </div>
+                      <div class=" my-2">
+                        <label for="lastname" class="text-primary-100 fs-6 fw-bold">Last Name*</label>
+                        <input class="form-control onboarding-signup-input" type="text" name="lastname" maxlength="20" id="lastname" placeholder="Last Name" required>
+                      </div>
+                      <div class=" my-2">
+                        <label for="dateOfBirth" class="text-primary-100 fs-6 fw-bold">Date Of Birth*</label>
+                        <input class="form-control onboarding-signup-input" type="date" name="dateOfBirth" id="dateOfBirth" required>
+                      </div>
+                      <div class=" my-2">
+                        <label for="contact" class="text-primary-100 fs-6 fw-bold">Contact*</label>
+                        <input class="form-control onboarding-signup-input" type="number" name="contact" maxlength="10" id="contact" placeholder="Contact Number" required>
+                      </div>
+                      <div class=" my-2  onboarding-signup-input">
+                        <div class="text-primary-100 fs-6 fw-bold w-100 ">Gender*</div>
+                        <div class="d-flex position-relative">
+                          <input class="form-check-input invisible position-absolute radio-gender" type="radio" name="gender" value="Male" id="male">
+                          <Label class=" gender-label border border-primary-200 text-primary-200 cursor-pointer text-center w-100 py-2 me-2 rounded-pill" for="male">
+                            <span class="">Male</span>
+                          </Label>
+                          <input class="form-check-input invisible position-absolute radio-gender" type="radio" name="gender" value="Female" id="female">
+                          <Label class=" gender-label border border-primary-200 text-primary-200 cursor-pointer text-center w-100 py-2 ms-2 rounded-pill" for="female">
+                            <span class="">Female</span>
+                          </Label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+
+                <!-- step-4 Professional Details-->
+                <div class="col-12 slideWindow">
+                  <div class="d-flex flex-wrap flex-column flex-lg-row w-100 justify-content-evenly align-items-center align-items-lg-start step-container">
+                    
+                    <div class="mt-5">
+                      <div class=" my-2 ">
+                        <label for="descriptionTitle" class="text-primary-100 fs-6 fw-bold">Description Title *</label>
+                        <input class="form-control onboarding-signup-input" type="text" name="descriptionTitle" maxlength="50" id="descriptionTitle" placeholder="Description Title" required>
+                      </div>
+                      <div class=" my-2 ">
+                        <label for="bioText" class="text-primary-100 fs-6 fw-bold">Bio *</label>
+                        <textarea class="form-control onboarding-signup-input" name="bioText" maxlength="500" id="bioText" placeholder="Text Your Bio..." rows="5"></textarea>
+                      </div>
+                      <div class=" my-2 d-none" id="hostingServicesInputField">
+                        <label class="text-primary-100 fs-6 fw-bold">Hosting Services You may provide *</label>
+                        <div class="d-flex">
+                            <select class="form-control form-select" id="hosting_services" multiple>
+                                <option value="Html">Html</option>
+                                <option value="CSS">CSS</option>
+                                <option value="Django">Django</option>
+                                <option value="Java">Java</option>
+                                <option value="Python">Python</option>
+                                <option value="other">other</option>
+                            </select>
+                            <button type="button" id="new_service_field_btn" class="ms-2 btn-sm py-2 btn-outline-primary-100 border border-primary-600" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Add New Hosting Services">
+                                <span class="material-icons d-flex justify-content-center align-items-center">add</span>
+                            </button>
+                        </div>
+                        <input type="text" class="invisible position-absolute" name="hosting_services"id="hosting_services_hidden_input" value="" required>
+                        <div class="d-flex mt-3 d-none flex-column mt-1">
+                            <label class="text-primary-100 fs-6 fw-bold">Other Hosting Services (optional)</label>
+                            <input type="text" class="form-control" id="other_services" name="other_services" placeholder="AWS,Hostinger" >
+                            <div class="fs-6 wrap-word text-dark-400">Add other hosting services, E.g.: AWS,Hostinger. Write in comma-separated format.</div>
+                      </div>
+                    </div>
+                   
+                    <div class="d-flex flex-column align-items-center mt-md-5 ">
+                      <div class=" my-2">
+                        <label for="experience" class="text-primary-100 fs-6 fw-bold">Experience *</label>
+                        <input class="form-control onboarding-signup-input" type="number" maxlength="2" name="experience" id="experience" min="0" max="99" placeholder="1 Year">
+                      </div>
+                      <div class=" my-2 onboarding-signup-input">
+                        <label class="text-primary-100 fs-6 fw-bold">Skill *</label>
+                        <select class="form-control form-select" id="user_skills" multiple>
+                            <option value="Html">Html</option>
+                            <option value="CSS">CSS</option>
+                            <option value="Django">Django</option>
+                            <option value="Java">Java</option>
+                            <option value="Python">Python</option>
+                        </select>
+                        <input type="text" class="invisible position-absolute" name="skills" id="user_skills_hidden_input" value="" required>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- Working Details For Developer -->
+                <!-- Working Details -->
+                <div class="col-12 slideWindow p-2 pt-3 d-none" id="dev_working_exp">
+                  <div class="d-flex flex-column w-100 justify-content-evenly align-items-center">
+                      <!-- Initial Project card -->
+                      <div class="" id="dev_project_initial_screen">
+                          <div class="card overflow-hidden border-radius-16 mb-3 mt-5" style="max-width: 740px; box-shadow:0px 0px 12px var(--bs-dark-600);">
+                              <div class="row g-0">
+                                <div class="col-md-4">
+                                  <img src="assets/project.jpg" class="img-fluid project_dummy_img rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                  <div class="card-body p-4">
+                                      <div class="ps-md-3 text-center text-md-start d-flex flex-column justify-content-center">
+                                          <h4 class="fw-bold text-primary">Showcase Your Expertise 🚀</h4>
+                                          <p class="mb-4 text-dark-200">
+                                              Add at least one project to highlight your skills and make your profile stand out among top professionals. A strong portfolio increases your chances of attracting clients and getting hired faster. Start building your credibility today!
+                                          </p>
+                                          <div>
+                                              <button type="button" data-bs-toggle="modal" data-bs-target="#portfolio_add_dev_project_modal" class="btn btn-primary-200 border-0 btn-sm rounded-pill d-flex align-items-center justify-content-center">
+                                                  <span class="material-icons fs-5">add</span>
+                                                  <span class="ms-1 fs-6">Add New Project</span>
+                                              </button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      </div>
+                      <!-- Projects card section -->
+                      <div class="container-fluid mx-0 px-4 d-flex flex-column justify-content-center d-none" id="dev_exp_projects_screen">
+                          <div class="d-flex justify-content-between">
+                              <div class="h5 m-0 fw-bold text-primary-100">
+                                  <div>Showcase Your Expertise 🚀</div>
+                                  <div class="fs-6 text-dark-400 fw-normal mt-1">Maximum 3 projects are allowed during the onboarding.</div>
+                                  <input type="hidden" name="dev_project_count" id="dev_project_count">
+                                  <div class="fs-6 text-dark-100 mt-2">Project : <span id="dev_exp_project_count">0</span></div>
+                              </div>
+                              <div>
+                                  <button type="button" data-bs-toggle="modal" data-bs-target="#portfolio_add_dev_project_modal" class="btn btn-primary-200 border-0 btn-sm rounded-pill d-flex align-items-center justify-content-center">
+                                      <span class="material-icons fs-5">add</span>
+                                      <span class="ms-1 fs-6">Add New Project</span>
+                                  </button>
+                              </div>
+                          </div>
+
+                          <div class="row m-0 mt-3" id="dev_exp_project_container">
+                          </div>
+                      </div>
+                  </div>
+                </div>
+
+                <!-- Working Details Hoster-->
+                 <div class="col-12 slideWindow p-2 pt-3 d-none" id="hoster_working_exp">
+                  <div class="d-flex flex-column w-100 justify-content-evenly align-items-center">
+                    <!-- Initial Project card -->
+                    <div class="" id="hoster_project_initial_screen">
+                        <div class="card overflow-hidden border-radius-16 mb-3 mt-5" style="max-width: 740px; box-shadow:0px 0px 12px var(--bs-dark-600);">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="assets/project.jpg" class="img-fluid project_dummy_img rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body p-4">
+                                    <div class="ps-md-3 text-center text-md-start d-flex flex-column justify-content-center">
+                                        <h4 class="fw-bold text-primary">Showcase Your Expertise 🚀</h4>
+                                        <p class="mb-4 text-dark-200">
+                                            Add at least one project to highlight your skills and make your profile stand out among top professionals. A strong portfolio increases your chances of attracting clients and getting hired faster. Start building your credibility today!
+                                        </p>
+                                        <div>
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#portfolio_add_hoster_project_modal" class="btn btn-primary-200 border-0 btn-sm rounded-pill d-flex align-items-center justify-content-center">
+                                                <span class="material-icons fs-5">add</span>
+                                                <span class="ms-1 fs-6">Add New Project</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Projects card section -->
+                    <div class="container-fluid mx-0 px-4 d-flex flex-column justify-content-center d-none" id="hoster_exp_projects_screen">
+                        <div class="d-flex justify-content-between">
+                            <div class="h5 m-0 fw-bold text-primary-100">
+                                <div>Showcase Your Expertise 🚀</div>
+                                <div class="fs-6 text-dark-400 fw-normal mt-1">Maximum 3 projects are allowed during the onboarding.</div>
+                                <input type="hidden" name="hoster_project_count" id="hoster_project_count">
+                                <div class="fs-6 text-dark-100 mt-2">Project : <span id="hoster_exp_project_count">0</span></div>
+                            </div>
+                            <div>
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#portfolio_add_hoster_project_modal" class="btn btn-primary-200 border-0 btn-sm rounded-pill d-flex align-items-center justify-content-center">
+                                    <span class="material-icons fs-5">add</span>
+                                    <span class="ms-1 fs-6">Add New Project</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row m-0 mt-3" id="hoster_exp_project_container">
+                        </div>
+                    </div>
+                  </div>
+                </div>  
+
+                <!-- Working Details Reviewer -->
+                <div class="col-12 slideWindow p-2 pt-3 d-none" id="review_working_exp">
+                  <div class="d-flex flex-column w-100 justify-content-evenly align-items-center">
+                    <!-- Initial Project card -->
+                    <div class="" id="reviewer_project_initial_screen">
+                        <div class="card overflow-hidden border-radius-16 mb-3 mt-5" style="max-width: 740px; box-shadow:0px 0px 12px var(--bs-dark-600);">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="assets/project.jpg" class="img-fluid project_dummy_img rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body p-4">
+                                    <div class="ps-md-3 text-center text-md-start d-flex flex-column justify-content-center">
+                                        <h4 class="fw-bold text-primary">Showcase Your Expertise 🚀</h4>
+                                        <p class="mb-4 text-dark-200">
+                                            Add at least one project to highlight your skills and make your profile stand out among top professionals. A strong portfolio increases your chances of attracting clients and getting hired faster. Start building your credibility today!
+                                        </p>
+                                        <div>
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#portfolio_add_reviewer_project_modal" class="btn btn-primary-200 border-0 btn-sm rounded-pill d-flex align-items-center justify-content-center">
+                                                <span class="material-icons fs-5">add</span>
+                                                <span class="ms-1 fs-6">Add New Project</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Projects card section -->
+                    <div class="container-fluid mx-0 px-4 d-flex flex-column justify-content-center d-none" id="reviewer_exp_projects_screen">
+                        <div class="d-flex justify-content-between">
+                            <div class="h5 m-0 fw-bold text-primary-100">
+                                <div>Showcase Your Expertise 🚀</div>
+                                <div class="fs-6 text-dark-400 fw-normal mt-1">Maximum 3 projects are allowed during the onboarding.</div>
+                                <input type="hidden" name="reviewer_project_count" id="reviewer_project_count">
+                                <div class="fs-6 text-dark-100 mt-2">Project : <span id="reviewer_exp_project_count">0</span></div>
+                            </div>
+                            <div>
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#portfolio_add_reviewer_project_modal" class="btn btn-primary-200 border-0 btn-sm rounded-pill d-flex align-items-center justify-content-center">
+                                    <span class="material-icons fs-5">add</span>
+                                    <span class="ms-1 fs-6">Add New Project</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="row m-0 mt-3" id="reviewer_exp_project_container">
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- step-5 Address details -->
+                <div class="col-12 slideWindow">
+                  <div class="d-flex flex-wrap flex-column flex-lg-row w-100 justify-content-evenly align-items-center align-items-lg-start step-container">
+                    <div class="mt-5">
+                      <div class=" my-2 ">
+                        <label for="userAddressLine1" class="text-primary-100 fs-6 fw-bold">Address 1*</label>
+                        <input class="form-control onboarding-signup-input" type="text" name="userAddressLine1" maxlength="200" id="userAddressLine1" placeholder="Address Line One" required>
+                      </div>
+                      <div class=" my-2 ">
+                          <label for="userAddressLine2" class="text-primary-100 fs-6 fw-bold">Address 2<span class="fw-normal text-dark-300">(optional)</span></label>
+                          <input class="form-control onboarding-signup-input" type="text" name="userAddressLine2" maxlength="200" id="userAddressLine2" placeholder="Address Line Two">
+                      </div>
+                      <div class=" my-2 ">
+                        <label class="text-primary-100 fs-6 fw-bold" for="stateField">Country *</label>
+                        <select id="countryField" name="country" class="form-control form-select onboarding-signup-input" required>      
+                            <option value="" selected disabled>Select</option>
+                            <option value="1">India</option>
+                        </select>
+                      </div>
+                      </div>
+                      <div class="mt-md-5">
+                        <div class=" my-2 ">
+                          <label class="text-primary-100 fs-6 fw-bold" for="stateField">State *</label>
+                          <select id="stateField" name="state" class="form-control form-select  onboarding-signup-input" required>      
+                              <option value="" selected disabled>Select</option>
+                              <option value="1">Gujarat</option>
+                              <option value="2">Delhi</option>
+                              <option value="3">Rajusthan</option>
+                          </select>
+                        </div>
+                        <div class=" my-2 ">
+                          <label class="text-primary-100 fs-6 fw-bold" for="cityField">City *</label>
+                          <select id="cityField" name="city" class="form-control form-select  onboarding-signup-input" required>      
+                              <option value="" selected disabled>Select</option>
+                              <option value="1" >Ahmedabad</option>
+                              <option value="2" >Pune</option>
+                              <option value="3" >Mumbai</option>
+                          </select>
+                        </div>
+                        <div class=" my-2">
+                          <label for="postalCode" class="text-primary-100 fs-6 fw-bold">Postal Code *</label>
+                          <input class="form-control onboarding-signup-input" type="number" name="postalCode" maxlength="6" id="postalCode" placeholder="Postal Code" required>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- step-6 Social Links -->
+                <div class="col-12 slideWindow">
+                  <div class="d-flex flex-column align-items-center mt-5 step-container">
+                    <div class=" my-2 ">
+                        <label for="githubLink" class="text-primary-100 fs-6 fw-bold">Github <span class="fw-normal text-dark-300">(optional)</span></label>
+                        <input class="form-control onboarding-signup-input" type="text" name="githubLink" maxlength="200" id="githubLink" placeholder="Github">
+                    </div>
+                    <div class=" my-2 ">
+                        <label for="linkedInLink" class="text-primary-100 fs-6 fw-bold">Linked In <span class="fw-normal text-dark-300">(optional)</span></label>
+                        <input class="form-control onboarding-signup-input" type="text" name="linkedInLink" maxlength="200" id="linkedInLink" placeholder="Linked In">
+                    </div>
+                    <div class=" my-2 ">
+                        <label for="instagramLink" class="text-primary-100 fs-6 fw-bold">Instagram <span class="fw-normal text-dark-300">(optional)</span></label>
+                        <input class="form-control onboarding-signup-input" type="text" name="instagramLink" maxlength="200" id="instagramLink" placeholder="Instagram">
+                    </div>
+                    <div class=" my-2">
+                      <label for="facebookLink" class="text-primary-100 fs-6 fw-bold">Facebook <span class="fw-normal text-dark-300">(optional)</span></label>
+                      <input class="form-control onboarding-signup-input" type="text" name="facebookLink" maxlength="200" id="facebookLink" placeholder="Facebook">
+                    </div>
+                  </div>
+                </div>
+            </div>
+            
+            <div class=" w-100 bg-white mt-4">
+              <!-- The dynamic progress line -->
+              <div class="container-fluid p-0 m-0">
+                <div id="progress-container">
+                    <div id="progress-line"></div> 
+                </div>
+              </div>
+              <!-- next & prev button -->
+               <div class="d-flex justify-content-between align-items-center px-5 pb-5 pt-3">
+                  <button type="button" class="btn-sm fs-6 btn-outline-primary-100 border border-primary-100 rounded-pill" id="btn_prev">Back</button>
+                  <div class="text-primary-100 text-uppercase fw-bold" id="step-indicator">STEP 1 / 4</div>
+                  <button type="button"  class=" btn-sm fs-6 btn-outline-primary-100 border border-primary-100 rounded-pill" id="btn_next">Next</button>
+                  <button type="submit" class="btn-sm fs-6 btn-outline-primary-100 border border-primary-100 rounded-pill" id="btn_submit">Submit</button>
+               </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+
+      <!-- Developer Modals start -->
+      <!-- Edit Modals for Developer Portfolio Project  -->
+      <div id="dev_edit_project_modal_container"></div>
+      <!--Developer - Add Project Modal -->
+      <div class="modal fade" id="portfolio_add_dev_project_modal" tabindex="-1" aria-hidden="false">
+        <div class="modal-dialog">
+          <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Add New Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="addProjectForm">
+                        <div class=" my-2 signup-details">
+                          <label for="dev_project_name" class="text-primary-100 fs-6 fw-bold">Project Name *</label>
+                            <input type="text" id="dev_project_name" class="form-control" placeholder="Project Name" maxlength="40" required>
+                        </div>
+                        <div class=" my-2 w-100">
+                          <label for="dev_project_thumbnail" class="text-primary-100 fs-6 fw-bold">Thumbnail *</label>
+                            <input type="file" id="dev_project_thumbnail" class="form-control" accept=".jpg,.png,.jpeg" required>
+                            <div class="fs-6 text-dark-300">Max size 10MB</div>
+                        </div>
+                        <div class=" my-2">
+                            <label class="text-primary-100 fs-6 fw-bold" for="dev_technologies">Technologies *</label>
+                            <select class="form-control form-select" id="dev_technologies" multiple>
+                                <option value="Html">Html</option>
+                                <option value="CSS">CSS</option>
+                                <option value="Django">Django</option>
+                                <option value="Java">Java</option>
+                                <option value="Python">Python</option>
+                            </select>
+                            <input type="text" class="invisible position-absolute" name="technologies" id="dev_project_tech_input" value="" required>
+                        </div>
+                        <div class=" my-2 w-100">
+                          <label for="dev_project_preview_link" class="text-primary-100 fs-6 fw-bold">Preview Demo Link *</label>
+                            <input type="text" id="dev_project_preview_link"  class="form-control w-100" placeholder="https://www.exampleProject.com" required>
+                            <div class="fs-6 text-dark-300">Submit your hosted project link or demo video link of your project here.</div>
+                        </div>
+                        <div class=" my-2 w-100">
+                            <label class="text-primary-100 fs-6 fw-bold" for="dev_project_description">Description*</label>
+                            <textarea class="form-control "  maxlength="1000" id="dev_project_description" placeholder="Text Your descriptions..." rows="4" required></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-sm fs-6 btn-primary-200 rounded-pill border-0" onclick="developerAddProjects()">Add Project</button>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- Developer Modals end -->
+      
+
+      <!-- Reviewer Modals Start -->
+      <!-- Edit Modals for Reviewer Portfolio Project  -->
+      <div id="reviewer_edit_project_modal_container"></div>
+      <!--Reviewer - Add Project Modal -->
+      <div class="modal fade" id="portfolio_add_reviewer_project_modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Add New Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="addReviewerProjectForm">
+                        <div class=" my-2 signup-details">
+                          <label for="reviewer_project_name" class="text-primary-100 fs-6 fw-bold">Project Name *</label>
+                            <input type="text" id="reviewer_project_name" class="form-control" placeholder="Project Name" maxlength="40" required>
+                        </div>
+                        <div class=" my-2 w-100">
+                          <label for="reviewer_project_thumbnail" class="text-primary-100 fs-6 fw-bold">Thumbnail *</label>
+                            <input type="file" id="reviewer_project_thumbnail" class="form-control" accept=".jpg,.png,.jpeg" required>
+                            <div class="fs-6 text-dark-300">Max size 10MB</div>
+                        </div>
+                        <div class=" my-2">
+                            <label class="text-primary-100 fs-6 fw-bold" for="reviewer_technologies">Technologies *</label>
+                            <select class="form-control form-select" id="reviewer_technologies" multiple>
+                                <option value="Html">Html</option>
+                                <option value="CSS">CSS</option>
+                                <option value="Django">Django</option>
+                                <option value="Java">Java</option>
+                                <option value="Python">Python</option>
+                            </select>
+                            <input type="text" class="invisible position-absolute" name="technologies" id="reviewer_project_tech_input" value="" required>
+                        </div>
+                        <div class=" my-2 w-100">
+                          <label for="reviewer_project_preview_link" class="text-primary-100 fs-6 fw-bold">Preview Demo Link *</label>
+                            <input type="text" id="reviewer_project_preview_link"  class="form-control w-100" placeholder="https://www.exampleProject.com" required>
+                            <div class="fs-6 text-dark-300">Submit your hosted project link or demo video link of your project here.</div>
+                        </div>
+                        <div class=" my-2 w-100">
+                            <label class="text-primary-100 fs-6 fw-bold" for="reviewer_project_description">Description*</label>
+                            <textarea class="form-control "  maxlength="1000" id="reviewer_project_description" placeholder="Text Your descriptions..." rows="4" required></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-sm fs-6 btn-primary-200 rounded-pill border-0" onclick="reviewerAddProjects()">Add Project</button>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- Reviewer Modals End -->
+
+
+      <!-- Hoster Modals Start -->
+      <!-- Edit Modals for hoster Portfolio Project  -->
+      <div id="hoster_edit_project_modal_container"></div>
+      <!--Hoster - Add Project Modal -->
+      <div class="modal fade" id="portfolio_add_hoster_project_modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Add New Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="addHosterProjectForm">
+                        <div class=" my-2 signup-details">
+                          <label for="hoster_project_name" class="text-primary-100 fs-6 fw-bold">Project Name *</label>
+                            <input type="text" id="hoster_project_name" class="form-control" placeholder="Project Name" maxlength="40" required>
+                        </div>
+                        <div class=" my-2 w-100">
+                          <label for="hoster_project_thumbnail" class="text-primary-100 fs-6 fw-bold">Thumbnail *</label>
+                            <input type="file" id="hoster_project_thumbnail" class="form-control" accept=".jpg,.png,.jpeg" required>
+                            <div class="fs-6 text-dark-300">Max size 10MB</div>
+                        </div>
+                        <div class=" my-2">
+                            <label class="text-primary-100 fs-6 fw-bold" for="hoster_technologies">Technologies *</label>
+                            <select class="form-control form-select" id="hoster_technologies" multiple>
+                                <option value="Html">Html</option>
+                                <option value="CSS">CSS</option>
+                                <option value="Django">Django</option>
+                                <option value="Java">Java</option>
+                                <option value="Python">Python</option>
+                            </select>
+                            <input type="text" class="invisible position-absolute" name="technologies" id="hoster_project_tech_input" value="" required>
+                        </div>
+                        <div class=" my-2">
+                            <label class="text-primary-100 fs-6 fw-bold" for="hoster_project_platform">Platform *</label>
+                            <select class="form-control form-select" id="hoster_project_platform">
+                                <option value="" selected disabled>select</option>
+                                <option value="AWS">AWS</option>
+                                <option value="GoDaddy">GoDaddy</option>
+                                <option value="Hostinger">Hostinger</option>
+                            </select>
+                        </div>
+                        <div class=" my-2 w-100">
+                          <label for="hoster_project_preview_link" class="text-primary-100 fs-6 fw-bold">Preview Demo Link *</label>
+                            <input type="text" id="hoster_project_preview_link"  class="form-control w-100" placeholder="https://www.exampleProject.com" required>
+                            <div class="fs-6 text-dark-300">Submit your hosted project link or demo video link of your project here.</div>
+                        </div>
+                        <div class=" my-2 w-100">
+                            <label class="text-primary-100 fs-6 fw-bold" for="hoster_project_description">Description*</label>
+                            <textarea class="form-control "  maxlength="1000" id="hoster_project_description" placeholder="Text Your descriptions..." rows="4" required></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-sm fs-6 btn-primary-200 rounded-pill border-0" onclick="hosterAddProjects()">Add Project</button>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- Hoster Modals End -->
+    <script src="JS/multi-select.js"></script>
+    <script src="JS/common.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js" integrity="sha512-KFHXdr2oObHKI9w4Hv1XPKc898mE4kgYx58oqsc/JqqdLMDI4YjOLzom+EMlW8HFUd0QfjfAvxSL6sEq/a42fQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@3.1.0/dist/js/multi-select-tag.js"></script>
+    <script src="JS/validation.js"></script>
+    <script src="JS/client-onboarding.js"></script>
+    <script>
+        // Freelancer Portfolio Project
+        let projects = []; // Developer projects
+        let reviewerProjects = []; // Reviewer projects
+        let hosterProjects = []; // Hoster projects
+        const maxProjects = 3; // project limit during onboarding
+        // Reset Technology Field
+        function resetMultiSelectField(selectId){
+            const listItems = document.querySelectorAll(`#${selectId} ~ .mult-select-tag .drawer ul li`);
+            // Remove inline style from each list item
+            listItems.forEach(li => li.removeAttribute("style"));
+            // Select the input-container where selected badges are displayed
+            const inputContainer = document.querySelector(`#${selectId} ~ .mult-select-tag .input-container`);
+            // Collect selected values from input-container (badges)
+            const selectedValues = new Set(
+                [...inputContainer.querySelectorAll(".item-label")].map(item => item.dataset.value)
+            );
+            // Remove all elements inside the input-container
+            if (inputContainer) {
+                inputContainer.innerHTML = ""; // Clears all selected badges
+            }
+            // Find all checkboxes and check/uncheck them based on selectedValues
+            const checkboxes = document.querySelectorAll(`#${selectId} ~ .mult-select-tag .drawer .input_checkbox`);
+            checkboxes.forEach(checkbox => {
+                if (selectedValues.has(checkbox.dataset.value)) {
+                    checkbox.checked = false;  // Check the checkbox if the value is selected
+                } else {
+                    checkbox.checked = false; // Uncheck it if the value is not selected
+                }
+            });
+        }
+        
+        // Function give technologies in the form of comma seperated string.
+        function getValuesString(dataArray) {
+            // Check if dataArray is an array and contains objects
+            if (Array.isArray(dataArray) && dataArray.every(item => typeof item === "object" && item !== null)) {
+                // Extract 'value' from each object and join into a string
+                return dataArray.map(item => item.value).join(",");
+            }
+            return ""; // Return empty string if it's not a valid array of objects
+        }
+
+
+        // Developer multi-select field from porfolio add new project modal
+        new MultiSelectTag('dev_technologies',{
+            placeholder: 'Search',
+            tagColor: {
+                textColor: 'var(--bs-primary-100)',
+                borderColor: 'var(--bs-primary-100)',
+                bgColor: 'var(--bs-primary-800)',
+            },
+            onChange: function(values) {
+            const hiddenTechInput = document.getElementById("dev_project_tech_input");
+                hiddenTechInput.setAttribute("value",getValuesString(values));
+                validateField("#dev_project_tech_input", /.*/, "Technologies are required.");
+            }
+        });
+
+        // Reviewer multi-select field from porfolio add new project modal
+        new MultiSelectTag('reviewer_technologies',{
+            placeholder: 'Search',
+            tagColor: {
+                textColor: 'var(--bs-primary-100)',
+                borderColor: 'var(--bs-primary-100)',
+                bgColor: 'var(--bs-primary-800)',
+            },
+            onChange: function(values) {
+            const hiddenTechInput = document.getElementById("reviewer_project_tech_input");
+                hiddenTechInput.setAttribute("value",getValuesString(values));
+                validateField("#reviewer_project_tech_input", /.*/, "Technologies are required.");
+            }
+        });
+
+        // Hoster multi-select field from porfolio add new project modal
+        new MultiSelectTag('hoster_technologies',{
+            placeholder: 'Search',
+            tagColor: {
+                textColor: 'var(--bs-primary-100)',
+                borderColor: 'var(--bs-primary-100)',
+                bgColor: 'var(--bs-primary-800)',
+            },
+            onChange: function(values) {
+            const hiddenTechInput = document.getElementById("hoster_project_tech_input");
+                hiddenTechInput.setAttribute("value",getValuesString(values));
+                validateField("#hoster_project_tech_input", /.*/, "Technologies are required.");
+            }
+        });
+
+
+        //Developer Project - Create A Card With Modal
+        function developerRenderProjects() {
+            const projectContainer = document.getElementById("dev_exp_project_container");
+            const devEditProjectModalContainer = document.getElementById("dev_edit_project_modal_container");
+            projectContainer.innerHTML = "";
+            devEditProjectModalContainer.innerHTML = "";
+            
+            projects.forEach((project, index) => {
+                // get all the techs from #portfolio_add_dev_project_modal
+                let tech_options="";
+                if(document.getElementById("dev_technologies")){
+
+                    // All technologies options
+                    const dev_project_tech_options = document.getElementById("dev_technologies").children;
+                    // Get Array of selected technologies
+                    const custom_techs = (project.technologies).split(",");
+                    // Add technology options dynamically in edit modal with selected values.
+                    for (let option of dev_project_tech_options) {
+                        if(custom_techs.includes(option.getAttribute("value"))){
+                            tech_options += `<option value="${option.getAttribute("value")}" selected>${option.getAttribute("value")}</option>`;
+                        }else{
+                            tech_options += `<option value="${option.getAttribute("value")}">${option.getAttribute("value")}</option>`;
+                        }
+                    } 
+                    tech_options = tech_options.replace("undefined",""); // remove undefined from string
+                }
+
+                const projectCard = `
+
+                <div class="col-12 col-md-6 col-lg-4 ps-0 pe-2 pe-md-3 pe-lg-4">
+                    <div class="card portfolio_card border-radius-16" id="project_${index}">
+                        <div class="card-body p-2">
+                            <div>
+                                <img src="${project.thumbnail}" class="profile_project_image" alt="${project.name}">
+                            </div>
+                            <div class="px-1 pb-2">
+                                <div class="text-dark mt-2 fw-bold">${project.name}</div>
+                                <div class="mt-3 d-flex flex-wrap justify-content-start align-items-center">
+                                    <div class="badge rounded-pill bg-primary-400 profile_project_badge d-flex align-items-center py-2">Development</div>
+                                    <a href="${project.previewLink}" class="ms-2 text-decoration-none rounded-pill btn-sm btn-outline-primary px-2 py-1 cursor-pointer border border-primary profile_project_btn" target="_blank">
+                                        <span data-bs-toggle="tooltip" data-bs-placement="top" title="Preview Demo">Preview Demo</span>
+                                    </a>
+                                    <button type="button" class="ms-2 d-flex  justify-content-center align-items-center btn-sm btn-outline-primary rounded-circle border border-primary portfolio_project_action_btn" data-bs-toggle="modal" data-bs-target="#edit_dev_project_modal_${index}">
+                                        <span class="material-icons fs-6" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit">edit</span>
+                                    </button>
+                                    <button type="button" class="ms-2 d-flex  justify-content-center align-items-center btn-sm btn-outline-danger rounded-circle border border-danger portfolio_project_action_btn" onclick="deleteProject(${index})">
+                                        <span class="material-icons fs-6" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">delete</span>
+                                    </button>
+                                </div>
+                                <div class="mt-2 text-dark fw-500">
+                                    Technologies : <span class="text-dark-200 fw-normal">${project.technologies}</span>
+                                </div>
+                                <div class="mt-2 text-dark-100 text-truncate-multiline" data-bs-toggle="popover" data-placement="left" data-bs-trigger="hover focus" title="Description" data-bs-content="${project.description}">
+                                    ${project.description}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   <input type="hidden" name="dp_project_name_${index}" id="dp_project_name_${index}" value="${project.name}">
+                   <input type="hidden" name="dp_preview_link_${index}" id="dp_preview_link_${index}" value="${project.previewLink}">
+                   <input type="hidden" name="dp_technologies_${index}" id="dp_technologies_${index}" value="${project.technologies}">
+                   <input type="hidden" name="dp_description_${index}" id="dp_description_${index}" value="${project.description}">
+                   <input type="file" name="dp_thumbnail_${index}" id="dp_thumbnail_${index}" class="invisible position-absolute">
+                </div>
+                `;
+
+                const modalContainer = `
+                  <div class="modal fade" id="edit_dev_project_modal_${index}" tabindex="-1" aria-hidden="false">
+                      <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title">Edit Project</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                  <div class=" my-2 ">
+                                      <label for="edit_dev_project_name_${index}" class="text-primary-100 fs-6 fw-bold">Project Name *</label>
+                                      <input type="text" id="edit_dev_project_name_${index}" class="form-control" placeholder="Project Name" maxlength="40" value="${project.name}" required>
+                                  </div>
+                                  <div class=" my-2 w-100">
+                                      <label for=""edit_dev_project_thumbnail_${index}" class="text-primary-100 fs-6 fw-bold">Thumbnail *</label>
+                                      <input type="file" id="edit_dev_project_thumbnail_${index}" class="form-control" required accept=".jpg,.png,.jpeg" required>
+                                      <div class="fs-6 text-dark-300">Max size 10MB</div>
+                                  </div>
+                                  <div class=" my-2">
+                                      <label class="text-primary-100 fs-6 fw-bold" for="edit_technologies_${index}">Technologies *</label>
+                                      <select class="form-control form-select" id="edit_dev_technologies_${index}" multiple>
+                                          ${tech_options}
+                                      </select>
+                                      <input type="text" class="invisible position-absolute" id="edit_dev_project_tech_input_${index}" value="">
+                                  </div>
+                                  <div class=" my-2 w-100">
+                                      <label for="edit_dev_project_preview_link_${index}" class="text-primary-100 fs-6 fw-bold">Preview Demo Link *</label>
+                                      <input type="text" id="edit_dev_project_preview_link_${index}" class="form-control w-100" placeholder="https://www.exampleProject.com" value="${project.previewLink}" required>
+                                      <div class="fs-6 text-dark-300">Submit your hosted project link or demo video link of your project here.</div>
+                                  </div>
+                                  <div class=" my-2 w-100">
+                                      <label class="text-primary-100 fs-6 fw-bold" for="edit_dev_project_description_${index}">Description*</label>
+                                      <textarea class="form-control" maxlength="1000" id="edit_dev_project_description_${index}" placeholder="Text Your descriptions..." rows="4" required>${project.description}</textarea>
+                                  </div>
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="btn-sm fs-6 rounded-pill btn-primary-200 border-0" onclick="developerUpdateProject(${index})">Save</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                `
+
+                projectContainer.innerHTML += projectCard;
+                devEditProjectModalContainer.innerHTML += modalContainer;
+
+                // add technologies dynamically in edit modal
+                if(document.getElementById(`edit_dev_project_tech_input_${index}`)){
+                    document.getElementById(`edit_dev_project_tech_input_${index}`).setAttribute("value",project.technologies);
+                }
+
+                // File Transfer from add Project modal to Project card
+                if(document.getElementById(`dp_thumbnail_${index}`)){
+                  fileTransfer(projects[index].selectedFile,`dp_thumbnail_${index}`);
+                }
+
+            });
+
+            // project count
+            const dev_exp_project_count = document.getElementById("dev_exp_project_count");
+            const dev_project_count = document.getElementById("dev_project_count");
+            dev_exp_project_count.innerHTML = projects.length;
+            dev_project_count.setAttribute("value",projects.length)
+            for( let i = 0 ; i <= projects.length ; i++ ){
+                if(document.getElementById(`edit_dev_technologies_${i}`)){
+                    new MultiSelectTag(`edit_dev_technologies_${i}`,{
+                        placeholder: 'Search',
+                        tagColor: {
+                            textColor: 'var(--bs-primary-100)',
+                            borderColor: 'var(--bs-primary-100)',
+                            bgColor: 'var(--bs-primary-800)',
+                        },
+                        onChange: function(values) {
+                        const hiddenEditTechInput = document.getElementById(`edit_dev_project_tech_input_${i}`);
+                            hiddenEditTechInput.setAttribute("value",getValuesString(values));
+                            validateField(`#edit_dev_project_tech_input_${i}`, /.*/, "Technologies are required.");
+                        }
+                    });
+                }
+            }
+
+            reFillDeveloperFileData("dp_thumbnail");
+        }
+
+        //Developer - Portfolio Project Validation
+        $(document).ready(function() {
+            // Field Event Listeners for Real-Time Validation
+            $("#dev_project_name").on("input", function() {
+                validateField("#dev_project_name", /^[A-Za-z0-9.,!?&\-@()\[\]{}:;'" ]*$/, "Project Name is required.");
+            });
+
+            $("#dev_project_preview_link").on("input", function() {
+                validateField("#dev_project_preview_link", /^(https?:\/\/)?([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}(:\d+)?(\/.*)?$/, "Please enter a valid URL.");
+            });
+
+            $("#dev_project_description").on("input", function() {
+                validateField("#dev_project_description", /^[A-Za-z0-9.,!?&\-@()\[\]{}:;'" ]*$/, "Project description is required.");
+            });
+
+            $("#dev_project_tech_input").on("input", function() {
+                validateField("#dev_project_tech_input", /.*/, "Technologies are required.");
+            });
+
+            $("#dev_project_thumbnail").on("change", function() {
+                const file = this.files[0];
+                const fileSize = file ? file.size / (1024 * 1024) : 0; // MB
+                const allowedTypes = ["image/jpeg", "image/jpg", "image/png"];
+                
+                if (file) {
+                    if (fileSize > 10 || !allowedTypes.includes(file.type)) {
+                        showError("#dev_project_thumbnail", "Project Thumbnail is required.");
+                    } else {
+                        removeError("#dev_project_thumbnail");
+                    }
+                } else {
+                    showError("#dev_project_thumbnail", "Project Thumbnail is required.");
+                }
+            });
+        });
+
+
+        // Reviwer Project - Create A Card and modal
+        function reviewerRenderProjects() {
+            const projectContainer = document.getElementById("reviewer_exp_project_container");
+            const reviewerEditProjectModalContainer = document.getElementById("reviewer_edit_project_modal_container");
+            projectContainer.innerHTML = "";
+            reviewerEditProjectModalContainer.innerHTML = "";
+            
+            reviewerProjects.forEach((project, index) => {
+                // get all the techs from #portfolio_add_reviewer_project_modal
+                let tech_options="";
+                if(document.getElementById("reviewer_technologies")){
+
+                    // All technologies options
+                    const reviewer_project_tech_options = document.getElementById("reviewer_technologies").children;
+                    // Get Array of selected technologies
+                    const custom_techs = (project.technologies).split(",");
+                    // Add technology options dynamically in edit modal with selected values.
+                    for (let option of reviewer_project_tech_options) {
+                        if(custom_techs.includes(option.getAttribute("value"))){
+                            tech_options += `<option value="${option.getAttribute("value")}" selected>${option.getAttribute("value")}</option>`;
+                        }else{
+                            tech_options += `<option value="${option.getAttribute("value")}">${option.getAttribute("value")}</option>`;
+                        }
+                    } 
+                    tech_options = tech_options.replace("undefined",""); // remove undefined from string
+                }
+
+                const projectCard = `
+
+                <div class="col-12 col-md-6 col-lg-4 ps-0 pe-2 pe-md-3 pe-lg-4">
+                    <div class="card portfolio_card border-radius-16" id="project_${index}">
+                        <div class="card-body p-2">
+                            <div>
+                                <img src="${project.thumbnail}" class="profile_project_image" alt="${project.name}">
+                            </div>
+                            <div class="px-1 pb-2">
+                                <div class="text-dark mt-2 fw-bold">${project.name}</div>
+                                <div class="mt-3 d-flex flex-wrap justify-content-start align-items-center">
+                                    <div class="badge rounded-pill bg-primary-400 profile_project_badge d-flex align-items-center py-2">Review</div>
+                                    <a href="${project.previewLink}" class="ms-2 text-decoration-none rounded-pill btn-sm btn-outline-primary px-2 py-1 cursor-pointer border border-primary profile_project_btn" target="_blank">
+                                        <span data-bs-toggle="tooltip" data-bs-placement="top" title="Preview Demo">Preview Demo</span>
+                                    </a>
+                                    <button type="button" class="ms-2 d-flex  justify-content-center align-items-center btn-sm btn-outline-primary rounded-circle border border-primary portfolio_project_action_btn" data-bs-toggle="modal" data-bs-target="#edit_reviewer_project_modal_${index}">
+                                        <span class="material-icons fs-6" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit">edit</span>
+                                    </button>
+                                    <button type="button" class="ms-2 d-flex  justify-content-center align-items-center btn-sm btn-outline-danger rounded-circle border border-danger portfolio_project_action_btn" onclick="deleteProject(${index})">
+                                        <span class="material-icons fs-6" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">delete</span>
+                                    </button>
+                                </div>
+                                <div class="mt-2 text-dark fw-500">
+                                    Technologies : <span class="text-dark-200 fw-normal">${project.technologies}</span>
+                                </div>
+                                <div class="mt-2 text-dark-100 text-truncate-multiline" data-bs-toggle="popover" data-placement="left" data-bs-trigger="hover focus" title="Description" data-bs-content="${project.description}">
+                                    ${project.description}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   <input type="hidden" name="rp_project_name_${index}" id="rp_project_name_${index}" value="${project.name}">
+                   <input type="hidden" name="rp_preview_link_${index}" id="rp_preview_link_${index}" value="${project.previewLink}">
+                   <input type="hidden" name="rp_technologies_${index}" id="rp_technologies_${index}" value="${project.technologies}">
+                   <input type="hidden" name="rp_description_${index}" id="rp_description_${index}" value="${project.description}">
+                   <input type="file" name="rp_thumbnail_${index}" id="rp_thumbnail_${index}" class="invisible position-absolute">
+                </div>
+                `;
+
+                const modalContainer = `
+                  <div class="modal fade" id="edit_reviewer_project_modal_${index}" tabindex="-1" aria-hidden="false">
+                      <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title">Edit Project</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                  <div class=" my-2 ">
+                                      <label for="edit_reviewer_project_name_${index}" class="text-primary-100 fs-6 fw-bold">Project Name *</label>
+                                      <input type="text" id="edit_reviewer_project_name_${index}" class="form-control" placeholder="Project Name" maxlength="40" value="${project.name}" required>
+                                  </div>
+                                  <div class=" my-2 w-100">
+                                      <label for=""edit_reviewer_project_thumbnail_${index}" class="text-primary-100 fs-6 fw-bold">Thumbnail *</label>
+                                      <input type="file" id="edit_reviewer_project_thumbnail_${index}" class="form-control" required accept=".jpg,.png,.jpeg" required>
+                                      <div class="fs-6 text-dark-300">Max size 10MB</div>
+                                  </div>
+                                  <div class=" my-2">
+                                      <label class="text-primary-100 fs-6 fw-bold" for="edit_technologies_${index}">Technologies *</label>
+                                      <select class="form-control form-select" id="edit_reviewer_technologies_${index}" multiple>
+                                          ${tech_options}
+                                      </select>
+                                      <input type="text" class="invisible position-absolute" id="edit_reviewer_project_tech_input_${index}" value="">
+                                  </div>
+                                  <div class=" my-2 w-100">
+                                      <label for="edit_reviewer_project_preview_link_${index}" class="text-primary-100 fs-6 fw-bold">Preview Demo Link *</label>
+                                      <input type="text" id="edit_reviewer_project_preview_link_${index}" class="form-control w-100" placeholder="https://www.exampleProject.com" value="${project.previewLink}" required>
+                                      <div class="fs-6 text-dark-300">Submit your hosted project link or demo video link of your project here.</div>
+                                  </div>
+                                  <div class=" my-2 w-100">
+                                      <label class="text-primary-100 fs-6 fw-bold" for="edit_reviewer_project_description_${index}">Description*</label>
+                                      <textarea class="form-control" maxlength="1000" id="edit_reviewer_project_description_${index}" placeholder="Text Your descriptions..." rows="4" required>${project.description}</textarea>
+                                  </div>
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="btn-sm fs-6 rounded-pill btn-primary-200 border-0" onclick="reviewerUpdateProject(${index})">Save</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                `
+
+                projectContainer.innerHTML += projectCard;
+                reviewerEditProjectModalContainer.innerHTML += modalContainer;
+
+                // add technologies dynamically in edit modal
+                if(document.getElementById(`edit_reviewer_project_tech_input_${index}`)){
+                    document.getElementById(`edit_reviewer_project_tech_input_${index}`).setAttribute("value",project.technologies);
+                }
+
+                // File Transfer from add Project modal to Project card
+                if(document.getElementById(`rp_thumbnail_${index}`)){
+                  fileTransfer(reviewerProjects[index].selectedFile,`rp_thumbnail_${index}`);
+                }
+
+            });
+
+            // project count
+            const reviewer_exp_project_count = document.getElementById("reviewer_exp_project_count");
+            const reviewer_project_count = document.getElementById("reviewer_project_count");
+            reviewer_exp_project_count.innerHTML = reviewerProjects.length;
+            reviewer_project_count.setAttribute("value",reviewerProjects.length)
+            for( let i = 0 ; i <= reviewerProjects.length ; i++ ){
+                if(document.getElementById(`edit_reviewer_technologies_${i}`)){
+                    new MultiSelectTag(`edit_reviewer_technologies_${i}`,{
+                        placeholder: 'Search',
+                        tagColor: {
+                            textColor: 'var(--bs-primary-100)',
+                            borderColor: 'var(--bs-primary-100)',
+                            bgColor: 'var(--bs-primary-800)',
+                        },
+                        onChange: function(values) {
+                        const hiddenEditTechInput = document.getElementById(`edit_reviewer_project_tech_input_${i}`);
+                            hiddenEditTechInput.setAttribute("value",getValuesString(values));
+                            validateField(`#edit_reviewer_project_tech_input_${i}`, /.*/, "Technologies are required.");
+                        }
+                    });
+                }
+            }
+
+            reFillReviewerFileData("rp_thumbnail");
+        }
+
+        //Reviewer - Portfolio Project Validation
+        $(document).ready(function() {
+            // Field Event Listeners for Real-Time Validation
+            $("#reviewer_project_name").on("input", function() {
+                validateField("#reviewer_project_name", /^[A-Za-z0-9.,!?&\-@()\[\]{}:;'" ]*$/, "Project Name is required.");
+            });
+
+            $("#reviewer_project_preview_link").on("input", function() {
+                validateField("#reviewer_project_preview_link", /^(https?:\/\/)?([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}(:\d+)?(\/.*)?$/, "Please enter a valid URL.");
+            });
+
+            $("#reviewer_project_description").on("input", function() {
+                validateField("#reviewer_project_description", /^[A-Za-z0-9.,!?&\-@()\[\]{}:;'" ]*$/, "Project description is required.");
+            });
+
+            $("#reviewer_project_tech_input").on("input", function() {
+                validateField("#reviewer_project_tech_input", /.*/, "Technologies are required.");
+            });
+
+            $("#reviewer_project_thumbnail").on("change", function() {
+                const file = this.files[0];
+                const fileSize = file ? file.size / (1024 * 1024) : 0; // MB
+                const allowedTypes = ["image/jpeg", "image/jpg", "image/png"];
+                
+                if (file) {
+                    if (fileSize > 10 || !allowedTypes.includes(file.type)) {
+                        showError("#reviewer_project_thumbnail", "Project Thumbnail is required.");
+                    } else {
+                        removeError("#reviewer_project_thumbnail");
+                    }
+                } else {
+                    showError("#reviewer_project_thumbnail", "Project Thumbnail is required.");
+                }
+            });
+        });
+
+
+        //Hoster Project - Create A Card With Modal
+        function hosterRenderProjects() {
+
+            const projectContainer = document.getElementById("hoster_exp_project_container");
+            const hosterEditProjectModalContainer = document.getElementById("hoster_edit_project_modal_container");
+            projectContainer.innerHTML = "";
+            hosterEditProjectModalContainer.innerHTML = "";
+            
+            hosterProjects.forEach((project, index) => {
+                // get all the techs from #portfolio_add_hoster_project_modal
+                let tech_options="";
+                let platform_options="";
+                if(document.getElementById("hoster_technologies")){
+
+                    // All technologies options
+                    const hoster_project_tech_options = document.getElementById("hoster_technologies").children;
+                    // Get Array of selected technologies
+                    const custom_techs = (project.technologies).split(",");
+                    // Add technology options dynamically in edit modal with selected values.
+                    for (let option of hoster_project_tech_options) {
+                        if(custom_techs.includes(option.getAttribute("value"))){
+                            tech_options += `<option value="${option.getAttribute("value")}" selected>${option.getAttribute("value")}</option>`;
+                        }else{
+                            tech_options += `<option value="${option.getAttribute("value")}">${option.getAttribute("value")}</option>`;
+                        }
+                    } 
+                    tech_options = tech_options.replace("undefined",""); // remove undefined from string
+                }
+
+                if(document.getElementById("hoster_project_platform")){
+                   // All platform options
+                   const hoster_project_platform_options = document.getElementById("hoster_project_platform").children;
+                   for (let option of hoster_project_platform_options) {
+                        if(option.getAttribute("value") == hosterProjects[index].platform && option.getAttribute("value") != ""){
+                          platform_options += `<option value="${option.getAttribute("value")}" selected>${option.getAttribute("value")}</option>`;
+                        }else if(option.getAttribute("value") != ""){
+                          platform_options += `<option value="${option.getAttribute("value")}">${option.getAttribute("value")}</option>`;
+                        }
+                    } 
+                }
+                const projectCard = `
+
+                <div class="col-12 col-md-6 col-lg-4 ps-0 pe-2 pe-md-3 pe-lg-4">
+                    <div class="card portfolio_card border-radius-16" id="project_${index}">
+                        <div class="card-body p-2">
+                            <div>
+                                <img src="${project.thumbnail}" class="profile_project_image" alt="${project.name}">
+                            </div>
+                            <div class="px-1 pb-2">
+                                <div class="text-dark mt-2 fw-bold">${project.name}</div>
+                                <div class="mt-3 d-flex flex-wrap justify-content-start align-items-center">
+                                    <div class="badge rounded-pill bg-primary-400 profile_project_badge d-flex align-items-center py-2">Hosting</div>
+                                    <a href="${project.previewLink}" class="ms-2 text-decoration-none rounded-pill btn-sm btn-outline-primary px-2 py-1 cursor-pointer border border-primary profile_project_btn" target="_blank">
+                                        <span data-bs-toggle="tooltip" data-bs-placement="top" title="Preview Demo">Preview Demo</span>
+                                    </a>
+                                    <button type="button" class="ms-2 d-flex  justify-content-center align-items-center btn-sm btn-outline-primary rounded-circle border border-primary portfolio_project_action_btn" data-bs-toggle="modal" data-bs-target="#edit_hoster_project_modal_${index}">
+                                        <span class="material-icons fs-6" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit">edit</span>
+                                    </button>
+                                    <button type="button" class="ms-2 d-flex  justify-content-center align-items-center btn-sm btn-outline-danger rounded-circle border border-danger portfolio_project_action_btn" onclick="deleteProject(${index})">
+                                        <span class="material-icons fs-6" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">delete</span>
+                                    </button>
+                                </div>
+                                <div class="mt-2 text-dark fw-500">
+                                    Technologies : <span class="text-dark-200 fw-normal">${project.technologies}</span>
+                                </div>
+                                <div class="mt-2 text-dark fw-500">
+                                    Platform : <span class="text-dark-200 fw-normal">${project.platform}</span>
+                                </div>
+                                <div class="mt-2 text-dark-100 text-truncate-multiline" data-bs-toggle="popover" data-placement="left" data-bs-trigger="hover focus" title="Description" data-bs-content="${project.description}">
+                                    ${project.description}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   <input type="hidden" name="hp_project_name_${index}" id="hp_project_name_${index}" value="${project.name}">
+                   <input type="hidden" name="hp_preview_link_${index}" id="hp_preview_link_${index}" value="${project.previewLink}">
+                   <input type="hidden" name="hp_technologies_${index}" id="hp_technologies_${index}" value="${project.technologies}">
+                   <input type="hidden" name="hp_description_${index}" id="hp_description_${index}" value="${project.description}">
+                   <input type="hidden" name="hp_platform_${index}" id="hp_platform_${index}" value="${project.platform}">
+                   <input type="file" name="hp_thumbnail_${index}" id="hp_thumbnail_${index}" class="invisible position-absolute">
+                </div>
+                `;
+
+                const modalContainer = `
+                  <div class="modal fade" id="edit_hoster_project_modal_${index}" tabindex="-1" aria-hidden="false">
+                      <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title">Edit Project</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                  <div class=" my-2 ">
+                                      <label for="edit_hoster_project_name_${index}" class="text-primary-100 fs-6 fw-bold">Project Name *</label>
+                                      <input type="text" id="edit_hoster_project_name_${index}" class="form-control" placeholder="Project Name" maxlength="40" value="${project.name}" required>
+                                  </div>
+                                  <div class=" my-2 w-100">
+                                      <label for=""edit_hoster_project_thumbnail_${index}" class="text-primary-100 fs-6 fw-bold">Thumbnail *</label>
+                                      <input type="file" id="edit_hoster_project_thumbnail_${index}" class="form-control" required accept=".jpg,.png,.jpeg" required>
+                                      <div class="fs-6 text-dark-300">Max size 10MB</div>
+                                  </div>
+                                  <div class=" my-2">
+                                      <label class="text-primary-100 fs-6 fw-bold" for="edit_technologies_${index}">Technologies *</label>
+                                      <select class="form-control form-select" id="edit_hoster_technologies_${index}" multiple>
+                                          ${tech_options}
+                                      </select>
+                                      <input type="text" class="invisible position-absolute" id="edit_hoster_project_tech_input_${index}" value="">
+                                  </div>
+                                  <div class=" my-2">
+                                      <label class="text-primary-100 fs-6 fw-bold" for="edit_hoster_platform_${index}">Platform *</label>
+                                      <select class="form-control form-select" id="edit_hoster_platform_${index}">
+                                          ${platform_options}
+                                      </select>
+                                  </div>
+                                  <div class=" my-2 w-100">
+                                      <label for="edit_hoster_project_preview_link_${index}" class="text-primary-100 fs-6 fw-bold">Preview Demo Link *</label>
+                                      <input type="text" id="edit_hoster_project_preview_link_${index}" class="form-control w-100" placeholder="https://www.exampleProject.com" value="${project.previewLink}" required>
+                                      <div class="fs-6 text-dark-300">Submit your hosted project link or demo video link of your project here.</div>
+                                  </div>
+                                  <div class=" my-2 w-100">
+                                      <label class="text-primary-100 fs-6 fw-bold" for="edit_hoster_project_description_${index}">Description*</label>
+                                      <textarea class="form-control" maxlength="1000" id="edit_hoster_project_description_${index}" placeholder="Text Your descriptions..." rows="4" required>${project.description}</textarea>
+                                  </div>
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="btn-sm fs-6 rounded-pill btn-primary-200 border-0" onclick="hosterUpdateProject(${index})">Save</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                `
+
+                projectContainer.innerHTML += projectCard;
+                hosterEditProjectModalContainer.innerHTML += modalContainer;
+
+                // add technologies dynamically in edit modal
+                if(document.getElementById(`edit_hoster_project_tech_input_${index}`)){
+                    document.getElementById(`edit_hoster_project_tech_input_${index}`).setAttribute("value",project.technologies);
+                }
+
+                // File Transfer from add Project modal to Project card
+                if(document.getElementById(`dp_thumbnail_${index}`)){
+                  fileTransfer(hosterProjects[index].selectedFile,`hp_thumbnail_${index}`);
+                }
+
+            });
+
+            // project count
+            const hoster_exp_project_count = document.getElementById("hoster_exp_project_count");
+            const hoster_project_count = document.getElementById("hoster_project_count");
+            hoster_exp_project_count.innerHTML = hosterProjects.length;
+            hoster_project_count.setAttribute("value",hosterProjects.length)
+            for( let i = 0 ; i <= hosterProjects.length ; i++ ){
+                if(document.getElementById(`edit_hoster_technologies_${i}`)){
+                    new MultiSelectTag(`edit_hoster_technologies_${i}`,{
+                        placeholder: 'Search',
+                        tagColor: {
+                            textColor: 'var(--bs-primary-100)',
+                            borderColor: 'var(--bs-primary-100)',
+                            bgColor: 'var(--bs-primary-800)',
+                        },
+                        onChange: function(values) {
+                        const hiddenEditTechInput = document.getElementById(`edit_hoster_project_tech_input_${i}`);
+                            hiddenEditTechInput.setAttribute("value",getValuesString(values));
+                            validateField(`#edit_hoster_project_tech_input_${i}`, /.*/, "Technologies are required.");
+                        }
+                    });
+                }
+            }
+
+            reFillHosterFileData("hp_thumbnail");
+        }
+
+        //Hoster - Portfolio Project Validation
+        $(document).ready(function() {
+            // Field Event Listeners for Real-Time Validation
+            $("#hoster_project_name").on("input", function() {
+                validateField("#hoster_project_name", /^[A-Za-z0-9.,!?&\-@()\[\]{}:;'" ]*$/, "Project Name is required.");
+            });
+
+            $("#hoster_project_preview_link").on("input", function() {
+                validateField("#hoster_project_preview_link", /^(https?:\/\/)?([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}(:\d+)?(\/.*)?$/, "Please enter a valid URL.");
+            });
+
+            $("#hoster_project_description").on("input", function() {
+                validateField("#hoster_project_description", /^[A-Za-z0-9.,!?&\-@()\[\]{}:;'" ]*$/, "Project description is required.");
+            });
+
+            $("#hoster_project_tech_input").on("input", function() {
+                validateField("#hoster_project_tech_input", /.*/, "Technologies are required.");
+            });
+           
+            $("#hoster_project_platform").on("input", function() {
+                validateField("#hoster_project_platform", /.*/, "Platform is required.");
+            });
+
+            $("#hoster_project_thumbnail").on("change", function() {
+                const file = this.files[0];
+                const fileSize = file ? file.size / (1024 * 1024) : 0; // MB
+                const allowedTypes = ["image/jpeg", "image/jpg", "image/png"];
+                
+                if (file) {
+                    if (fileSize > 10 || !allowedTypes.includes(file.type)) {
+                        showError("#hoster_project_thumbnail", "Project Thumbnail is required.");
+                    } else {
+                        removeError("#hoster_project_thumbnail");
+                    }
+                } else {
+                    showError("#hoster_project_thumbnail", "Project Thumbnail is required.");
+                }
+            });
+        });
+
+
+        // Function to validate individual field
+        function validateField(fieldSelector, regex, errorMessage) {
+            const value = $(fieldSelector).val();
+            if (!value || !regex.test(value)) {
+                showError(fieldSelector, errorMessage);
+            } else {
+                removeError(fieldSelector);
+            }
+        }
+
+        // Function to show error message
+        function showError(fieldSelector, message) {
+            // Remove any existing error message first
+            $(fieldSelector).next(".error-message").remove();
+
+            // Append new error message
+            const errorMessage = `<div class="error-message" style="color: red;">${message}</div>`;
+            $(fieldSelector).after(errorMessage);
+        }
+
+        // Function to remove error message
+        function removeError(fieldSelector) {
+            $(fieldSelector).next(".error-message").remove();
+        }
+
+        // We can get image file from the modals where user can add or edit the image and set image to the hidden field of the card. 
+        function fileTransfer(fileData,input_id){
+          if(document.getElementById(input_id)){
+            // const sourceFileInput = document.getElementById(src_id);
+            const targetFileInput = document.getElementById(input_id);
+            
+            if (fileData) {
+                const srcSelectedFile = fileData;
+                // Create a data transfer object
+                const dataTransfer = new DataTransfer();
+                // Add the selected file to the data transfer object
+                dataTransfer.items.add(srcSelectedFile);
+                // Set the target input's files to the copied file list
+                targetFileInput.files = dataTransfer.files;
+            } 
+          }
+        }
+
+        // Developer - Add Project
+        function developerAddProjects() {
+            // Get field values
+            const projectName = $("#dev_project_name").val().trim();
+            const previewLink = $("#dev_project_preview_link").val().trim();
+            const description = $("#dev_project_description").val().trim();
+            const technologies = $("#dev_project_tech_input").val();
+            const projectThumbnail = $("#dev_project_thumbnail")[0].files[0];
+
+            let isValid = true; // Flag to track form validity
+
+            // Validate Project Name
+            if (!projectName || !/^[A-Za-z0-9.,!?&\-@()\[\]{}:;'" ]*$/.test(projectName)) {
+                showError("#dev_project_name", "Project Name is required.");
+                isValid = false;
+            }
+
+            // Validate Project Thumbnail (file size & type)
+            if (!projectThumbnail) {
+                showError("#dev_project_thumbnail", "Project Thumbnail is required.");
+                isValid = false;
+            } else {
+                const fileSize = projectThumbnail.size / (1024 * 1024); // size in MB
+                const allowedTypes = ["image/jpeg", "image/jpg", "image/png"];
+                if (fileSize > 10 || !allowedTypes.includes(projectThumbnail.type)) {
+                    showError("#dev_project_thumbnail", "Thumbnail should be in JPG, JPEG, PNG format and max size of 10MB.");
+                    isValid = false;
+                }
+            }
+
+            // Validate Technologies
+            if (!technologies) {
+                showError("#dev_project_tech_input", "Technologies are required.");
+                isValid = false;
+            }
+
+            // Validate Project Preview Link (URL format)
+            const urlRegex = /^(https?:\/\/)?([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}(:\d+)?(\/.*)?$/;
+            if (!previewLink || !urlRegex.test(previewLink)) {
+                showError("#dev_project_preview_link", "Please enter a valid URL.");
+                isValid = false;
+            }
+
+            // Validate Project Description
+            if (!description || !/^[A-Za-z0-9.,!?&\-@()\[\]{}:;'" ]*$/.test(description)) {
+                showError("#dev_project_description", "Project description is required.");
+                isValid = false;
+            }
+
+            // If all fields are valid, proceed with adding the project
+            if (isValid) {
+                //  Show/hide screens
+                $("#dev_exp_projects_screen").removeClass("d-none");
+                $("#dev_project_initial_screen").addClass("d-none");
+    
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    projects.push({
+                        name: projectName,
+                        thumbnail: e.target.result,
+                        technologies: technologies,
+                        previewLink: previewLink,
+                        description: description,
+                        selectedFile: projectThumbnail,
+                    });
+    
+                    // Hide modal after submission
+                    const addProjectModal = bootstrap.Modal.getInstance(document.getElementById('portfolio_add_dev_project_modal'));
+                    if (addProjectModal) addProjectModal.hide();
+    
+                    // Reset Technology field
+                    resetMultiSelectField("dev_technologies");
+                    developerRenderProjects();
+                    $("#addProjectForm")[0].reset();
+                };
+                reader.readAsDataURL(projectThumbnail);
+            } else {
+                return
+            }
+        }
+
+        // Developer - Get value from respective update modal and update the values from the existing cards
+        function developerUpdateProject(index) {
+            // Portfolio Project Edit Form Validation
+            $(document).ready(function() {
+                // Field Event Listeners for Real-Time Validation
+                $(`#edit_dev_project_name_${index}`).on("input", function() {
+                    validateField(`#edit_dev_project_name_${index}`, /^[A-Za-z0-9.,!?&\-@()\[\]{}:;'" ]*$/, "Project Name is required.");
+                });
+
+                $(`#edit_dev_project_preview_link_${index}`).on("input", function() {
+                    validateField(`#edit_dev_project_preview_link_${index}`, /^(https?:\/\/)?([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}(:\d+)?(\/.*)?$/, "Please enter a valid URL.");
+                });
+
+                $(`#edit_dev_project_description_${index}`).on("input", function() {
+                    validateField(`#edit_dev_project_description_${index}`, /^[A-Za-z0-9.,!?&\-@()\[\]{}:;'" ]*$/, "Project description is required.");
+                });
+
+                $(`#edit_dev_project_tech_input_${index}`).on("input", function() {
+                    validateField(`#edit_dev_project_tech_input_${index}`, /.*/, "Technologies are required.");
+                });
+
+                $(`#edit_dev_project_thumbnail_${index}`).on("change", function() {
+                    const file = this.files[0];
+                    const fileSize = file ? file.size / (1024 * 1024) : 0; // MB
+                    const allowedTypes = ["image/jpeg", "image/jpg", "image/png"];
+                    
+                    if (file) {
+                        if (fileSize > 10 || !allowedTypes.includes(file.type)) {
+                            showError(`#edit_dev_project_thumbnail_${index}`, "Project Thumbnail is less than 10MB and JPG, PNG , JPEG format");
+                        } else {
+                            removeError(`#edit_dev_project_thumbnail_${index}`);
+                        }
+                    } 
+                });
+            });
+
+
+            const modalElement = document.getElementById(`edit_dev_project_modal_${index}`);
+            const projectModal = bootstrap.Modal.getInstance(modalElement); // Get modal instance
+            const newName = $(`#edit_dev_project_name_${index}`).val().trim();
+            const newThumbnail = $(`#edit_dev_project_thumbnail_${index}`)[0].files[0];
+            const newPreviewLink = $(`#edit_dev_project_preview_link_${index}`).val().trim();
+            const newDescription = $(`#edit_dev_project_description_${index}`).val().trim();
+            const newtechnologies = $(`#edit_dev_project_tech_input_${index}`).val();
+
+            // File Transfer from add Project modal to Project card
+            if(newThumbnail){
+              fileTransfer(newThumbnail,`dp_thumbnail_${index}`);
+            }
+
+            let isValid = true; // Flag to track form validity
+
+            // Validate Project Name
+            if (!newName || !/^[A-Za-z0-9.,!?&\-@()\[\]{}:;'" ]*$/.test(newName)) {
+                showError(`#edit_dev_project_name_${index}`, "Project Name is required.");
+                isValid = false;
+            }
+
+            // Validate Project Thumbnail (file size & type)
+            if (!newThumbnail) {
+                isValid = true;
+            } else {
+                const fileSize = newThumbnail.size / (1024 * 1024); // size in MB
+                const allowedTypes = ["image/jpeg", "image/jpg", "image/png"];
+                if (fileSize > 10 || !allowedTypes.includes(newThumbnail.type)) {
+                    showError(`#edit_dev_project_thumbnail_${index}`, "Project Thumbnail is less than 10MB and JPG, PNG , JPEG format");
+                    isValid = false;
+                }
+            }
+
+            // Validate Technologies
+            if (!newtechnologies) {
+                showError(`#edit_dev_project_tech_input_${index}`, "Technologies are required.");
+                isValid = false;
+            }
+
+            // Validate Project Preview Link (URL format)
+            const urlRegex = /^(https?:\/\/)?([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}(:\d+)?(\/.*)?$/;
+            if (!newPreviewLink || !urlRegex.test(newPreviewLink)) {
+                showError(`#edit_dev_project_preview_link_${index}`, "Please enter a valid URL.");
+                isValid = false;
+            }
+
+            // Validate Project Description
+            if (!newDescription || !/^[A-Za-z0-9.,!?&\-@()\[\]{}:;'" ]*$/.test(newDescription)) {
+                showError(`#edit_dev_project_description_${index}`, "Project description is required.");
+                isValid = false;
+            }
+
+            // If all fields are valid, proceed with adding the project
+            if (isValid) {
+                
+                projects[index].name = newName;
+                projects[index].previewLink = newPreviewLink;
+                projects[index].description = newDescription;
+                projects[index].technologies = newtechnologies;
+                projects[index].selectedFile = newThumbnail;
+    
+                if (newThumbnail) {
+                    const reader = new FileReader();
+                    reader.onload = function (e) {
+                        projects[index].thumbnail = e.target.result;
+                        developerRenderProjects();
+                        projectModal.hide(); // Hide modal
+                        removeModalBackdrop(); // Remove remaining backdrop
+                    };
+                    reader.readAsDataURL(newThumbnail);
+                } else {
+                    developerRenderProjects();
+                    projectModal.hide(); // Hide modal
+                    removeModalBackdrop(); // Remove remaining backdrop
+                }
+            }
+        }
+
+
+        // Reviewer - Add Project
+        function reviewerAddProjects() {
+            // Get field values
+            const projectName = $("#reviewer_project_name").val().trim();
+            const previewLink = $("#reviewer_project_preview_link").val().trim();
+            const description = $("#reviewer_project_description").val().trim();
+            const technologies = $("#reviewer_project_tech_input").val();
+            const projectThumbnail = $("#reviewer_project_thumbnail")[0].files[0];
+
+            let isValid = true; // Flag to track form validity
+
+            // Validate Project Name
+            if (!projectName || !/^[A-Za-z0-9.,!?&\-@()\[\]{}:;'" ]*$/.test(projectName)) {
+                showError("#reviewer_project_name", "Project Name is required.");
+                isValid = false;
+            }
+
+            // Validate Project Thumbnail (file size & type)
+            if (!projectThumbnail) {
+                showError("#reviewer_project_thumbnail", "Project Thumbnail is required.");
+                isValid = false;
+            } else {
+                const fileSize = projectThumbnail.size / (1024 * 1024); // size in MB
+                const allowedTypes = ["image/jpeg", "image/jpg", "image/png"];
+                if (fileSize > 10 || !allowedTypes.includes(projectThumbnail.type)) {
+                    showError("#reviewer_project_thumbnail", "Thumbnail should be in JPG, JPEG, PNG format and max size of 10MB.");
+                    isValid = false;
+                }
+            }
+
+            // Validate Technologies
+            if (!technologies) {
+                showError("#reviewer_project_tech_input", "Technologies are required.");
+                isValid = false;
+            }
+
+            // Validate Project Preview Link (URL format)
+            const urlRegex = /^(https?:\/\/)?([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}(:\d+)?(\/.*)?$/;
+            if (!previewLink || !urlRegex.test(previewLink)) {
+                showError("#reviewer_project_preview_link", "Please enter a valid URL.");
+                isValid = false;
+            }
+
+            // Validate Project Description
+            if (!description || !/^[A-Za-z0-9.,!?&\-@()\[\]{}:;'" ]*$/.test(description)) {
+                showError("#reviewer_project_description", "Project description is required.");
+                isValid = false;
+            }
+
+            // If all fields are valid, proceed with adding the project
+            if (isValid) {
+                //  Show/hide screens
+                $("#reviewer_exp_projects_screen").removeClass("d-none");
+                $("#reviewer_project_initial_screen").addClass("d-none");
+    
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                  reviewerProjects.push({
+                        name: projectName,
+                        thumbnail: e.target.result,
+                        technologies: technologies,
+                        previewLink: previewLink,
+                        description: description,
+                        selectedFile: projectThumbnail,
+                    });
+    
+                    // Hide modal after submission
+                    const addProjectModal = bootstrap.Modal.getInstance(document.getElementById('portfolio_add_reviewer_project_modal'));
+                    if (addProjectModal) addProjectModal.hide();
+    
+                    // Reset Technology field
+                    resetMultiSelectField("reviewer_technologies");
+                    reviewerRenderProjects();
+                    $("#addReviewerProjectForm")[0].reset();
+                };
+                reader.readAsDataURL(projectThumbnail);
+            } else {
+                return
+            }
+        }
+
+        //Reviewer - Get value from respective update modal and update the values from the existing cards
+        function reviewerUpdateProject(index) {
+            // Portfolio Project Edit Form Validation
+            $(document).ready(function() {
+                // Field Event Listeners for Real-Time Validation
+                $(`#edit_reviewer_project_name_${index}`).on("input", function() {
+                    validateField(`#edit_reviewer_project_name_${index}`, /^[A-Za-z0-9.,!?&\-@()\[\]{}:;'" ]*$/, "Project Name is required.");
+                });
+
+                $(`#edit_reviewer_project_preview_link_${index}`).on("input", function() {
+                    validateField(`#edit_reviewer_project_preview_link_${index}`, /^(https?:\/\/)?([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}(:\d+)?(\/.*)?$/, "Please enter a valid URL.");
+                });
+
+                $(`#edit_reviewer_project_description_${index}`).on("input", function() {
+                    validateField(`#edit_reviewer_project_description_${index}`, /^[A-Za-z0-9.,!?&\-@()\[\]{}:;'" ]*$/, "Project description is required.");
+                });
+
+                $(`#edit_reviewer_project_tech_input_${index}`).on("input", function() {
+                    validateField(`#edit_reviewer_project_tech_input_${index}`, /.*/, "Technologies are required.");
+                });
+
+                $(`#edit_reviewer_project_thumbnail_${index}`).on("change", function() {
+                    const file = this.files[0];
+                    const fileSize = file ? file.size / (1024 * 1024) : 0; // MB
+                    const allowedTypes = ["image/jpeg", "image/jpg", "image/png"];
+                    
+                    if (file) {
+                        if (fileSize > 10 || !allowedTypes.includes(file.type)) {
+                            showError(`#edit_reviewer_project_thumbnail_${index}`, "Project Thumbnail is less than 10MB and JPG, PNG , JPEG format");
+                        } else {
+                            removeError(`#edit_reviewer_project_thumbnail_${index}`);
+                        }
+                    } 
+                });
+            });
+
+
+            const modalElement = document.getElementById(`edit_reviewer_project_modal_${index}`);
+            const projectModal = bootstrap.Modal.getInstance(modalElement); // Get modal instance
+            const newName = $(`#edit_reviewer_project_name_${index}`).val().trim();
+            const newThumbnail = $(`#edit_reviewer_project_thumbnail_${index}`)[0].files[0];
+            const newPreviewLink = $(`#edit_reviewer_project_preview_link_${index}`).val().trim();
+            const newDescription = $(`#edit_reviewer_project_description_${index}`).val().trim();
+            const newtechnologies = $(`#edit_reviewer_project_tech_input_${index}`).val();
+
+            // File Transfer from add Project modal to Project card
+            if(newThumbnail){
+              fileTransfer(newThumbnail,`dp_thumbnail_${index}`);
+            }
+
+            let isValid = true; // Flag to track form validity
+
+            // Validate Project Name
+            if (!newName || !/^[A-Za-z0-9.,!?&\-@()\[\]{}:;'" ]*$/.test(newName)) {
+                showError(`#edit_reviewer_project_name_${index}`, "Project Name is required.");
+                isValid = false;
+            }
+
+            // Validate Project Thumbnail (file size & type)
+            if (!newThumbnail) {
+                isValid = true;
+            } else {
+                const fileSize = newThumbnail.size / (1024 * 1024); // size in MB
+                const allowedTypes = ["image/jpeg", "image/jpg", "image/png"];
+                if (fileSize > 10 || !allowedTypes.includes(newThumbnail.type)) {
+                    showError(`#edit_reviewer_project_thumbnail_${index}`, "Project Thumbnail is less than 10MB and JPG, PNG , JPEG format");
+                    isValid = false;
+                }
+            }
+
+            // Validate Technologies
+            if (!newtechnologies) {
+                showError(`#edit_reviewer_project_tech_input_${index}`, "Technologies are required.");
+                isValid = false;
+            }
+
+            // Validate Project Preview Link (URL format)
+            const urlRegex = /^(https?:\/\/)?([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}(:\d+)?(\/.*)?$/;
+            if (!newPreviewLink || !urlRegex.test(newPreviewLink)) {
+                showError(`#edit_reviewer_project_preview_link_${index}`, "Please enter a valid URL.");
+                isValid = false;
+            }
+
+            // Validate Project Description
+            if (!newDescription || !/^[A-Za-z0-9.,!?&\-@()\[\]{}:;'" ]*$/.test(newDescription)) {
+                showError(`#edit_reviewer_project_description_${index}`, "Project description is required.");
+                isValid = false;
+            }
+
+            // If all fields are valid, proceed with adding the project
+            if (isValid) {
+                
+                reviewerProjects[index].name = newName;
+                reviewerProjects[index].previewLink = newPreviewLink;
+                reviewerProjects[index].description = newDescription;
+                reviewerProjects[index].technologies = newtechnologies;
+                reviewerProjects[index].selectedFile = newThumbnail;
+    
+                if (newThumbnail) {
+                    const reader = new FileReader();
+                    reader.onload = function (e) {
+                        reviewerProjects[index].thumbnail = e.target.result;
+                        reviewerRenderProjects();
+                        projectModal.hide(); // Hide modal
+                        removeModalBackdrop(); // Remove remaining backdrop
+                    };
+                    reader.readAsDataURL(newThumbnail);
+                } else {
+                    reviewerRenderProjects();
+                    projectModal.hide(); // Hide modal
+                    removeModalBackdrop(); // Remove remaining backdrop
+                }
+            }
+        }
+
+        // Hoster - Add Project
+        function hosterAddProjects() {
+            // Get field values
+            const projectName = $("#hoster_project_name").val().trim();
+            const previewLink = $("#hoster_project_preview_link").val().trim();
+            const description = $("#hoster_project_description").val().trim();
+            const platform = $("#hoster_project_platform").val();
+            const technologies = $("#hoster_project_tech_input").val();
+            const projectThumbnail = $("#hoster_project_thumbnail")[0].files[0];
+
+            let isValid = true; // Flag to track form validity
+
+            // Validate Project Name
+            if (!projectName || !/^[A-Za-z0-9.,!?&\-@()\[\]{}:;'" ]*$/.test(projectName)) {
+                showError("#hoster_project_name", "Project Name is required.");
+                isValid = false;
+            }
+
+            // Validate Project Thumbnail (file size & type)
+            if (!projectThumbnail) {
+                showError("#hoster_project_thumbnail", "Project Thumbnail is required.");
+                isValid = false;
+            } else {
+                const fileSize = projectThumbnail.size / (1024 * 1024); // size in MB
+                const allowedTypes = ["image/jpeg", "image/jpg", "image/png"];
+                if (fileSize > 10 || !allowedTypes.includes(projectThumbnail.type)) {
+                    showError("#hoster_project_thumbnail", "Thumbnail should be in JPG, JPEG, PNG format and max size of 10MB.");
+                    isValid = false;
+                }
+            }
+
+            // Validate Technologies
+            if (!technologies) {
+                showError("#hoster_project_tech_input", "Technologies are required.");
+                isValid = false;
+            }
+            
+            // Validate PLatform
+            if (!platform) {
+                showError("#hoster_project_platform", "Platform is required.");
+                isValid = false;
+            }
+
+            // Validate Project Preview Link (URL format)
+            const urlRegex = /^(https?:\/\/)?([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}(:\d+)?(\/.*)?$/;
+            if (!previewLink || !urlRegex.test(previewLink)) {
+                showError("#hoster_project_preview_link", "Please enter a valid URL.");
+                isValid = false;
+            }
+
+            // Validate Project Description
+            if (!description || !/^[A-Za-z0-9.,!?&\-@()\[\]{}:;'" ]*$/.test(description)) {
+                showError("#hoster_project_description", "Project description is required.");
+                isValid = false;
+            }
+
+            // If all fields are valid, proceed with adding the project
+            if (isValid) {
+                //  Show/hide screens
+                $("#hoster_exp_projects_screen").removeClass("d-none");
+                $("#hoster_project_initial_screen").addClass("d-none");
+    
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                  hosterProjects.push({
+                        name: projectName,
+                        thumbnail: e.target.result,
+                        technologies: technologies,
+                        previewLink: previewLink,
+                        description: description,
+                        platform: platform,
+                        selectedFile: projectThumbnail,
+                    });
+    
+                    // Hide modal after submission
+                    const addProjectModal = bootstrap.Modal.getInstance(document.getElementById('portfolio_add_hoster_project_modal'));
+                    if (addProjectModal) addProjectModal.hide();
+    
+                    // Reset Technology field
+                    resetMultiSelectField("hoster_technologies");
+                    hosterRenderProjects();
+                    $("#addHosterProjectForm")[0].reset();
+                };
+                reader.readAsDataURL(projectThumbnail);
+            } else {
+                return
+            }
+        }
+
+        //Hoster - Get value from respective update modal and update the values from the existing cards
+        function hosterUpdateProject(index) {
+            // Portfolio Project Edit Form Validation
+            $(document).ready(function() {
+                // Field Event Listeners for Real-Time Validation
+                $(`#edit_hoster_project_name_${index}`).on("input", function() {
+                    validateField(`#edit_hoster_project_name_${index}`, /^[A-Za-z0-9.,!?&\-@()\[\]{}:;'" ]*$/, "Project Name is required.");
+                });
+
+                $(`#edit_hoster_project_preview_link_${index}`).on("input", function() {
+                    validateField(`#edit_hoster_project_preview_link_${index}`, /^(https?:\/\/)?([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}(:\d+)?(\/.*)?$/, "Please enter a valid URL.");
+                });
+
+                $(`#edit_hoster_project_description_${index}`).on("input", function() {
+                    validateField(`#edit_hoster_project_description_${index}`, /^[A-Za-z0-9.,!?&\-@()\[\]{}:;'" ]*$/, "Project description is required.");
+                });
+
+                $(`#edit_hoster_project_tech_input_${index}`).on("input", function() {
+                    validateField(`#edit_hoster_project_tech_input_${index}`, /.*/, "Technologies are required.");
+                });
+                
+                $(`#edit_hoster_platform_${index}`).on("input", function() {
+                    validateField(`#edit_hoster_platform_${index}`, /.*/, "Platform is required.");
+                });
+
+                $(`#edit_hoster_project_thumbnail_${index}`).on("change", function() {
+                    const file = this.files[0];
+                    const fileSize = file ? file.size / (1024 * 1024) : 0; // MB
+                    const allowedTypes = ["image/jpeg", "image/jpg", "image/png"];
+                    
+                    if (file) {
+                        if (fileSize > 10 || !allowedTypes.includes(file.type)) {
+                            showError(`#edit_hoster_project_thumbnail_${index}`, "Project Thumbnail is less than 10MB and JPG, PNG , JPEG format");
+                        } else {
+                            removeError(`#edit_hoster_project_thumbnail_${index}`);
+                        }
+                    } 
+                });
+            });
+
+
+            const modalElement = document.getElementById(`edit_hoster_project_modal_${index}`);
+            const projectModal = bootstrap.Modal.getInstance(modalElement); // Get modal instance
+            const newName = $(`#edit_hoster_project_name_${index}`).val().trim();
+            const newThumbnail = $(`#edit_hoster_project_thumbnail_${index}`)[0].files[0];
+            const newPreviewLink = $(`#edit_hoster_project_preview_link_${index}`).val().trim();
+            const newDescription = $(`#edit_hoster_project_description_${index}`).val().trim();
+            const newPlatform = $(`#edit_hoster_platform_${index}`).val();
+            const newtechnologies = $(`#edit_hoster_project_tech_input_${index}`).val();
+
+            // File Transfer from add Project modal to Project card
+            if(newThumbnail){
+              fileTransfer(newThumbnail,`dp_thumbnail_${index}`);
+            }
+
+            let isValid = true; // Flag to track form validity
+
+            // Validate Project Name
+            if (!newName || !/^[A-Za-z0-9.,!?&\-@()\[\]{}:;'" ]*$/.test(newName)) {
+                showError(`#edit_hoster_project_name_${index}`, "Project Name is required.");
+                isValid = false;
+            }
+
+            // Validate Project Thumbnail (file size & type)
+            if (!newThumbnail) {
+                isValid = true;
+            } else {
+                const fileSize = newThumbnail.size / (1024 * 1024); // size in MB
+                const allowedTypes = ["image/jpeg", "image/jpg", "image/png"];
+                if (fileSize > 10 || !allowedTypes.includes(newThumbnail.type)) {
+                    showError(`#edit_hoster_project_thumbnail_${index}`, "Project Thumbnail is less than 10MB and JPG, PNG , JPEG format");
+                    isValid = false;
+                }
+            }
+
+            // Validate Technologies
+            if (!newtechnologies) {
+                showError(`#edit_hoster_project_tech_input_${index}`, "Technologies are required.");
+                isValid = false;
+            }
+           
+            // Validate Platform
+            if (!newPlatform) {
+                showError(`#edit_hoster_platform_${index}`, "Platform is required.");
+                isValid = false;
+            }
+
+            // Validate Project Preview Link (URL format)
+            const urlRegex = /^(https?:\/\/)?([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}(:\d+)?(\/.*)?$/;
+            if (!newPreviewLink || !urlRegex.test(newPreviewLink)) {
+                showError(`#edit_hoster_project_preview_link_${index}`, "Please enter a valid URL.");
+                isValid = false;
+            }
+
+            // Validate Project Description
+            if (!newDescription || !/^[A-Za-z0-9.,!?&\-@()\[\]{}:;'" ]*$/.test(newDescription)) {
+                showError(`#edit_hoster_project_description_${index}`, "Project description is required.");
+                isValid = false;
+            }
+
+            // If all fields are valid, proceed with adding the project
+            if (isValid) {
+                
+                hosterProjects[index].name = newName;
+                hosterProjects[index].previewLink = newPreviewLink;
+                hosterProjects[index].description = newDescription;
+                hosterProjects[index].technologies = newtechnologies;
+                hosterProjects[index].platform = newPlatform;
+                hosterProjects[index].selectedFile = newThumbnail;
+    
+                if (newThumbnail) {
+                    const reader = new FileReader();
+                    reader.onload = function (e) {
+                        hosterProjects[index].thumbnail = e.target.result;
+                        hosterRenderProjects();
+                        projectModal.hide(); // Hide modal
+                        removeModalBackdrop(); // Remove remaining backdrop
+                    };
+                    reader.readAsDataURL(newThumbnail);
+                } else {
+                    hosterRenderProjects();
+                    projectModal.hide(); // Hide modal
+                    removeModalBackdrop(); // Remove remaining backdrop
+                }
+            }
+        }
+
+        // Function to remove the modal backdrop manually
+        function removeModalBackdrop() {
+            document.querySelectorAll('.modal-backdrop').forEach(backdrop => backdrop.remove());
+            document.body.classList.remove('modal-open'); // Remove body class that prevents scrolling
+        }
+
+        // Delete the project
+        function deleteProject(index) {
+            projects.splice(index, 1);
+            developerRenderProjects();
+        }
+        
+
+        // Developer refill file data in input field
+        function reFillDeveloperFileData(idPrefix){
+          for( let i = 0 ; i <= projects.length ; i++ ){
+            if(document.getElementById(`${idPrefix}_${i}`)){
+              // const sourceFileInput = document.getElementById(src_id);
+              const targetFileInput = document.getElementById(`${idPrefix}_${i}`);
+              fileData = projects[i].selectedFile; 
+              if (fileData) {
+                  const srcSelectedFile = fileData;
+                  // Create a data transfer object
+                  const dataTransfer = new DataTransfer();
+                  // Add the selected file to the data transfer object
+                  dataTransfer.items.add(srcSelectedFile);
+                  // Set the target input's files to the copied file list
+                  targetFileInput.files = dataTransfer.files;
+              } 
+            }
+          }
+        }
+       
+        // Reviewer refill file data in input field
+        function reFillReviewerFileData(idPrefix){
+          for( let i = 0 ; i <= reviewerProjects.length ; i++ ){
+            if(document.getElementById(`${idPrefix}_${i}`)){
+              // const sourceFileInput = document.getElementById(src_id);
+              const targetFileInput = document.getElementById(`${idPrefix}_${i}`);
+              fileData = reviewerProjects[i].selectedFile; 
+              if (fileData) {
+                  const srcSelectedFile = fileData;
+                  // Create a data transfer object
+                  const dataTransfer = new DataTransfer();
+                  // Add the selected file to the data transfer object
+                  dataTransfer.items.add(srcSelectedFile);
+                  // Set the target input's files to the copied file list
+                  targetFileInput.files = dataTransfer.files;
+              } 
+            }
+          }
+        }
+       
+        // Hoster refill file data in input field
+        function reFillHosterFileData(idPrefix){
+          for( let i = 0 ; i <= hosterProjects.length ; i++ ){
+            if(document.getElementById(`${idPrefix}_${i}`)){
+              // const sourceFileInput = document.getElementById(src_id);
+              const targetFileInput = document.getElementById(`${idPrefix}_${i}`);
+              fileData = hosterProjects[i].selectedFile; 
+              if (fileData) {
+                  const srcSelectedFile = fileData;
+                  // Create a data transfer object
+                  const dataTransfer = new DataTransfer();
+                  // Add the selected file to the data transfer object
+                  dataTransfer.items.add(srcSelectedFile);
+                  // Set the target input's files to the copied file list
+                  targetFileInput.files = dataTransfer.files;
+              } 
+            }
+          }
+        }
+       
+        developerRenderProjects();
+        reviewerRenderProjects();
+        hosterRenderProjects();
+    </script>
+</body>
+</html>

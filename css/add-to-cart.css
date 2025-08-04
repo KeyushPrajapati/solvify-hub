@@ -1,0 +1,80 @@
+.cart-product-image{
+    aspect-ratio: 16/9 !important;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.cart-profile-img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+.cart-delete-btn{
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+.cart-delete-btn:hover{
+    transition: 0.3s;
+    background-color: var(--bs-danger-300) !important;
+}
+.cart-delete-icon{
+    font-size: 16px;
+}
+.cart-container{
+    border-radius: 16px;
+}
+
+
+/* Card featured CSS START*/
+.content-section {
+    display: none;
+}
+
+.project-content-container {
+    display: none;
+}
+
+/* Visible states */
+.content-section.visible {
+    display: block;
+}
+
+.project-content-container.visible {
+    display: block;
+}
+.service_btn{
+    border:1px solid var(--bs-primary-100) ;
+}
+.btn_on_animation {
+    background-color: var(--bs-info) !important; /* Button background */
+    color: var(--bs-dark) !important;          /* Text color */
+    animation: blink-border 1s infinite;       /* Infinite animation */
+    border: 3px solid var(--bs-info);  
+}
+
+@keyframes blink-border {
+    0%, 100% {
+        border-color: var(--bs-info-300); /* Border visible */
+    }
+    50% {
+        border-color: transparent;    /* Border hidden */
+    }
+}
+
+/* Card featured CSS END*/
+
+/* Empty Cart CSS START */
+.empty-cart-section{
+    border-radius: 16px;
+    background-color: var(--bs-primary-700);
+}
+.null-cart-img{
+    aspect-ratio: 1/1;
+    max-width: 100px;
+}
+/* Empty Cart CSS END */
+
+/* Checkout CSS start */
+
+/* Checkout CSS end */

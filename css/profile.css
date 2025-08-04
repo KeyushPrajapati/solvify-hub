@@ -1,0 +1,138 @@
+/* Sidebar owner personal Data START*/
+.profile-image img{
+    object-fit: cover;
+}
+.profile-social-link{
+    width: 40px;
+    height: 40px;
+    transition: 0.5s;
+}
+.profile-social-link:hover{
+    transition: 0.5s;
+    background-color: var(--bs-primary-700) !important;
+}
+.profile-sidebar,.profile-card{
+    border-radius: 16px;
+}
+.profile-info-label{
+    padding: 16px 24px !important;
+}
+.profile-sidebar-edit-btn{
+    top:12px;
+    right:12px;
+}
+.profile-logout-btn{
+    transition: 0.5s;
+}
+.profile-logout-btn:hover{
+    transition: 0.5s;
+    color:white;
+}
+.profile-skill-badge{
+    padding: 12px 14px;
+}
+.profile-edit-btn{
+    width: 12rem !important;
+}
+.profile-edit-field{
+    width: 100% !important;
+}
+.withdraw-profile-card{
+    background: var(--bs-success-200);
+  background-image:
+    radial-gradient(70% 80% ellipse at center top, #c0ffc8 0%, rgba(0,0,0,0) 100%);
+    /* radial-gradient(80% 90% ellipse at right bottom, #69cf72 0%, #2f8646 100%); */
+}
+/* Freelancer CSS start*/
+.section-hidden { display: none; }
+
+
+/* Portfolio section in freelancer personal profile start*/
+.profile_project_image{
+   aspect-ratio: 16/9;
+   width: 100%;
+   object-fit: cover;
+   object-position: center;
+   border-radius: 12px;
+}
+.profile_project_badge{
+    letter-spacing: 0.4px;
+}
+.profile_edit_project_btn{
+    width: 25px !important;
+    padding: 0;
+    height: 25px !important;
+    background-color: white;
+}
+.profile_edit_project_btn:hover{
+    background-color:var(--bs-primary);
+}
+.portfolio_card{
+    transition: 0.4s;
+}
+.portfolio_card:hover{
+    border: none;
+    transition: 0.4s;
+    box-shadow: 0px 5px 10px #30303045;
+}
+#portfolio_project_review_canvas.offcanvas-end{
+    width: 700px !important;
+}
+.portfolio_project_preview_image{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: center;
+}
+.hosting_platform_container{
+    border-left: 1px solid var(--bs-dark-600);
+}
+@media screen and (max-width:576px) {
+    .hosting_platform_container{
+        border-left: none;
+        border-top: 1px solid var(--bs-dark-600);
+    }
+}
+/* Portfolio section in freelancer personal profile end*/
+
+/* Freelancer Client side profile start */
+.client_profile_drawer{
+    width: 100%;
+    max-width: 850px;
+}
+.cf_profile_image{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.cf_right_side_details{
+    border-left: 1px solid var(--bs-dark-600);
+}
+.cf-icon{
+    width: 36px;
+    height: 36px;
+    background-color: var(--bs-primary-800);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cf-role-project-count{
+    height: 100%;
+}
+.cf_profile_project_badge{
+    font-size: 12px;
+    padding: 2px 9px;
+    height: 100%;
+}
+.cf_profile_project_btn{
+    font-size: 12px;
+    padding: 2px 8px;
+}
+/* Freelancer Client side profile End */
+
+/* Swiper Custom CSS */
+.portfolio-slider-wrapper{
+    max-width: 100% !important;
+}
